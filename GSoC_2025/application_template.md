@@ -2,9 +2,7 @@
 
 > [!CAUTION]
 > Do not edit this template directly!
-> Instead copy its content into a new file under the `GSoC-2025` directory, edit it and open a PR. Please use the following name format for the new file:
-> `<Package Name>:<Project Name> (<Your-Name>)`. E.g. "movement: support for Kalman filters (Sofía Miñano)".
-> See the [README](README.md) for more details.
+> Instead use it to open a new PR as explained in the [README](README.md#steps).
 
 
 Please use the following template to submit your application to the NIU GSoC 2025 program, and to discuss your proposal with the community. 
