@@ -78,7 +78,7 @@ _Extension: max 0.25 page_
 
 - **GSoC experience**
 
-    Have you participated in GSoC before? If so, when and with which project? What was your experience like? If you haven't, what do you expect from the program?
+    What do you expect from the program?
 
 - **Are you also applying to projects with other organisations in GSoC 2025?**
 
