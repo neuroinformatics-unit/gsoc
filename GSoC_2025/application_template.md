@@ -2,7 +2,7 @@
 
 > [!CAUTION]
 > Do not edit this template directly!
-> Instead use it to open a new PR as explained in the [README](README.md#steps).
+> Instead use it to open a new PR as explained in the [README](../README.md#steps).
 
 
 Please use the following template to submit your application to the NIU GSoC 2025 program, and to discuss your proposal with the community. 
