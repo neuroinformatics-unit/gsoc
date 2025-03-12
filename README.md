@@ -1,6 +1,6 @@
 ## Welcome to the proposals site for GSoC 2025! ☀️
 
-To discuss your project proposal with the us, open a PR in this repo and add a new markdown file under the `GSoC 2025` directory following [our template](GSoC_2025/proposal_template.md).
+To discuss your project proposal with the us, open a PR in this repo and add a new markdown file under the `GSoC 2025` directory following [our template](GSoC_2025/application_template.md).
 
 We will discuss and polish your proposal in the PR review process ✨
 
@@ -15,7 +15,7 @@ We will discuss and polish your proposal in the PR review process ✨
     - Fork this repo.
     - Clone your fork to your local machine.
     - Create a new branch for your proposal.
-    - Add a new markdown file under the `GSoC 2025` directory following [our template](GSoC_2025/proposal_template.md) and filename format `<Package Name>:<Project Name> (<Your-Name>)`. 
+    - Add a new markdown file under the `GSoC 2025` directory following [our template](GSoC_2025/application_template.md) and filename format `<Package Name>:<Project Name> (<Your-Name>)`. 
     - Edit your proposal and commit the changes regularly.
     - When you are ready, push your changes to GitHub and open a draft pull request.
     - Check all is good, and when you are ready, mark the PR as "Ready for review"
