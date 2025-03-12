@@ -8,10 +8,10 @@ We will discuss and polish your proposal in the PR review process ✨
 
 
 ### Steps 
-1. **Read the information and tips on the [GSoC 2025 NIU site](https://neuroinformatics.dev/get-involved/gsoc/index.html).
-    - We also link to resources to learn more about tools such as Git and the open-source development workflow. 
+1. Read the information and tips on the [GSoC 2025 NIU site](https://neuroinformatics.dev/get-involved/gsoc/index.html).
+    - It includes links to resources to learn more about tools such as Git and the open-source development workflow. 
 
-2. When you are ready to discuss your proposal with us, open a PR in this repo. This involves:
+2. When you are ready to discuss your proposal with us, open a PR in this repo. To do this:
     - Fork this repo.
     - Clone your fork to your local machine.
     - Create a new branch for your proposal.
@@ -19,4 +19,3 @@ We will discuss and polish your proposal in the PR review process ✨
     - Edit your proposal and commit the changes regularly.
     - When you are ready, push your changes to GitHub and open a draft pull request.
     - Check all is good, and when you are ready, mark the PR as "Ready for review"
-    - Finally, tag one of the project mentors as a reviewer in the PR.
