@@ -44,4 +44,12 @@
   </table>
 </blockquote>
 
-
+## Project proposal
+## Personal statement
+- **Past experience**
+- **Motivation: why this project?**
+- **Match: why you?**
+- **Availability**
+## GSoC
+- **GSoC experience**
+- **Are you also applying to projects with other organisations in GSoC 2025?**
