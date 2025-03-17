@@ -14,7 +14,7 @@
     <tr>
       <td rowspan="3"><strong>In Datashuttle</strong></td>
       <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/487">#487</a></td>
-      <td>Fixed log directory creation issue in <code>_start_log</code></td>
+      <td>Fixed log directory creation issue in _start_log</td>
     </tr>
     <tr>
       <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/489">#489</a></td>
@@ -41,6 +41,11 @@
       <td><a href="https://github.com/hyperledger-labs/aifaq/pull/71">#71</a></td>
       <td>Fixes sidebar glitch</td>
     </tr>
+    <tr>
+      <td rowspan="1"><strong>Stopwatch Project</strong></td>
+      <td><a href="https://github.com/sumana-2705/Stopwatch">link</a></td>
+      <td>A self-made project to learn textual framework</td>
+    </tr>
   </table>
 </blockquote>
 
@@ -52,4 +57,6 @@
 - **Availability**
 ## GSoC
 - **GSoC experience**
-- **Are you also applying to projects with other organisations in GSoC 2025?**
+- **Are you also applying to projects with other organisations in GSoC 2025?** <br/>
+I looked for many Organisations working on various domains before concluding my search to datashuttle. I have made great connections contributing here and allocated majority of time and energy understanding the project. I also liked a project in UC-OSPO org so I may submit one proposal there too (just for the satisfaction), but I am not sure of it. I really want to work for `Extend the functionality of the Terminal User Interface` project this summer and it will be my top priority.
+  
