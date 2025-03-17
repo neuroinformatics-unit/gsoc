@@ -24,6 +24,23 @@
       <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/475">#475</a></td>
       <td>Updated tree view while selecting location of new project</td>
     </tr>
+    <tr>
+      <td rowspan="4"><strong>PRs related to UI</strong></td>
+      <td><a href="https://github.com/ruxailab/RUXAILAB/pull/599">#599</a></td>
+      <td>Improve responsiveness of User Test Preview with a cleaner layout</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ruxailab/RUXAILAB/pull/596">#596</a></td>
+      <td>Fix layout overflow and incorrect margin</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/internetarchive/openlibrary/pull/10208">#10208</a></td>
+      <td>Added yearly goal affordances to mobile view in my books page</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/hyperledger-labs/aifaq/pull/71">#71</a></td>
+      <td>Fixes sidebar glitch</td>
+    </tr>
   </table>
 </blockquote>
 
