@@ -52,24 +52,25 @@
 ## Project proposal
 - **Synopsis** <br/>
   The project aims to enhance datashuttle’s TUI by adding new features and exposing key functionalities from its Python API. datashuttle helps neuroscience researchers standardize data organization, improving collaboration and reproducibility. This project will introduce graphical components (buttons, drop-downs, and log displays), enable real-time UI responsiveness, and add new features like project validation and enhanced directory editing. Deliverables include an improved TUI, new functionalities, performance optimizations, tests, and documentation. The open-source community will benefit from a more powerful and user-friendly TUI, making standardized data management more accessible.
+  
 - **Implementation Timeline**
 
 
-| **Phase**                  | **Week** | **Deliverables** |
-|----------------------------|---------|------------------|
-| **Initial Development**    | 1       | Add UI elements like drop-down lists for directory tree editing, improve responsiveness while transfer job is active. |
-| **User Experience (UX)**   | 2       | Implement buttons, radio-buttons, and a log display for validation errors and transfer jobs. |
-|                            | 3       | Improve user interaction flow and enhance usability of UI components. |
-| **Core Functionalities**   | 4       | Enable TUI to create folders in both "raw data" and "derivatives" (top-level folders). |
-|                            | 5       | Implement file/folder upload/download feature with overwrite and dry-run parameters. |
-| **Midterm Evaluation**     | 6       | Review progress, complete pending tasks, and ensure all features work smoothly. |
-| **Advanced Features**      | 7       | Extend full project upload/download support to include code and analysis. |
-|                            | 8       | Test and refine project-wide transfers, address edge cases. |
-| **Testing**                | 9       | Develop tests for newly implemented functionalities and ensure stability. |
-|                            | 10      | Perform end-to-end testing, fix any remaining bugs, and finalize the test suite for reliability. |
-| **Documentation**          | 11       | Write detailed documentation for all added features, update existing docs. |
-| **Final Refinements**      | 12      | Bug fixes, polish UI/UX, final reviews, and submit the final project. |
-| **Stretch Goals**          | -       | Additional improvements like performance optimization, custom TUI themes. |
+  | **Phase**                  | **Week** | **Deliverables** |
+  |----------------------------|---------|------------------|
+  | **Initial Development**    | 1       | Add UI elements like drop-down lists for directory tree editing, improve responsiveness while transfer job is active. |
+  | **User Experience (UX)**   | 2       | Implement buttons, radio-buttons, and a log display for validation errors and transfer jobs. |
+  |                            | 3       | Improve user interaction flow and enhance usability of UI components. |
+  | **Core Functionalities**   | 4       | Enable TUI to create folders in both "raw data" and "derivatives" (top-level folders). |
+  |                            | 5       | Implement file/folder upload/download feature with overwrite and dry-run parameters. |
+  | **Midterm Evaluation**     | 6       | Review progress, complete pending tasks, and ensure all features work smoothly. |
+  | **Advanced Features**      | 7       | Extend full project upload/download support to include code and analysis. |
+  |                            | 8       | Test and refine project-wide transfers, address edge cases. |
+  | **Testing**                | 9       | Develop tests for newly implemented functionalities and ensure stability. |
+  |                            | 10      | Perform end-to-end testing, fix any remaining bugs, and finalize the test suite for reliability. |
+  | **Documentation**          | 11      | Write detailed documentation for all added features, update existing docs. |
+  | **Final Refinements**      | 12      | Bug fixes, polish UI/UX, final reviews, and submit the final project. |
+  | **Stretch Goals**          | -       | Additional improvements like performance optimization, custom TUI themes. |
 
   
 ## Personal statement
