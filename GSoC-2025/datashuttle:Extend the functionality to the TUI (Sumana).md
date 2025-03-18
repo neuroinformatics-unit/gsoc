@@ -51,12 +51,15 @@
 
 ## Project proposal
 ## Personal statement
-- **Past experience**
+- **Past experience** <br/>
+  I have been actively contributing to open-source projects, collaborating with organizations like Microsoft Recommenders, Aeon, Open Library, Flyte, Wagtail, Open Climate Fix, and more. One of my most memorable moments was receiving appreciation from the Microsoft Recommenders maintainer after my first PR was merged ([link](https://x.com/miguelgfierro/status/1808596073847357646)). So far, I have successfully merged more than 15 PRs in these organisations and completed [Hacktoberfest 2024](https://holopin.io/@sumana2705). Additionally, I have completed the [Machine Learning Specialization](https://www.coursera.org/account/accomplishments/specialization/FRH15SYH6GVW) by Stanford University (Coursera), covering Supervised Learning, Advanced Learning Algorithms, and Unsupervised Learning.
 - **Motivation: why this project?**
 - **Match: why you?**
-- **Availability**
+- **Availability** <br/>
+  I do not have any other commitments during the program, I did not accept any Internship or other offers for the summer. I would be available for the whole program period. My University’s End Semester exams are scheduled from 25th April to 10th May, So I will be available for the whole program period. After this I will be having my Mid Semester Exams scheduled in September, that will also not take too much of my time due to less syllabus in Mid Sems. On an average, I will be available for 25 hours a week for the Summer period. I am ready to extend this whenever needed.
+
 ## GSoC
 - **GSoC experience**
 - **Are you also applying to projects with other organisations in GSoC 2025?** <br/>
-I looked for many Organisations working on various domains before concluding my search to datashuttle. I have made great connections contributing here and allocated majority of time and energy understanding the project. I also liked a project in UC-OSPO org so I may submit one proposal there too (just for the satisfaction), but I am not sure of it. I really want to work for `Extend the functionality of the Terminal User Interface` project this summer and it will be my top priority.
+I looked for many organisations working on various domains before concluding my search to datashuttle. I have made great connections contributing here and allocated majority of time and energy understanding the project. I also liked a project in UC-OSPO org so I may submit one proposal there too (just for the satisfaction), but I am not sure of it. I really want to work for `Extend the functionality of the Terminal User Interface` project this summer and it will be my top priority.
   
