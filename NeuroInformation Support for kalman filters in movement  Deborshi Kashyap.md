@@ -1,3 +1,27 @@
+<h1> Name and Contact Information </h1>
+
+Name : Deborshi Kashyap
+
+Time-zone : UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi
+
+E-mail : bskpuzari@gmail.com
+
+Github : [decembboy](https://github.com/decembboy)  ,  [Deborshi](https://github.com/deborshi-web)
+
+Zulip Username : [Debor](https://neuroinformatics.zulipchat.com/#user/882018)
+
+Code Contribution:
+
+[Microsoft torchgeo](https://github.com/microsoft/torchgeo/pull/2460)
+
+[myhealthconnectsociety](https://www.coursera.org/account/accomplishments/specialization/5AD3BY5DV4V3)
+
+[neuroinformatics unit ( movement )](https://github.com/neuroinformatics-unit/movement/issues/21)
+
+    
+
+
+
 # Title: 
 
 Support for kalman filter in movement
@@ -62,7 +86,16 @@ Week 12	Submit final deliverables, write project report, and assist with integra
 
 <h2> Past Experience: </h2>
 
-I am an experienced Python developer with expertise in numpy, pandas, OpenCV, and matplotlib. I have worked on data processing, visualization, and automation tools, including CSV-to-graph converters and AI-driven automation frameworks. I have contributed to open-source projects such as 
+I am an experienced Python developer with expertise in numpy, pandas, OpenCV, and matplotlib. I have worked on data processing, visualization, and automation tools, including CSV-to-graph converters and AI-driven automation frameworks here are projects listed below
+
+[Interactive German Dialect](https://github.com/decembboy/German-Dialect-Map)
+
+[Interactive Graph Generator](https://github.com/decembboy/Interactive-graph-generator)
+
+[Automate Assistant](https://github.com/decembboy/Automate-Assistant)
+
+
+I have contributed to open-source projects such as 
 
 1.	[Microsoft torchgeo](https://github.com/microsoft/torchgeo/pull/2460)
 2.	[myhealthconnectsociety](https://www.coursera.org/account/accomplishments/specialization/5AD3BY5DV4V3)
