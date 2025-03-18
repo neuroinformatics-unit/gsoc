@@ -50,6 +50,24 @@
 </blockquote>
 
 ## Project proposal
+- **Synopsis**
+- **Implementation Timeline**
+
+| Timeline      | Deliverables    |
+|--------------|--------------|
+| Week 1        | Data 1       |
+| Week 2        | Data 2       |
+| Week 3        | Data 3       |
+| Week 4        | Data 4       |
+| Week 5        | Data 5       |
+| Week 6        | Data 6       |
+| Week 7        | Data 7       |
+| Week 8        | Data 8       |
+| Week 9        | Data 9       |
+| Week 10       | Data 10      |
+| Week 11       | Data 11      |
+| Week 12       | Data 12      |
+  
 ## Personal statement
 - **Past experience** <br/>
   I have been actively contributing to open-source projects, collaborating with organizations like Microsoft Recommenders, Aeon, Open Library, Flyte, Wagtail, Open Climate Fix, and more. One of my most memorable moments was receiving appreciation from the Microsoft Recommenders maintainer after my first PR was merged ([link](https://x.com/miguelgfierro/status/1808596073847357646)). So far, I have successfully merged more than 15 PRs in these organisations and completed [Hacktoberfest 2024](https://holopin.io/@sumana2705). Additionally, I have completed the [Machine Learning Specialization](https://www.coursera.org/account/accomplishments/specialization/FRH15SYH6GVW) by Stanford University (Coursera), covering Supervised Learning, Advanced Learning Algorithms, and Unsupervised Learning.
