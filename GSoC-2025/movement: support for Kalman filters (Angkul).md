@@ -11,6 +11,8 @@
 
     I have contributed in implementing a general `rolling filter` function for mean and median filters in movement which focus on fixing the [issue #454](https://github.com/neuroinformatics-unit/movement/issues/454). Later on the suggestion of my mentor I extended this general function for min and max too and change the relevant documentation and write test cases for the rolling filter function. Here is my merged [PR #455](https://github.com/neuroinformatics-unit/movement/pull/455).
 
+    I have opened the [draft PR](https://github.com/neuroinformatics-unit/movement/pull/457) related to the support for Kalman filter. So far, this PR contains the experimentation code so far and the results of the experimentation with darts and filterpy packages.
+
 - **Proposal discussion link**
 
 ## Project Proposal
