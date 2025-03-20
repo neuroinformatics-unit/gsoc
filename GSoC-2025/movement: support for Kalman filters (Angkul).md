@@ -9,7 +9,7 @@
 - **Personal website / project portfolio**: https://github.com/angkul07
 - **Code Contribution**:
 
-    I have contributed in implementing a general `rolling filter ` function for mean and median filters in movement which focus on fixing the [issue #454](https://github.com/neuroinformatics-unit/movement/issues/454). Later on the suggestion of my mentor I extended this general function for min and max too and change the relevant documentation and write test cases for the rolling filter function. Here is my merged [PR #455](https://github.com/neuroinformatics-unit/movement/pull/455).
+    I have contributed in implementing a general `rolling filter` function for mean and median filters in movement which focus on fixing the [issue #454](https://github.com/neuroinformatics-unit/movement/issues/454). Later on the suggestion of my mentor I extended this general function for min and max too and change the relevant documentation and write test cases for the rolling filter function. Here is my merged [PR #455](https://github.com/neuroinformatics-unit/movement/pull/455).
 
 - **Proposal discussion link**
 
@@ -17,17 +17,10 @@
 
 - **Synopsis**
 
-    The project focuses on integration of Kalman Filter in the movement library for data cleaning and filtering. The detailed scope of this project is to use Kalman Filter to smooth position, velocity and acceleration of the animals in the dataset. This project also aims to solve the problem of identity switches in multi-animal tracking data.
-
-    **Why is this project important**: This project is important from the point of view of Animal behavior research specially tracking movement patterns in animal. Since movement is a library which analyzes the motion tracks, this project is suitable for movement.
-
-    **Goals and deliverables**: 
-    - Implementation of a Kalman filter for smoothing position, velocity and acceleration which improves the tracking stability and reduce noise in the data.
-    - Fix identity switches in multi-animal tracking using Kalman Filter to predict movement and detect ID mismatches. The correct ID swaps to maintain consistent tracking.
-    - Ensure the performance on the datasets by implementing the unit tests for each new feature.
-    - Add the documentation for integrating Kalman Filters in movement and add an example use case in movement gallery.
-
-    This project will benefit the open source community specially the  researchers who are actively researchering the animal behaviour. This open source project, reduces the barrier between research and code. 
+    This project focuses on implementing the Kalman Filter in movement for data cleaning and filtering, specifically to smooth position, velocity, and acceleration data in animal tracking data. This helps in reducing noise in data and improve the data consistency and quality. Additionally, the project tackles the identity-switch problem in multi-animal tracking, ensuring more reliable tracking and analysis. 
+    This project is important because this aims to reduce the noisiness in animal tracking data and thus improving the data quailty for analysing motion tracking. 
+    
+    Deliverables include the Kalman Filter implementation, extending Kalman Filter to fix identity switch, testing-documentation of the new functionality and an example in movement gallery.  With the help of this Kalman Filter implementation, the open-source community will gain cleaner, more consistent, and high-quality data for motion tracking analysis benefiting the researchers, scientists.
 
 - **Implementation timeline**
     
@@ -60,17 +53,17 @@
     | **Week 11**  <br> August 20 - August 27 | - Start writing the documentation for Identity switch correction feature.  <br> - Freeze the codebase. |
     | **Week 12**  <br> August 28 - September 4 | - Finish remaining tests and documentations.  <br> - Code polishing, final testing & performance checks.  <br> - Final GSOC report. |
 
-    I estimated that minimum number of hours required to complete this project is between 170-180 hours. I plan to dedicate the 15-20 hours per week and approx. 4 hours daily.
+    I estimated that minimum number of hours required to complete this project is between 170-180 hours. I plan to dedicate the 15-20 hours per week and approx. 4-5 hours daily.
 
     **Communication plan**
     
-    I plan to communicate with my mentor daily on zulip chat and bi-weekly through zoom meetings with the mentors.
+    To communicate with the mentors, I will follow the default communication channels follow by movement which are zulip chats and zoom meetings.I will communicate with my mentors daily on Zulip chat for guidance and continuous feedback. To review the progress from the previous week and discuss plans for the upcoming week, I will do a weekly stand-up Zoom meeting with my mentors.
 
 ## Personal statement
 
 - **Past experience**
     
-    I have been programming for 2 years and I am proficient in python, pandas, numpy, pytorch and various other libraries. So, my experience with data libraries aligns with this project. I think the experience which I gain working with the movement library in the past few weeks will help me in my future contribution in the movement.
+    I have been programming for 2 years and I am proficient in python, pandas, numpy, pytorch and various other libraries. So, my experience with data libraries aligns with this project. I think the experience which I gained working with the movement in the past few weeks, it will help me in my future contribution in the movement.
 
 - **Motivation**
     
@@ -92,7 +85,7 @@
 
     For me, GSoC is more than just a program—it's a chance to learn, grow, and be part of something bigger. As a first-time participant, I am very excited to work closely with mentors, gain new skills, and grow as a developer. 
     Beyond just coding, I see GSoC as a chance to develop problem-solving skills, collaborate in a structured development environment, and make meaningful contributions to open source.
-    Most of all, I can’t wait to make meaningful contributions, learn from others, and give back to the community that has taught me so much. This is going to be an incredible journey!
+    Most of all, I can’t wait to make meaningful contributions in the research with the help of movement, learn from others, and give back to the community that has taught me so much. This is going to be an incredible journey!
 
 - **Are you also applying to projects with other organisations in GSoC 2025?**
 
