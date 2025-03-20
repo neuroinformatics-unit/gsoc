@@ -75,6 +75,8 @@ The project aims to enhance datashuttle’s TUI by adding new features and expos
   | **Final Refinements**      | 12      | Bug fixes, polish UI/UX, final reviews, and submit the final project. |
   | **Stretch Goals**          | -       | Additional improvements like performance optimization, custom TUI themes. |
 
+**Communication Plan** <br/>
+I will communicate with my mentor through Zulip chat whenever needed. However, I feel that having a weekly stand-up meeting via video call would be beneficial for discussing the detailed plan for the week and identifying areas for further improvement. That said, I am completely open to any mode of communication based on my mentor’s availability and preference.
   
 ## Personal statement
 - **Past experience** <br/>
