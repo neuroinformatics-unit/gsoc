@@ -14,7 +14,7 @@ Code Contribution:
 
 [Microsoft torchgeo](https://github.com/microsoft/torchgeo/pull/2460)
 
-[myhealthconnectsociety]([https://www.coursera.org/account/accomplishments/specialization/5AD3BY5DV4V3](https://github.com/myhealthconnectsociety/project-healthcare/pull/138))
+[myhealthconnectsociety](https://github.com/myhealthconnectsociety/project-healthcare/pull/138)
 
 [neuroinformatics unit ( movement )](https://github.com/neuroinformatics-unit/movement/issues/21)
 
