@@ -70,7 +70,7 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
   </thead>
   <tbody>
     <tr>
-      <td><b>Community Bonding Period</b></td>
+      <td><b>Community Bonding Period</b><br>Mon 5/8 - Sun 6/1</td>
       <td>
         <ol type="1">
           <li>Familiarizing more with the community and clearing my doubts regarding the project, discussing expectations.</li>
@@ -82,7 +82,7 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
       </td>
     </tr>
     <tr>
-      <td><b>Week 1</b><br>Mon 5/27 - Sat 6/2</td>
+      <td><b>Week 1</b><br>Mon 6/2 - Sat 6/7</td>
       <td>
         <ol type="1">
           <li></li>
@@ -92,112 +92,121 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
       </td>
     </tr>
     <tr>
-      <td><b>Week 2</b><br>Mon 5/27 - Sat 6/2</td>
+      <td><b>Week 2</b><br>Mon 6/9 - Sat 6/14</td>
       <td>
         <ol type="1">
-          <li>Setup the project and test for any problems in the development environment with Docker.</li>
-          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
-          <li>Read full Internal Design System (Vocabulary) code.</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ol>
       </td>
     </tr>
     <tr>
-      <td><b>Week 3</b><br>Mon 5/27 - Sat 6/2</td>
+      <td><b>Week 3</b><br>Mon 6/16 - Sat 6/21</td>
       <td>
         <ol type="1">
-          <li>Setup the project and test for any problems in the development environment with Docker.</li>
-          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
-          <li>Read full Internal Design System (Vocabulary) code.</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ol>
       </td>
     </tr>
     <tr>
-      <td><b>Week 4</b><br>Mon 5/27 - Sat 6/2</td>
+      <td><b>Week 4</b><br>Mon 6/23 - Sat 6/28</td>
       <td>
         <ol type="1">
-          <li>Setup the project and test for any problems in the development environment with Docker.</li>
-          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
-          <li>Read full Internal Design System (Vocabulary) code.</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ol>
       </td>
     </tr>
     <tr>
-      <td><b>Week 5</b><br>Mon 5/27 - Sat 6/2</td>
+      <td><b>Week 5</b><br>Mon 6/30 - Sat 7/5</td>
       <td>
         <ol type="1">
-          <li>Setup the project and test for any problems in the development environment with Docker.</li>
-          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
-          <li>Read full Internal Design System (Vocabulary) code.</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ol>
       </td>
     </tr>
     <tr>
-      <td><b>Week 6</b><br>Mon 5/27 - Sat 6/2</td>
+      <td><b>Week 6</b><br>Mon 7/7 - Sat 7/12</td>
       <td>
         <ol type="1">
-          <li>Setup the project and test for any problems in the development environment with Docker.</li>
-          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
-          <li>Read full Internal Design System (Vocabulary) code.</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ol>
       </td>
     </tr>
     <tr>
-      <td><b>Week 7</b><br>Mon 5/27 - Sat 6/2</td>
+      <td><b>Week 7</b><br>Mon 7/14 - Sat 7/19</td>
       <td>
         <ol type="1">
-          <li>Setup the project and test for any problems in the development environment with Docker.</li>
-          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
-          <li>Read full Internal Design System (Vocabulary) code.</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ol>
       </td>
     </tr>
     <tr>
-      <td><b>Week 8</b><br>Mon 5/27 - Sat 6/2</td>
+      <td><b>Week 8</b><br>Mon 7/21 - Sat 7/26</td>
       <td>
         <ol type="1">
-          <li>Setup the project and test for any problems in the development environment with Docker.</li>
-          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
-          <li>Read full Internal Design System (Vocabulary) code.</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ol>
       </td>
     </tr>
     <tr>
-      <td><b>Week 9</b><br>Mon 5/27 - Sat 6/2</td>
+      <td><b>Week 9</b><br>Mon 7/28 - Sat 8/2</td>
       <td>
         <ol type="1">
-          <li>Setup the project and test for any problems in the development environment with Docker.</li>
-          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
-          <li>Read full Internal Design System (Vocabulary) code.</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ol>
       </td>
     </tr>
     <tr>
-      <td><b>Week 10</b><br>Mon 5/27 - Sat 6/2</td>
+      <td><b>Week 10</b><br>Mon 8/4 - Sat 8/9</td>
       <td>
         <ol type="1">
-          <li>Setup the project and test for any problems in the development environment with Docker.</li>
-          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
-          <li>Read full Internal Design System (Vocabulary) code.</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ol>
       </td>
     </tr>
     <tr>
-      <td><b>Week 11</b><br>Mon 5/27 - Sat 6/2</td>
+      <td><b>Week 11</b><br>Mon 8/11 - Sat 8/16</td>
       <td>
         <ol type="1">
-          <li>Setup the project and test for any problems in the development environment with Docker.</li>
-          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
-          <li>Read full Internal Design System (Vocabulary) code.</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ol>
       </td>
     </tr>
     <tr>
-      <td><b>Week 12</b><br>Mon 5/27 - Sat 6/2</td>
+      <td><b>Week 12</b><br>Mon 8/18 - Sat 8/23</td>
       <td>
         <ol type="1">
-          <li>Setup the project and test for any problems in the development environment with Docker.</li>
-          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
-          <li>Read full Internal Design System (Vocabulary) code.</li>
+          <li></li>
+          <li></li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Week 13</b><br>Mon 8/25 - Mon 9/1</td>
+      <td>
+        <ol type="1">
+          <li></li>
+          <li></li>
+          <li></li>
         </ol>
       </td>
     </tr>
@@ -205,9 +214,9 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
       <td><b>Stretch Goals</b></td>
       <td>
         <ol type="1">
-          <li>Setup the project and test for any problems in the development environment with Docker.</li>
-          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
-          <li>Read full Internal Design System (Vocabulary) code.</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ol>
       </td>
     </tr>
