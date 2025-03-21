@@ -201,11 +201,11 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
       </td>
     </tr>
     <tr>
-      <td><b>Week 13</b><br>Mon 8/25 - Mon 9/1</td>
+      <td><b>Week 13</b><br>Mon 8/25 - Mon 9/1<br>(Final eval due 9/1)</td>
       <td>
         <ol type="1">
-          <li></li>
-          <li></li>
+          <li>Discuss the final evaluation with the project mentor.</li>
+          <li>Prepare a project report that shows the work done till week 12.</li>
           <li></li>
         </ol>
       </td>
