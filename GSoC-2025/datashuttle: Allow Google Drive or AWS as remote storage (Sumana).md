@@ -85,9 +85,9 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
       <td><b>Week 1</b><br>Mon 6/2 - Sat 6/7</td>
       <td>
         <ol type="1">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Define the integration strategy for Google Drive support via <b>RClone</b>.</li>
+          <li>Identify necessary modifications to both the Python API and the TUI for seamless integration.</li>
+          <li>Create a design document outlining the approach, expected challenges, and success criteria.</li>
         </ol>
       </td>
     </tr>
@@ -95,9 +95,8 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
       <td><b>Week 2</b><br>Mon 6/9 - Sat 6/14</td>
       <td>
         <ol type="1">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Begin coding the core functionality for data transfer between the local filesystem and Google Drive.</li>
+          <li>Conduct basic functionality tests to ensure the integration is correctly functioning.</li>
         </ol>
       </td>
     </tr>
@@ -105,9 +104,9 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
       <td><b>Week 3</b><br>Mon 6/16 - Sat 6/21</td>
       <td>
         <ol type="1">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Develop comprehensive test cases covering various scenarios for Google Drive transfers.</li>
+          <li>Execute tests and document any issues or failures.</li>
+          <li>Start debugging and refining the code based on test outcomes.</li>
         </ol>
       </td>
     </tr>
@@ -115,29 +114,25 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
       <td><b>Week 4</b><br>Mon 6/23 - Sat 6/28</td>
       <td>
         <ol type="1">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Write detailed documentation for the Google Drive integration, including setup instructions, API usage, and TUI operations.</li>
+          <li>Ensure that the documentation covers both common use cases and edge scenarios.</li>
+          <li>Solicit feedback on the documentation from mentors ensure clarity.</li>
         </ol>
       </td>
     </tr>
     <tr>
       <td><b>Week 5</b><br>Mon 6/30 - Sat 7/5</td>
       <td>
-        <ol type="1">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
+          <li>Enhance the user experience by refining the workflow and interactions within the TUI for Google Drive support.</li>
       </td>
     </tr>
     <tr>
       <td><b>Week 6</b><br>Mon 7/7 - Sat 7/12</td>
       <td>
         <ol type="1">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Address any leftover issues or bugs discovered during testing and user experience enhancements.</li>
+          <li>Finalize and polish all deliverables in preparation for the midterm evaluation.</li>
+          <li>Write a blog post summarizing the progress made so far</li>
         </ol>
       </td>
     </tr>
@@ -145,9 +140,9 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
       <td><b>Week 7</b><br>Mon 7/14 - Sat 7/19</td>
       <td>
         <ol type="1">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Define the integration strategy for AWS S3 bucket support using RClone.</li>
+          <li>Identify necessary modifications in both the Python API and the TUI to accommodate AWS transfers.</li>
+          <li>Create a design document outlining the implementation approach, expected challenges, and success criteria.</li>
         </ol>
       </td>
     </tr>
@@ -155,9 +150,9 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
       <td><b>Week 8</b><br>Mon 7/21 - Sat 7/26</td>
       <td>
         <ol type="1">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Implement the core functionality for data transfer between the local filesystem and AWS S3 buckets.</li>
+          <li>Conduct initial manual tests to verify basic file transfer operations.</li>
+          <li>Ensure that AWS-specific configurations (e.g., authentication, bucket selection) are correctly handled in both API and TUI.</li>
         </ol>
       </td>
     </tr>
@@ -165,9 +160,8 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
       <td><b>Week 9</b><br>Mon 7/28 - Sat 8/2</td>
       <td>
         <ol type="1">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Develop comprehensive test cases to validate AWS integration under different scenarios.</li>
+          <li>Debug and refine the implementation based on test results.</li>
         </ol>
       </td>
     </tr>
@@ -175,9 +169,8 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
       <td><b>Week 10</b><br>Mon 8/4 - Sat 8/9</td>
       <td>
         <ol type="1">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Write detailed documentation explaining the AWS integration, including API usage and TUI operations. Ensuring that documentation provides clear instructions on setting up AWS credentials and configuring RClone for seamless transfers.</li>
+          <li>Include examples of common use cases and troubleshooting guidelines.</li>
         </ol>
       </td>
     </tr>
@@ -185,9 +178,8 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
       <td><b>Week 11</b><br>Mon 8/11 - Sat 8/16</td>
       <td>
         <ol type="1">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Improve the user interface (UI) within the TUI to enhance usability and visual clarity for both functionalities.</li>
+          <li>Optimize menu structures, error messages, and progress indicators for better user experience.</li>
         </ol>
       </td>
     </tr>
@@ -195,8 +187,8 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
       <td><b>Week 12</b><br>Mon 8/18 - Sat 8/23</td>
       <td>
         <ol type="1">
-          <li></li>
-          <li></li>
+          <li>Address any remaining issues or bugs discovered in the AWS integration.</li>
+          <li>Conduct final integration tests for both Google Drive and AWS functionalities to ensure stability and reliability.</li>
         </ol>
       </td>
     </tr>
@@ -206,7 +198,7 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
         <ol type="1">
           <li>Discuss the final evaluation with the project mentor.</li>
           <li>Prepare a project report that shows the work done till week 12.</li>
-          <li></li>
+          <li>Document all the progress made in my GSoC blog about GSoC’25 journey.</li>
         </ol>
       </td>
     </tr>
