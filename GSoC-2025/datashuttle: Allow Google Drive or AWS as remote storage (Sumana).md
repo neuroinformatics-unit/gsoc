@@ -1,4 +1,4 @@
-# datashuttle: Extend the functionality of the Terminal User Interface
+# datashuttle: Allow Google Drive or AWS as remote storage
 ## Personal Details
 - **Full Name:** Angajala Sumana Sree
 - **Preferred Name:** Sumana
@@ -12,9 +12,13 @@
 <blockquote>
   <table>
     <tr>
-      <td rowspan="3"><strong>In Datashuttle</strong></td>
+      <td rowspan="4"><strong>In Datashuttle</strong></td>
       <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/487">#487</a></td>
       <td>Fixed log directory creation issue in _start_log</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/495">#495</a></td>
+      <td>Show Warning message for Existing Folder Creation in TUI</td>
     </tr>
     <tr>
       <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/489">#489</a></td>
