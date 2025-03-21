@@ -58,26 +58,161 @@
 This project aims to enhance datashuttle, a Python-based tool for standardized data transfer in neuroscience, by adding support for **Google Drive** and **Amazon Web Services**. Currently, datashuttle facilitates data transfer via SSH or mounted drives; this extension will enable seamless cloud storage integration using **RClone**. The project will implement new functionalities in both the Python API and TUI, ensuring efficient remote data access. Additionally, comprehensive testing and documentation will be provided to support users. This upgrade will significantly improve data accessibility and collaboration for researchers handling large-scale neuroscience datasets.
   
 **Implementation Timeline** <br/>
-- During the Community Bonding period, I will deepen my understanding of the datashuttle community, clarify any doubts about the project, and align on expectations with mentors. Additionally, I will connect with other contributors working with NIU to build relationships and gain insights for effective collaboration.
-- Throughout the project, I plan to write and update blogs documenting my progress, including midterm and end-term updates. I will refine these blogs based on mentor’s feedback before publishing them.
 - I have structured the project timeline based on a dedicated 20-hour workweek, allotting required time to the all the phase
 
 
-  | **Phase**                  | **Week** | **Deliverables** |
-  |----------------------------|---------|------------------|
-  | **Initial Development**    | 1       | Add UI elements like drop-down lists for directory tree editing, improve responsiveness while transfer job is active. |
-  | **User Experience (UX)**   | 2       | Implement buttons, radio-buttons, and a log display for validation errors and transfer jobs. |
-  | **User Experience (UX)**   | 3       | Improve user interaction flow and enhance usability of UI components. |
-  | **Core Functionalities**   | 4       | Enable TUI to create folders in both "raw data" and "derivatives" (top-level folders). |
-  | **Core Functionalities**   | 5       | Implement file/folder upload/download feature with overwrite and dry-run parameters. |
-  | **Midterm Evaluation**     | 6       | Review progress, complete pending tasks, and ensure all features work smoothly. |
-  | **Advanced Features**      | 7       | Extend full project upload/download support to include code and analysis. |
-  | **Advanced Features**      | 8       | Test and refine project-wide transfers, address edge cases. |
-  | **Testing**                | 9       | Develop tests for newly implemented functionalities and ensure stability. |
-  | **Testing**                | 10      | Perform end-to-end testing, fix any remaining bugs, and finalize the test suite for reliability. |
-  | **Documentation**          | 11      | Write detailed documentation for all added features, update existing docs. |
-  | **Final Refinements**      | 12      | Bug fixes, polish UI/UX, final reviews, and submit the final project. |
-  | **Stretch Goals**          | -       | Additional improvements like performance optimization, custom TUI themes. |
+  <table>
+  <thead>
+    <tr>
+      <th>Timeline</th>
+      <th>Deliverables</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Community Bonding Period</b></td>
+      <td>
+        <ol type="1">
+          <li>Familiarizing more with the community and clearing my doubts regarding the project, discussing expectations.</li>
+          <li>Connecting with other contributors working with Neuroinformatics Unit.</li>
+          <li>Review the existing codebase to gain a comprehensive understanding of the API-TUI interaction.</li>
+          <li>Explore the process of integrating new functionalities into the Textual API and Terminal User Interface (TUI).</li>
+          <li>Analyze previously implemented data transfer methods, including SSH and mounted drives.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Week 1</b><br>Mon 5/27 - Sat 6/2</td>
+      <td>
+        <ol type="1">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Week 2</b><br>Mon 5/27 - Sat 6/2</td>
+      <td>
+        <ol type="1">
+          <li>Setup the project and test for any problems in the development environment with Docker.</li>
+          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
+          <li>Read full Internal Design System (Vocabulary) code.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Week 3</b><br>Mon 5/27 - Sat 6/2</td>
+      <td>
+        <ol type="1">
+          <li>Setup the project and test for any problems in the development environment with Docker.</li>
+          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
+          <li>Read full Internal Design System (Vocabulary) code.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Week 4</b><br>Mon 5/27 - Sat 6/2</td>
+      <td>
+        <ol type="1">
+          <li>Setup the project and test for any problems in the development environment with Docker.</li>
+          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
+          <li>Read full Internal Design System (Vocabulary) code.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Week 5</b><br>Mon 5/27 - Sat 6/2</td>
+      <td>
+        <ol type="1">
+          <li>Setup the project and test for any problems in the development environment with Docker.</li>
+          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
+          <li>Read full Internal Design System (Vocabulary) code.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Week 6</b><br>Mon 5/27 - Sat 6/2</td>
+      <td>
+        <ol type="1">
+          <li>Setup the project and test for any problems in the development environment with Docker.</li>
+          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
+          <li>Read full Internal Design System (Vocabulary) code.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Week 7</b><br>Mon 5/27 - Sat 6/2</td>
+      <td>
+        <ol type="1">
+          <li>Setup the project and test for any problems in the development environment with Docker.</li>
+          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
+          <li>Read full Internal Design System (Vocabulary) code.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Week 8</b><br>Mon 5/27 - Sat 6/2</td>
+      <td>
+        <ol type="1">
+          <li>Setup the project and test for any problems in the development environment with Docker.</li>
+          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
+          <li>Read full Internal Design System (Vocabulary) code.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Week 9</b><br>Mon 5/27 - Sat 6/2</td>
+      <td>
+        <ol type="1">
+          <li>Setup the project and test for any problems in the development environment with Docker.</li>
+          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
+          <li>Read full Internal Design System (Vocabulary) code.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Week 10</b><br>Mon 5/27 - Sat 6/2</td>
+      <td>
+        <ol type="1">
+          <li>Setup the project and test for any problems in the development environment with Docker.</li>
+          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
+          <li>Read full Internal Design System (Vocabulary) code.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Week 11</b><br>Mon 5/27 - Sat 6/2</td>
+      <td>
+        <ol type="1">
+          <li>Setup the project and test for any problems in the development environment with Docker.</li>
+          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
+          <li>Read full Internal Design System (Vocabulary) code.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Week 12</b><br>Mon 5/27 - Sat 6/2</td>
+      <td>
+        <ol type="1">
+          <li>Setup the project and test for any problems in the development environment with Docker.</li>
+          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
+          <li>Read full Internal Design System (Vocabulary) code.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Stretch Goals</b></td>
+      <td>
+        <ol type="1">
+          <li>Setup the project and test for any problems in the development environment with Docker.</li>
+          <li>Research about sites that do not require a mouse and can be navigated just by the keyboard.</li>
+          <li>Read full Internal Design System (Vocabulary) code.</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 **Communication Plan** <br/>
 I will communicate with my mentor through Zulip chat whenever needed. However, I feel that having a weekly stand-up meeting via video call would be beneficial for discussing the detailed plan for the week and identifying areas for further improvement. That said, I am completely open to any mode of communication based on my mentor’s availability and preference.
