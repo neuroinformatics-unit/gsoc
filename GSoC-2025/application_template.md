@@ -61,7 +61,7 @@ _Length: max 1 page_
 
 _Length: max 0.75 page_
 
-- **Past experienc.** 
+- **Past experience.** 
 
     Please describe your past experience with programming, open source, or any other experience you deem relevant for the project you are applying for. Any successful open source projects, published work or content of the like should definitely be highlighted.
 - **Motivation: why this project?**
