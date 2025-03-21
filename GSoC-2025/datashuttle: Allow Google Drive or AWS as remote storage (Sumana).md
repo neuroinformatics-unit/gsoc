@@ -77,6 +77,7 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
           <li>Connecting with other contributors working with Neuroinformatics Unit.</li>
           <li>Review the existing codebase to gain a comprehensive understanding of the API-TUI interaction.</li>
           <li>Explore the process of integrating new functionalities into the Textual API and Terminal User Interface (TUI).</li>
+          <li>Research and understand RClone’s architecture, supported cloud storage services, and file transfer mechanisms to aid in seamless integration.</li>
           <li>Analyze previously implemented data transfer methods, including SSH and mounted drives.</li>
         </ol>
       </td>
@@ -123,7 +124,9 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
     <tr>
       <td><b>Week 5</b><br>Mon 6/30 - Sat 7/5</td>
       <td>
+        <ol type="1">
           <li>Enhance the user experience by refining the workflow and interactions within the TUI for Google Drive support.</li>
+        </ol>
       </td>
     </tr>
     <tr>
@@ -206,9 +209,8 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
       <td><b>Stretch Goals</b></td>
       <td>
         <ol type="1">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Add detailed logs and a progress bar to track file transfers.</li>
+          <li>Implement automatic retries for failed transfers and resume interrupted uploads.</li>
         </ol>
       </td>
     </tr>
