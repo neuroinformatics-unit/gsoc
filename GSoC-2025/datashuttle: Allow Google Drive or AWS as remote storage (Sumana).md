@@ -29,7 +29,7 @@
       <td>Updated tree view while selecting location of new project</td>
     </tr>
     <tr>
-      <td rowspan="4"><strong>PRs related to UI</strong></td>
+      <td rowspan="4"><strong>PRs related to UI/UX</strong></td>
       <td><a href="https://github.com/ruxailab/RUXAILAB/pull/599">#599</a></td>
       <td>Improve responsiveness of User Test Preview with a cleaner layout</td>
     </tr>
@@ -55,7 +55,7 @@
 
 ## Project proposal
 **Synopsis** <br/>
-The project aims to enhance datashuttle’s TUI by adding new features and exposing key functionalities from its Python API. datashuttle helps neuroscience researchers standardize data organization, improving collaboration and reproducibility. This project will introduce graphical components (buttons, drop-downs, and log displays), enable real-time UI responsiveness, and add new features like project validation and enhanced directory editing. Deliverables include an improved TUI, new functionalities, performance optimizations, tests, and documentation. The open-source community will benefit from a more powerful and user-friendly TUI, making standardized data management more accessible.
+This project aims to enhance datashuttle, a Python-based tool for standardized data transfer in neuroscience, by adding support for **Google Drive** and **Amazon Web Services**. Currently, datashuttle facilitates data transfer via SSH or mounted drives; this extension will enable seamless cloud storage integration using **RClone**. The project will implement new functionalities in both the Python API and TUI, ensuring efficient remote data access. Additionally, comprehensive testing and documentation will be provided to support users. This upgrade will significantly improve data accessibility and collaboration for researchers handling large-scale neuroscience datasets.
   
 **Implementation Timeline** <br/>
 - During the Community Bonding period, I will deepen my understanding of the datashuttle community, clarify any doubts about the project, and align on expectations with mentors. Additionally, I will connect with other contributors working with NIU to build relationships and gain insights for effective collaboration.
