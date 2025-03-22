@@ -121,7 +121,7 @@
 
 - **Availability**
 
-    I have a summer break from my university and I am mostly free during the period from May 15 to August 1. For the month of August, I have a few classes but I can manage my time to work on the project.   
+    I have a summer break from my university and I am mostly free during the period from May 15 to August 1. For the month of August, I have a few classes but I can manage my time to work on the project. I am available for about 30-35 hours every week.
 
 
 ## GSoC
