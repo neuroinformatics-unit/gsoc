@@ -11,9 +11,9 @@
 - **Code contribution**
 Here’s a quick breakdown of how my PRs relate to each other :
 
-- [First PR](https://github.com/neuroinformatics-unit/movement/pull/477)([#477](https://github.com/neuroinformatics-unit/movement/pull/477)) – Initial Kalman filter experiment using simulated motion data, compared with other filtering methods.
-- [Second PR](https://github.com/neuroinformatics-unit/movement/pull/484)([#484](https://github.com/neuroinformatics-unit/movement/pull/484) – Applied Kalman filtering to real-world data (SLEAP), implemented xarray integration.
-- [Third PR](https://github.com/neuroinformatics-unit/movement/pull/496)([#496](https://github.com/neuroinformatics-unit/movement/pull/496) – Robust features: adaptive noise rejection, validation checks, basic Napari visualization, optimized filtering.
+- [First PR](https://github.com/neuroinformatics-unit/movement/pull/477) ([#477](https://github.com/neuroinformatics-unit/movement/pull/477)) – Initial Kalman filter experiment using simulated motion data, compared with other filtering methods.
+- [Second PR](https://github.com/neuroinformatics-unit/movement/pull/484) ([#484](https://github.com/neuroinformatics-unit/movement/pull/484)) – Applied Kalman filtering to real-world data (SLEAP), implemented xarray integration.
+- [Third PR](https://github.com/neuroinformatics-unit/movement/pull/496) ([#496](https://github.com/neuroinformatics-unit/movement/pull/496)) – Robust features: adaptive noise rejection, validation checks, basic Napari visualization, optimized filtering.
 
 - **Proposal discussion link**
 Please link to the pull request where you discussed your project proposal with the community. 
