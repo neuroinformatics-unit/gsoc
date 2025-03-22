@@ -11,9 +11,9 @@
 - **Code contribution**
 Here’s a quick breakdown of how my PRs relate to each other :
 
-- [First PR](https://github.com/neuroinformatics-unit/movement/pull/477) – Initial Kalman filter experiment using simulated motion data, compared with other filtering methods.
-- [Second PR](https://github.com/neuroinformatics-unit/movement/pull/484) – Applied Kalman filtering to real-world data (SLEAP), implemented xarray integration.
-- [Third PR](https://github.com/neuroinformatics-unit/movement/pull/496) – Robust features: adaptive noise rejection, validation checks, basic Napari visualization, optimized filtering.
+- [First PR](https://github.com/neuroinformatics-unit/movement/pull/477)([#477](https://github.com/neuroinformatics-unit/movement/pull/477)) – Initial Kalman filter experiment using simulated motion data, compared with other filtering methods.
+- [Second PR](https://github.com/neuroinformatics-unit/movement/pull/484)([#484](https://github.com/neuroinformatics-unit/movement/pull/484) – Applied Kalman filtering to real-world data (SLEAP), implemented xarray integration.
+- [Third PR](https://github.com/neuroinformatics-unit/movement/pull/496)([#496](https://github.com/neuroinformatics-unit/movement/pull/496) – Robust features: adaptive noise rejection, validation checks, basic Napari visualization, optimized filtering.
 
 - **Proposal discussion link**
 Please link to the pull request where you discussed your project proposal with the community. 
@@ -77,20 +77,22 @@ Please link to the pull request where you discussed your project proposal with t
 
 - **Past experience.** 
 
-**Academic Background** : 3rd-year Computer Science student** specializing in Data Science, with a strong interest in AI/ML and data-driven applications.  
-**Real-World Data Experience**:Worked on real-world data challenges, particularly with noisy and complex datasets.Deepfake Detection System (ResNet + LSTM) processed time-series data and detected face swap deepfakes successfully.Additionally,have developed an Indian Sign Language Translation system (Patent Granted) to recognize and translate Indian Sign Language gestures into text and vice versa.  
-**Technical Skills**:Proficient in Python, C, and C++, with expertise in data science, ML (Scikit-learn, TensorFlow, Keras), deep learning (CNNs, ResNet, LSTM), data visualization (Matplotlib, Seaborn, Power BI), and database management (MySQL). Experienced with Git/GitHub, APIs, Streamlit, and GNOME (Linux).
+**Academic Background** : 3rd-year Computer Science student specializing in Data Science, with a strong interest in AI/ML and data-driven applications.  
+
+**Real-World Data Experience**: Worked on real-world data challenges, particularly with noisy and complex datasets. Developed a Deepfake Detection System (ResNet + LSTM) processed time-series data and detected face swap deepfakes successfully. Additionally, have developed an Indian Sign Language Translation system **(Patent Granted)** to recognize and translate Indian Sign Language gestures into text and vice versa. I've tackled various projects in data science, AI/ML, and NLP, enhancing my problem-solving and analytical skills.   
+
+**Technical Skills**: Proficient in Python, C, and C++, with expertise in data science, ML (Scikit-learn, TensorFlow, Keras), deep learning (CNNs, ResNet, LSTM), data visualization (Matplotlib, Seaborn, Power BI), and database management (MySQL). Experienced with Git/GitHub, APIs, Streamlit, and GNOME (Linux).
 [Open-Source Contributions](https://github.com/gitsofaryan/Hacktoberfest-Projects-2024/tree/main/Hacktobercpp)
 Actively contributed to **Girlscript Summer of Code, Hacktoberfest, and Summer of Bitcoin**.  
 
 - **Motivation: why this project?**
-I'm really excited about the potential to improve motion tracking, especially in areas like robotics and biomechanics, where getting precise, real-time data is so important. The Movement package, with its focus on Kalman Filtering to handle noisy data, seems like the perfect place to apply my skills. I've spent time working on projects like Deepfake Detection, where I learned a lot about sequence modeling, and my Indian Sign Language Translation project, which involved real-time gesture recognition. These experiences really drove home how crucial accurate state estimation is. I'm genuinely looking forward to contributing to this open-source tool and helping to make motion tracking even better.
+- I'm really excited about the potential to improve motion tracking, especially in areas like robotics and biomechanics, where getting precise, real-time data is so important. The Movement package, with its focus on Kalman Filtering to handle noisy data, seems like the perfect place to apply my skills. I've spent time working on projects like Deepfake Detection, where I learned a lot about sequence modeling, and my Indian Sign Language Translation project, which involved real-time gesture recognition. These experiences really drove home how crucial accurate state estimation is. I'm genuinely looking forward to contributing to this open-source tool and helping to make motion tracking even better.
 
 - **Match: why you?**
-I have a strong background in state estimation and handling noisy data, making me a great fit for this project. My work on Deepfake Detection (ResNet + LSTM) and Indian Sign Language Translation (Patent Granted) involved real-time anomaly detection and data processing. Through open-source contributions (Girlscript Summer of Code, Hacktoberfest, Summer of Bitcoin), I’ve gained collaboration skills and have gained a base knowledge of time-series processing and noise reduction. My problem-solving mindset and commitment to open-source will help me contribute meaningfully to the Movement package.
+- I have a strong background in state estimation and handling noisy data, making me a great fit for this project. My work on Deepfake Detection (ResNet + LSTM) and Indian Sign Language Translation (Patent Granted) involved real-time anomaly detection and data processing. Through open-source contributions (Girlscript Summer of Code, Hacktoberfest, Summer of Bitcoin), I’ve gained collaboration skills and have gained a base knowledge of time-series processing and noise reduction. My problem-solving mindset and commitment to open-source will help me contribute meaningfully to the Movement package.
 
 - **Availability**
-I will manage my GSoC work alongside my college schedule by dedicating focused time each day and utilizing weekends effectively to ensure consistent progress.
+My final exams are scheduled from May 21 to June 15, during which my availability may be slightly limited. However, I am committed to managing my time efficiently to ensure steady progress on the project. I will plan ahead, utilize my weekends effectively, and make up for any lost time before and after my exams to stay on track with the GSoC timeline.
     
 
 ## GSoC
