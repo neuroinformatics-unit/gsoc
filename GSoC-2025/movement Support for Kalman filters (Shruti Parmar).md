@@ -77,7 +77,7 @@ Please link to the pull request where you discussed your project proposal with t
 
 - **Past experience.** 
 
-**Academic Background** : 3rd-year Computer Science student specializing in Data Science, with a strong interest in AI/ML and data-driven applications.  
+**Academic Background** : 3rd-year Computer Science student specializing in Data Science, with a strong interest in AI/ML and data-driven applications. I am also Google Developer Groups (GDG) On-Campus Co-Lead, with active involvement in open-source and hackathons.  
 
 **Real-World Data Experience**: Worked on real-world data challenges, particularly with noisy and complex datasets. Developed a Deepfake Detection System (ResNet + LSTM) processed time-series data and detected face swap deepfakes successfully. Additionally, have developed an Indian Sign Language Translation system **(Patent Granted)** to recognize and translate Indian Sign Language gestures into text and vice versa. I've tackled various projects in data science, AI/ML, and NLP, enhancing my problem-solving and analytical skills.   
 
@@ -86,10 +86,11 @@ Please link to the pull request where you discussed your project proposal with t
 Actively contributed to **Girlscript Summer of Code, Hacktoberfest, and Summer of Bitcoin**.  
 
 - **Motivation: why this project?**
-- I'm really excited about the potential to improve motion tracking, especially in areas like robotics and biomechanics, where getting precise, real-time data is so important. The Movement package, with its focus on Kalman Filtering to handle noisy data, seems like the perfect place to apply my skills. I've spent time working on projects like Deepfake Detection, where I learned a lot about sequence modeling, and my Indian Sign Language Translation project, which involved real-time gesture recognition. These experiences really drove home how crucial accurate state estimation is. I'm genuinely looking forward to contributing to this open-source tool and helping to make motion tracking even better.
+- I'm really excited about the potential to improve motion tracking, especially in areas like robotics and biomechanics, where getting precise, real-time data is so important. The Movement package, with its focus on Kalman Filtering to handle noisy data, seems like the perfect place to apply my skills. Having worked on Deepfake Detection (ResNet + LSTM) and Indian Sign Language Translation **(Patent Granted)**, I’ve tackled complex data challenges. This project is a great opportunity to apply my skills while contributing to an impactful open-source tool.
 
 - **Match: why you?**
-- I have a strong background in state estimation and handling noisy data, making me a great fit for this project. My work on Deepfake Detection (ResNet + LSTM) and Indian Sign Language Translation (Patent Granted) involved real-time anomaly detection and data processing. Through open-source contributions (Girlscript Summer of Code, Hacktoberfest, Summer of Bitcoin), I’ve gained collaboration skills and have gained a base knowledge of time-series processing and noise reduction. My problem-solving mindset and commitment to open-source will help me contribute meaningfully to the Movement package.
+- I've tackled **Deepfake Detection (ResNet + LSTM) and ISL Translation, competed in **70+ hackathons**, winning multiple, including **2nd place at IIT Madras Guvi’s national hackathon**, **finalist at Eureka (IIT Bombay)**, and **9th in a national Data Engineering Hackathon**. Active in **GSSoC, Hacktoberfest, and Summer of Bitcoin**, I’m passionate about open-source and real-world solutions.
+
 
 - **Availability**
 My final exams are scheduled from May 21 to June 15, during which my availability may be slightly limited. However, I am committed to managing my time efficiently to ensure steady progress on the project. I will plan ahead, utilize my weekends effectively, and make up for any lost time before and after my exams to stay on track with the GSoC timeline.
