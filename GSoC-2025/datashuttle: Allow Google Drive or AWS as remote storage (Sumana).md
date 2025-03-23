@@ -8,7 +8,7 @@
 - **Location & time-zone:** Anantapur, India (GMT+5:30)
 - **Portfolio Website:** https://sumana-2705.github.io/Sumana-Portfolio/
 - **Code contribution:**
-
+After reviewing the codebase and TUI, I identified issues on my own and raised 2 out of 4 PRs to enhance the functionality of the TUI.
 <blockquote>
   <table>
     <tr>
@@ -18,11 +18,11 @@
     </tr>
     <tr>
       <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/495">#495</a></td>
-      <td>Show Warning message for Existing Folder Creation in TUI</td>
+      <td>Show Warning message for Existing Folder Creation in TUI (own)</td>
     </tr>
     <tr>
       <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/489">#489</a></td>
-      <td>Added Projects List Button on Project Manager Screen</td>
+      <td>Added Projects List Button on Project Manager Screen (own)</td>
     </tr>
     <tr>
       <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/475">#475</a></td>
@@ -59,9 +59,9 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
   
 **Implementation Timeline** <br/>
 - I have structured the project timeline based on a dedicated 20-hour workweek, allotting required time to the all the phase
+- I planned the deliverables to work on the Python API and TUI in parallel. This approach will help me better understand potential issues in the TUI and take necessary steps to minimize them through the API code.
 
-
-  <table>
+<table>
   <thead>
     <tr>
       <th>Timeline</th>
@@ -97,7 +97,7 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
       <td>
         <ol type="1">
           <li>Begin coding the core functionality for data transfer between the local filesystem and Google Drive.</li>
-          <li>Conduct basic functionality tests to ensure the integration is correctly functioning.</li>
+          <li>Conduct basic functionality tests to ensure the integration is correctly functioning in both Python API and TUI.</li>
         </ol>
       </td>
     </tr>
@@ -117,7 +117,7 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
         <ol type="1">
           <li>Write detailed documentation for the Google Drive integration, including setup instructions, API usage, and TUI operations.</li>
           <li>Ensure that the documentation covers both common use cases and edge scenarios.</li>
-          <li>Solicit feedback on the documentation from mentors ensure clarity.</li>
+          <li>Feedback on the documentation from mentors ensure clarity.</li>
         </ol>
       </td>
     </tr>
@@ -211,6 +211,7 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
         <ol type="1">
           <li>Add detailed logs and a progress bar to track file transfers.</li>
           <li>Implement automatic retries for failed transfers and resume interrupted uploads.</li>
+          <li>Any other untouched work which I feel important for the project, I will continue to contribute further to the community</li>
         </ol>
       </td>
     </tr>
@@ -231,7 +232,7 @@ Ever since the GSoC organizations were announced, I had been searching for an or
 I’ve contributed to various open-source projects purely out of curiosity and a passion for learning. One of my biggest strengths is discipline and taking ownership of the project. I would like to treat the project as my own, taking care of its execution, submission and future maintenance. My contributions reflect my dedication, curiosity to learn and compassion for my fellow contributors.To make more meaningful contributions, I have learnt basics of the Textual framework and developed an introductory [project using textual](https://github.com/sumana-2705/Stopwatch). It has helped me understand the codebase deeply and contribute more effectively. I love learning from experienced people and constantly pushing myself to grow which makes me unique from others for this project. This same mindset of discipline, ownership, and continuous learning has been a defining factor in my academic journey as well. I have prepared for and cleared JEE Advanced, one of the world's toughest exams with an acceptance rate of just 1%, through self-study during the COVID lockdown. This achievement earned me a seat at IIT (BHU), one of India’s top-10 engineering institutions. It was a challenging journey, but my dedication and consistency over two years helped me succeed. I bring that same commitment, sincerity, and hard work to everything I do.
 
 - **Availability** <br/>
-  I do not have any other commitments during the program, I did not accept any Internship or other offers for the summer. I would be available for the whole program period. My University’s End Semester exams are scheduled from 25th April to 10th May, So I will be available for the whole program period. After this I will be having my Mid Semester Exams scheduled in September, that will also not take too much of my time due to less syllabus in Mid Sems. On an average, I will be available for 20-25 hours a week for the entire period. I am ready to extend this whenever needed.
+  I do not have any other commitments during the program, I did not accept any Internship or other offers for the summer. I would be available for the whole program period. My University’s End Semester exams are scheduled from 25th April to 10th May, So I will be available for the whole program period. After this I will be having my Mid Semester Exams scheduled in September, that will also not take too much of my time due to less syllabus in Mid Sems. On an average, I will be available for 20-25 hours a week for the entire period as it is a 175 hours project. I am ready to extend this whenever needed.
 
 ## GSoC
 - **GSoC experience** <br/>
