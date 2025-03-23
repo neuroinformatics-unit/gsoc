@@ -113,5 +113,5 @@ My background in Python, data processing, and algorithmic optimization makes me 
 
 <h3> Availability: </h3> 
   
-  I have commitments during the GSoC work time. I have exams in June and December.
+ I have commitments during the GSoC work period. I have one-day exams in June and December, time-table is not yet scheduled.
 
