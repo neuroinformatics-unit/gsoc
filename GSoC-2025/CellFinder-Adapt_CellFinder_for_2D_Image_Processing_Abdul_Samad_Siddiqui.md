@@ -10,7 +10,7 @@
 - **Code contribution**: 
   - [[ENH] Add progress bar for training widget](https://github.com/brainglobe/cellfinder/pull/500)
   - [[ENH] Fix internet connection check for global accessibility](https://github.com/brainglobe/brainglobe-atlasapi/pull/536)
-- **Proposal discussion link**: 
+- **Proposal discussion link**: https://github.com/neuroinformatics-unit/gsoc/pull/13
 
 ## Project proposal 
 _Length: max 1 page_
