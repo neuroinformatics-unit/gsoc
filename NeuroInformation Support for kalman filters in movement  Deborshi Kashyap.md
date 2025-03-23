@@ -115,3 +115,7 @@ My background in Python, data processing, and algorithmic optimization makes me 
   
  I have commitments during the GSoC work period. I have one-day exams in June and December, time-table is not yet scheduled.
 
+ <h3> Are you also applying for projects with other organisations in GSoC 2025? </h3>
+
+ No, I'm not applying for any projects with other organizations in GSoC 2025.
+
