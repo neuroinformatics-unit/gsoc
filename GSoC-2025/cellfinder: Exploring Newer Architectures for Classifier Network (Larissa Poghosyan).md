@@ -1,11 +1,4 @@
-# Application template
-
-Please use the following template to submit your application to the NIU GSoC 2025 program, and to discuss your proposal with the community. 
-
-The more closely you follow this template, the easier it will be for us to review your application! Please include clear headings for all the different sections.
-
-## cellfinder: Exploring Newer Architectures for Classifier Network (Larissa Poghosyan)
-
+# cellfinder: Exploring Newer Architectures for Classifier Network (Larissa Poghosyan)
 
 ## Personal details
 Please include the following information:
@@ -52,6 +45,7 @@ _Length: max 1 page_
     - [ ] Write a blogpost
     - [ ] 2D support for ViT 
 
+    ---
 
     | **Week**      | **Phase**         | **Dates**         | **Deliverables**   |
     |---------------|-------------------|-------------------|--------------------|
