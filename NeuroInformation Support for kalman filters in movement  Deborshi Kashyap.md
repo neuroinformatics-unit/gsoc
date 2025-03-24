@@ -98,10 +98,10 @@ I am an experienced Python developer with expertise in numpy, pandas, OpenCV, an
 I have contributed to open-source projects such as 
 
 1.	[Microsoft torchgeo](https://github.com/microsoft/torchgeo/pull/2460)
-2.	[myhealthconnectsociety](https://www.coursera.org/account/accomplishments/specialization/5AD3BY5DV4V3)
+2.	[myhealthconnectsociety](https://github.com/myhealthconnectsociety/project-healthcare/pull/138)
 3.	[neuroinformatics unit ( movement )](https://github.com/neuroinformatics-unit/movement/issues/21)
 
-. I also took a [Google cyber security course](https://www.coursera.org/account/accomplishments/specialization/5AD3BY5DV4V3) on Coursera. It demonstrates my ability to manage complicated data procedures efficiently.
+ I also took a [Google cyber security course](https://www.coursera.org/account/accomplishments/specialization/5AD3BY5DV4V3) on Coursera. It demonstrates my ability to manage complicated data procedures efficiently.
 
 <h3> Motivation: </h3>
 
