@@ -33,7 +33,12 @@ Key challenges:
 | Week 8-9 | Comprehensive testing across platforms |
 | Week 9-10 | Documentation, final polishing, mentor review | 🎉
 
-## Experience
+## Pull requests
+- https://github.com/neuroinformatics-unit/datashuttle/pull/473
+    - Check that central_path can be written to during SSH setup. #449 
+- https://github.com/neuroinformatics-unit/datashuttle/pull/471
+    - Validate broad vs. narrow datatypes #466     
+
 ## Experience
 I have 3 years of Python experience with expertise in:
 - Algorithms and logic implementation
