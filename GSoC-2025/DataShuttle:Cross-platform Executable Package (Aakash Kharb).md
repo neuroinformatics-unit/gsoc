@@ -1,69 +1,94 @@
-# DataShuttle: Cross-platform Executable Package ([Aakash Kharb])
+# DataShuttle: Cross-platform Executable Package (Aakash Kharb)
 
-# Personal details
- - **Full name**: Aakash Kharb  
- - **Email**: akharbrtk2@gmail.com  
- - **GitHub username**: aakash-test7
- - **Zulip username**: Aakash Kharb
- - **Linkedin**: https://linkedin.com/in/aakash-kharb/  
- - **Location & time-zone**: India, Indian Standard Time (GMT+5:30)
-   
-## Abstract
-DataShuttle currently requires Conda for installation, which limits accessibility for users without coding experience. This project aims to research and implement a robust solution for packaging DataShuttle as a standalone executable that works across Windows, macOS, and Linux. The solution will need to address Textual's rendering limitations in native terminals by potentially bundling a compatible terminal environment.
+## Personal Details
 
-## Technical Details
-The project will involve:
-1. Researching existing solutions for packaging Python applications with Textual/TUI interfaces
-2. Evaluating approaches like PyInstaller, PyOxidizer, Briefcase, or other packaging tools
-3. Addressing the terminal rendering challenge (potentially by bundling a terminal)
-4. Implementing CI/CD integration for automated builds
-5. Creating comprehensive documentation for end-users
+- **Full name**: Aakash Kharb
+- **Email**: [akharbrtk2@gmail.com](mailto:akharbrtk2@gmail.com)
+- **GitHub username**: aakash-test7
+- **Zulip username**: Aakash Kharb
+- **Linkedin**: [https://linkedin.com/in/aakash-kharb/](https://linkedin.com/in/aakash-kharb/)
+- **Location & Time-zone**: India, Indian Standard Time (GMT+5:30)
 
-Key challenges:
-- Textual's rendering limitations in native terminals
-- Maintaining cross-platform compatibility
-- Ensuring the solution is maintainable long-term
+## Code Contribution
 
-## Deliverables
-1. Research report on packaging approaches for Textual applications
-2. Implemented solution for cross-platform DataShuttle distribution
-3. CI/CD integration for automated builds
-4. Documentation for both users and maintainers
-5. Testing framework for the packaged versions
+- [https://github.com/neuroinformatics-unit/datashuttle/pull/473](https://github.com/neuroinformatics-unit/datashuttle/pull/473)
+- [https://github.com/neuroinformatics-unit/datashuttle/pull/471](https://github.com/neuroinformatics-unit/datashuttle/pull/471)
 
-## Timeline
-| Period | Tasks |
-|--------|-------|
-| Community Bonding | Familiarize with codebase, setup dev environment, finalize research plan |
-| Week 1-2 | Research packaging solutions, evaluate approaches |
-| Week 3-5 | Prototype selected solution, address terminal issues |
-| Week 6-7 | Implement CI/CD integration, automated builds |
-| Week 8-9 | Comprehensive testing across platforms |
-| Week 9-10 | Documentation, final polishing, mentor review | 🎉
+## Project Proposal
 
-## Pull requests
-- https://github.com/neuroinformatics-unit/datashuttle/pull/473
-    - Check that central_path can be written to during SSH setup. #449 
-- https://github.com/neuroinformatics-unit/datashuttle/pull/471
-    - Validate broad vs. narrow datatypes #466     
+### Synopsis
 
-## Experience
-I have 3 years of Python experience with expertise in:
-- Algorithms and logic implementation
+DataShuttle currently requires Conda for installation, which limits accessibility for non-technical users. This project aims to create a standalone, cross-platform executable package for DataShuttle that works on Windows, macOS, and Linux without requiring Conda or Python installation. The solution will address Textual's rendering limitations in native terminals by potentially bundling a compatible terminal environment.
+
+### Deliverables
+
+- Research report on packaging approaches for Textual applications
+- Implemented solution for cross-platform DataShuttle distribution
+- CI/CD integration for automated builds
+- Comprehensive documentation for users and maintainers
+- Testing framework for packaged versions
+
+### Implementation Timeline
+
+| Period          | Tasks                                                         | Hours/Week |
+|-----------------|---------------------------------------------------------------|------------|
+| Community Bonding | Familiarize with codebase, setup dev environment, finalize research plan | 20         |
+| Week 1-2        | Research packaging solutions (PyInstaller, PyOxidizer, Briefcase), evaluate approaches | 35         |
+| Week 3-5        | Prototype selected solution, address terminal rendering issues | 40         |
+| Week 6-7        | Implement CI/CD integration, automated builds                 | 40         |
+| Week 8-9        | Comprehensive testing across platforms                        | 40         |
+| Week 10-12      | Documentation, final polishing, mentor review                 | 35         |
+
+### Stretch Goals
+
+- Implement auto-update functionality
+- Create GUI installer for each platform
+- Optimize package size and performance
+
+### Communication Plan
+
+- Weekly video calls with mentor for progress updates
+- Daily stand-ups via Zulip chat
+- Regular updates via GitHub PRs/issues
+- Immediate communication for blockers via Zulip/email
+
+## Personal Statement
+
+### Past Experience
+
+With 3 years of Python experience, I've worked on:
+
+- Full-stack applications (chickpea7.streamlit.app, aakash-dbms.streamlit.app)
+- Terminal applications (aakash-terminal.vercel.app)
 - Machine learning and data science workflows
-- Backend and frontend development
-- Some Examples
-    -  chickpea7.streamlit.app
-    -  aakash-dbms.streamlit.app
-    -  aakash-terminal.vercel.app
+- Backend system design and implementation
 
-While I haven't specifically packaged Python applications Dockerfiles in depth, I understand the Python ecosystem well and am excited to dive deeper into packaging solutions and have been currently working with Docker and some similar projects.
+### Motivation
 
-## Contingency
-If the initial packaging approach encounters any problems, difficulties, alternative solutions will be explored based on the initial research. The mentor will be contacted regularly to ensure progress.
+I'm passionate about making technical tools more accessible. DataShuttle solves important problems in neuroinformatics, but its current installation process creates unnecessary barriers. This project aligns perfectly with my interest in developer tools and user experience.
 
-## Other commitments
-I have completed my exams and will be avilable enitrely during the summer and would contribute 35-40+ hours per week.
+### Why Me?
 
-## Potential mentors
-@JoeZiminski
+- Strong Python fundamentals and problem-solving skills
+- Experience with cross-platform development challenges
+- Quick learner with ability to dive into new technical areas
+- Passion for creating polished end-user experiences
+
+### Availability
+
+- No other commitments during GSoC period
+- Available 35-40+ hours per week
+- No planned vacations during program
+
+## GSoC Expectations
+
+I hope to:
+
+- Contribute meaningfully to open-source neuroscience tools
+- Deepen my understanding of Python packaging and distribution
+- Learn from experienced mentors in the field
+- Build connections within the neuroinformatics community
+
+## Other Applications
+
+Currently only applying to NIU for GSoC 2025. Fully committed to this project.
