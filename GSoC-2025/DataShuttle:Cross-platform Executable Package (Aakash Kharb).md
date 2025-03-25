@@ -1,5 +1,13 @@
 # DataShuttle: Cross-platform Executable Package ([Aakash Kharb])
 
+# Personal details
+ - **Full name**: Aakash Kharb  
+ - **Email**: akharbrtk2@gmail.com  
+ - **GitHub username**: aakash-test7
+ - **Zulip username**: Aakash Kharb
+ - **Linkedin**: https://linkedin.com/in/aakash-kharb/  
+ - **Location & time-zone**: India, Indian Standard Time (GMT+5:30)
+   
 ## Abstract
 DataShuttle currently requires Conda for installation, which limits accessibility for users without coding experience. This project aims to research and implement a robust solution for packaging DataShuttle as a standalone executable that works across Windows, macOS, and Linux. The solution will need to address Textual's rendering limitations in native terminals by potentially bundling a compatible terminal environment.
 
