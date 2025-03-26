@@ -1,4 +1,4 @@
-BrainGlobe: Enhancing Neuroscientific Data Visualization (Your Name)
+BrainGlobe: Enhancing Neuroscientific Data Visualization; Jivansh Raghuvanshi
 
 Personal Details
 Full Name: Jivansh Raghuvanshi
