@@ -72,4 +72,4 @@ _Length: max 0.25 page_
 I participated in GSoC 2024 with INCF, where I worked on enhancing HNN-core for MEG/EEG data analysis. This experience taught me the importance of collaboration, clear communication, and iterative development in open-source projects. I look forward to applying these lessons to the CellFinder project.
 
 ### Are you also applying to projects with other organisations in GSoC 2025?
-Yes, I'm applying for one project with INCF, but my main priority is this CellFinder project.
+No I haven't submitted to the any other organizations I want to solely focus on this project.
