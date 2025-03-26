@@ -1,44 +1,26 @@
-# Application template
+# movement: implement outlier detection algorithms (Arismita Mukherjee)
 
-> [!CAUTION]
-> Do not edit this template directly!
-> Instead use it to open a new PR as explained in the [README](../README.md#steps).
+# Personal details
+- **Full name** Arismita Mukherjee
+- **Email** arismita08.m@gmail.com
+- **GitHub username** ArismitaM
+- **Zulip username** Arismita M
+- **Location & time-zone** Bangalore, India IST(UTC+5:30)
+- **Personal website / project portfolio**
+- **Code contribution** https://github.com/neuroinformatics-unit/movement/pull/459
 
-
-Please use the following template to submit your application to the NIU GSoC 2025 program, and to discuss your proposal with the community. 
-
-The more closely you follow this template, the easier it will be for us to review your application! Please include clear headings for all the different sections.
-
-## Project title
-Follow the following format for the proposal title: `<Package Name>:<Project Name> (<Your-Name>)` and provide it in your pull request as a new markdown file of the same name, i.e.   `<Package Name>:<Project Name> (<Your-Name>).md`
-
-E.g. "movement: support for Kalman filters (Jane Doe)". 
-
-Please use the same title when you submit your proposal to the GSoC application site!
-
-## Personal details
-Please include the following information:
-- **Full name** (include preferred name if desired)
-- **Email**
-- **GitHub username**
-- **Zulip username**
-- **Location & time-zone**
-- **Personal website / project portfolio** (optional)
-- **Code contribution**
-
-    Please link a pull request, ideally submitted to your chosen project or one of the NIU tools. Applications without a code contribution won't be considered. It must be publicly visible and represent your own work, although you may have help from other developers in the community to further improve it. It must be meaningful code contribution (i.e. not just fixing a minor spelling mistake). While AI tools (such as Copilot etc) can be a very useful, contributions mostly created by AI are unlikely to be useful, and will not be accepted. You can link more than one pull request if desired.
-
-- **Proposal discussion link**
-
+- **Proposal discussion link** TBD
+  
     Please link to the pull request where you discussed your project proposal with the community. 
 
 ## Project proposal 
 _Length: max 1 page_
 
 - **Synopsis**
-
-    Briefly explain: what is the project about? Why is it important? What are the goals? What are the deliverables? How would the open source community benefit from this project?
-
+Normally for any prediction, the "confidence score" is used as a measure of outlier detection. A low confidence signifies a possible outlier and a high confidence is assumed to be pointing to a prediction that is most probably correct. However, for pose estimation, if the backbone network (the model doing the prediction) may mistake the front hind paw of a mouse to be its left hind paw and predict its location with high confidence. Finding such "confident error" is aking to "needle-in-a-haystack" problem. Hence, we need to implement the following cost functions (as described in the lightning pose paper) for outlier detection:
+    - **Temporal Continuity Loss**: Compare the pixel distance of the location of a keypont at (t)instance with that at (t-1)instance. Flag an outlier if the pixel distance exceeds a threshold.
+    - **Pose Plausibility Loss**: All poses are not feasible due to natural restrictions of an animal movement. This loss function restricts the pose-prediction space to such a low-dimensional subspace and flags an outlier if the pixel distance of the prediction is above a threshold from the nearest location in this low-dimensional subspace.
+    - **Multiview Consistency Loss**: Different 2D-perspectives from different cameras of a 3-D object restrict possible prediction to a low dimensional subspace. Multiple 2-D perspectives are merged into a 3-D perspective and then reprojected onto the 2D perspective of the camera to calculate the pixel distance of this re-projection against the prediction to calculate the loss and predict an outlier.
 - **Implementation timeline**
 
     Please include the following information:
