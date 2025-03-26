@@ -11,17 +11,17 @@
 
 - **Proposal discussion link** TBD
   
-    Please link to the pull request where you discussed your project proposal with the community. 
-
 ## Project proposal 
-_Length: max 1 page_
-
 - **Synopsis**
 Normally for any prediction, the "confidence score" is used as a measure of outlier detection. A low confidence signifies a possible outlier and a high confidence is assumed to be pointing to a prediction that is most probably correct. However, for pose estimation, if the backbone network (the model doing the prediction) may mistake the front hind paw of a mouse to be its left hind paw and predict its location with high confidence. Finding such "confident error" is aking to "needle-in-a-haystack" problem. Hence, we need to implement the following cost functions (as described in the lightning pose paper) for outlier detection:
     - **Temporal Continuity Loss**: Compare the pixel distance of the location of a keypont at (t)instance with that at (t-1)instance. Flag an outlier if the pixel distance exceeds a threshold.
     - **Pose Plausibility Loss**: All poses are not feasible due to natural restrictions of an animal movement. This loss function restricts the pose-prediction space to such a low-dimensional subspace and flags an outlier if the pixel distance of the prediction is above a threshold from the nearest location in this low-dimensional subspace.
     - **Multiview Consistency Loss**: Different 2D-perspectives from different cameras of a 3-D object restrict possible prediction to a low dimensional subspace. Multiple 2-D perspectives are merged into a 3-D perspective and then reprojected onto the 2D perspective of the camera to calculate the pixel distance of this re-projection against the prediction to calculate the loss and predict an outlier.
 - **Implementation timeline**
+  - **Minimal Set of deliverables** : 
+    - Temporal Continuity Loss based outlier detection: Code and documentation
+    -  Pose Plausibility Loss based outlier detection: Code and documentation
+    -  Multivier Consistency Loss based outlier detection: Code and documentation
 
     Please include the following information:
     1. A bullet point list with **minimal set of deliverables**
