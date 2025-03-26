@@ -7,29 +7,43 @@
 - **Zulip Username:** Sumana Sree
 - **Location & time-zone:** Anantapur, India (GMT+5:30)
 - **Portfolio Website:** https://sumana-2705.github.io/Sumana-Portfolio/
+- **Proposal discussion link:** https://github.com/neuroinformatics-unit/gsoc/pull/5
 - **Code contribution:**
-After reviewing the codebase and TUI, I identified issues on my own and raised 2 out of 4 PRs to enhance the functionality of the TUI.
 <blockquote>
   <table>
     <tr>
-      <td rowspan="4"><strong>In Datashuttle</strong></td>
+      <td rowspan="6"><strong>In Datashuttle</strong></td>
       <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/487">#487</a></td>
       <td>Fixed log directory creation issue in _start_log</td>
     </tr>
     <tr>
+      <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/501">#501</a></td>
+      <td>Added support for custom tags in template input with regex conversion</td>
+    </tr>
+    <tr>
+    <tr>
       <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/495">#495</a></td>
-      <td>Show Warning message for Existing Folder Creation in TUI (own)</td>
+      <td>Show Warning message for Existing Folder Creation in TUI</td>
     </tr>
     <tr>
       <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/489">#489</a></td>
-      <td>Added Projects List Button on Project Manager Screen (own)</td>
+      <td>Added Projects List Button on Project Manager Screen</td>
     </tr>
     <tr>
       <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/475">#475</a></td>
       <td>Updated tree view while selecting location of new project</td>
     </tr>
     <tr>
-      <td rowspan="4"><strong>PRs related to UI/UX</strong></td>
+      <td rowspan="2"><strong>PRs related to Python</strong></td>
+      <td><a href="https://github.com/aeon-toolkit/aeon/pull/2419">#2419</a></td>
+      <td>Add LITETimeClassifier Example to Classification Notebook</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/flyteorg/flytesnacks/pull/1739">#1739</a></td>
+      <td>Added examples for tensorflow types in Datatypes and IO section</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><strong>PRs related to UI/UX</strong></td>
       <td><a href="https://github.com/ruxailab/RUXAILAB/pull/599">#599</a></td>
       <td>Improve responsiveness of User Test Preview with a cleaner layout</td>
     </tr>
@@ -42,10 +56,6 @@ After reviewing the codebase and TUI, I identified issues on my own and raised 2
       <td>Added yearly goal affordances to mobile view in my books page</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/hyperledger-labs/aifaq/pull/71">#71</a></td>
-      <td>Fixes sidebar glitch</td>
-    </tr>
-    <tr>
       <td rowspan="1"><strong>Stopwatch Project</strong></td>
       <td><a href="https://github.com/sumana-2705/Stopwatch">link</a></td>
       <td>A self-made project to learn textual framework</td>
@@ -55,12 +65,21 @@ After reviewing the codebase and TUI, I identified issues on my own and raised 2
 
 ## Project proposal
 **Synopsis** <br/>
-This project aims to enhance datashuttle, a Python-based tool for standardized data transfer in neuroscience, by adding support for **Google Drive** and **Amazon Web Services**. Currently, datashuttle facilitates data transfer via SSH or mounted drives; this extension will enable seamless cloud storage integration using **RClone**. The project will implement new functionalities in both the Python API and TUI, ensuring efficient remote data access. Additionally, comprehensive testing and documentation will be provided to support users. This upgrade will significantly improve data accessibility and collaboration for researchers handling large-scale neuroscience datasets.
+This project aims to enhance datashuttle, a Python-based tool for standardized data transfer in neuroscience, by adding support for **Google Drive** and **Amazon Web Services**. Currently, datashuttle facilitates data transfer via SSH or mounted drives; this extension will enable cloud storage integration using **RClone**. The project will implement new functionalities in both the Python API and TUI, ensuring efficient remote data access. Additionally, comprehensive testing and documentation will be provided to support users. This upgrade will significantly improve data accessibility and collaboration for researchers handling large-scale neuroscience datasets.
   
-**Implementation Timeline** <br/>
-- I have structured the project timeline based on a dedicated 20-hour workweek, allotting required time to the all the phase
-- I planned the deliverables to work on the Python API and TUI in parallel. This approach will help me better understand potential issues in the TUI and take necessary steps to minimize them through the API code.
+**Deliverables** <br/>
+- Extend DataShuttle to support transfers between the local filesystem and cloud services like Google Drive and AWS using both the Python API and terminal interface.
+- Write tests to the newly added transfer features.
+- Provide clear and concise documentation.
 
+**Stretch Goals** <br/>
+- Add detailed logs and a progress bar to track file transfers.
+- Implement automatic retries for failed transfers and resume interrupted uploads.
+- Any other untouched work which I feel important for the project, I will continue to contribute further to the community.
+
+**Implementation Timeline** <br/>
+- I have structured the project timeline based on a dedicated 30-hour workweek, allotting required time to the all the phase
+<br/>
 <table>
   <thead>
     <tr>
@@ -205,16 +224,6 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
         </ol>
       </td>
     </tr>
-    <tr>
-      <td><b>Stretch Goals</b></td>
-      <td>
-        <ol type="1">
-          <li>Add detailed logs and a progress bar to track file transfers.</li>
-          <li>Implement automatic retries for failed transfers and resume interrupted uploads.</li>
-          <li>Any other untouched work which I feel important for the project, I will continue to contribute further to the community</li>
-        </ol>
-      </td>
-    </tr>
   </tbody>
 </table>
 
@@ -223,7 +232,7 @@ I will communicate with my mentor through Zulip chat whenever needed. However, I
   
 ## Personal statement
 - **Past experience** <br/>
-  I have been actively contributing to open-source projects, collaborating with organizations like Microsoft Recommenders, Aeon, Open Library, Flyte, Wagtail, Open Climate Fix, and more. One of my most memorable moments was receiving appreciation from the Microsoft Recommenders maintainer after my first PR was merged ([link](https://x.com/miguelgfierro/status/1808596073847357646)). So far, I have successfully merged more than 15 PRs in these organisations and completed [Hacktoberfest 2024](https://holopin.io/@sumana2705). Additionally, I have completed the [Machine Learning Specialization](https://www.coursera.org/account/accomplishments/specialization/FRH15SYH6GVW) by Stanford University (Coursera), covering Supervised Learning, Advanced Learning Algorithms, and Unsupervised Learning.
+  I have 3 years experience in Python language. I have been actively contributing to open-source projects from last 7 months, collaborating with organizations like Microsoft Recommenders, Aeon, Open Library, Flyte, Wagtail, Open Climate Fix, and more. One of my most memorable moments was receiving appreciation from the Microsoft Recommenders maintainer after my first PR was merged ([link](https://x.com/miguelgfierro/status/1808596073847357646)). So far, I have successfully merged more than 15 PRs in these organisations and completed [Hacktoberfest 2024](https://holopin.io/@sumana2705). Additionally, I have completed the [Machine Learning Specialization](https://www.coursera.org/account/accomplishments/specialization/FRH15SYH6GVW) by Stanford University (Coursera), covering Supervised Learning, Advanced Learning Algorithms, and Unsupervised Learning.
   
 - **Motivation: why this project?** <br/>
 Ever since the GSoC organizations were announced, I had been searching for an organisation whose aim resonates with my thinking and experience. I found NIU's initiative to develop open-source software for neuroscience and machine learning truly unique, which motivated me to choose this project. As a Python programmer with a bit of frontend development knowledge, I never expected to find a project that combines both. But when I saw the Datashuttle TUI, I was amazed, this was the first time I had explored an application developed entirely for the terminal. While contributing, I faced some challenges as a beginner, but the project maintainers were incredibly helpful. Their support kept me engaged, and I became even more eager to learn about this technology.
@@ -232,12 +241,11 @@ Ever since the GSoC organizations were announced, I had been searching for an or
 I’ve contributed to various open-source projects purely out of curiosity and a passion for learning. One of my biggest strengths is discipline and taking ownership of the project. I would like to treat the project as my own, taking care of its execution, submission and future maintenance. My contributions reflect my dedication, curiosity to learn and compassion for my fellow contributors.To make more meaningful contributions, I have learnt basics of the Textual framework and developed an introductory [project using textual](https://github.com/sumana-2705/Stopwatch). It has helped me understand the codebase deeply and contribute more effectively. I love learning from experienced people and constantly pushing myself to grow which makes me unique from others for this project. This same mindset of discipline, ownership, and continuous learning has been a defining factor in my academic journey as well. I have prepared for and cleared JEE Advanced, one of the world's toughest exams with an acceptance rate of just 1%, through self-study during the COVID lockdown. This achievement earned me a seat at IIT (BHU), one of India’s top-10 engineering institutions. It was a challenging journey, but my dedication and consistency over two years helped me succeed. I bring that same commitment, sincerity, and hard work to everything I do.
 
 - **Availability** <br/>
-  I do not have any other commitments during the program, I did not accept any Internship or other offers for the summer. I would be available for the whole program period. My University’s End Semester exams are scheduled from 25th April to 10th May, So I will be available for the whole program period. After this I will be having my Mid Semester Exams scheduled in September, that will also not take too much of my time due to less syllabus in Mid Sems. On an average, I will be available for 20-25 hours a week for the entire period as it is a 175 hours project. I am ready to extend this whenever needed.
+  I do not have any other commitments during the program, I did not accept any Internship or other offers for the summer. I would be available for the whole program period. My University’s End Semester exams are scheduled from 25th April to 10th May, So I will be available for the whole program period. After this I will be having my Mid Semester Exams scheduled in September, that will also not take too much of my time due to less syllabus in Mid Sems. On an average, I will be available for 30 hours a week for the entire period. I am ready to extend this whenever needed.
 
 ## GSoC
 - **GSoC experience** <br/>
   I hope to gain hands-on experience in building Terminal User Interfaces and further improve my proficiency in Python programming. Additionally, I am eager to explore NIU's other projects beyond Datashuttle and learn more about innovative ideas like it. I also look forward to building a collaborative and professional relationship with the people at NIU and continuing my contributions even after the program ends.
   
 - **Are you also applying to projects with other organisations in GSoC 2025?** <br/>
-I looked for many organisations working on various domains before concluding my search to datashuttle. I have made great connections contributing here and allocated majority of time and energy understanding the project. I also liked a project in UC-OSPO org so I may submit one proposal there too (just for the satisfaction), but I am not sure of it. I really want to work for `Extend the functionality of the Terminal User Interface` project this summer and it will be my top priority.
-  
+  No, I am not submitting proposal anywhere else other than datashuttle.
