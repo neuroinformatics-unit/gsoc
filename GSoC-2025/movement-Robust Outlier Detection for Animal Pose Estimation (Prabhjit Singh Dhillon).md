@@ -5,7 +5,7 @@
 - **Email**: dhillonprabhjitsingh@gmail.com
 - **GitHub username**: demoncoder-crypto
 - **Zulip username**: Prabhjit Singh Dhilon
-- **Location & time-zone**: [UTC+5:30 (IST)]
+- **Location & time-zone**: UTC+5:30 (IST)
 - **Contact**: +91‑9056431046
 - **Code contribution**:
   - [Add support for downloading publicly available datasets](https://github.com/neuroinformatics-unit/movement/pull/515)
