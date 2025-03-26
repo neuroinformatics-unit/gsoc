@@ -1,4 +1,4 @@
-# movement: implement outlier detection algorithms (Arismita Mukherjee)
+# movement: implementing outlier detection algorithms (Arismita Mukherjee)
 
 # Personal details
 - **Full name** Arismita Mukherjee
@@ -18,41 +18,51 @@ Normally for any prediction, the "confidence score" is used as a measure of outl
     - **Pose Plausibility Loss**: All poses are not feasible due to natural restrictions of an animal movement. This loss function restricts the pose-prediction space to such a low-dimensional subspace and flags an outlier if the pixel distance of the prediction is above a threshold from the nearest location in this low-dimensional subspace.
     - **Multiview Consistency Loss**: Different 2D-perspectives from different cameras of a 3-D object restrict possible prediction to a low dimensional subspace. Multiple 2-D perspectives are merged into a 3-D perspective and then reprojected onto the 2D perspective of the camera to calculate the pixel distance of this re-projection against the prediction to calculate the loss and predict an outlier.
 - **Implementation timeline**
-  - **Minimal Set of deliverables** : 
+  1. **Minimal Set of deliverables** : 
     - Temporal Continuity Loss based outlier detection: Code and documentation
     -  Pose Plausibility Loss based outlier detection: Code and documentation
-    -  Multivier Consistency Loss based outlier detection: Code and documentation
-
-    Please include the following information:
-    1. A bullet point list with **minimal set of deliverables**
-    2. Additional **stretch goals** or "if time allows" deliverables (optional)
-    3. A detailed **weekly timeline**: when do you plan to do what? 
-        - Please use a week as a minimal unit of time, and include any planned vacations or other commitments. 
-        - This timeline could be formatted as a table. 
-        - Remember to also include the number of hours per week you plan to work on the GSoC project. 
-        - When estimating the required time for a task, keep in mind deliverables should include investigation/research, coding and documentation. 
-        - The default schedule for GSoC is 12 weeks - see the [GSoC timeline](https://developers.google.com/open-source/gsoc/timeline) for precise dates. 
-        - Also please specify any prep work you plan to do during the "Community bonding period".
-        - Usually week 1's deliverables already include some code. Week 6 marks the mid-term point, where usually more than half of the project should be completed. At the end of week 11 you may want to try to "freeze" the code and complete any remaining tests or documentation in weeks 11 and 12.
+    -  Multiview Consistency Loss based outlier detection: Code and documentation
+  2. **Weekly Timeline**
+       |       Week        |    Start    |    End      |                        Activity                        |
+       | ----------------- | ----------- | ------------| -------------------------------------------------------|
+       | Community Bonding | 2025/05/08  | 2025/06/01  |            xarray, pandas, numpy revision              |
+       |    Week 1         | 2025/06/02  | 2025/06/08  |Understand Temporal loss from Lightning Pose. Start Code|
+       |    Week 2         | 2025/06/09  | 2025/06/15  |            Temporal loss implementation                | 
+       |    Week 3         | 2025/06/16  | 2025/06/22  | Temporal loss test case implementaion and documentation|
+       |    Week 4         | 2025/06/23  | 2025/06/29  |   Understand Pose Plausibility. How to restrict poses  |
+       |    Week 5         | 2025/06/30  | 2025/07/06  |   Implement Pose plausibility based outlier detection  |
+       |    Week 6         | 2025/07/07  | 2025/07/13  |   Implement Pose plausibility based outlier detection  |
+       |    Week 7         | 2025/07/14  | 2025/07/20  |  Pose Plausibility test cases and documentation        |
+       |    Week 8         | 2025/07/21  | 2025/07/27  |  Understand multiview consistency loss from LP         |
+       |    Week 9         | 2025/07/28  | 2025/08/03  | Implement Multiview Consistency based outlier detector |
+       |    Week 10        | 2025/08/04  | 2025/08/10  | Implement Multiview Consistency based outlier detector |
+       |    Week 11        | 2025/08/11  | 2025/08/17  | Multiview consistency test cases and documentation     |
+       |    Week 12        | 2025/08/18  | 2025/08/24  | Any pending work and final project submission          |
+  3.  I will be able to devote 30 hours per week towards GSoC project
 
 - **Communication plan**
-
-    Please explain: how do you plan to communicate with your mentor? How often? (e.g., daily or weekly stand-ups, longer meetings..?) What communication channels will you use? (e.g., video calls, Zulip chat...?)
+  Communication with my mentors will be done in 2 levels:
+  1. Any questions/clarifications/advice sought will be updated in github - so, there is an easy way of tracking and referring to all communication related to the project in 1 place. A message informing the mentors of the same will be posted on Zulip to ensure that mentors are informed about my request.
+  2. Weekly standup. This will be a video call at an agreed upon time. This will help provide the mentors with update on progress and any deviation from the plan.
 
 ## Personal statement
 
-_Length: max 0.75 page_
-
-- **Past experienc.** 
-
-    Please describe your past experience with programming, open source, or any other experience you deem relevant for the project you are applying for. Any successful open source projects, published work or content of the like should definitely be highlighted.
+- **Past experience** 
+  1. As part of an ML project that I worked on along with 2 other members for a hackathon, we developed the following:
+    - Drowsiness detection by identifying the relative distance between eye keypoints.
+    - Automatic clustering of faces from an unseen video based on DBScan of face encodings using keypoint detection. Some of these clusters were later merged manually to train the model to identify different aspects of the same face. These clusters were subsequently used to identify known faces from unseen videos.
+  2. Landcover classification from satellite imaging for GSSoC
+    - Involved identification of different type of landcovers by identifying the RGB code for different pixels on .tif file. These pixels were then clustered using DBScan and bounding boxes were drawn around these clusters. This data, therefore, became labelled training data for training models (e.g., Yolov5, RetinaNet and VGG5).
+    
 - **Motivation: why this project?**
+I am eager to learn how AI/ML can be used to improve the quality of life on this planet. My past projects have primarily been steps to understand how AI/ML works and how to use it to achieve solution to practical problems. The possibility of reducing human involvement in training machines fascinates me. Hence, my inclination towards using clustering to auto-generate high quality training data. Automatic identification of possible errors in prediction is a similar area of interest - as it helps automatically find errors with minimal human intervention. Hence, my interest in implementation of outlier detection in movement.
+I believe, removing the responsibility of sifting through hundreds of prediction to identify errors, will allow humans to concentrate on things we do best. Like, identification of reason for the errors - and correcting the same. 
 
-    Why are you interested in this specific project? What aspects of it motivate you to work on it? How does it link to your personal or professional interests? How do you envision its impact in the open source community?
 - **Match: why you?**
+In my previous projects, I have worked on concepts which were unknown to me when I started. However, my interest in learning new ideas and concepts allowed me to get upto speed quickly and learn on the job to complete these tasks successfully, on time. This project poses a similar challenge. My past experience in handling similar challenges and my desire to learn as well as my interest in the area of work, I believe, make a right match for this project.
 
-    Why should we choose you for this project? What unique skills or experiences can you bring to the project and the community? Is there something you have worked on in the past that makes you particularly well-suited for this project?
 - **Availability**
+My end-semester exams get over early May - making me available for the GSoC project. I will be taking a week off in May, before the GSoC project kicks off. Post that, I will be available to complete my GSoC project.
 
     Please state if you have any other plans for the work period (school work, another job, planned vacation)? If so, how do you plan to combine them with your GSoC work?
 
