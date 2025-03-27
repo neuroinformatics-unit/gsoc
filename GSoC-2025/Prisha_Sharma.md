@@ -12,24 +12,24 @@ Please include the following information:
 <blockquote>
     <table>
         <tr>
-            <td rowspan="3"><strong>Cellfinder</strong></td>
+            <td rowspan="5"><strong>Projects</strong></td>
+            <td><strong>Cellfinder</strong></td>
             <td><a href="https://github.com/brainglobe/cellfinder/pull/490">#490</a></td>
             <td>Inform the user when they supply just the weights in place of the full model</td>
         </tr>
         <tr>
+            <td></td>
             <td><a href="https://github.com/brainglobe/cellfinder/pull/499">#499</a></td>
             <td>Remove save weights option from training widget</td>
         </tr>
         <tr>
-            <td rowspan="3"><strong>datashuttle</strong></td>
-        </tr>
-        <tr>
-            <td rowspan="1"></td>
+            <td><strong>Datashuttle</strong></td>
             <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/470">#470</a></td>
             <td>Attempting to copy in the terminal user interface crashes on headless HPC</td>
         </tr>
     </table>
 </blockquote>
+
 
 
 ## Project proposal
