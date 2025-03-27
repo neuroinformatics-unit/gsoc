@@ -27,7 +27,7 @@ Normally for any prediction, the "confidence score" is used as a measure of outl
        |       Week        |    Start    |    End      |                        Activity                        |
        | ----------------- | ----------- | ------------| -------------------------------------------------------|
        | Community Bonding | 2025/05/08  | 2025/06/01  |            xarray, pandas, numpy revision              |
-       |    Week 1         | 2025/06/02  | 2025/06/08  | understand WP1 from LP paper and code base. Start Code |
+       |    Week 1         | 2025/06/02  | 2025/06/08  | understand WP1 from LP paper, code base, start Coding  |
        |    Week 2         | 2025/06/09  | 2025/06/15  |                 code, test cases for WP1               | 
        |    Week 3         | 2025/06/16  | 2025/06/22  |code, test cases, example usecase, documentation for WP1|
        |    Week 4         | 2025/06/23  | 2025/06/29  |        understand WP2 from LP paper and code base      |
@@ -71,7 +71,7 @@ My end-semester exams get over early May - making me available for the GSoC proj
 - **GSoC experience**
   - Gain a deep understanding of statistical modelling in AI/ML
   - Gain an understanding of how knowledge about animal movement helps in advanced research in areas like bimechanics and neuroscience.
-  - Understand the nuances of working as part of a geogrpahically distributed team
+  - Understand the nuances of working as part of a geographically distributed team
   - Gain experience of contributing to a large scale open source software project
   - Improve my communication skills through regular interaction with my mentors.
 
