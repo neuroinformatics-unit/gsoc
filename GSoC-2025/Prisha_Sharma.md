@@ -12,21 +12,25 @@ Please include the following information:
 <blockquote>
     <table>
         <tr>
-            <td rowspan="4"><strong>Cellfinder</strong></td>
+            <td rowspan="3"><strong>Cellfinder</strong></td>
             <td><a href="https://github.com/brainglobe/cellfinder/pull/490">#490</a></td>
             <td>Inform the user when they supply just the weights in place of the full model</td>
         </tr>
         <tr>
             <td><a href="https://github.com/brainglobe/cellfinder/pull/499">#499</a></td>
-            <td>Remove save weights option from training widget </td>
+            <td>Remove save weights option from training widget</td>
         </tr>
         <tr>
-            <td rowspan="1"><strong>datashuttle</strong></td>
+            <td colspan="3"><strong>datashuttle</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="1"></td>
             <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/470">#470</a></td>
             <td>Attempting to copy in the terminal user interface crashes on headless HPC</td>
         </tr>
     </table>
 </blockquote>
+
 
 ## Project proposal
 
@@ -57,7 +61,7 @@ This project aims to enhance CellFinder by adding multi-channel support for brai
     <tr>
       <th>Timeline</th>
       <th>Deliverables</th>
-      <th>Hours</th>
+      <th>Hours/Week</th>
     </tr>
   </thead>
   <tbody>
@@ -81,7 +85,7 @@ This project aims to enhance CellFinder by adding multi-channel support for brai
           <li>Refine based on mentor's feedback</li>
         </ol>
       </td>
-      <td>15</td>
+      <td>35</td>
     </tr>
     <tr>
       <td><b>Week 3-4</b><br>Focus: Neural network integration</td>
@@ -92,7 +96,7 @@ This project aims to enhance CellFinder by adding multi-channel support for brai
           <li>Refine based on mentor's feedback</li>
         </ol>
       </td>
-      <td>15</td>
+      <td>35</td>
     </tr>
     <tr>
       <td><b>Week 5-6</b><br>Focus: Testing </td>
@@ -102,7 +106,7 @@ This project aims to enhance CellFinder by adding multi-channel support for brai
           <li>Refine based on mentor's feedback</li>
         </ol>
       </td>
-      <td>15</td>
+      <td>35</td>
     </tr>
     <tr>
       <td><b>Week 7-8 </b><br>Focus: Benchmarking and Documentation</td>
@@ -112,7 +116,7 @@ This project aims to enhance CellFinder by adding multi-channel support for brai
           <li>Write detailed usage documentation for multi-channel mode.</li>
         </ol>
       </td>
-      <td>15</td>
+      <td>35</td>
     </tr>
     <tr>
       <td><b>Week 9-10</b><br>Focus: Final Documentation and Blog Draft</td>
@@ -122,7 +126,7 @@ This project aims to enhance CellFinder by adding multi-channel support for brai
           <li>Final documentation polish.</li>
         </ol>
       </td>
-      <td>15</td>
+      <td>35</td>
     </tr>
     <tr>
       <td><b>Week 11-12</b><br>Focus: Refinement and Finalization</td>
@@ -132,7 +136,7 @@ This project aims to enhance CellFinder by adding multi-channel support for brai
           <li>Address feedback and finalize all tests and documentation.</li>
         </ol>
       </td>
-      <td>20</td>
+      <td>30</td>
     </tr>
     <tr>
       <td><b>Week 13</b><br>Focus: Add Final Submission and Wrap-up</td>
@@ -143,7 +147,7 @@ This project aims to enhance CellFinder by adding multi-channel support for brai
           <li>Deliver blog post showcasing results on single-channel and multi-channel data</li>
         </ol>
       </td>
-      <td>15</td>
+      <td>35</td>
     </tr>
     <tr>
   </tbody>
