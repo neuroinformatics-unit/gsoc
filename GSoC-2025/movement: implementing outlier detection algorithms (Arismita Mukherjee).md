@@ -1,15 +1,15 @@
 # movement: implementing outlier detection algorithms (Arismita Mukherjee)
 
 # Personal details
-- **Full name** Arismita Mukherjee
-- **Email** arismita08.m@gmail.com
-- **GitHub username** ArismitaM
-- **Zulip username** Arismita M
-- **Location & time-zone** Bangalore, India IST(UTC+5:30)
+- **Full name**: Arismita Mukherjee
+- **Email**: arismita08.m@gmail.com
+- **GitHub username**: ArismitaM
+- **Zulip username**: Arismita M
+- **Location & time-zone**: Bangalore, India IST(UTC+5:30)
 - **Personal website / project portfolio**: https://github.com/ArismitaM
-- **Code contribution** I implemented a rolling mean filter for movement using <https://github.com/neuroinformatics-unit/movement/pull/459>
+- **Code contribution**: I implemented a rolling mean filter for movement using <https://github.com/neuroinformatics-unit/movement/pull/459>
 
-- **Proposal discussion link** A draft PR https://github.com/neuroinformatics-unit/movement/pull/470 was opened for discussing my proposal. However, as per advice of mentors, this draft PR was closed and all proposal discussion about the project has happened on this <https://github.com/neuroinformatics-unit/movement/issues/145>
+- **Proposal discussion link**: A draft PR https://github.com/neuroinformatics-unit/movement/pull/470 was opened for discussing my proposal. However, as per advice of mentors, this draft PR was closed and all proposal discussion about the project has happened on this <https://github.com/neuroinformatics-unit/movement/issues/145>
   
 ## Project proposal 
 - **Synopsis**
