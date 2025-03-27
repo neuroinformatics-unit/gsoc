@@ -32,18 +32,30 @@ This project aims to integrate Kalman filtering into the Movement project to enh
 
 # Implementation Timeline:
 
-<h3> Minimal Deliverables: </h3>
+1. <h3> Understanding the Problem </h3>
+The goal is to implement Kalman Filters in a simplified manner for tracking movement.
+Kalman Filters help in predicting and correcting movement data (e.g., tracking an object's position over time with noisy measurements).
 
-•	A Python implementation of a Kalman filter for smoothing position, velocity, and acceleration timeseries.
-•	Unit tests to validate the implementation.
-•	Documentation for new functionality.
-•	An example use case in the Movement gallery.
+2. <h3> Define Requirements </h3>
+Should handle basic motion models (e.g., constant velocity, constant acceleration).
+Should be easy to integrate into a simple movement tracking system.
+Should have minimal computational overhead for real-time processing.
 
-<h3> Stretch Goals: </h3>
+3. <h3> Implement a Basic Kalman Filter </h3>
+Define the state vector (position, velocity, etc.).
+Define state transition and observation models.
+Initialize the process covariance, measurement covariance, and Kalman gain.
+Implement the prediction and update steps.
 
-•	Implement Kalman filtering to fix identity switches in multi-animal tracking data.
-•	Optimize performance for large datasets.
-•	Add additional filter tuning options for user customization.
+4. <h3> Test with Sample Data </h3>
+Simulate object movement (e.g., moving in a straight line).
+Introduce noise to measurements.
+Verify if the filter smooths out the trajectory correctly.
+
+5. <h3> Optimize and Simplify </h3>
+Reduce computational complexity if needed.
+Remove unnecessary parameters for a minimalist version.
+Provide easy-to-use functions for integration.
 
 <h2> Week	Deliverables </h2>
 
@@ -78,8 +90,11 @@ Week 12	Submit final deliverables, write project report, and assist with integra
 <h3> Communication Plan: </h3>
 
 •	Weekly progress meetings with mentors via video calls.
+
 •	Ongoing discussions and questions through Zulip chat.
+
 •	Regular code updates and reviews on GitHub.
+
 •	Midterm and final project reports.
 
 # Personal Statement:
