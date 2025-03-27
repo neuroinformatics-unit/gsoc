@@ -21,7 +21,7 @@ Please include the following information:
             <td>Remove save weights option from training widget</td>
         </tr>
         <tr>
-            <td colspan="3"><strong>datashuttle</strong></td>
+            <td rowspan="3"><strong>datashuttle</strong></td>
         </tr>
         <tr>
             <td rowspan="1"></td>
