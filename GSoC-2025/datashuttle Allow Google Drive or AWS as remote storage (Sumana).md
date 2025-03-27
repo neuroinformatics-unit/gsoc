@@ -74,8 +74,7 @@ This project aims to enhance datashuttle, a Python-based tool for standardized d
 
 **Stretch Goals** <br/>
 - Add detailed logs and a progress bar to track file transfers.
-- Implement automatic retries for failed transfers and resume interrupted uploads.
-- Any other untouched work which I feel important for the project, I will continue to contribute further to the community.
+- Address open issues in the repository adding new functionalities.
 
 **Implementation Timeline** <br/>
 - I have structured the project timeline based on a dedicated 30-hour workweek, allotting required time to the all the phase
@@ -241,7 +240,7 @@ Ever since the GSoC organizations were announced, I had been searching for an or
 I’ve contributed to various open-source projects purely out of curiosity and a passion for learning. One of my biggest strengths is discipline and taking ownership of the project. I would like to treat the project as my own, taking care of its execution, submission and future maintenance. My contributions reflect my dedication, curiosity to learn and compassion for my fellow contributors.To make more meaningful contributions, I have learnt basics of the Textual framework and developed an introductory [project using textual](https://github.com/sumana-2705/Stopwatch). It has helped me understand the codebase deeply and contribute more effectively. I love learning from experienced people and constantly pushing myself to grow which makes me unique from others for this project. This same mindset of discipline, ownership, and continuous learning has been a defining factor in my academic journey as well. I have prepared for and cleared JEE Advanced, one of the world's toughest exams with an acceptance rate of just 1%, through self-study during the COVID lockdown. This achievement earned me a seat at IIT (BHU), one of India’s top-10 engineering institutions. It was a challenging journey, but my dedication and consistency over two years helped me succeed. I bring that same commitment, sincerity, and hard work to everything I do.
 
 - **Availability** <br/>
-  I do not have any other commitments during the program, I did not accept any Internship or other offers for the summer. I would be available for the whole program period. My University’s End Semester exams are scheduled from 25th April to 10th May, So I will be available for the whole program period. After this I will be having my Mid Semester Exams scheduled in September, that will also not take too much of my time due to less syllabus in Mid Sems. On an average, I will be available for 30 hours a week for the entire period. I am ready to extend this whenever needed.
+  I do not have any other commitments during the program, I did not accept any Internship or other offers for the summer. I would be available for the whole program period. My University’s End Semester exams are scheduled from 25th April to 10th May, So I will be available for the whole program period. After this I will be having my Mid Semester Exams scheduled in September, that will also not take too much of my time due to less syllabus in Mid Sems. On an average, I will be available for 30 hours a week for the entire period (considering as a 175 hour project). I am ready to extend this whenever needed.
 
 ## GSoC
 - **GSoC experience** <br/>
