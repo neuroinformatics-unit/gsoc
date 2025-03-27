@@ -6,10 +6,10 @@
 - **GitHub username** ArismitaM
 - **Zulip username** Arismita M
 - **Location & time-zone** Bangalore, India IST(UTC+5:30)
-- **Personal website / project portfolio**
-- **Code contribution** https://github.com/neuroinformatics-unit/movement/pull/459
+- **Personal website / project portfolio**: https://github.com/ArismitaM
+- **Code contribution** I implemented a rolling mean filter for movement using <https://github.com/neuroinformatics-unit/movement/pull/459>
 
-- **Proposal discussion link** TBD
+- **Proposal discussion link** A draft PR https://github.com/neuroinformatics-unit/movement/pull/470 was opened for discussing my proposal. However, as per advice of mentors, this draft PR was closed and all proposal discussion about the project has happened on this <https://github.com/neuroinformatics-unit/movement/issues/145>
   
 ## Project proposal 
 - **Synopsis**
@@ -38,7 +38,7 @@ Normally for any prediction, the "confidence score" is used as a measure of outl
        |    Week 10        | 2025/08/04  | 2025/08/10  | Implement Multiview Consistency based outlier detector |
        |    Week 11        | 2025/08/11  | 2025/08/17  | Multiview consistency test cases and documentation     |
        |    Week 12        | 2025/08/18  | 2025/08/24  | Any pending work and final project submission          |
-  3.  I will be able to devote 30 hours per week towards GSoC project
+  3.  I will be able to devote 20-25 hours per week towards GSoC project. 
 
 - **Communication plan**
   Communication with my mentors will be done in 2 levels:
@@ -48,32 +48,29 @@ Normally for any prediction, the "confidence score" is used as a measure of outl
 ## Personal statement
 
 - **Past experience** 
-  1. As part of an ML project that I worked on along with 2 other members for a hackathon, we developed the following:
-    - Drowsiness detection by identifying the relative distance between eye keypoints.
-    - Automatic clustering of faces from an unseen video based on DBScan of face encodings using keypoint detection. Some of these clusters were later merged manually to train the model to identify different aspects of the same face. These clusters were subsequently used to identify known faces from unseen videos.
-  2. Landcover classification from satellite imaging for GSSoC
+  1. As part of an [ML project](https://github.com/AGiLe-IIITB/HackNite_MasterRepo) that I worked on, along with 2 other members, I developed the following:
+    - **Blink detection** by identifying the relative distance between eye keypoints.
+    - **Face Identification**: Automatic clustering of faces from an unseen video based on DBScan of face encodings using keypoint detection. Some of these clusters were later merged manually to train the model to identify different aspects of the same face. These clusters were subsequently used to identify known faces from unseen videos.
+  2. [Landcover classification](https://github.com/ArismitaM/Land_Cover_Classification) from satellite imaging
     - Involved identification of different type of landcovers by identifying the RGB code for different pixels on .tif file. These pixels were then clustered using DBScan and bounding boxes were drawn around these clusters. This data, therefore, became labelled training data for training models (e.g., Yolov5, RetinaNet and VGG5).
     
 - **Motivation: why this project?**
-I am eager to learn how AI/ML can be used to improve the quality of life on this planet. My past projects have primarily been steps to understand how AI/ML works and how to use it to achieve solution to practical problems. The possibility of reducing human involvement in training machines fascinates me. Hence, my inclination towards using clustering to auto-generate high quality training data. Automatic identification of possible errors in prediction is a similar area of interest - as it helps automatically find errors with minimal human intervention. Hence, my interest in implementation of outlier detection in movement.
+I am eager to learn how AI/ML can be used to improve the quality of life on this planet. My past projects have primarily been steps to understand how AI/ML works and how to use it to achieve solution to practical problems. The possibility of reducing human involvement in training machines fascinates me. Hence, my inclination towards using clustering to auto-generate high quality training data. Automatic identification of possible errors in prediction is a logical next step in this area of interest - as it helps automatically find errors with minimal human intervention. Hence, my interest in implementation of outlier detection in movement.
 I believe, removing the responsibility of sifting through hundreds of prediction to identify errors, will allow humans to concentrate on things we do best. Like, identification of reason for the errors - and correcting the same. 
 
 - **Match: why you?**
-In my previous projects, I have worked on concepts which were unknown to me when I started. However, my interest in learning new ideas and concepts allowed me to get upto speed quickly and learn on the job to complete these tasks successfully, on time. This project poses a similar challenge. My past experience in handling similar challenges and my desire to learn as well as my interest in the area of work, I believe, make a right match for this project.
+In my previous projects, I have worked on concepts which were unknown to me when I started. However, my interest in learning new ideas and concepts allowed me to get upto speed quickly and learn on the job to complete these tasks successfully, on time. This project poses a similar challenge. My past experience in handling similar challenges and my desire to learn as well as my interest in the area of work, I believe, make me the right match for this project. Over the past month, I have spent quite some time in understanding the movement codebase, discussing, with mentors, about possible paths of implemention of outlier detection and provided suggested code changes in https://github.com/neuroinformatics-unit/movement/issues/145. So, I feel, I have gained usable experience to hit the ground running for this project.
 
 - **Availability**
-My end-semester exams get over early May - making me available for the GSoC project. I will be taking a week off in May, before the GSoC project kicks off. Post that, I will be available to complete my GSoC project.
-
-    Please state if you have any other plans for the work period (school work, another job, planned vacation)? If so, how do you plan to combine them with your GSoC work?
+My end-semester exams get over early May - making me available for the GSoC project. I will be taking a week off in May, before the GSoC project kicks off. Post that, I will be available full-time to complete my GSoC project.
 
 ## GSoC
 
-_Length: max 0.25 page_
-
 - **GSoC experience**
-
-    What do you expect from the program?
+  - Gain a deep understanding of statistical modelling in AI/ML
+  - Understand the nuances of working as part of a geogrpahically distributed team
+  - Gain experience of contributing to a large scale open source software project
+  - Improve my communication skills through regular interaction with my mentors.
 
 - **Are you also applying to projects with other organisations in GSoC 2025?**
-
-    If so, which ones? What would be your preference in case of a tie?
+  No I am not applying to any other GSoC 2025 projects with any other organisations.
