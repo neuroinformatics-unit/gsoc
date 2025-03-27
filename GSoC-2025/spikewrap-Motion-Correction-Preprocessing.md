@@ -11,7 +11,9 @@
 
 ## Code contribution
 
-(In Progress))
+Update feature roadmap with new planned features #227, according to Issue #217 Update roadmap.
+https://github.com/neuroinformatics-unit/spikewrap/pull/227
+
 
 ## Project proposal
 
