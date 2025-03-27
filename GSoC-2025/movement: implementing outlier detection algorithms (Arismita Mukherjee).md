@@ -27,7 +27,7 @@ Normally for any prediction, the "confidence score" is used as a measure of outl
        |       Week        |    Start    |    End      |                        Activity                        |
        | ----------------- | ----------- | ------------| -------------------------------------------------------|
        | Community Bonding | 2025/05/08  | 2025/06/01  |            xarray, pandas, numpy revision              |
-       |    Week 1         | 2025/06/02  | 2025/06/08  | understand WP1 from LP paper, code base, start Coding  |
+       |    Week 1         | 2025/06/02  | 2025/06/08  | understand WP1 from LP paper, code base, start coding  |
        |    Week 2         | 2025/06/09  | 2025/06/15  |                 code, test cases for WP1               | 
        |    Week 3         | 2025/06/16  | 2025/06/22  |code, test cases, example usecase, documentation for WP1|
        |    Week 4         | 2025/06/23  | 2025/06/29  |        understand WP2 from LP paper and code base      |
@@ -53,8 +53,8 @@ Normally for any prediction, the "confidence score" is used as a measure of outl
     - **Blink detection** by identifying the relative distance between eye keypoints.
     - **Face Identification**: Automatic clustering of faces from an unseen video based on DBScan of face encodings using keypoint detection. Some of these clusters were later merged manually to train the model to identify different aspects of the same face. These clusters were subsequently used to identify known faces from unseen videos.
   2. [Landcover classification](https://github.com/ArismitaM/Land_Cover_Classification) from satellite imaging
-    - Involved identification of different type of landcovers by identifying the RGB code for different pixels on .tif file. These pixels were then clustered using DBScan and bounding boxes were drawn around these clusters. This data, therefore, became labelled training data for training models (e.g., Yolov5, RetinaNet and VGG5).
-  3. As part of my curriculum (integrated M-Tech majoring in Electronics and Communication Engineering), I have taken courses in Python coding and used the same in the above mentioned projects. I am currently studying a course on Digital Signal Processing as part of my curriculum and I find DSP to be very interesting
+    - Involved identification of different type of landcovers by identifying the RGB code for different pixels on .tif file. These pixels were then clustered using DBScan and bounding boxes were drawn around these clusters. This data, therefore, became labeled training data for training models (e.g., Yolov5, RetinaNet and VGG5).
+  3. As part of my curriculum (integrated M-Tech majoring in Electronics and Communication Engineering at International Institute of Information Technology, Bangalore), I have taken courses in Python coding and used the same in the above mentioned projects. I am currently studying a course on Digital Signal Processing as part of my curriculum and I find DSP to be very interesting
     
 - **Motivation: why this project?**
 I am eager to learn how AI/ML can be used to improve the quality of life on this planet. My past projects have primarily been steps to understand how AI/ML works and how to use it to achieve solution to practical problems. The possibility of reducing human involvement in training machines fascinates me. Hence, my inclination towards using clustering to auto-generate high quality training data. Automatic identification of possible errors in prediction is a logical next step in this area of interest - as it helps automatically find errors with minimal human intervention. Hence, my interest in implementation of outlier detection in movement.
@@ -63,17 +63,18 @@ I believe, removing the responsibility of sifting through hundreds of prediction
 - **Match: why you?**
 In my previous projects, I have worked on concepts which were unknown to me when I started. However, my interest in learning new ideas and concepts allowed me to get upto speed quickly and learn on the job to complete these tasks successfully, on time. This project poses a similar challenge. My past experience in handling similar challenges and my desire to learn as well as my interest in the area of work, I believe, make me the right match for this project. Over the past month, I have worked towards understanding the movement codebase, discussing, with mentors, about possible paths of implemention of outlier detection and provided suggested code changes in https://github.com/neuroinformatics-unit/movement/issues/145. So, I feel, I have gained usable experience to hit the ground running for this project.
 
-- **Availability**
+- **Availability**:
 My end-semester exams get over early May - making me available for the GSoC project. I will be taking a week off in May, before the GSoC project kicks off. Post that, I will be available full-time to complete my GSoC project.
 
 ## GSoC
 
 - **GSoC experience**
   - Gain a deep understanding of statistical modelling in AI/ML
-  - Gain an understanding of how knowledge about animal movement helps in advanced research in areas like bimechanics and neuroscience.
+  - Gain an understanding of how knowledge about animal movement helps in advanced research in areas like biomechanics and neuroscience.
   - Understand the nuances of working as part of a geographically distributed team
   - Gain experience of contributing to a large scale open source software project
   - Improve my communication skills through regular interaction with my mentors.
 
 - **Are you also applying to projects with other organisations in GSoC 2025?**
+
   No I am not applying to any other GSoC 2025 projects with any other organisations.
