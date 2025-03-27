@@ -12,13 +12,13 @@ Please include the following information:
 <blockquote>
     <table>
         <tr>
-            <td rowspan="5"><strong>Projects</strong></td>
+            <td rowspan="5"><strong>PR</strong></td>
             <td><strong>Cellfinder</strong></td>
             <td><a href="https://github.com/brainglobe/cellfinder/pull/490">#490</a></td>
             <td>Inform the user when they supply just the weights in place of the full model</td>
         </tr>
         <tr>
-            <td></td>
+            <td><strong>Cellfinder</strong></td>
             <td><a href="https://github.com/brainglobe/cellfinder/pull/499">#499</a></td>
             <td>Remove save weights option from training widget</td>
         </tr>
