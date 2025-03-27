@@ -11,26 +11,32 @@
 
 ## Project proposal 
 - **Synopsis**
-  The `brainglobe-registration` tool aligns 2D and 3D brain images with a standardized atlas but currently requires manual selection of the atlas region, which can be error-prone as well as quite time-consuming. This project aims to automate region selection by implementing and comparing different approaches such as similarity metrics (normalized cross-correlation), adaptive grid-search and Bayesian optimization.
+  The `brainglobe-registration` tool currently requires manual atlas region selection, making the process error-prone and time-consuming. This project will automate the selection using similarity metrics, adaptive grid-search, and Bayesian optimization, significantly enhancing accuracy and efficiency.
 
 - **Implementation timeline**
 
-| Time Frame                        | Tasks & Deliverables                                                                                                                                               |
-|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Pre-GSoC (Mar 10 - May 8)         | PR for automatic region determination using similarity metrics. Study codebase, review literature on Bayesian optimization & ML strategies for image registration. |
-| Community Bonding (May 8 - Jun 1) | Discuss approach with mentors, plan experiments, set up the development environment.                                                                               |
-| Week 1 (Jun 2 - Jun 9)            | Implement grid search for region selection, evaluate on large datasets.                                                                                            |
-| Week 2 (Jun 10 - Jun 17)          | Optimize grid search, develop visualization tools, compare with similarity methods.                                                                                |
-| Week 3 (Jun 18 - Jun 25)          | Implement Bayesian optimization for atlas region selection, define priors, test on small datasets.                                                                 |
-| Week 4 (Jun 26 - Jul 2)           | Optimize Bayesian search space, compare with grid search, analyze trade-offs.                                                                                      |
-| Week 5 (Jul 3 - Jul 10)           | Finalize Bayesian implementation, collect feedback, implement unit tests.                                                                                          |
-| Week 6 (Jul 11 - Jul 18)          | Mid-term: Fully implement & test adaptive grid search & Bayesian optimization, finalize documentation.                                                             |
-| Week 7 (Jul 19 - Jul 26)          | Research ML-based methods, identify feature extraction techniques.                                                                                                 |
-| Week 8 (Jul 27 - Aug 3)           | Implement initial ML-based methods (e.g., clustering), train/test models.                                                                                          |
-| Week 9 (Aug 4 - Aug 11)           | Improve ML model, compare ML vs Bayesian vs grid-search vs similarity metrics.                                                                                     |
-| Week 10 (Aug 12 - Aug 19)         | Optimize best-performing method for 3D subvolume selection, extend test coverage.                                                                                  |
-| Week 11 (Aug 20 - Aug 27)         | Freeze codebase, finalize documentation, start blog post.                                                                                                          |
-| Week 12 (Aug 28 - Sep 4)          | Final testing, performance checks, submit final report & deliverables.                                                                                             |
+  I. **Minimal set of deliverables:**
+  -	Implementation of automatic atlas region selection using similarity metrics (normalized cross-correlation) (PR review in progress)
+  -	Adaptive grid-search algorithm for automated selection.
+  -	Bayesian optimization-based approach for region selection.
+  -	Comparative performance analysis and visualization tools.
+  -	Comprehensive documentation and unit tests.
+  
+  II. **Stretch goals:**
+  - Optimization of the entire workflow with GPU acceleration enabling faster large-scale registration.
+
+  III. **Weekly Timeline:**
+
+  | Time frame                          | Tasks and   milestones                                          |
+  |-------------------------------------|-----------------------------------------------------------------|
+  | Pre-GSoC (Mar 10   – May 8)         | Initial PR,   codebase study, literature review                 |
+  | Community   bonding (May 8 – Jun 1) | Development setup,   experimental planning.                     |
+  | Week 1-2 (Jun 2 –   Jun 17)         | Grid search   implementation, optimization, visualization       |
+  | Week 3-5 (Jun 18   – Jul 10)        | Bayesian   optimization implementation, refinement, evaluation. |
+  | Week 6 (Jul 11 –   Jul 18)          | Mid-term:   Finalized grid-search and Bayesian optimization     |
+  | Week 7-9 (Jul 19   – Aug 11)        | ML methods   research, initial implementation, evaluation.      |
+  | Weeks 10-11 (Aug   12- Aug 27)      | Optimization,   finalize documentation, begin final report      |
+  | Week 12 (Aug 28 –   Sep 4)          | Final testing,   submit deliverables and final report           |
 
 **Time commitment:** 15-20 hours per week approx ( I have a 28 hours per week work limit), 4 hours per day.
 - **Communication plan**
