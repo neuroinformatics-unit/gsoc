@@ -15,7 +15,7 @@ Please include the following information:
             <td rowspan="5"><strong>PR</strong></td>
             <td><strong>Cellfinder</strong></td>
             <td><a href="https://github.com/brainglobe/cellfinder/pull/490">#490</a></td>
-            <td>Inform the user when they supply just the weights in place of the full model</td>
+            <td>Inform the user when they supply just the weights in place of the full model (merged)</td>
         </tr>
         <tr>
             <td><strong>Cellfinder</strong></td>
