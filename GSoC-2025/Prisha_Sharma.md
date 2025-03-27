@@ -20,12 +20,12 @@ Please include the following information:
         <tr>
             <td><strong>Cellfinder</strong></td>
             <td><a href="https://github.com/brainglobe/cellfinder/pull/499">#499</a></td>
-            <td>Remove save weights option from training widget</td>
+            <td>Remove save weights option from training widget (merged)</td>
         </tr>
         <tr>
             <td><strong>Datashuttle</strong></td>
             <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/470">#470</a></td>
-            <td>Attempting to copy in the terminal user interface crashes on headless HPC</td>
+            <td>Attempting to copy in the terminal user interface crashes on headless HPC (merged)</td>
         </tr>
     </table>
 </blockquote>
