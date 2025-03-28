@@ -76,6 +76,8 @@
     I have been contributing to movement for some time now, fix issues, opened draft PR for kalman filter and I completely understand the movement's codebase, team structure, how the team work. I have been in regular touch with the mentors and active in the Zulip chat. All this shows, my the dedication towards the movement and this project. Given my familiarity with both the codebase and the team, I am confident that I can efficiently implement 
     the Kalman filter features in the movement library.
 
+    I have been contributing to the movement for many weeks now. In these past weeks, I opened the 3 PRs. In one PR, I implemented a general filter function for different filters like median, mean, max, min and this PR is merged now. In second PR, I added the more methods(ffill, bfill etc.) in the interpolate_na function and extend its functionality. The third PR is a draft PR, which contains all experiments with different Kalman filter implementations so far. To make all the PRs, I need to understood how movement works internally, learn all related libraries, kalman filter. This shows that I am a quick learner and disciplined. I take the responsibility of the project and I 
+
 - **Availabilty**
     
     I will be fully available during the working period because at that time, I will have my summer breaks of 3 months from may to july. So, I will be fully available.
