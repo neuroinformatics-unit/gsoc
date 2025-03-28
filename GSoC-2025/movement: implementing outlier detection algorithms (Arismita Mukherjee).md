@@ -15,32 +15,40 @@
 - **Synopsis**
 
    Normally for any prediction, the "confidence score" is used as a measure of outlier detection. A low confidence signifies a possible outlier and a high confidence is assumed to be pointing to a prediction that is most probably correct. However, for pose estimation, if the backbone network (the model doing the prediction) may mistake the front hind paw of a mouse to be its left hind paw and predict its location with high confidence. Finding such "confident error" is aking to "needle-in-a-haystack" problem. Hence, we need to implement the following cost functions (as described in the lightning pose paper) for outlier detection:
-    - **Temporal Continuity Loss**: Compare the pixel distance of the location of a keypont at (t)instance with that at (t-1)instance. Flag an outlier if the pixel distance exceeds a threshold.
-    - **Pose Plausibility Loss**: All poses are not feasible due to natural restrictions of an animal movement. This loss function restricts the pose-prediction space to such a low-dimensional subspace and flags an outlier if the pixel distance of the prediction is above a threshold from the nearest location in this low-dimensional subspace.
+    - **Temporal Continuity Loss**: Compare the pixel distance of the location of a keypont at (t)instance with that at (t-1)instance. Flag an outlier if the pixel distance exceeds a threshold. There are 2 interesting scenarios that will be interesting to think about. An example, will perhaps, be able to explain these better (Let us use x co-ord of 1 keypoint for illustration, and assume 10 as the threshold to trigger an outlier-detection):
+        1. x=12 (t=0), x=32 (t=1), x=15 (t=2), x=10 (t=3)
+        2. Let us assume we pad row 0 with the values of the actual row 0, so, we get as many diffs as there are rows.
+        3. As per the temporal loss calculation, diff-ing sequential rows, will flag t=1 (t=0, in input) and t=2 (t=1 in input) as outliers. However, t=1 (t=0, in input) is definitely not an outlier.
+        4. If we were to do diff first between t and t+1 and then between t-1 and t, we will have outlier marked in both cases only for t=1, thereby identifying the exact outlier.
+        5. If we were to consider a case where we see a set of clustered outliers e.g., x=12(t=0), x=32(t=1), x=35(t=2), x=30(t=3), x=15(t=4), x=11(t=5), x=13(t=6), clearly t=1 (t=2 after padding), t=2 (t=3 after padding), t=3 (t=4 after padding) are outliers. But using the 2 diffs (t to t+1 and t-1 to t), we will not breach the threshold for any of the points for both diffs simultaneously. This is, perhaps, a clear indication that we do not have a single outlier but a series of outliers and the position of the threshold breaches act as start and end markers for the set of outliers.
+    - **Pose Plausibility Loss**: All poses are not feasible due to natural restrictions of an animal movement. This loss function restricts the pose-prediction space to such a low-dimensional subspace and flags an outlier if the pixel distance of the prediction is above a threshold from the nearest location in this low-dimensional subspace. In order to restrict the plausible pose space, the LP paper suggests the use of pose PCA to identify the dominant Principal Pose components. The predictions, are then, projected onto this restricted Pose Space and reprojected back onto the keypoints to identify the loss based on the pixel difference between the actual prediction and the pose reprojection.
     - **Multiview Consistency Loss**: Different 2D-perspectives from different cameras of a 3-D object restrict possible prediction to a low dimensional subspace. Multiple 2-D perspectives are merged into a 3-D perspective and then reprojected onto the 2D perspective of the camera to calculate the pixel distance of this re-projection against the prediction to calculate the loss and predict an outlier. Normally, to merge multiple 2-D camera perspectives onto 3-D, all these cameras are calibrated to identify their intrinsic parameters (e.g., their focal length and distortion). These intrinsic paramteres along with extrinsic parameters (the exact relative location of the cameras in the 3-D space), determine the 2D-projection that each camera sees of a 3-D object. However, camera calibration is laborious, time-consuming and at times not feasible in tightly constained spaces. Moreover, the calibration has to be done for every change to either location of the camera or the camera itself. The Lightning Pose Paper [LP](https://www.nature.com/articles/s41592-024-02319-1) approximates the position of the keypoints in 3-D space by using Principal Component Analysis (of 3 principal components). The 3-D space is approxomated by calculating the EigenVector for each of these 3 principal components and the Loading Score of each of the camera towards these EigenVectors determine the transformation of the 2-D perspective of each of these cameras onto this 3-D space. Thus, each of the camera perspectives are projected onto this approximated 3-D space. Every point in this 3-D space is, then, re-projected back onto the 2-D space of specific cameras by reversing the steps described above. The pixel distance between the actual prediction of a keypoint and the reprojection back from the 3-PCA 3-D space back to the 2-D space of the camera defines this cost function. Thus, this novel 3-PCA approach removes the need for the repetitive camer callibration.
+
+    Outlier detection based on these loss calculation will be implemented as a user-friendly Python API. Test cases will be implemented to exercise these APIs and ensure they work as per expectation. Documentation to explain the use of these APIs will be put in place. Examples will be added in the codebase, to enable users to start using these APIs with ease. 
 
 - **Implementation timeline**
   1. **Minimal Set of deliverables** : 
-    - Temporal Continuity Loss based outlier detection (**WP1**): Code and documentation
-    -  Pose Plausibility Loss based outlier detection (**WP2**): Code and documentation
-    -  Multiview Consistency Loss based outlier detection (**WP3**): Code and documentation
+    - Temporal Continuity Loss based outlier detection (**WP1**): Code, test cases, example usecases and documentation
+    -  Pose Plausibility Loss based outlier detection (**WP2**): Code, test cases, example usecases and documentation
+    -  Multiview Consistency Loss based outlier detection (**WP3**): Code, test cases, example usecases and documentation
   2. **Stretch Goals**:
     - Support calibrated camera data for an alternate Multiview Consistency Loss calculation. Compare the performance of this calibrated Multiview Consistency Loss to that of uncalibrated (3-PCA based) Multiview Consistency Loss for outlier detection.
+    - Implement UI for visualizing the outlier keypoints in each video frame based on the different loss calculations.
   3. **Weekly Timeline**:
        |       Week        |    Start    |    End      |                        Activity                        |
        | ----------------- | ----------- | ------------| -------------------------------------------------------|
-       | Community Bonding | 2025/05/08  | 2025/06/01  |            xarray, pandas, numpy revision              |
-       |    Week 1         | 2025/06/02  | 2025/06/08  | understand WP1 from LP paper, code base, start coding  |
-       |    Week 2         | 2025/06/09  | 2025/06/15  |                 code, test cases for WP1               | 
-       |    Week 3         | 2025/06/16  | 2025/06/22  |code, test cases, example usecase, documentation for WP1|
-       |    Week 4         | 2025/06/23  | 2025/06/29  |        understand WP2 from LP paper and code base      |
-       |    Week 5         | 2025/06/30  | 2025/07/06  |                code, test cases for WP2                |
-       |    Week 6         | 2025/07/07  | 2025/07/13  |                code, test cases for WP2                |
-       |    Week 7         | 2025/07/14  | 2025/07/20  |code, test cases, example usecase, documentation for WP2|
-       |    Week 8         | 2025/07/21  | 2025/07/27  |        understand WP3 from LP paper and code base      |
-       |    Week 9         | 2025/07/28  | 2025/08/03  |                code, test cases for WP3                |
-       |    Week 10        | 2025/08/04  | 2025/08/10  |                code, test cases for WP3                |
-       |    Week 11        | 2025/08/11  | 2025/08/17  |code, test cases, example usecase, documentation for WP3|
+       | Community Bonding | 2025/05/08  | 2025/06/01  |<ul><li>xarray, pandas, numpy revision</li> <li>understand the developer workflow for contribution to movement</li> <li>interact and get to know the movement developer community and my mentors</li></ul>|
+       |    Week 1         | 2025/06/02  | 2025/06/08  |<ul><li>understand WP1 from LP paper and code base</li><li>start coding for single frame outlier detection</li></ul>|
+       |    Week 2         | 2025/06/09  | 2025/06/15  |<ul><li>complete code for single frame outlier detection</li><li>code test cases for single frame outlier detection</li><li>code for multi frame outlier detection</li></ul>| 
+       |    Week 3         | 2025/06/16  | 2025/06/22  |<ul><li>complete code for multi frame outlier detection</li><li>code test cases for multi frame outlier detection</li><li>add example usecases for WP1</li><li> documentation for WP1</li>|
+       |    Week 4         | 2025/06/23  | 2025/06/29  |<ul><li>understand WP2 from LP paper and code base</li><li>start coding to generate the restricted pose space using pose PCA</li></ul>|
+       |    Week 5         | 2025/06/30  | 2025/07/06  |<ul><li>complete code for pose PCA</li><li>start coding to determine the loss for WP2</li></ul>|
+       |    Week 6         | 2025/07/07  | 2025/07/13  |<ul><li>complete code to determine the loss for WP2</li><li>code test cases for WP2</li></ul>|
+       |    Week 7         | 2025/07/14  | 2025/07/20  |<ul><li>complete test case code for WP2</li><li> add example usecases for WP2</li><li>documentation for WP2</li></ul>|
+       |    Week 8         | 2025/07/21  | 2025/07/27  |<ul><li>understand WP3 from LP paper and code base</li><li>start coding for projecting multi camera views onto 3-PCA model</li></ul>|
+       |    Week 9         | 2025/07/28  | 2025/08/03  |<ul><li>complete code for projecting multi camera views onto 3-PCA model</li><li>start coding to determine loss for WP3</li></ul>|
+       |    Week 10        | 2025/08/04  | 2025/08/10  |<ul><li>complete code to determine loss for WP3</li><li> start coding test cases for WP3</li></ul>|
+       |    Week 11        | 2025/08/11  | 2025/08/17  |<ul><li> complete coding test cases for WP3</li><li>add example usecases for WP3</li><li>documentation for WP3</li></ul>|
        |    Week 12        | 2025/08/18  | 2025/08/24  |    any pending work and final project submission       |
   3.  I will be devoting 30-35 hours per week towards this GSoC project. 
 
