@@ -9,7 +9,7 @@
 - **Personal Website / Portfolio (optional):** [Github Profile](https://github.com/shrutiparmar2003) , [Linkedin Profile](https://www.linkedin.com/in/shruti-parmar-0625282a2/)
 
 - **Code contribution** :
-   - I've been experimenting with a Kalman filter and learned a lot from my earlier PRs ([#477](https://github.com/neuroinformatics-unit/movement/pull/477) and [#484](https://github.com/neuroinformatics-unit/movement/pull/484) ), which helped shape my work in PR [#496](https://github.com/neuroinformatics-unit/movement/pull/496). While PR [#496](https://github.com/neuroinformatics-unit/movement/pull/496) is still in progress, I aim to refine the filter further by integrating it with Movement's built-in data structures.
+   - I've been experimenting with a Kalman filter and learned a lot from my earlier PRs ([#477](https://github.com/neuroinformatics-unit/movement/pull/477) and [#484](https://github.com/neuroinformatics-unit/movement/pull/484) ), which helped shape my work in PR [#496](https://github.com/neuroinformatics-unit/movement/pull/496). While PR [#496](https://github.com/neuroinformatics-unit/movement/pull/496) is still in progress, I aim to refine the filter further by integrating it with Movement's built-in data structures. I initially tested the Kalman filter using the filterpy package, but it turned out to be outdated, so I’m now exploring more up-to-date alternatives for better performance and compatibility.
 
 - **Proposal discussion link** : [Link](https://github.com/neuroinformatics-unit/gsoc/pull/8)
 
