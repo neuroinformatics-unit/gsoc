@@ -39,17 +39,17 @@
        | ----------------- | ----------- | ------------| -------------------------------------------------------|
        | Community Bonding | 2025/05/08  | 2025/06/01  |<ul><li>xarray, pandas, numpy revision</li> <li>understand the developer workflow for contribution to movement</li> <li>interact and get to know the movement developer community and my mentors</li></ul>|
        |    Week 1         | 2025/06/02  | 2025/06/08  |<ul><li>understand WP1 from LP paper and code base</li><li>start coding for single frame outlier detection</li></ul>|
-       |    Week 2         | 2025/06/09  | 2025/06/15  |<ul><li>complete code for single frame outlier detection</li><li>code test cases for single frame outlier detection</li><li>code for multi frame outlier detection</li></ul>| 
-       |    Week 3         | 2025/06/16  | 2025/06/22  |<ul><li>complete code for multi frame outlier detection</li><li>code test cases for multi frame outlier detection</li><li>add example usecases for WP1</li><li> documentation for WP1</li>|
+       |    Week 2         | 2025/06/09  | 2025/06/15  |<ul><li>complete code for single frame outlier detection</li><li>add test cases for single frame outlier detection</li><li>code for multi frame outlier detection</li></ul>| 
+       |    Week 3         | 2025/06/16  | 2025/06/22  |<ul><li>complete code for multi frame outlier detection</li><li>add test cases for multi frame outlier detection</li><li>add example usecases for WP1</li><li> documentation for WP1</li>|
        |    Week 4         | 2025/06/23  | 2025/06/29  |<ul><li>understand WP2 from LP paper and code base</li><li>start coding to generate the restricted pose space using pose PCA</li></ul>|
        |    Week 5         | 2025/06/30  | 2025/07/06  |<ul><li>complete code for pose PCA</li><li>start coding to determine the loss for WP2</li></ul>|
-       |    Week 6         | 2025/07/07  | 2025/07/13  |<ul><li>complete code to determine the loss for WP2</li><li>code test cases for WP2</li></ul>|
-       |    Week 7         | 2025/07/14  | 2025/07/20  |<ul><li>complete test case code for WP2</li><li> add example usecases for WP2</li><li>documentation for WP2</li></ul>|
+       |    Week 6         | 2025/07/07  | 2025/07/13  |<ul><li>complete code to determine the loss for WP2</li><li>add test cases for WP2</li></ul>|
+       |    Week 7         | 2025/07/14  | 2025/07/20  |<ul><li>complete adding test cases for WP2</li><li> add example usecases for WP2</li><li>documentation for WP2</li></ul>|
        |    Week 8         | 2025/07/21  | 2025/07/27  |<ul><li>understand WP3 from LP paper and code base</li><li>start coding for projecting multi camera views onto 3-PCA model</li></ul>|
        |    Week 9         | 2025/07/28  | 2025/08/03  |<ul><li>complete code for projecting multi camera views onto 3-PCA model</li><li>start coding to determine loss for WP3</li></ul>|
-       |    Week 10        | 2025/08/04  | 2025/08/10  |<ul><li>complete code to determine loss for WP3</li><li> start coding test cases for WP3</li></ul>|
-       |    Week 11        | 2025/08/11  | 2025/08/17  |<ul><li> complete coding test cases for WP3</li><li>add example usecases for WP3</li><li>documentation for WP3</li></ul>|
-       |    Week 12        | 2025/08/18  | 2025/08/24  |    any pending work and final project submission       |
+       |    Week 10        | 2025/08/04  | 2025/08/10  |<ul><li>complete code to determine loss for WP3</li><li> start adding test cases for WP3</li></ul>|
+       |    Week 11        | 2025/08/11  | 2025/08/17  |<ul><li> complete adding test cases for WP3</li><li>add example usecases for WP3</li><li>documentation for WP3</li></ul>|
+       |    Week 12        | 2025/08/18  | 2025/08/24  |<ul><li>final code/testcases/usecases/documentation cleanup</li><li>GSoC final submission</li></ul>|
   3.  I will be devoting 30-35 hours per week towards this GSoC project. 
 
 - **Communication plan**
