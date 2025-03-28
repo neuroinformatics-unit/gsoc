@@ -52,8 +52,6 @@ This project aims to enhance CellFinder by adding multi-channel support for brai
 
 - Publish a blog post showcasing improvements with 1 & 3-channel images.
 
--  Bonus (if time allows): Implement a visualization tool to display detected cells across different channels, aiding interpretation.
-
 **Implementation timeline**
 
 <table>
@@ -66,7 +64,7 @@ This project aims to enhance CellFinder by adding multi-channel support for brai
   </thead>
   <tbody>
     <tr>
-      <td><b>Community Bonding Period</b><br>Focus: Understanding</td>
+      <td><b>Community Bonding Period</b><br> Understanding</td>
       <td>
         <ol type="1">
           <li>Discuss project details with mentor and understand the codebase</li>
@@ -77,74 +75,99 @@ This project aims to enhance CellFinder by adding multi-channel support for brai
       <td>15</td>
     </tr>
     <tr>
-      <td><b>Week 1-2</b><br>Focus: Integrating attention into blob detection</td>
+      <td><b>Week 1</b><br>Modify cell candidate detection for Multichannel detection</td>
       <td>
         <ol type="1">
-          <li>Modify the blob detection pipeline to process arbitrary channels through attention.</li>
-          <li>Conduct multi-channel blob detection tests</li>
+          <li>Modify the cell candidate detection pipeline to handle N channels.</li>
+          <li>Feature Extraction for Each Channel</li>
+          <li>Normalize feature values across different channels </li>
+          <li>Combine extracted features from all channels to create a comprehensive feature representation for each cell candidate</li>
           <li>Refine based on mentor's feedback</li>
         </ol>
       </td>
       <td>35</td>
     </tr>
     <tr>
-      <td><b>Week 3-4</b><br>Focus: Neural network integration</td>
+      <td><b>Week 2</b><br>Refine Multichannel Cell Candidate Detection</td>
       <td>
         <ol type="1">
-          <li>Integrate attention modules into the neural network classifier to classify cell candidates from brain images with an arbitrary number of channels  .</li>
-          <li>Start small-scale training experiments on multi-channel brain datasets.</li>
-          <li>Refine based on mentor's feedback</li>
+          <li>Optimize feature selection across channels for better accuracy</li>
+          <li>Improve the detection algorithm based on cell shape, intensity, and texture to reduce false positives.</li>
+          <li>Validate using real test images with 1, 2, and 3 channels</li>
         </ol>
       </td>
       <td>35</td>
     </tr>
     <tr>
-      <td><b>Week 5-6</b><br>Focus: Testing </td>
+      <td><b>Week 3-4</b><br>Modify Neural Network for Multichannel Input </td>
       <td>
         <ol type="1">
-          <li>Write and finalize test cases (unit + integration tests).</li>
-          <li>Refine based on mentor's feedback</li>
+          <li>Expand the input layer to accept an arbitrary number of channels.</li>
+          <li> Adjust convolutional layers for better feature extraction.</li>
+          <li>Define new loss functions & evaluation metrics for multi-class classification.</li>
         </ol>
       </td>
       <td>35</td>
     </tr>
     <tr>
-      <td><b>Week 7-8 </b><br>Focus: Benchmarking and Documentation</td>
+      <td><b>Week 5-6 </b><br>Train the Modified Neural Network</td>
       <td>
         <ol type="1">
-          <li>Conduct large benchmark experiments on different brain image datasets.</li>
-          <li>Write detailed usage documentation for multi-channel mode.</li>
+          <li> Prepare training dataset with 1, 2, and 3-channel images..</li>
+          <li>Train initial models for classification.</li>
+          <li>Debug issues & optimize hyperparameters.</li>
+          <li>Fine-tune model performance (reduce false positives/negatives).</li>
         </ol>
       </td>
       <td>35</td>
     </tr>
     <tr>
-      <td><b>Week 9-10</b><br>Focus: Final Documentation and Blog Draft</td>
+      <td><b>Week 7</b><br>Integrate Multichannel Classification into Cellfinder</td>
       <td>
         <ol type="1">
-          <li>Start preparing blog draft (problem, approach, results, visualizations).</li>
-          <li>Final documentation polish.</li>
+          <li>Modify to enable multi-class labeling.</li>
+          <li>Ensure compatibility with existing pipeline.</li>
         </ol>
       </td>
       <td>35</td>
     </tr>
     <tr>
-      <td><b>Week 11-12</b><br>Focus: Refinement and Finalization</td>
+      <td><b>Week 8</b><br>Update Napari Visualization for Multichannel</td>
       <td>
         <ol type="1">
-          <li>Submit final blog draft to mentors for review</li>
-          <li>Address feedback and finalize all tests and documentation.</li>
+          <li>Modify napari viewer to support multi-channel overlays.</li>
         </ol>
       </td>
       <td>30</td>
     </tr>
     <tr>
-      <td><b>Week 13</b><br>Focus: Add Final Submission and Wrap-up</td>
+      <td><b>Week 9-10</b><br>Testing & Documentation</td>
       <td>
         <ol type="1">
-          <li> Submit final report.</li>
-          <li>Make final PR to the main repository.</li>
-          <li>Deliver blog post showcasing results on single-channel and multi-channel data</li>
+          <li>  Implement unit tests for modified functions.</li>
+          <li> Compare new implementation with existing single-channel approach.</li>
+          <li>Update Cellfinder documentation.</li>
+          <li>Create user guide for running Cellfinder with different channel configurations.</li>
+        </ol>
+      </td>
+      <td>35</td>
+    </tr>
+    <tr>
+    <td><b>Week 11-12</b><br>Prepare Blog Post on Multichannel Cellfinder</td>
+      <td>
+        <ol type="1">
+          <li>Write an article on detecting & classifying cells with multichannel images.</li>
+          <li>Include example workflows & results.</li>
+        </ol>
+      </td>
+      <td>35</td>
+    </tr>
+    <tr>
+    <td><b>Week 13</b><br>Project Wrap-Up & Submission</td>
+      <td>
+        <ol type="1">
+          <li>Submit final implementation & documentation..</li>
+          <li>Publish blog post & showcase results.</li>
         </ol>
       </td>
       <td>35</td>
