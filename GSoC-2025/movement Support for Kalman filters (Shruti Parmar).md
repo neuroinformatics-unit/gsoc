@@ -18,8 +18,8 @@ Here’s a quick breakdown of how my PRs relate to each other :
    - [Third PR](https://github.com/neuroinformatics-unit/movement/pull/496) ([#496](https://github.com/neuroinformatics-unit/movement/pull/496)) – Robust features: 
     adaptive noise rejection, validation checks, basic Napari visualization, optimized filtering.
 
-- **Proposal discussion link**
-Please link to the pull request where you discussed your project proposal with the community. 
+- **Proposal discussion link** : [Link](https://github.com/neuroinformatics-unit/gsoc/pull/8)
+
 
 ## Project Proposal
 
@@ -44,22 +44,24 @@ To improve motion tracking in Movement by applying Kalman filtering to smooth po
 | **Phase**                | **Dates**                | **Planned Tasks & Deliverables**                                             |
 |--------------------------|--------------------------|-----------------------------------------------------------------------------|
 | **Pre-GSoC Phase 1**     | March 24 – April 8       | - Finalizing and submitting the GSoC proposal while continuing discussions with mentors and refining my contributions |
-| **Pre-GSoC Phase 2**     | April 9 – May 8          | -  	Finalize approach with mentors, explore improvements (outlier handling, visualization), and select datasets.<br>- Ensure everything is aligned to keep the project on track. |
-| **Community Bonding**    | May 8 – June 1           | - Since the groundwork is already in place, I'll refine the existing work and plan the next steps. |
-| **Week 1**               | June 2 – June 9          | - Improve outlier detection (Mahalanobis) and fine-tune Q & R for stable tracking. |
-| **Week 2**               | June 10 – June 16        | - Use Napari to compare raw vs. filtered data and fine-tune Q & R—adjust Q to reduce lag and R to prevent jumps. |
-| **Week 3**               | June 17 – June 23        | - Optimize Kalman filter by adapting noise parameters for diverse datasets |
-| **Week 4**               | June 24 – June 30        | - Create unit tests for Kalman filter accuracy across datasets. Update documentation for better clarity and ease of contribution. |
-| **Week 5 (Midterm Prep)**| July 1 – July 7          | - Prepare for midterm evaluation, start preliminary search on identity switch detection after wrapping up core deliverables. |
+| **Pre-GSoC Phase 2**     | April 9 – May 8          | - Explore and compare different Kalman filter implementations for Movement (NumPy-based, PyKalman, Dynamax, MovingPandas, and NFoursid). Test each for RMSE, noise stability, and integration with Movement’s data structure (Already tested filterpy but it's an outdated package.)|
+| **Community Bonding**    | May 8 – June 1           | - Finalize the best Kalman filter approach with mentor's feedback. Compare methods based on accuracy, efficiency, and ease of integration.Plan the integration and refine the approach.|
+| **Week 1**               | June 2 – June 9          | - Integrate the chosen Kalman filter into Movement, ensuring it processes position data correctly and outputs smoothed position, velocity, and acceleration .<br> Run initial tests to verify library functionality and basic operation within Movement. |
+| **Week 2**               | June 10 – June 16        | - Apply the Kalman filter to Movement datasets by extracting, structuring, and filtering position data while preserving dimensions. Convert the output back into xarray DataArray objects and visualize raw vs. filtered data for comparison. |
+| **Week 3**               | June 17 – June 23        | - Fine-tune Q & R—boost Q if lagging, adjust R if too jumpy. Test across datasets, using RMSE to balance accuracy and stability. |
+| **Week 4**               | June 24 – June 30        | - Test and evaluate the Kalman filter by checking its accuracy on Movement data. Use synthetic data with added noise to see how well it performs, compare its results on both real and synthetic data.<br>- Document its strengths and limitations |
+| **Week 5 (Midterm Prep)**| July 1 – July 7          | - Wrap up core implementation, refine filtering, and make sure everything aligns with Movement’s datasets and mentor feedback.<br> - Review and update function docstrings to match Movement’s style (likely NumPy docstring format) |
 | **Week 6 (Midterm)**     | July 8 – July 14         | - Submit evaluation, review feedback, research identity switch detection methods with mentor’s guidance and research papers (Stretch goal). |
-| **Week 7**               | July 15 – July 21        | - Implement basic identity switch detection (Hungarian algorithm), test for accuracy |
-| **Week 8**               | July 22 – July 28        | - Refine the identity switch detection algorithm and test it on more complex multi-animal scenarios, starting simple and gradually increasing the complexity.<br>- Optimize based on the results. |
-| **Week 9**               | July 29 – August 4       | - Refine identity switch detection and test on increasingly complex multi-animal scenarios while starting simple. |
-| **Week 10**              | August 5 – August 11     | - Finalize algorithms, ensure smooth execution, and refine documentation |
+| **Week 7**               | July 15 – July 21        | - Explore identity switch detection methods, studying similar projects, and test a basic Hungarian algorithm on simple cases.<br>Run small-scale experiments to check feasibility and discuss findings with mentors to refine the approach |
+| **Week 8 & Week 9**      | July 22 – Aug 04         | - Improve identity switch detection, starting with simple cases and gradually increasing complexity. <br> - Conduct benchmarking using RMSE, noise reduction, and filter stability.|
+| **Week 10**              | August 5 – August 11     | - Finalize algorithms, ensure smooth execution, refine documentation  and prepare an example use case for the movement gallery |
 | **Week 11**              | August 12 – August 18    | - Address final improvements, validate results, and package deliverables for submission. |
 | **Final Week**           | August 19 – September 1  | - Freeze codebase, submit project, finalize documentation, mentor review |
 
 
+- **Project Length**
+  Medium-sized (175-hour) project
+  
 - **Communication Plan**
 
 I'll dedicate 4-5 hours/day on weekdays and 6 hours on weekends. Regular check-ins with mentors via weekly video calls (Zoom/Google Meet) and daily Zulip updates for feedback
