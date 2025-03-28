@@ -13,7 +13,7 @@
 <blockquote>
     <table>
         <tr>
-            <td rowspan="4"><strong>brainrender-napari PRs</strong></td>
+            <td rowspan="5"><strong>brainrender-napari PRs</strong></td>
             <td><a href="https://github.com/brainglobe/brainrender-napari/pull/175">#175</a></td>
             <td>Color rows of atlas manager widget</td>
         </tr>
@@ -29,6 +29,10 @@
         <tr>
             <td><a href="https://github.com/brainglobe/brainrender-napari/pull/176">#176</a></td>
             <td>Add popup warning for 2D mesh display</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/brainglobe/brainrender-napari/pull/192">#192</a></td>
+            <td>Simplify multi-threading around progressbar</td>
         </tr>
         <tr>
             <td rowspan="1"><strong>brainglobe-atlasAPI PR</strong></td>
