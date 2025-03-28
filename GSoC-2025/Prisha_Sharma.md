@@ -42,7 +42,7 @@ This project aims to enhance CellFinder by adding multi-channel support for brai
 
 ### Deliverables
 
-- Modify blob detection to support multiple channels.
+- Modify cell candidate detection to support multiple channels.
 
 - Enhance neural network for multi-channel cell classification.
 
