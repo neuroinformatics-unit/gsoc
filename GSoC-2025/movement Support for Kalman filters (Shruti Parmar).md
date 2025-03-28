@@ -8,15 +8,8 @@
 - **Location & Timezone:** Location : Jabalpur, Madhya Pradesh, India. Timezone : Asia/Kolkata  
 - **Personal Website / Portfolio (optional):** [Github Profile](https://github.com/shrutiparmar2003) , [Linkedin Profile](https://www.linkedin.com/in/shruti-parmar-0625282a2/)
 
-- **Code contribution**
-Here’s a quick breakdown of how my PRs relate to each other :
-
-   - [First PR](https://github.com/neuroinformatics-unit/movement/pull/477) ([#477](https://github.com/neuroinformatics-unit/movement/pull/477)) – Initial Kalman filter 
-     experiment using simulated motion data, compared with other filtering methods.
-   - [Second PR](https://github.com/neuroinformatics-unit/movement/pull/484) ([#484](https://github.com/neuroinformatics-unit/movement/pull/484)) – Applied Kalman 
-     filtering to real-world data (SLEAP), implemented xarray integration.
-   - [Third PR](https://github.com/neuroinformatics-unit/movement/pull/496) ([#496](https://github.com/neuroinformatics-unit/movement/pull/496)) – Robust features: 
-    adaptive noise rejection, validation checks, basic Napari visualization, optimized filtering.
+- **Code contribution** :
+   - I've been experimenting with a Kalman filter and learned a lot from my earlier PRs ([#477](https://github.com/neuroinformatics-unit/movement/pull/477) and [#484](https://github.com/neuroinformatics-unit/movement/pull/484) ), which helped shape my work in PR [#496](https://github.com/neuroinformatics-unit/movement/pull/496). While PR [#496](https://github.com/neuroinformatics-unit/movement/pull/496) is still in progress, I aim to refine the filter further by integrating it with Movement's built-in data structures.
 
 - **Proposal discussion link** : [Link](https://github.com/neuroinformatics-unit/gsoc/pull/8)
 
@@ -45,7 +38,7 @@ To improve motion tracking in Movement by applying Kalman filtering to smooth po
 |--------------------------|--------------------------|-----------------------------------------------------------------------------|
 | **Pre-GSoC Phase 1**     | March 24 – April 8       | - Finalizing and submitting the GSoC proposal while continuing discussions with mentors and refining my contributions |
 | **Pre-GSoC Phase 2**     | April 9 – May 8          | - Explore and compare different Kalman filter implementations for Movement (NumPy-based, PyKalman, Dynamax, MovingPandas, and NFoursid). Test each for RMSE, noise stability, and integration with Movement’s data structure (Already tested filterpy but it's an outdated package.)|
-| **Community Bonding**    | May 8 – June 1           | - Finalize the best Kalman filter approach with mentor's feedback. Compare methods based on accuracy, efficiency, and ease of integration.Plan the integration and refine the approach.|
+| **Community Bonding**    | May 8 – June 1           | - Finalize the best Kalman filter approach with mentor's feedback. Compare methods based on accuracy, efficiency, and ease of integration. Plan the integration and refine the approach.|
 | **Week 1**               | June 2 – June 9          | - Integrate the chosen Kalman filter into Movement, ensuring it processes position data correctly and outputs smoothed position, velocity, and acceleration .<br> Run initial tests to verify library functionality and basic operation within Movement. |
 | **Week 2**               | June 10 – June 16        | - Apply the Kalman filter to Movement datasets by extracting, structuring, and filtering position data while preserving dimensions. Convert the output back into xarray DataArray objects and visualize raw vs. filtered data for comparison. |
 | **Week 3**               | June 17 – June 23        | - Fine-tune Q & R—boost Q if lagging, adjust R if too jumpy. Test across datasets, using RMSE to balance accuracy and stability. |
