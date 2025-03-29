@@ -75,25 +75,15 @@ This project aims to enhance CellFinder by adding multi-channel support for brai
       <td>15</td>
     </tr>
     <tr>
-      <td><b>Week 1</b><br>Modify cell candidate detection for Multichannel detection</td>
+      <td><b>Week 1-2</b><br>Modify cell candidate detection for Multichannel detection</td>
       <td>
         <ol type="1">
           <li>Modify the cell candidate detection pipeline to handle N channels.</li>
           <li>Feature Extraction for Each Channel</li>
           <li>Normalize feature values across different channels </li>
           <li>Combine extracted features from all channels to create a comprehensive feature representation for each cell candidate</li>
-          <li>Refine based on mentor's feedback</li>
-        </ol>
-      </td>
-      <td>35</td>
-    </tr>
-    <tr>
-      <td><b>Week 2</b><br>Refine Multichannel Cell Candidate Detection</td>
-      <td>
-        <ol type="1">
-          <li>Optimize feature selection across channels for better accuracy</li>
-          <li>Improve the detection algorithm based on cell shape, intensity, and texture to reduce false positives.</li>
           <li>Validate using real test images with 1, 2, and 3 channels</li>
+          <li>Refine based on mentor's feedback</li>
         </ol>
       </td>
       <td>35</td>
@@ -103,7 +93,9 @@ This project aims to enhance CellFinder by adding multi-channel support for brai
       <td>
         <ol type="1">
           <li>Expand the input layer to accept an arbitrary number of channels.</li>
-          <li> Adjust convolutional layers for better feature extraction.</li>
+          <li> Adjust CNN Feature Extractor for Multi-Channel Input.</li>
+          <li> Modify fully connected (FC) layers to enable multi-class classification using a softmax output.</li>
+          <li>Ensure compatibility of skip connections in Voxception-ResNet with the modified feature maps.</li>
           <li>Define new loss functions & evaluation metrics for multi-class classification.</li>
         </ol>
       </td>
@@ -125,8 +117,11 @@ This project aims to enhance CellFinder by adding multi-channel support for brai
       <td><b>Week 7</b><br>Integrate Multichannel Classification into Cellfinder</td>
       <td>
         <ol type="1">
-          <li>Modify to enable multi-class labeling.</li>
-          <li>Ensure compatibility with existing pipeline.</li>
+          <li>Integrate trained multi-channel classification model into Cellfinder.</li>
+          <li>Modify Cellfinder’s data pipeline to process multi-class outputs.</li>
+          <li>Ensure detected cell labels are correctly assigned and stored.</li>
+          <li>Validate integration with real test images.</li>
+          <li>Ensure compatibility with existing Cellfinder visualization and segmentation tools.</li>
         </ol>
       </td>
       <td>35</td>
