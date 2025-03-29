@@ -187,27 +187,60 @@
       <td><b>Week 11</b><br>Mon 8/11 - Sun 8/17<br><i>(Summer break)</i></td>
       <td>
         <ol type="1">
-          <li>Complete widget UI implementation</li>
-          <li>Add data visualization components</li>
-          <li>Complete implementation of remaining planned features</li>
-          <li><b>CODE FREEZE at end of week</b></li>
+          <li>Continue basic widget functionality implementation</li>
+          <li>Design detailed widget UI components</li>
+          <li>Implement data source selection interface</li>
         </ol>
       </td>
-      <td>20</td>
+      <td>40</td>
     </tr>
     <tr>
       <td><b>Week 12</b><br>Mon 8/18 - Sun 8/24<br><i>(Summer break)</i></td>
       <td>
         <ol type="1">
+          <li>Complete widget UI implementation</li>
+          <li>Implement query interface for different data types</li>
+          <li>Add data visualization components
+          </li>
+        </ol>
+      </td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td><b>Week 13</b><br>Mon 8/25 - Sun 9/1<br><i>(Summer break)</i></td>
+      <td>
+        <ol type="1">
+          <li>Add data visualization components</li>
+          <li>Implement results display interface</li>
+          <li>Integrate visualization with napari layers</li>
+        </ol>
+      </td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td><b>Week 14</b><br>Mon 9/2 - Sun 9/8<br><i>(Summer break)</i></td>
+      <td>
+        <ol type="1">
+          <li>Complete implementation of remaining planned features</li>
+          <li><b>CODE FREEZE at end of week</b></li>
+        </ol>
+      </td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td><b>Week 15</b><br>Mon 9/9 - Sun 9/15<br><i>(Summer break)</i></td>
+      <td>
+        <ol type="1">
           <li>Conduct comprehensive testing</li>
           <li>Implement integration tests</li>
           <li>Fix identified issues</li>
+          <li>Begin user documentation</li>
         </ol>
       </td>
-      <td>15</td>
+      <td>30</td>
     </tr>
     <tr>
-      <td><b>Week 13 (Last Week)</b><br>Mon 8/25- Sun 9/1<br><i>(Summer break)</i></td>
+      <td><b>Week 16 (Last Week)</b><br>Mon 9/16 - Sun 9/22<br><i>(Summer break)</i></td>
       <td>
         <ol type="1">
           <li>Complete user documentation</li>
@@ -216,15 +249,13 @@
           <li>Reflect on and summarize the tasks I have completed so far</li>
         </ol>
       </td>
-      <td>15</td>
+      <td>25</td>
     </tr>
     <tr>
       <td><b>Stretch Goals (If time allows)</b></td>
       <td>
         <ol type="1">
           <li>Advanced Visualization Options: Settings for custom camera positions, background colors, etc.</li>
-          <li>Support for additional data types (spatial transcriptomics, connectivity data)</li>
-          <li>Additional data source integrations</li>
         </ol>
       </td>
       <td>20</td>
