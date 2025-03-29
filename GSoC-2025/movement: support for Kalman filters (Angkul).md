@@ -1,6 +1,6 @@
 ## movement: support for Kalman filters (Angkul)
 
-## Persona details
+## Personal details
 
 * **Full name**: Angkul Puniya  
 * **Email**: [angkul58@gmail.com](mailto:angkul58@gmail.com)  
@@ -47,20 +47,20 @@
 
 | Time Frame | Tasks & Deliverables | Hours |
 | :---- | :---- | :---- |
-| **Pre GSOC period**   March 24 \- May 8 | \- Take a deeper dive into the work done so far, learn the Kalman filter, explore the other existing implementations of the Kalman Filter([PyKalman](https://github.com/pykalman/pykalman), [nfoursid](https://nfoursid.readthedocs.io/en/latest/source/kalman.html)) <br> \- Explore the movement codebase, docs and testing things, fix bugs, implement examples to understand the internal working of movement functions. | 15 |
-| **Community Bonding Period (Before week 1\)**   May 8 \- June 1 | \- Research to fix the identity switch problem in Multi-Animal Tracking so that we can save time in later weeks and directly work on fixing this problem. Regular discussion with mentors. <br>\- Discuss and decide the best possible method to implement the Kalman Filter with the mentor. | 15 |
-| **Week 1** <br>  June 2 \- June 8 | \- Implement the basic Kalman Filter for position smoothing.   <br>\- Test the position smoothing feature on the movement dataset and synthetic data, ensuring it is working as expected. Ask mentors for feedback and suggestions. | 15 |
-| **Week 2** <br>  June 9 \- June 15 | \- Extend the Kalman Filter to handle velocity and acceleration smoothing.   <br>\- Derive the velocity and acceleration data from the position data using the kinematics module for testing purposes. Test the implementation by using synthetic data. <br>\- Test the velocity and acceleration smoothing on the derived dataset. Ask mentors for feedback and suggestions. | 15 |
-| **Week 3** <br>  June 16 \- June 22 | \- Discuss the current progress with the mentor and ask for review and suggestions.   <br>\- Optimize the Kalman filter  Work on the suggestions and unit testing for the smoothing functionality. | 15 |
-| **Week 4** <br>  June 23 \- June 29 | \- Write the docstring for the Kalman filter functions. Write documentation and guide for the Kalman filter and smoothing feature.   <br>\- Create an initial example for the movement gallery. | 15 |
-| **Week 5** <br>  June 30 \- July 6 | \- Ask mentors for feedback and refined the smoothing feature based on feedback.   <br>\- Finalize the integrations, documentation, and prepare for mid-term examination. | 15 |
-| **Week 6** <br>  July 7 \- July 13 | \- **Mid-term Submission:** Smoothing features should be fully implemented, tested, and documented. <br>\- Submit the mid-term evaluation.  | 15 |
-| **Week 7** <br>  July 14 \- July 20 | \- Research, discuss, and design Kalman filter approach for identity switch correction. This feature will be more difficult to implement.  <br> \- Collect the data related to identity switch, discuss with mentors, and set up the development environment. | 15 |
-| **Week 8** <br>  July 21 \- July 27 | \- Implement data association using Hungarian Algorithm or Mahalanobis distance. However, other methods might be possible after research. I explained it in [this comment](https://github.com/neuroinformatics-unit/gsoc/pull/4#discussion_r2017404525). <br>\- Start implementing the Kalman filter prediction, cost matrix for multi-animal tracking. <br>\- Test basic identity switches detection. | 15 |
-| **Week 9** <br>  July 28 \- August 3 | \- Improve identity correction using re-identification techniques such as confidence scores.   <br>\- Implement the tests for identity switch correction and ask mentors for feedback. | 15 |
-| **Week 10** <br>  August 4 \- August 10 | \- Optimize Kalman filter performance for multi-animal tracking. Optimization is required to make sure that switch corrections are identified correctly.   <br>\- Integration of identity correction in the movement codebase. <br>\- Ask mentors for feedback and suggestions. | 15 |
-| **Week 11** <br>  August 11 \- August 17 | \- Start writing the documentation for Identity switch correction feature.   <br>\- Freeze the codebase. | 14 |
-| **Week 12** <br>  August 18 \- August 24 | \- Finish remaining tests and documentation..   <br>\- Code polishing, final testing & performance checks. <br>\- Submit the final GSOC report. | 15 |
+| **Pre GSOC period**   March 24 \- May 8 | \- Explore the movement codebase, docs and testing things, fix bugs, implement examples to understand the internal working of movement functions. <br>\- Understand the Kalman filter, explore and experiment with the other existing implementations of the Kalman Filter([PyKalman](https://github.com/pykalman/pykalman), [nfoursid](https://nfoursid.readthedocs.io/en/latest/source/kalman.html), [dynamax](https://probml.github.io/dynamax/), [movingpandas](https://movingpandas.readthedocs.io/en/main/api/trajectorysmoother.html)). I already experimented with [darts](https://unit8co.github.io/darts/generated_api/darts.models.filtering.kalman_filter.html)(it doesn’t provide any flexibility) and [filterpy](https://filterpy.readthedocs.io/en/latest/kalman/KalmanFilter.html)(it is outdated) so these are not suitable. <br>\- Experiment includes basic implementations of the Kalman filter using these libraries and applying them to the movement dataset. This helps in assessing each library's flexibility, ease of intergration with the movement library. For results, each implementation will also be tested on synthetic noisy data and see if it can recover the true motion, if remove spikes or not, and smooth the data or not.  | 15 |
+| **Community Bonding Period (Before week 1\)**   May 8 \- June 1 | \- Discuss and decide the best possible method to implement the Kalman Filter with the mentors based on the experiment's results. <br>\- Research to fix the identity switch problem in Multi-Animal Tracking so that we can save time in later weeks and directly work on fixing this problem. Regular discussion with mentors. | 15 |
+| **Week 1**   June 2 \- June 8 | \- Implement the basic Kalman Filter for position smoothing and generate the synthetic data for position.   <br>\- Test the position smoothing feature on the movement dataset and synthetic data, ensuring it is working as expected. Fix bugs if any occurs. Ask mentors for feedback and suggestions. | 15 |
+| **Week 2**   June 9 \- June 15 | \- Extend the Kalman Filter to handle velocity and acceleration smoothing.   <br>\- Derive the velocity and acceleration data from the position data using the kinematics module for testing purposes. <br>\- Test the velocity and acceleration smoothing on the movement dataset and on the synthetic dataset. Ask mentors for feedback and suggestions. | 15 |
+| **Week 3**   June 16 \- June 22 | \- Optimize the Kalman filter parameters if the chosen Kalman filter implementation doesn’t support the automatic optimization of these parameters. Libraries like PyKalman, Dynamax support the EM(Expectation-Maximization) algorithm which automatically optimizes the parameters. <br>\- Discuss the current progress with the mentor and ask for review and suggestions.   <br>\- Work on the suggestions and unit testing for the smoothing functionality. | 15 |
+| **Week 4**   June 23 \- June 29 | \- Write the docstring for the implemented Kalman filter. Write documentation and guide for the Kalman filter and smoothing feature.   <br>\- Create an initial example of the Kalman filter for the movement gallery. | 15 |
+| **Week 5**   June 30 \- July 6 | \- Ask mentors for feedback and refine the smoothing feature based on feedback.   <br>\- Finalize the integrations, documentation, and prepare for mid-term examination. | 15 |
+| **Week 6**   July 7 \- July 13 | \- **Mid-term Submission:** Run the final tests,to ensure that Kalman filter implementations are working as expected <br>\- Submit the mid-term evaluation. | 15 |
+| **Week 7**   July 14 \- July 20 | \- Research, explore methods to fix the identity switches correction. I will continue the progress of the community bonding period. According to my current research the Hungarian Algorithm, Mahalanobis distance and Joint Probabilistic Data Association (JPDA) are possible solutions. Combining the Hungarian Algorithm and Mahalanobis distance is better over JPDA because it is simple, effective and computational cost effective.  <br>\- Collect the data for identity switch, discuss the approach with mentors, and set up the development environment. | 15 |
+| **Week 8**   July 21 \- July 27 | \- The proposed steps are: predict the future positions of identity tracked animals using the Kalman filter, and create a distance or cost matrix by calculating the Mahalanobis distance between future and original positions. Apply the Hungarian Algorithm on the cost matrix to find the optimal assignments of identities and update the identities. However we can use Mahalanobis distance or Hungarian Algorithm alone but combining both of them provide a more robust solution. <br>\- Implement the Mahalanobis distance and Hungarian Algorithms for identity switch correction. Use the implemented Kalman filter to predict positions. <br>\- Discuss the implemented solution with mentors and work on the suggestions. | 15 |
+| **Week 9**   July 28 \- August 3 | \- Test the implemented solution on the collected dataset. Test on the cases where two animals crossed paths. <br>\- Improve identity correction using re-identification techniques such as confidence scores. If the confidence score is less than the threshold for a corrected identity then that identity predicted is wrong and so initializes the other identity. <br>\- | 15 |
+| **Week 10**   August 4 \- August 10 | \- Implement the unit tests for identity switch correction and ask mentors for feedback and suggestions. <br>\- Integration of identity correction in the movement library. | 15 |
+| **Week 11**   August 11 \- August 17 | \- Create a use case example of identity switch corrections implementation. <br>\- Start writing the documentation for identity switch correction. | 15 |
+| **Week 12**   August 18 \- August 24 | \- Code polishing, final testing, performance checks and finalizing the documentation. <br>\- Freeze codebase  <br>\- Submit the project and final GSOC report. | 15 |
 
 * **Communication plan**  
   I will communicate with my mentors daily on Zulip chat for guidance and continuous feedback. To review the progress from the previous week and discuss plans for the upcoming week, I would appreciate weekly video calls with my mentors.
@@ -74,11 +74,11 @@
 
 	There are two main reasons why I wanted to work on this project. First of all this is a rare and exciting project(there are only a few  
 	projects which research on the animals) and second this project aligns with my skill set. I always wanted to work on a project where I       
-  can apply my skill set in a real world scenario. So, this project gives me that opportunity. To be honest, I have never been good with   
-  the data cleaning and processing but this time the work I have done so far for this project(all issues I solved, PRs), the time I spent,  
-  gives me a chance to improve my skills and I understood the working of these libraries under the hood. This is one of the most exciting and important reason which motivates me to work on this project. 
+can apply my skill set in a real world scenario. So, this project gives me that opportunity. To be honest, I have never been good with   
+the data cleaning and processing but this time the work I have done so far for this project(all issues I solved, PRs), the time I spent,  
+gives me a chance to improve my skills and I understood the working of these libraries under the hood. This is one of the most exciting and important reason which motivates me to work on this project. 
 
-  This project is more than about data, this project gives me an opportunity to contribute to open-source research and I will be helping so many  future researchers, scientists. This is very exciting for me and I am very excited to work on this project.  
+This project is more than about data, this project gives me an opportunity to contribute to open-source research and I will be helping so many future researchers, scientists. This is very exciting for me and I am very excited to work on this project.  
 	
 
 * **Match: why me**  
@@ -90,6 +90,8 @@
   I will be fully available during the working period as I will have a 3 month summer break from May to July. I will be most active between Monday and Friday from 3 pm to 3 am IST.
 
 ## GSOC
+
+I have been contributing to the 
 
 * **GSoC experience**  
   For me, GSoC is more than just a program—it's a chance to learn, grow, and be part of something bigger. As a first-time participant, I am very excited to work closely with mentors, gain new skills, and grow as a developer. Beyond just coding, I see GSoC as a chance to develop problem-solving skills, collaborate in a structured development environment, and make meaningful contributions to open source. Most of all, I can’t wait to make meaningful contributions in the research with the help of movement, learn from others, and give back to the community that has taught me so much. This is going to be an incredible journey\!  
