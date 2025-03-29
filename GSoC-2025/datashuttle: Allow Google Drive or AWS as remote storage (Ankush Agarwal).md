@@ -99,13 +99,15 @@ The real-world impact of this project (datashuttle project), the technical chall
 
 **Match: Why Me?**
 
+I am currently pursuing my Bachelor of Technology degree in Information Technology branch from Dr. B.R. Ambedkar National Institute of Technology Jalandhar. In my 3rd year of undergrad I have served as a founder in building the product [ColdScribe](https://www.producthunt.com/products/coldscribe#coldscribe). Coldscribe is an AI tool which generates customised cold email. It uses Nextjs, Django and AWS services. Moreover, I have built a [Next.js landing page template](https://theankushagarwal.gumroad.com/l/NextjsLandingPage) and sold it on Gumroad, showcasing my passion for technology and continuous learning. 
+
 The combination of my technical expertise along with my current work at datashuttle repository positions me to handle this project effectively.
 
 1. Through my previous work I showed my ability to use the datashuttle codebase as I contributed to it.
 2. My knowledge of Python includes programming with external APIs
 3. I have obtained basic knowledge of Google Drive and AWS together with other cloud platforms.
 
-Additionally, I like to write detailed oriented and well documented code. I will thoroughly test my code before raising PR. I am punctual and will deliver my work on time. Moreover, I am currently pursuing my Bachelor of Technology degree in Information Technology branch and my undergrad knowledge will also be helpful. 
+Additionally, I like to write detailed oriented and well documented code. I will thoroughly test my code before raising PR. I am punctual and will deliver my work on time. My undergrad knowledge will also be helpful. 
 
 Apart from this, in the past I have cleared JEE Mains examination and secured [98.75](https://drive.google.com/file/d/1CIgjOKSJvJNsuo1A_1i1n2a6zRfnDQwV/view?usp=sharing) percentile. It is considered one of the toughest logical examination of India and around 1 million students appear for this examination. 
 
