@@ -3,7 +3,7 @@
 
 ## Personal details
 Please include the following information:
-- **Full name** (include preferred name if desired): Ankush Agarwal
+- **Full name** : Ankush Agarwal
 - **Email** : ankush.agarwal.202@gmail.com
 - **GitHub username** : TheAnkushAgarwal
 - **Zulip username** : Ankush Agarwal
@@ -16,7 +16,7 @@ Please include the following information:
 
 - **Proposal discussion link**
 
-    Please link to the pull request where you discussed your project proposal with the community. 
+    [neuroinformatics-unit#30](https://github.com/neuroinformatics-unit/gsoc/pull/30)
 
 ## Project proposal 
 
