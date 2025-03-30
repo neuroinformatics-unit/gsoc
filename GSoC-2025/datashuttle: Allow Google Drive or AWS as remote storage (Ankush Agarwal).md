@@ -11,12 +11,11 @@ Please include the following information:
 - **Personal website / project portfolio** (optional)
 - **Code contribution** :
   
-  - [PR #481](https://github.com/neuroinformatics-unit/datashuttle/pull/481): Add v* in workflow tags to solve issue [#440](https://github.com/neuroinformatics-unit/datashuttle/issues/440). This PR in very useful for ensuring that incorrect-formatted tags are not accidentally pushed.
-  - [PR #476](https://github.com/neuroinformatics-unit/datashuttle/pull/476) : Enable the 'save' button on configs when widget input is changed to solve issue [#330](https://github.com/neuroinformatics-unit/datashuttle/issues/330). 
+  - [PR #481](https://github.com/neuroinformatics-unit/datashuttle/pull/481): Add v* in workflow tags to solve issue [#440](https://github.com/neuroinformatics-unit/datashuttle/issues/440). This PR got merged and is very useful for ensuring that incorrect-formatted tags are not accidentally pushed.
+  - [PR #476](https://github.com/neuroinformatics-unit/datashuttle/pull/476) : Enable the 'save' button on configs when widget input is changed to solve issue [#330](https://github.com/neuroinformatics-unit/datashuttle/issues/330). This PR closes the issue [#330](https://github.com/neuroinformatics-unit/datashuttle/issues/330) as the benefits of the functionality added were outweighed by costs in code implementation, due to edge cases that the original issue [#330](https://github.com/neuroinformatics-unit/datashuttle/issues/330) did not consider. 
 
 - **Proposal discussion link**
-  
-    [neuroinformatics-unit#31](https://github.com/neuroinformatics-unit/gsoc/pull/31)
+  - [neuroinformatics-unit#31](https://github.com/neuroinformatics-unit/gsoc/pull/31)
 
 ## Project proposal 
 
