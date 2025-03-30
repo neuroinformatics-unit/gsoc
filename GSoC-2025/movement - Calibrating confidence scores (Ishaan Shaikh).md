@@ -13,9 +13,7 @@
     2. [Correct confidence_array shape in from_numpy example docstring](https://github.com/neuroinformatics-unit/movement/pull/492)  
     3. [Set print_report to False by default in filtering functions](https://github.com/neuroinformatics-unit/movement/pull/493)
 
-- **Proposal discussion link**:
-
-     
+- **Proposal discussion link**: https://github.com/neuroinformatics-unit/gsoc/pull/11
 
 ## Project proposal 
 
@@ -28,34 +26,36 @@
 
     **Minimal Deliverables**  
 
-    - Implement a **confidence calibration method** for at least one pose estimation framework (DeepLabCut, SLEAP, LightningPose, or Anipose).  
+    - Implement a **confidence calibration method** for at least one pose estimation framework (DeepLabCut, SLEAP, LightningPose, or Anipose). Since confidence score computation varies across frameworks, comparing 2-3 calibration techniques can help determine the most robust and adaptable approach.
     - Develop **unit tests** to validate calibration performance.  
     - Create **documentation** explaining the calibration method and integration process.  
     - Provide an **example use case** in the movement gallery.  
+    - Write a **blog post** summarizing the implementation, challenges, and findings to engage the open-source community.  
 
     **Stretch Goals (If Time Allows)**  
     - Extend calibration support to **multiple** pose estimation frameworks instead of just one.   
-    - Improve **efficiency and scalability** of the calibration process for larger datasets.  
-    - Explore the **impact** of confidence calibration on **downstream tasks**, such as behavior analysis.
+    - Improve **efficiency and scalability** of the calibration process for larger datasets by using **parallelization** and leveraging high-confidence keypoints as pseudo-ground truth.
+    - Explore the **impact** of confidence calibration on **downstream tasks** by analyzing how calibration affects subsequent processing such as smoothing movement trajectories or improving behavior segmentation and assessing performance changes like improved tracking accuracy and reduced false positives/negatives.
+
 
 **Weekly Timeline:**  
 
-| **Week** | **Dates** | **Tasks & Deliverables** | **Hours/Week** |
-|----------|----------|-------------------------|---------------|
-| **Up Till May 8** | Until May 8 | Familiarize with movement codebase, explore confidence scores in pose estimation frameworks, fix minor issues, discuss project details with mentor, and review method used in keypoint-moseq. | 10-15 |
-| **Community Bonding** | May 8 – June 1 | Set up the development environment, Finalize a framework for implementing calibration, choosing between DLC or SLEAP, as they are the most widely used in the movement, research and try out existing calibration techniques, and develop a detailed implementation plan. | 10-15 |
-| **Week 1 & 2** | June 2 – June 15 | Implement data preprocessing pipeline for confidence scores and keypoint errors. Start regression-based calibration and discuss evaluation metrics with mentor. | 25-30 |
-| **Week 3 & 4** | June 16 – June 29 | Validate and refine regression-based calibration, implement logistic regression calibration, and develop unit tests. Begin benchmarking calibrated vs. uncalibrated confidence scores. | 25-30 |
-| **Week 5 & 6 (Midterm Evaluation)** | June 30 – July 13 | Start integrating the calibration method into movement. Ensure usability and efficiency. Submit midterm evaluation by July 18. | 30-35 |
-| **Week 7 & 8** | July 14 – July 27 | Implement documentation and develop an example use case for movement gallery demonstrating the impact of confidence calibration. | 30-35 |
-| **Week 9 (Buffer Period)** | July 28 – Aug 3 | Address mentor feedback, fix bugs, and optimize performance to ensure a robust implementation. | 25-30 |
-| **Week 10 & 11** | Aug 4 – Aug 17 | Finalize tests, ensure the code is maintainable and well-integrated, and complete any outstanding documentation or usability improvements. | 25-30 |
-| **Week 12 (Final Submission)** | Aug 18 – Aug 25 | Submit final project, mentor evaluation, and write a blog post summarizing implementation and findings. | 20-25 |
-| **Post GSoC** | After Aug 25 | Continue contributing to **movement**, improving calibration methods, and exploring research applications in pose estimation confidence calibration. | N/A |
+| **Week & Dates** | **Tasks & Deliverables** |
+|------------------|-------------------------|
+| **Community Bonding (May 8 – June 1)** | Set up the development environment, finalize a framework for implementing calibration choosing between DLC or SLEAP, as they are the most widely used in movement, research and try out existing calibration techniques, and develop a detailed implementation plan. |
+| **Week 1 & 2 (June 2 – June 15)** | Implement data preprocessing for confidence scores and keypoint errors. This includes cleaning raw data, normalizing and scaling confidence scores for consistency, aligning keypoint detections with ground truth labels, and applying transformations. Begin experimenting with multiple calibration techniques and discuss evaluation metrics with the mentor. |
+| **Week 3 & 4 (June 16 – June 29)** | Start implementing the chosen calibration method. Evaluate its effectiveness and refine it based on initial results. Integrate unit tests to validate correctness at each step. Begin benchmarking calibrated vs. uncalibrated confidence scores. |
+| **Week 5 & 6 (June 30 – July 13) (Midterm Evaluation)** | Integrate the selected calibration method into movement. For usability, write detailed documentation and implement integration tests to ensure easy adoption by other developers. For efficiency, apply batch processing where appropriate. Submit midterm evaluation by July 18. |
+| **Week 7 & 8 (July 14 – July 27)** | Present side-by-side comparisons of pose outputs before and after calibration along with confidence histograms to demonstrate improvements in score distributions. Compute metrics such as Expected Calibration Error, **analyze confidence vs accuracy** to show that calibrated scores better reflect true accuracy. Ensure results are well-documented with sample code. |
+| **Week 9 (July 28 – Aug 3) (Buffer Period)** | Address mentor feedback, fix bugs, and optimize performance to ensure a robust implementation. |
+| **Week 10 & 11 (Aug 4 – Aug 17)** | Finalize all code, improve maintainability, and ensure proper integration into movement. Conduct additional small-scale evaluations if necessary. Complete any remaining documentation. |
+| **Week 12 (Aug 18 – Aug 25) (Final Submission)** | Submit final project, mentor evaluation, and write a blog post summarizing implementation and findings. |
+| **Post GSoC (After Aug 25)** | Continue contributing to **movement**, exploring broader applications in movement analysis, and engaging with the community for future development. |
+
 
 - **Communication plan**
 
-    I plan to maintain regular communication with my mentors to ensure steady progress and alignment with project goals. I will **provide weekly updates** on my progress, challenges, and next steps through **Zulip** to keep discussions documented. Additionally, in-depth feedback, troubleshooting, and planning will be discussed in the bi-weekly **community calls**. For quick questions or clarifications, I will use **Zulip** and **GitHub issues**.
+    I plan to maintain regular communication with my mentors to ensure steady progress and alignment with project goals. I will **share daily updates** on my progress, challenges, and next steps through **Zulip** to keep discussions documented. Additionally, planning will be discussed in the bi-weekly **community calls**. Separate **Zoom meetings** will be scheduled as needed for in-depth discussions and problem-solving.
 
 ## Personal statement
 
@@ -78,7 +78,7 @@
 
 - **Availability**
 
-    In the coding period, I will work for at least 4 to 5 hours or even more if required everyday until the completion of the project. I have a 2-month long vacation after May 17 and no other commitments in hand so major part of the project will be implemented in this duration.
+    In the coding period, I will work for at least 5 to 6 hours or even more if required everyday until the completion of the project. I have a 2-month long vacation after May 17 and no other commitments in hand so major part of the project will be implemented in this duration.
 
 ## GSoC
 
@@ -90,4 +90,4 @@
 
 - **Are you also applying to projects with other organisations in GSoC 2025?**
 
-    I am applying exclusively to NIU for GSoC 2025 because this project aligns closely with my interests in confidence calibration, pose estimation, and machine learning.
+    I am applying exclusively to NIU for GSoC 2025 because this project aligns closely with my interests in pose estimation, and machine learning.
