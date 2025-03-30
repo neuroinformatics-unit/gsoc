@@ -1,1 +1,46 @@
+Project title
+movement: web-based graphical user interface(Khushi Sharma)
+
+Personal details
+
+Full name : Khushi Sharma
+
+Email: khsharma2503@gmail.com
+
+GitHub username: khushi-2503
+
+Zulip username: Khushi Sharma
+
+Location & time-zone : India (UTC+5:30)
+
+Personal website / project portfolio (optional): https://khushi-2503.github.io/personal-website/
+
+Code contribution : https://github.com/neuroinformatics-unit/movement/pull/528
+
+Proposal discussion link : https://neuroinformatics.zulipchat.com/#narrow/channel/405740-General/topic/Google.20Summer.20of.20Code/near/509024316
+Project proposal
+Length: max 1 page
+
+Synopsis
+
+Briefly explain: what is the project about? Why is it important? What are the goals? What are the deliverables? How would the open source community benefit from this project?
+
+Implementation timeline
+
+Please include the following information:
+
+A bullet point list with minimal set of deliverables
+Additional stretch goals or "if time allows" deliverables (optional)
+A detailed weekly timeline: when do you plan to do what?
+Please use a week as a minimal unit of time, and include any planned vacations or other commitments.
+This timeline could be formatted as a table.
+Remember to also include the number of hours per week you plan to work on the GSoC project.
+When estimating the required time for a task, keep in mind deliverables should include investigation/research, coding and documentation.
+The default schedule for GSoC is 12 weeks - see the GSoC timeline for precise dates.
+Also please specify any prep work you plan to do during the "Community bonding period".
+Usually week 1's deliverables already include some code. Week 6 marks the mid-term point, where usually more than half of the project should be completed. At the end of week 11 you may want to try to "freeze" the code and complete any remaining tests or documentation in weeks 11 and 12.
+Communication plan
+
+Please explain: how do you plan to communicate with your mentor? How often? (e.g., daily or weekly stand-ups, longer meetings..?) What communication channels will you use? (e.g., video calls, Zulip chat...?)
+
 
