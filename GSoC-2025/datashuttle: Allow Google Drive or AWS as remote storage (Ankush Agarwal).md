@@ -11,8 +11,8 @@ Please include the following information:
 - **Personal website / project portfolio** (optional)
 - **Code contribution** :
   
-  [Solved Issue #440](https://github.com/neuroinformatics-unit/datashuttle/pull/481)
-  [Solved Issue #330](https://github.com/neuroinformatics-unit/datashuttle/pull/476)
+  - [PR #481](https://github.com/neuroinformatics-unit/datashuttle/pull/481): Add v* in workflow tags to solve issue [#440](https://github.com/neuroinformatics-unit/datashuttle/issues/440). This PR in very useful for ensuring that incorrect-formatted tags are not accidentally pushed.
+  - [PR #476](https://github.com/neuroinformatics-unit/datashuttle/pull/476) : Enable the 'save' button on configs when widget input is changed to solve issue [#330](https://github.com/neuroinformatics-unit/datashuttle/issues/330). 
 
 - **Proposal discussion link**
   
