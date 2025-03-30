@@ -10,12 +10,10 @@ Please include the following information:
 - **Location & time-zone** : India (IST - Indian Standard Time, UTC +5:30)
 - **Personal website / project portfolio** (optional)
 - **Code contribution** :
-- [Solved Issue #440](https://github.com/neuroinformatics-unit/datashuttle/pull/481)
-- [Solved Issue #330](https://github.com/neuroinformatics-unit/datashuttle/pull/476)
-
+  [Solved Issue #440](https://github.com/neuroinformatics-unit/datashuttle/pull/481)
+  [Solved Issue #330](https://github.com/neuroinformatics-unit/datashuttle/pull/476)
 
 - **Proposal discussion link**
-
     [neuroinformatics-unit#30](https://github.com/neuroinformatics-unit/gsoc/pull/30)
 
 ## Project proposal 
@@ -129,4 +127,4 @@ Google Summer of Code will deliver the following benefits to me:
 
 **Are you also applying to projects with other organisations in GSoC 2025?**
 
-I am not applying to any other GSoC projects. I have chosen Datashuttle because it combines my skills perfectly and provides me with existing knowledge of the codebase due to earlier work.
+I am not applying to any other GSoC organisation. I have chosen Datashuttle because it combines my skills perfectly and provides me with existing knowledge of the codebase due to earlier work.
