@@ -119,7 +119,7 @@ I am fully available to commit approximately 40 hours per week to this project t
 
 
 Google Summer of Code will deliver the following benefits to me:
-1. To recieve valuable mentorship and guidance from experienced developers.
+1. To receive valuable mentorship and guidance from experienced developers.
 2. The participation in this open source project will help me develop experience in building meaningful contributions to both real-world applications and open source systems.
 3. Growth in my technical skills.
 4. I will have the ability to establish myself as a future developer for the Neuroinformatics Unit organization.
