@@ -12,16 +12,27 @@
     - Added thread workers to transfer data asynchronously in datashuttle TUI without freezing the screen allowing the TUI to display a loading animation indicating transfer in progress.
         - Issue: [#431](https://github.com/neuroinformatics-unit/datashuttle/issues/431) (closed)
         - PR: [#479](https://github.com/neuroinformatics-unit/datashuttle/pull/479) (merged)
-    
-    - Implemented support for SSH to Windows Machine. The current method of setting up SSH assumes the target machine to be linux/unix. 
-        - Issue: [#450](https://github.com/neuroinformatics-unit/datashuttle/issues/450)
-        - PR: [#477](https://github.com/neuroinformatics-unit/datashuttle/pull/477)
 
-    - Implemented functionality to search for both central and local repositories for suggesting next subject/session in the TUI.
+    - Developed a prototype version of the core project adding Google Drive and AWS S3 support in the Datashuttle Python API and TUI
+        - Issue: [#407](https://github.com/neuroinformatics-unit/datashuttle/issues/407)
+        - PR: [#503](https://github.com/neuroinformatics-unit/datashuttle/pull/503) 
+    
+    - Implemented functionality to search both central and local repositories for suggesting next subject/session in the TUI.
         - Issue: [#409](https://github.com/neuroinformatics-unit/datashuttle/issues/409)
         - PR: [#484](https://github.com/neuroinformatics-unit/datashuttle/pull/484)
 
-- **Proposal discussion link**
+    - Implemented support for SSH to Windows Machine. The current method of setting up SSH assumes the target machine to be linux/unix. 
+        - Issue: [#450](https://github.com/neuroinformatics-unit/datashuttle/issues/450)
+        - PR: [#477](https://github.com/neuroinformatics-unit/datashuttle/pull/477)
+    
+    - Added test for renaming file/folder on directorytree in TUI
+        - Issue: [#323](https://github.com/neuroinformatics-unit/datashuttle/issues/323) (closed)
+        - PR: [#496](https://github.com/neuroinformatics-unit/datashuttle/pull/496) (merged)
+
+    - Reviewed testing approach for testing SSH transfers with Docker images in PR [#208](https://github.com/neuroinformatics-unit/datashuttle/pull/208)
+        - Review link: [208/review](https://github.com/neuroinformatics-unit/datashuttle/pull/208#pullrequestreview-2708596155)
+
+- **Proposal discussion link**: [GSoC PR #9](https://github.com/neuroinformatics-unit/gsoc/pull/9)
 
 ## Project Proposal
 
@@ -52,7 +63,7 @@
 
     **Stretch Goals**
 
-    - SSH testing with Docker containers.
+    - Adding support for additional storage options like Dropbox, Cloudflare, Ceph, etc. after surveying 
     - Progress bar for data transfers.
 
 
@@ -103,7 +114,7 @@
 
 - **Past Experience**
     
-    I have about two years of experience programming in Python. I have used Python for just about everything from backend development to machine learning (ex. [collaborative filtering](https://www.kaggle.com/code/kglshrey/fastai-collaborativefiltering)). I have developed web scraping scripts and coded high performance backends in Python. I also have experience in UI development using frameworks like React. Although I am new to open-source, I have been catching up quickly and have made a few contributions to Datashuttle. Here's my [first PR](https://github.com/neuroinformatics-unit/datashuttle/pull/479) that got merged.
+    I have about two years of experience programming in Python. I have used Python for just about everything from backend development to machine learning (eg. [collaborative filtering](https://www.kaggle.com/code/kglshrey/fastai-collaborativefiltering)). I have developed web scraping scripts and coded high performance backends in Python. I also have experience in UI development using frameworks like React. Although I am new to open-source, I have been catching up quickly and have made a few contributions to Datashuttle. Here's my [first PR](https://github.com/neuroinformatics-unit/datashuttle/pull/479) that got merged.
 
     **Projects**
     - [Voice search for hotels](https://github.com/cs7-shrey/haven)
