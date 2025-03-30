@@ -10,11 +10,13 @@ Please include the following information:
 - **Location & time-zone**: India (IST - Indian Standard Time, UTC +5:30)
 - **Personal website / project portfolio** (optional)
 - **Code contribution** :
+  
   [Solved Issue #440](https://github.com/neuroinformatics-unit/datashuttle/pull/481)
   [Solved Issue #330](https://github.com/neuroinformatics-unit/datashuttle/pull/476)
 
 - **Proposal discussion link**
-    
+  
+    [neuroinformatics-unit#31](https://github.com/neuroinformatics-unit/gsoc/pull/31)
 
 ## Project proposal 
 
