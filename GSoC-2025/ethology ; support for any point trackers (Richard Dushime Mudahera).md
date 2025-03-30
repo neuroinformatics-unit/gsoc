@@ -123,8 +123,8 @@ This project integrates any-point tracking—a computer vision (CV) technique th
 | **8**    | **Documentation** <br> - Write user guides. <br> - Create video tutorials. | Docs cover loading, tracking, export. | 30 |  
 | **9**    | **Stretch: CoTracker Integration** <br> - Add model switching. <br> - Benchmark vs. TAPIR (accuracy/FPS). | CoTracker support in API + widget. | 30 |  
 | **10**   | **Stretch: Trajectory Correction** <br> - GUI tools to edit points. <br> - Undo/redo functionality. | Users can fix tracking errors in Napari. | 30 |  
-| **11**   | **Edge Cases & Testing** <br> - Handle occlusions (linear interpolation). <br> - Stress-test on 1hr+ videos. | Beta version with bug fixes. | 30 |  
-| **12**   | **Finalization** <br> - CI/CD (GitHub Actions). <br> - Polish UI/UX. | Code merged, full test coverage. | 30 |  
+| **11**   | **Edge Cases & Testing** <br> - Handle occlusions (linear interpolation). <br> - Stress-test . | Beta version with bug fixes. | 30 |  
+| **12**   | **Finalization** <br> - CI/CD (GitHub Actions). <br> - Final touches and presentation. <br> - Final Blogpost | Code merged, full test coverage. | 30 |  
 | **Continued Community Engagement**   |  - Stay active as a community contributor by addressing bugs, offering support, and enhancing features as needed.<br> - Provide assistance through forums, Zulip, and GitHub for users adopting the tool.<br> - Monitor feedback and plan follow-up in agreement with mentors.<br> - Act as a resource for new contributors and maintain a connection with mentors. | 30 |  
 
 ---
