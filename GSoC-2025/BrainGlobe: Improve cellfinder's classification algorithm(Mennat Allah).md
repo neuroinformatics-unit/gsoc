@@ -1,3 +1,6 @@
+# Project Title: "BraniGlobr: Improve Cellfinder's classification algorithm"
+_______________________________________________________________________________________________
+
 # Personal Details: 
 
 - **Full name: Mennat Allah Khalifa Hasab Elnabi** 
@@ -5,11 +8,17 @@
 - **GitHub username: Menna1812**
 - **Zulip username: Mennat Abdelfattah**
 - **Location & time-zone: Cairo, Egypt  && GMT+2**
+_______________________________________________________________________________________________
 
-## **Code contribution**
+# **Code contribution**
 
-To be included later on. 
+[Pull Request: Implementing Issue #295 – "Check Location of Detected Cells in Tests" #509](https://github.com/brainglobe/cellfinder/pull/509)
 
+This PR introduces a feature to validate detected cell locations by comparing them against a reference dataset. It ensures that detected cells align with expected locations, improving accuracy in cell detection tests.
+
+**proposal discussion link** 
+
+[BrainGlobe: Improve cellfinder's classification Algorithm(Mennat Allah Khalifa)](https://github.com/neuroinformatics-unit/gsoc/pull/28)
 _______________________________________________________________________________________________
 # Project proposal 
 
@@ -19,7 +28,7 @@ Given the growing need for fast and accurate cell detection in neuroscience rese
 
 Deep learning has evolved with modern architectures like **Vision Transformer (ViT)** and **EfficientNet**, which offer improved performance and reduced computational costs compared to older models. The primary objective of this project is to determine whether these modern deep learning models can outperform **ResNet** in terms of **speed and accuracy** for cell classification. Ultimately, by releasing these improvements under an **open-source** license, the project will serve as an inspiration for applying advanced deep learning techniques to image analysis.
 
-### Deliverables  
+**Deliverables**  
 - **Implementation** of a new deep learning algorithm within **cellfinder**.  
 - **Comprehensive testing** to validate its performance.  
 - **Detailed documentation** and a **blog post** explaining the new model, its advantages, and how it was integrated.  
