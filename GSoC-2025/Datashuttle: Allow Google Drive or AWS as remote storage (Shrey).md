@@ -111,7 +111,7 @@ As neuroscience projects grow in size, Datashuttle helps such projects manage th
             <td>
                 <ul>
                     <li>Take feedback on existing PRs to get them merged.</li>
-                    <li>Discuss the current draft implementation of the project.</li>
+                    <li>Discuss the current <a href="https://github.com/neuroinformatics-unit/datashuttle/pull/503">draft implementation</a> of the project.</li>
                     <li>Further explore the codebase for an optimized and clean implementation of the features.</li>
                     <li>Finalize the project implementation details with the mentor(s).</li>
                 </ul>
