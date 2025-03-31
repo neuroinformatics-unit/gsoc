@@ -29,7 +29,7 @@ Please include the following information:
     be merged at that time, But since this was my first pull request , it help me understand the codebase.
 
     - [Devlopment of Website for National Institute of Mental Health and Neuro Sciences](https://www.nimhans.ac.in/)
-    ![image](Nimhans.png) 
+    ![image](https://github.com/Transyltooniaa/gsoc/blob/proposal/GSoC-2025/Nimhans.png) 
     A private Repository so cannot be shared
 
 - **Proposal discussion link**
