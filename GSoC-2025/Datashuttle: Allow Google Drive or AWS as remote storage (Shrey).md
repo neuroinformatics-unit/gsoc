@@ -176,7 +176,7 @@ As neuroscience projects grow in size, Datashuttle helps such projects manage th
 
 **Communication Plan** 
 
-I plan to communicate with my mentor on Zulip chat and Github and have weekly meetings to discuss the progress and any blockers. 
+I plan to communicate with my mentor on Zulip chat and Github and have weekly meetings to discuss the progress and blockers if any. 
 
 ## Personal Statement
 
