@@ -1,7 +1,7 @@
 # GSOC 2025 Application 
 
 
-## Allow Google Drive or AWS as remote storage
+## Extend Spikewrap Test Functionality
 
 ## Personal details
 Please include the following information:
