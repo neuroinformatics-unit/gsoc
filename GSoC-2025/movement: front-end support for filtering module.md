@@ -33,16 +33,47 @@ _Length: max 1 page_
 - **Implementation timeline**
 
     Please include the following information:
-    1. A bullet point list with **minimal set of deliverables**
-    2. Additional **stretch goals** or "if time allows" deliverables (optional)
-    3. A detailed **weekly timeline**: when do you plan to do what? 
-        - Please use a week as a minimal unit of time, and include any planned vacations or other commitments. 
-        - This timeline could be formatted as a table. 
-        - Remember to also include the number of hours per week you plan to work on the GSoC project. 
-        - When estimating the required time for a task, keep in mind deliverables should include investigation/research, coding and documentation. 
-        - The default schedule for GSoC is 12 weeks - see the [GSoC timeline](https://developers.google.com/open-source/gsoc/timeline) for precise dates. 
-        - Also please specify any prep work you plan to do during the "Community bonding period".
-        - Usually week 1's deliverables already include some code. Week 6 marks the mid-term point, where usually more than half of the project should be completed. At the end of week 11 you may want to try to "freeze" the code and complete any remaining tests or documentation in weeks 11 and 12.
+    1. A bullet point list with **minimal set of deliverables** <br> 
+    2. ## **Stretch Goals** 
+    - **JSON Workflow Export**: Save/load filter configurations  
+    - **Hardware Acceleration**: GPU-backed filtering for large datasets  
+    - **Community Presets**: Preconfigured settings for common use cases  
+
+    3. ## <b>GSoC 2025:  Timeline</b>
+
+    ## **Community Bonding Period** *(May 8 – June 1)*
+
+    | Week   | Tasks                                                                                   | Hours | Output                         |
+    |--------|-----------------------------------------------------------------------------------------|-------|--------------------------------|
+    | **CB1** | - Study napari plugin architecture<br>- Draft widget wireframes with mentors | 7     | Environment setup guide       |
+    | **CB2** | - Profile existing filter performance<br>- Create UML sequence diagrams for data flow<br>- Setup documentation skeleton with Sphinx | 8     | Technical design doc          |
+    | **CB3** | - Finalize widget CSS theme alignment<br>- Write first Jupyter notebook draft| 5     | PR for docs infrastructure    |
+
+    ---
+
+    ## **Coding Period** *(June 2 – August 24)*
+
+    ### **Core Deliverables Timeline**
+
+    | Week   | Focus Area         | Critical Deliverables                                                                 | Hours |
+    |--------|--------------------|---------------------------------------------------------------------------------------|-------|
+    | **1**  | Widget Framework   | - Base widget class<br>- Confidence threshold UI<br>- Data binding                    | 15    |
+    | **2**  | Median Filter      | - Rolling window logic<br>- Performance optimizations<br>- Unit tests                 | 14    |
+    | **3**  | SavGol Filter      | - Polynomial order control<br>- Edge mode handling<br>- Benchmark suite               | 16    |
+    | **4**  | Preview System     | - Live parameter tuning<br>- Side-by-side visualization<br>- Frame scrubber       | 14    |
+    | **5**  | Error Handling     | - Parameter validation<br>- Tooltip explanations<br>- Logging system                  | 13    |
+    | **6**  | **Midterm**        | - Cross-platform tests<br>- Performance report<br>- User docs v1                      | 14    |
+    | **7**  | Advanced Features  | - Filter chaining logic<br>- Undo/redo stack                                          | 12    |
+    | **8**  | Testing              | - Automated screenshot tests<br>- Codecov integration<br>- Release pipeline           | 15    |
+    | **9**  | Documentation      | - Video tutorial production<br>- Animated tutorials<br>- Accessibility audit      | 14    |
+    | **10** | Optimization       | - Memory leak fixes<br>- Batch processing mode                                        | 12    |
+    | **11** | Polish             | - Keyboard shortcuts<br>- Theme consistency<br>- Contributor guide                    | 13    |
+    | **12** | Validation         | - Windows/macOS tests<br>- Final benchmark<br>- Release checklist                     | 12    |
+
+   
+---
+## **Evaluation Checkpoints**
+
 
 - **Communication plan**
 
