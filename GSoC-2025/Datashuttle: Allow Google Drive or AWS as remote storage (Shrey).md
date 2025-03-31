@@ -8,29 +8,58 @@
 - **Zulip username**: Shrey Singh
 - **Location & time-zone**: India, GMT+5:30 (Asia/Kolkata)
 - **Personal website / project portfolio**: https://github.com/cs7-shrey 
-- **Code contribution**
-    - Added thread workers to transfer data asynchronously in datashuttle TUI without freezing the screen allowing the TUI to display a loading animation indicating transfer in progress.
-        - Issue: [#431](https://github.com/neuroinformatics-unit/datashuttle/issues/431) (closed)
-        - PR: [#479](https://github.com/neuroinformatics-unit/datashuttle/pull/479) (merged)
 
-    - Developed a prototype version of the core project adding Google Drive and AWS S3 support in the Datashuttle Python API and TUI
-        - Issue: [#407](https://github.com/neuroinformatics-unit/datashuttle/issues/407)
-        - PR: [#503](https://github.com/neuroinformatics-unit/datashuttle/pull/503) 
-    
-    - Implemented functionality to search both central and local repositories for suggesting next subject/session in the TUI.
-        - Issue: [#409](https://github.com/neuroinformatics-unit/datashuttle/issues/409)
-        - PR: [#484](https://github.com/neuroinformatics-unit/datashuttle/pull/484)
+#### **Code contribution**
 
-    - Implemented support for SSH to Windows Machine. The current method of setting up SSH assumes the target machine to be linux/unix. 
-        - Issue: [#450](https://github.com/neuroinformatics-unit/datashuttle/issues/450)
-        - PR: [#477](https://github.com/neuroinformatics-unit/datashuttle/pull/477)
-    
-    - Added test for renaming file/folder on directorytree in TUI
-        - Issue: [#323](https://github.com/neuroinformatics-unit/datashuttle/issues/323) (closed)
-        - PR: [#496](https://github.com/neuroinformatics-unit/datashuttle/pull/496) (merged)
+<table>
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Description</th>
+            <th>Issue</th>
+            <th>PR/Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Added thread workers to transfer data asynchronously in Datashuttle TUI without freezing the screen, allowing the TUI to display a loading animation indicating transfer in progress.</td>
+            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/issues/431">#431</a> [closed]</td>
+            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/479">#479</a> [merged]</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Developed a prototype version of the core project, adding Google Drive and AWS S3 support in the Datashuttle Python API and TUI.</td>
+            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/issues/407">#407</a></td>
+            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/503">#503</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Implemented functionality to search both central and local repositories for suggesting the next subject/session in the TUI.</td>
+            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/issues/409">#409</a></td>
+            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/484">#484</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Implemented support for SSH to Windows machines. The current method of setting up SSH assumes the target machine is Linux/Unix.</td>
+            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/issues/450">#450</a></td>
+            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/477">#477</a></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Added test for renaming files/folders in the directory tree in the TUI.</td>
+            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/issues/323">#323</a> [closed]</td>
+            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/496">#496</a> [merged]</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Reviewed the testing approach for SSH transfers with Docker images in PR <a href="https://github.com/neuroinformatics-unit/datashuttle/pull/208">#208</a>.</td>
+            <td>-</td>
+            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/208#pullrequestreview-2708596155">208/review</a></td>
+        </tr>
+    </tbody>
+</table>
 
-    - Reviewed testing approach for testing SSH transfers with Docker images in PR [#208](https://github.com/neuroinformatics-unit/datashuttle/pull/208)
-        - Review link: [208/review](https://github.com/neuroinformatics-unit/datashuttle/pull/208#pullrequestreview-2708596155)
 
 - **Proposal discussion link**: [GSoC PR #9](https://github.com/neuroinformatics-unit/gsoc/pull/9)
 
