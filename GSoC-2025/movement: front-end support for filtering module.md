@@ -1,16 +1,16 @@
 ## movement: front-end support for filtering module in movement (Harsh Bhanushali)
-
 ## Personal details
 Please include the following information:
 - **Full name: Harsh Rakesh Bhanushali** 
 - **Email: bhanushali.harsh203@gmail.com**
 - **GitHub username: harsh-bhanushali-05**      
-- **Zulip username**
+- **Zulip username: harsh bhanushali**
 - **Location & time-zone: Panjim, Indian Standard Time (GMT+5:30)**
 - **Code contribution**
-1) https://github.com/neuroinformatics-unit/movement/pull/481
-2) https://github.com/neuroinformatics-unit/movement/pull/497
-3) https://github.com/neuroinformatics-unit/movement/pull/489
+1) [Made report_nan_stats and calculate_nan_stats more permissive about dimensions.](https://github.com/neuroinformatics-unit/movement/pull/481)
+2) [Added support for exporting bboxes in VIA-tracks.](https://github.com/neuroinformatics-unit/movement/pull/497)
+3) [Added a Widget for drawing region of interest in napari. feature addition disscussed in #378](https://github.com/neuroinformatics-unit/movement/pull/489)
+
 - **Proposal discussion link**
   
 ## Project proposal 
@@ -18,7 +18,17 @@ _Length: max 1 page_
 
 - **Synopsis**
 
-    Briefly explain: what is the project about? Why is it important? What are the goals? What are the deliverables? How would the open source community benefit from this project?
+  This project aims to develop an intuitive napari plugin for Movement’s filtering module, enabling non-programmers to clean and analyze motion-tracking data (e.g., from pose estimation tools like DeepLabCut) through a graphical interface instead of Python scripting. <br><br>
+    <u>Why It Matters</u>
+
+    <b>Accessibility Gap</b>: majority biologists/neuroscientists lack coding skills but rely on pose-tracking data.
+
+    <b>Time Efficiency</b>: Manual data cleaning consumes research time; real-time filtering previews could help with this.
+
+    <b>Reproducibility</b>: GUI-driven workflows ensure standardized filtering across labs.
+
+    <b>Open Science</b>: Democratizes advanced tools for underrepresented institutions with limited computational resources.
+
 
 - **Implementation timeline**
 
