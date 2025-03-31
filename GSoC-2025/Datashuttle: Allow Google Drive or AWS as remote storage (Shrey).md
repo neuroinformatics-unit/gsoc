@@ -55,7 +55,7 @@
             <td>6</td>
             <td>Reviewed the testing approach for SSH transfers with Docker images in PR <a href="https://github.com/neuroinformatics-unit/datashuttle/pull/208">#208</a>.</td>
             <td>-</td>
-            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/208#pullrequestreview-2708596155">208/review</a></td>
+            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/208#pullrequestreview-2708596155">review</a></td>
         </tr>
     </tbody>
 </table>
