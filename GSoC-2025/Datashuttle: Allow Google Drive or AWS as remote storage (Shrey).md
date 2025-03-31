@@ -24,8 +24,8 @@
         <tr>
             <td>1</td>
             <td>Added thread workers to transfer data asynchronously in Datashuttle TUI without freezing the screen, allowing the TUI to display a loading animation indicating transfer in progress.</td>
-            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/issues/431">#431</a> [closed]</td>
-            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/479">#479</a> [merged]</td>
+            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/issues/431">#431</a> (closed)</td>
+            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/479">#479</a> (merged)</td>
         </tr>
         <tr>
             <td>2</td>
@@ -48,8 +48,8 @@
         <tr>
             <td>5</td>
             <td>Added test for renaming files/folders in the directory tree in the TUI.</td>
-            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/issues/323">#323</a> [closed]</td>
-            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/496">#496</a> [merged]</td>
+            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/issues/323">#323</a> (closed)</td>
+            <td><a href="https://github.com/neuroinformatics-unit/datashuttle/pull/496">#496</a> (merged)</td>
         </tr>
         <tr>
             <td>6</td>
@@ -65,79 +65,118 @@
 
 ## Project Proposal
 
-- **Synopsis**
-    
-    The project involves supporting data transfers to and from Google Drive and Amazon Web Services (AWS) buckets. It involves extending Rclone's existing features to support setting up connections to Google Drive or AWS buckets and creating the required screens and tabs in the TUI.
+**Synopsis**
 
-    **Why is the project important?**
-    As neuroscience projects grow in size, Datashuttle helps such projects manage their data between central and local repositories helping them maintain a standard structure of the project. Datashuttle currently allows connections to central machines like an HPC via SSH. However, not all labs have access to such machines. Google Drive and AWS buckets are excellent options to store neuroscience data in such cases and many researchers will already be storing their data in them due to their widespread adoption. Integrating support for Google Drive and AWS buckets as remote storage would significantly enhance Datashuttle's flexibility, and adoption making Datashuttle useful for neuroscience experiments using or planning to use Google Drive or AWS as storage options.
+The project involves supporting data transfers to and from Google Drive and Amazon Web Services (AWS) buckets. It involves extending Rclone's existing features to support setting up connections to Google Drive or AWS buckets and creating the required screens and tabs in the TUI.
 
-    **Goals**
-    
-    - Implement setting up Rclone config for Google Drive and AWS and expose them Datashuttle's Python API.
-    - Extend Datashuttle's wrapping of Rclone to support Google Drive and AWS transfers and add utility functions for the same.
-    - Create TUI interface to expose the Python API to enable users to setup connections to Google Drive and AWS and transfer data via the TUI.
-    - Write tests to ensure that the setup works correctly, transfers happen correctly, transfer settings (overwrite, dry run, etc.) work properly, connection failures are handled and TUI works as expected.
-    - Update the documentation to include the new features in API reference and the "How to" section. 
+**Why is the project important?**
+As neuroscience projects grow in size, Datashuttle helps such projects manage their data between central and local repositories helping them maintain a standard structure of the project. Datashuttle currently allows connections to central machines like an HPC via SSH. However, not all labs have access to such machines. Google Drive and AWS buckets are excellent options to store neuroscience data in such cases and many researchers will already be storing their data in them due to their widespread adoption. Integrating support for Google Drive and AWS buckets as remote storage would significantly enhance Datashuttle's flexibility, and adoption making Datashuttle useful for neuroscience experiments using or planning to use Google Drive or AWS as storage options.
 
+**Goals**
 
-- **Implementation timeline**
-
-    **Deliverables**
-
-    - Support for setting up connections to Google Drive and AWS and transferring data in the Datashuttle's Python API using Rclone.
-    - TUI tabs and screens to enable users to setup connections to Google Drive and AWS and transfer data via the TUI.
-    - Integration and TUI tests for the implemented features.
-    - Documentation for setting up Google Drive or AWS as central storage.
-
-    **Stretch Goals**
-
-    - Adding support for additional storage options like Dropbox, Cloudflare, Ceph, etc. after surveying 
-    - Progress bar for data transfers.
+- Implement setting up Rclone config for Google Drive and AWS and expose them Datashuttle's Python API.
+- Extend Datashuttle's wrapping of Rclone to support Google Drive and AWS transfers and add utility functions for the same.
+- Create TUI interface to expose the Python API to enable users to setup connections to Google Drive and AWS and transfer data via the TUI.
+- Write tests to ensure that the setup works correctly, transfers happen correctly, transfer settings (overwrite, dry run, etc.) work properly, connection failures are handled and TUI works as expected.
+- Update the documentation to include the new features in API reference and the "How to" section. 
 
 
-    **Weekly timeline**
+**Implementation timeline**
 
-    **Community Bonding Period (May 8 - June 1)**
-    
-    - Take feeback on existing PRs to get them merged.
-    - Explore the codebase for implementation of the features.
-    - Discuss the project and implementation details with the mentor(s).
+**Deliverables**
 
-    **Week 1-2 (June 2 - June 15)**
-    
-    - Implement Rclone's config setup for Google Drive and expose it in the Datashuttle's Python API.
-    - Write tests to ensure the working of data transfers to and from Google Drive via Datashuttle's Python API.
-    
-    **Week 3-4 (June 16 - June 29)**
+- Support for setting up connections to Google Drive and AWS and transferring data in the Datashuttle's Python API using Rclone.
+- TUI tabs and screens to enable users to setup connections to Google Drive and AWS and transfer data via the TUI.
+- Integration and TUI tests for the implemented features.
+- Documentation for setting up Google Drive or AWS as central storage.
 
-    - Implement TUI screens for setting up Google Drive as central storage.
-    - Write TUI tests to make sure the interface is working as expected.
+**Stretch Goals**
 
-    **Week 5-6 (June 30 - July 13)**
+- Adding support for additional storage options like Dropbox, Cloudflare, Ceph, etc. after surveying 
+- Progress bar for data transfers.
 
-    - Complete testing for Google Drive transfers and update documentation for setting up Google Drive as central storage.
-    - Implement Rclone's config setup for AWS buckets and expose it in the Datashuttle's Python API.
-    
-    **Week 7-8 (July 14 - July 27)**
 
-    - Write tests to ensure the working of transfers to and from AWS via Datashuttle's Python API.
-    - Implement TUI interface for setting up AWS as central storage. 
+**Weekly timeline**
 
-    **Week 9-10 (July 28 - August 10)**
+<table>
+    <thead>
+        <tr>
+            <th>Timeline</th>
+            <th>Deliverables</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Community Bonding Period <br> (May 8 - June 1)</strong></td>
+            <td>
+                <ul>
+                    <li>Take feedback on existing PRs to get them merged.</li>
+                    <li>Discuss the current draft implementation of the project.</li>
+                    <li>Further explore the codebase for an optimized and clean implementation of the features.</li>
+                    <li>Finalize the project implementation details with the mentor(s).</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Week 1-2 <br> (June 2 - June 15)</strong></td>
+            <td>
+                <ul>
+                    <li>Implement Rclone's config setup for Google Drive and expose it in Datashuttle's Python API.</li>
+                    <li>Write tests to ensure the working of data transfers to and from Google Drive via Datashuttle's Python API.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Week 3-4 <br> (June 16 - June 29)</strong></td>
+            <td>
+                <ul>
+                    <li>Implement TUI screens for setting up Google Drive as central storage.</li>
+                    <li>Write TUI tests to make sure the interface is working as expected.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Week 5-6 <br> (June 30 - July 13)</strong></td>
+            <td>
+                <ul>
+                    <li>Complete testing for Google Drive transfers and update documentation for setting up Google Drive as central storage.</li>
+                    <li>Implement Rclone's config setup for AWS buckets and expose it in Datashuttle's Python API.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Week 7-8 <br> (July 14 - July 27)</strong></td>
+            <td>
+                <ul>
+                    <li>Write tests to ensure the working of transfers to and from AWS via Datashuttle's Python API.</li>
+                    <li>Implement TUI interface for setting up AWS as central storage.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Week 9-10 <br> (July 28 - August 10)</strong></td>
+            <td>
+                <ul>
+                    <li>Write TUI tests to make sure the interface is working as expected.</li>
+                    <li>Complete testing for AWS transfers and update documentation for setting up AWS as central storage.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Week 11-12 <br> (August 11 - August 27)</strong></td>
+            <td>
+                <ul>
+                    <li>Buffer period for any pending work or improvements.</li>
+                    <li>Prepare the final report and submit it.</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-    - Write TUI tests to make sure the interface is working as expected.
-    - Complete testing for AWS transfers and update documentation for setting up AWS as central storage.
+**Communication Plan** 
 
-    **Week 11-12 (August 11 - August 27)**
-
-    - Buffer period for any pending work or improvements.
-    - Prepare the final report and submit it.
-
-- **Communication Plan** 
-
-    I plan to communicate with my mentor on Zulip chat and Github and have weekly meetings to discuss the progress and any blockers. 
-
+I plan to communicate with my mentor on Zulip chat and Github and have weekly meetings to discuss the progress and any blockers. 
 
 ## Personal Statement
 
