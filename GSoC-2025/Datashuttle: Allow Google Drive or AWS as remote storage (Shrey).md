@@ -92,7 +92,7 @@ As neuroscience projects grow in size, Datashuttle helps such projects manage th
 
 **Stretch Goals**
 
-- Adding support for additional storage options like Dropbox, Cloudflare, Ceph, etc. after surveying 
+- Adding support for additional storage options like Dropbox, Cloudflare, Ceph, etc. after surveying the community. 
 - Progress bar for data transfers.
 
 
