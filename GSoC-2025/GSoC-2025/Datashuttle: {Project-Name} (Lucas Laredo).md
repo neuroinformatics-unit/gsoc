@@ -40,7 +40,7 @@
 
 - **Communication plan**
 
-    I plan on using Zulip as the closest communication method with my mentor, informing about progress, but also to share discuss any doubts or blockers followed by drafting pull requests regularly to keep my progress transparent and allow for continuous feedback. I also suggest weekly meetings, following the suggested implementation timeline, that serve as checkpoints to address any remaining blockers from previous tasks.
+    I plan to use Zulip as the closest communication method with my mentor alongside drafting pull requests regularly to allow continuous feedback. I also suggest weekly meetings, following the suggested implementation timeline, to serve as checkpoints tracking the progress.
 
 ## Personal statement
 
