@@ -17,11 +17,18 @@ Please include the following information:
     Please link to the pull request where you discussed your project proposal with the community. 
 
 ## Project proposal 
-_Length: max 1 page_
 
 - **Synopsis**
 
-    Briefly explain: what is the project about? Why is it important? What are the goals? What are the deliverables? How would the open source community benefit from this project?
+    This project aims to enhance the deep learning classifier in the BrainGlobe cellfinder tool, which detects cells in large-scale brain microscopy images. Currently, cellfinder uses a ResNet-based model for classifying cell candidates, but newer architectures may offer better accuracy, speed, or efficiency. The goal is to implement and evaluate modern alternatives to ResNet, ensuring cellfinder remains at the cutting edge of cell detection. 
+    
+    **It's important because** other DL techniques may outperform the current architecture making cell detection and classification faster, robust, and hence more reliable by neuroscientists. With the very fast development of DL approaches, cellfinder has to be up-to-date to add a true value for neuroscience research. detecting and mapping cells in 3D throughout the entire mammalian brain is crucial for faster brain understanding and developments in neuroscience.
+
+    **The Open-Source Community Benefits**
+    1. Better Neuroscience Tools: Enhances cellfinder’s accuracy/speed, accelerating brain research worldwide.
+    2. Reproducible Benchmarks: Clear model comparisons help researchers choose optimal architectures for similar tasks.
+    3. Extensible & Well-Documented Code that is harmonized with DL rapid advancements.
+    4. Blog posts and tutorials help newcomers in bioimage analysis and deep learning.
 
 
 - **Implementation timeline**
