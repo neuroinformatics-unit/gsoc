@@ -34,26 +34,26 @@ DataShuttle currently requires Conda for installation, which limits accessibilit
 ### Deliverables
 
 -  **Research Report**
-  - Comparison of packaging tools (PyInstaller, PyOxidizer, Nuitka, Briefcase) with pros/cons for CLI vs. GUI.
-  - Evaluation of Textual rendering fallbacks (e.g., --headless mode, WebRender).
+  - - Comparison of packaging tools (PyInstaller, PyOxidizer, Nuitka, Briefcase) with pros/cons for CLI vs. GUI.
+  - - Evaluation of Textual rendering fallbacks (e.g., --headless mode, WebRender).
   
 -  **Implemented Solution**
-  - Primary: Statically linked binaries (CLI-first) for all platforms.
-  - Optional GUI: Bundled terminal (disabled by default in headless mode).
-  - pip support: Installable via `pip install datashuttle`.
+  - - Primary: Statically linked binaries (CLI-first) for all platforms.
+  - - Optional GUI: Bundled terminal (disabled by default in headless mode).
+  - - pip support: Installable via `pip install datashuttle`.
   
 -  **CI/CD Integration**
-  - Automated builds for native binaries (Windows .exe, Linux .AppImage, macOS .app).
-  - HPC testing: Verify compatibility on SSH-only environments.
+  - - Automated builds for native binaries (Windows .exe, Linux .AppImage, macOS .app).
+  - - HPC testing: Verify compatibility on SSH-only environments.
   
 -  **Documentation**
-  - Proper detailed writings.
-  - Entry and endpoints marked, along with some creative visualisations.
+  - - Proper detailed writings.
+  - - Entry and endpoints marked, along with some creative visualisations.
   
 -  **Testing Framework**
-  - Headless testing: I'll setup in a virtual machine instance. 
-  - GUI testting: A display environment , I have a Mac.
-  - Performance tests: Time, memory
+  - - Headless testing: I'll setup in a virtual machine instance. 
+  - - GUI testting: A display environment , I have a Mac.
+  - - Performance tests: Time, memory
 
 ### Implementation Timeline
 
