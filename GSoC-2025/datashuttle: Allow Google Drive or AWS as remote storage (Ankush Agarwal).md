@@ -69,7 +69,7 @@ Stretch Goals:
 **Communication Plan**
 
 The project period will involve continuous communication between me and my mentor through regular sessions.
-1. I will organize 45-60 minute video discussions every week to evaluate project developments together with discussing obstacles and future action steps.
+1. I will organize video discussions session every week to evaluate project developments together with discussing obstacles and future action steps.
 2. I will use Zulip chat to share daily updates about my progress alongside any encountered obstacles.
 3. I will use Zulip for fast questions between regular meetings without set times.
 
@@ -111,7 +111,7 @@ Apart from this, in the past, I have cleared JEE Mains examination and secured [
 
 **Availability**
 
-I am fully available to commit approximately 40 hours per week to this project throughout the GSoC period. I have no other major commitments during this time. Moreover, I will be having summer break from my university (Dr. B.R. Ambedkar National Institute of Technology Jalandhar) and I will not be involved in any other work during this period.
+I am fully available to commit approximately 20 hours per week or more (as per project requirement of 175 total hours ) to this project throughout the GSoC period. I have no other major commitments during this time. Moreover, I will be having summer break from my university (Dr. B.R. Ambedkar National Institute of Technology Jalandhar) and I will not be involved in any other work during this period.
 
 ## GSoC
 
