@@ -33,7 +33,7 @@ Please include the following information:
     Please link to the pull request where you discussed your project proposal with the community. 
 
 ## Project proposal 
-_Extension: max 1 page_
+_Length: max 1 page_
 
 - **Synopsis**
 
@@ -59,9 +59,9 @@ _Extension: max 1 page_
 
 ## Personal statement
 
-_Extension: max 0.75 page_
+_Length: max 0.75 page_
 
-- **Past experienc.** 
+- **Past experience.** 
 
     Please describe your past experience with programming, open source, or any other experience you deem relevant for the project you are applying for. Any successful open source projects, published work or content of the like should definitely be highlighted.
 - **Motivation: why this project?**
@@ -76,7 +76,7 @@ _Extension: max 0.75 page_
 
 ## GSoC
 
-_Extension: max 0.25 page_
+_Length: max 0.25 page_
 
 - **GSoC experience**
 
