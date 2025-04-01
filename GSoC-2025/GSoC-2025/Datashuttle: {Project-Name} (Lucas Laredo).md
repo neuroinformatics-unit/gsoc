@@ -40,7 +40,7 @@
 
 - **Communication plan**
 
-    Please explain: how do you plan to communicate with your mentor? How often? (e.g., daily or weekly stand-ups, longer meetings..?) What communication channels will you use? (e.g., video calls, Zulip chat...?)
+    I plan on using Zulip as the closest communication method with my mentor, informing about progress, but also to share discuss any doubts or blockers followed by drafting pull requests regularly to keep my progress transparent and allow for continuous feedback. I also suggest weekly meetings, following the suggested implementation timeline, that serve as checkpoints to address any remaining blockers from previous tasks.
 
 ## Personal statement
 
