@@ -103,6 +103,7 @@ My end-semester exams conclude in early May, freeing me to commit fully to GSoC.
 ## GSoC   
 
 - **GSoC experience** <br>
-I expect GSoC to deepen my open-source collaboration skills, refine my technical expertise (e.g., napari plugin development), and connect me with mentors to build impactful tools. The program offers a structured environment to contribute meaningfully to Movement while learning industry-standard practices in testing, documentation, and community-driven development. Ultimately, I aim to grow as a developer and deliver a feature that simplifies research workflows for scientists globally. <br> 
-**Other Applications**  
+I expect GSoC to deepen my open-source collaboration skills, refine my technical expertise (e.g., napari plugin development), and connect me with mentors to build impactful tools. The program offers a structured environment to contribute meaningfully to Movement while learning industry-standard practices in testing, documentation, and community-driven development. Ultimately, I aim to grow as a developer and deliver a feature that simplifies research workflows for scientists globally. 
+
+- **Other Applications**  
 No—I’m exclusively applying to the neuroinformatics-unit.  
