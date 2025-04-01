@@ -1,6 +1,5 @@
 # datashuttle: Allow Google Drive or AWS as remote storage (Ankush Agarwal)
 
-
 ## Personal details
 Please include the following information:
 - **Full name** : Ankush Agarwal
@@ -21,10 +20,10 @@ Please include the following information:
 
 **Synopsis**
 
-At present, datashuttle facilitates the transfer of data from one operating system to another through SSH and mounted drives. This project development extends the datashuttle capabilities to transfer data between user systems and cloud storage solutions across Google Drive and AWS Amazon Web Service buckets. The connectivity changes will incorporate RClone because RClone provides support for those cloud services. New features from cloud storage solutions provide datashuttle with advanced capabilities that benefit researchers in neuroscience. 
+At present, datashuttle facilitates the transfer of data from one operating system to another through SSH and mounted drives. This project development extends the datashuttle capabilities to transfer data between user systems and cloud storage solutions across Google Drive, Dropbox and AWS Amazon Web Service buckets. The connectivity changes will incorporate RClone because RClone provides support for those cloud services. New features from cloud storage solutions provide datashuttle with advanced capabilities that benefit researchers in neuroscience. 
 
 **Goals and Deliverables:**
-1. The Python API will be modified to grant support for Google Drive as well as AWS file transfers.
+1. The Python API will be modified to grant support for Google Drive, Dropbox as well as AWS file transfers.
 2. Integration of this new feature into their terminal user interface (TUI) system.
 3. Development of tests for the new features will be performed
 4. The project aims to develop documentation which will help users and developers using the system.
@@ -35,8 +34,8 @@ At present, datashuttle facilitates the transfer of data from one operating syst
 
 Minimal Deliverables:
 1. A new functionality will be added to the Python API to allow file transfers directly from Google Drive.
-2. Extension of Python API for AWS bucket transfers
-3. The system will establish TUI to enable users setup their connection to both AWS bucket and Google Drive through the TUI interface.
+2. Extension of Python API for Dropbox, AWS bucket transfers
+3. The system will establish TUI to enable users setup their connection to Dropbox, AWS bucket and Google Drive through the TUI interface.
 4. Writing unit tests and integration tests for all new functionality
 5. Documentation for both user-facing features and developer APIs
 
@@ -44,7 +43,7 @@ Minimal Deliverables:
 Stretch Goals:
 1. Enhancing the TUI and  developing support for transfer progress visualization in the TUI
 2. Optimization for large dataset transfers
-3. Support for additional storage solutions, based on community needs such as Ceph, Cloudflare, Dropbox, FTP
+3. Support for additional storage solutions, based on community needs such as Ceph, Cloudflare, FTP. (FTP would be my priority as it's a universal protocol that would enable compatibility with many existing lab setups and institutional servers.)
 4. Scope for implementing additional features after consulting with my mentor and completing all remaining work throughout the journey of development.
 
 
@@ -52,19 +51,19 @@ Stretch Goals:
 
 | Week | Tasks | Hours |
 |------|-------|-------|
-| Community Bonding | Study datashuttle codebase, understand RClone API for cloud services, discuss the implementation details with mentors, familiarize with project standards | 30-35 |
-| Week 1 | Implement basic Google Drive connection functionality in Python API, write initial tests | 35-40 |
-| Week 2 | Complete Google Drive implementation, check for bugs and errors, complete writing tests | 35-40 |
-| Week 3 | Begin AWS S3 bucket implementation in Python API, write initial tests | 35-40 |
-| Week 4 | Complete AWS implementation, check for bugs and errors, complete writing tests | 35-40 |
-| Week 5 | Refactor common code between implementations, complete any pending tasks from the previous week | 35-40 |
-| Week 6 (Mid-term) | Begin TUI integration for Google Drive, prepare mid-term deliverables | 35-40 |
-| Week 7 | Complete TUI integration for Google Drive, begin TUI integration for AWS | 35-40 |
-| Week 8 | Complete TUI integration for AWS | 35-40 |
-| Week 9 | Comprehensive testing of both API and TUI implementations, fixing issues, completing any remaining tasks | 35-40 |
-| Week 10 | Write user documentation for cloud storage features, create usage examples | 35-40 |
-| Week 11 | Code freeze, focus on completing tests and documentation | 35-40 |
-| Week 12 | Final testing, documentation refinement, prepare for final submission | 35-40 |
+| Community Bonding | Study datashuttle codebase, understand RClone API for cloud services, discuss the implementation details with mentors, familiarize with project standards | 15-20 |
+| Week 1 | Implement basic Google Drive connection functionality in Python API, write initial tests | 15-20 |
+| Week 2 | Complete Google Drive implementation, check for bugs and errors, complete writing tests | 15-20 |
+| Week 3 | Begin Dropbox implementation in Python API, write initial tests | 15-20 |
+| Week 4 | Complete Dropbox implementation, check for bugs and errors, complete writing tests | 15-20 |
+| Week 5 | Begin AWS S3 bucket implementation in Python API, write initial tests | 15-20 |
+| Week 6 (Mid-term) | Complete AWS implementation, prepare mid-term deliverables | 15-20 |
+| Week 7 | Begin TUI integration for Google Drive and Dropbox | 15-20 |
+| Week 8 | Complete TUI integration for Google Drive and Dropbox, begin TUI integration for AWS | 15-20 |
+| Week 9 | Complete TUI integration for AWS, comprehensive testing of API and TUI implementations | 15-20 |
+| Week 10 | Write user documentation for cloud storage features, create usage examples | 15-20 |
+| Week 11 | Code freeze, focus on completing tests and documentation | 15-20 |
+| Week 12 | Final testing, documentation refinement, prepare for final submission | 15-20 |
 
 
 **Communication Plan**
