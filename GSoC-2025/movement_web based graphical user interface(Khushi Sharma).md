@@ -17,7 +17,7 @@ Personal website / project portfolio (optional): https://khushi-2503.github.io/p
 
 Code contribution : https://github.com/neuroinformatics-unit/movement/pull/528
 
-Proposal discussion link : 
+Proposal discussion link : https://github.com/neuroinformatics-unit/gsoc/pull/33
 
 Project Proposal
 
