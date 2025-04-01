@@ -58,7 +58,7 @@
 
 - **Availability**
 
-    Please state if you have any other plans for the work period (school work, another job, planned vacation)? If so, how do you plan to combine them with your GSoC work?
+    I plan to dedicate around 20 hours per week to the GSoC project while balancing my part-time internship. I am confident in my ability to manage both commitments. Additionally, I have 15 days of vacation, which I plan to use to further focus on the project.
 
 ## GSoC
 
