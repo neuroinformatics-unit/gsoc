@@ -19,7 +19,10 @@ Please include the following information:
         Addresses [#372](https://github.com/neuroinformatics-unit/datashuttle/issues/372): Automates Sphinx docs deployment using GitHub Actions, deploying tagged releases to versioned directories, updating switcher.json, and maintaining the latest release.
 
     - [Add option to delete a project](https://github.com/neuroinformatics-unit/datashuttle/issues/436)
-        Developed a function to delete both the DataShuttle project configuration and associated data from local and central paths. The implementation is currently on hold until it is requested by a user. But, the issue is left open and serves as a reference for future extensions.  
+        Developed a function to delete both the DataShuttle project configuration and associated data from local and central paths. The implementation is currently on hold until it is requested by a user. But, the issue is left open and serves as a reference for future extensions. 
+
+    - **merged** : [Fixing json syntax in the mountainsort5 sorting yaml](https://github.com/neuroinformatics-unit/spikewrap/pull/228)  
+    While exploring the codebase and trying to understand it to better, I caught upon this minor syntax error and fixed it.
 
     - [Completing Docstring for parameters of get_next_sub ](https://github.com/neuroinformatics-unit/datashuttle/pull/482)
         Adding docstrings for the parameters of get_next_sub function. TDocstrings were added for the parameters of the get_next_sub function. This PR was prompted by a previous comment, leading to the opening of a related issue [#483](https://github.com/neuroinformatics-unit/datashuttle/issues/483)
