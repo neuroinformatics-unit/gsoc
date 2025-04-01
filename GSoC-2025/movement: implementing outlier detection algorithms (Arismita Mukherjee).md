@@ -38,7 +38,7 @@
        |       Week        |    Start    |    End      |                        Activity                        |
        | ----------------- | ----------- | ------------| -------------------------------------------------------|
        | Community Bonding | 2025/05/08  | 2025/06/01  |<ul><li>xarray, pandas, numpy revision</li> <li>understand the developer workflow for contribution to movement</li> <li>interact and get to know the movement developer community and my mentors</li></ul>|
-       |    Week 1         | 2025/06/02  | 2025/06/08  |<ul><li>understand WP1 from LP paper and code base</li><li>start coding for single frame outlier detection</li></ul>|
+       |    Week 1         | 2025/06/02  | 2025/06/08  |<ul><li>add to the initial understanding of WP1 from LP paper, LP code base and movement code base</li><li>start coding for single frame outlier detection</li></ul>|
        |    Week 2         | 2025/06/09  | 2025/06/15  |<ul><li>complete code for single frame outlier detection</li><li>add test cases for single frame outlier detection</li><li>start coding for multi frame outlier detection</li></ul>| 
        |    Week 3         | 2025/06/16  | 2025/06/22  |<ul><li>complete code for multi frame outlier detection</li><li>add test cases for multi frame outlier detection</li><li>add example usecases for WP1</li><li> documentation for WP1</li>|
        |    Week 4         | 2025/06/23  | 2025/06/29  |<ul><li>understand WP2 from LP paper and code base</li><li>start coding to generate the restricted pose space using pose PCA</li></ul>|
