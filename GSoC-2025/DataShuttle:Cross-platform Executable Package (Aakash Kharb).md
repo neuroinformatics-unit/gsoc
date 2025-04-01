@@ -18,26 +18,56 @@
 
 ### Synopsis
 
-DataShuttle currently requires Conda for installation, which limits accessibility for non-technical users. This project aims to create a standalone, cross-platform executable package for DataShuttle that works on Windows, macOS, and Linux without requiring Conda or Python installation. The solution will address Textual's rendering limitations in native terminals by potentially bundling a compatible terminal environment.
+DataShuttle currently requires Conda for installation, which limits accessibility for non-technical users. This project aims to create a standalone, cross-platform executable package for DataShuttle that works on Windows, macOS, and Linux. This project will:
+
+- 1. Package DataShuttle as a standalone, cross-platform executable (Windows, macOS, Linux) without Conda/Python, prioritizing CLI/headless compatibility.
+- 2. Solve Textual’s terminal rendering issues by:
+  - Bundling a lightweight terminal (e.g., wezterm) only for GUI systems.
+  - Providing a fallback mode for headless environments (e.g., basic TTY output or Web-based rendering).
+- 3. Ensure robust deployment via pip-installable wheels + self-contained binaries for flexibility.
+
+## Key Challenges
+- Terminal rendering
+- Cross-platform support
+- Minimal dependencies
 
 ### Deliverables
 
-- Research report on packaging approaches for Textual applications
-- Implemented solution for cross-platform DataShuttle distribution
-- CI/CD integration for automated builds
-- Comprehensive documentation for users and maintainers
-- Testing framework for packaged versions
+-  **Research Report**
+  - Comparison of packaging tools (PyInstaller, PyOxidizer, Nuitka, Briefcase) with pros/cons for CLI vs. GUI.
+  - Evaluation of Textual rendering fallbacks (e.g., --headless mode, WebRender).
+  
+-  **Implemented Solution**
+  - Primary: Statically linked binaries (CLI-first) for all platforms.
+  - Optional GUI: Bundled terminal (disabled by default in headless mode).
+  - pip support: Installable via `pip install datashuttle`.
+  
+-  **CI/CD Integration**
+  - Automated builds for native binaries (Windows .exe, Linux .AppImage, macOS .app).
+  - HPC testing: Verify compatibility on SSH-only environments.
+  
+-  **Documentation**
+  - Proper detailed writings.
+  - Entry and endpoints marked, along with some creative visualisations.
+  
+-  **Testing Framework**
+  - Headless testing: I'll setup in a virtual machine instance. 
+  - GUI testting: A display environment , I have a Mac.
+  - Performance tests: Time, memory
 
 ### Implementation Timeline
 
 | Period          | Tasks                                                         | Hours/Week |
 |-----------------|---------------------------------------------------------------|------------|
-| Community Bonding | Familiarize with codebase, setup dev environment, finalize research plan | 20         |
+| Community Bonding | Familiarize with codebase, setup dev environment, finalize research plan | 25         |
 | Week 1-2        | Research packaging solutions (PyInstaller, PyOxidizer, Briefcase), evaluate approaches | 35         |
 | Week 3-5        | Prototype selected solution, address terminal rendering issues | 40         |
-| Week 6-7        | Implement CI/CD integration, automated builds                 | 40         |
-| Week 8-9        | Comprehensive testing across platforms                        | 40         |
-| Week 10-12      | Documentation, final polishing, mentor review                 | 35         |
+| Week 6-7        | CI/CD for multi-platform builds + headless testing            | 40         |
+| Week 8          | pip wheel support, minor testing, analysis                    | 35         |
+| Week 9-10       | Comprehensive testing across platforms                        | 35         |
+| Week 11-12      | Documentation, final polishing, mentor review                 | 35         |
+
+Total time = 25 + 180 = 205
 
 ### Stretch Goals
 
@@ -53,6 +83,7 @@ DataShuttle currently requires Conda for installation, which limits accessibilit
 - Immediate communication for blockers via Zulip/email
 
 ## Personal Statement
+"There's no value in lies. I know how to work and I am passionate about it. At night, sleep becomes easy, especially when I see something I've created."
 
 ### Past Experience
 
