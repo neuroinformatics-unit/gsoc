@@ -58,7 +58,7 @@
 
 - **Availability**
 
-    I plan to dedicate around 25 hours per week to the GSoC project while balancing my part-time internship. I am confident with my ability to manage both commitments, specially since during the period of the program I will be on vacation from uni and which I plan to use it to further focus on the project.
+    I plan to dedicate around 25 hours per week to the GSoC project while balancing my part-time internship. I am confident with my ability to manage both commitments, specially since during the period of the program I will be on vacation from university and which I plan to use it to further focus on the project.
 
 ## GSoC
 
