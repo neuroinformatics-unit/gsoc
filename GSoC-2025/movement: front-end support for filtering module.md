@@ -8,7 +8,8 @@
 - **Code contributions**:  
   1. [Made `report_nan_stats` and `calculate_nan_stats` more permissive about dimensions.](https://github.com/neuroinformatics-unit/movement/pull/481)  
   2. [Added support for exporting bboxes in VIA-tracks.](https://github.com/neuroinformatics-unit/movement/pull/497)  
-  3. [Added a Widget for drawing region of interest in napari (feature discussed in #378).](https://github.com/neuroinformatics-unit/movement/pull/489)  
+  3. [Added a Widget for drawing region of interest in napari (feature discussed in #378).](https://github.com/neuroinformatics-unit/movement/pull/489)
+  4. [Fix Runtime Warning raised by ROI plot test](https://github.com/neuroinformatics-unit/movement/pull/534)
 - **Proposal discussion link**:   
 
 ---
