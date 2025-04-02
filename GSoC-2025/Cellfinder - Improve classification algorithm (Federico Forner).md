@@ -15,7 +15,7 @@
 
 ### Proposal discussion link
 
-- 
+(https://github.com/neuroinformatics-unit/gsoc/pull/38#issue-2961522261)
 
 ## Project proposal 
 
