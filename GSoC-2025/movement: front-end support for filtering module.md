@@ -42,7 +42,7 @@ This project aims to develop an intuitive napari plugin for Movement’s filteri
 
 ### 2. **Extended Deliverables (Aspirational)**  
 - **Filter Chaining**: Sequential application of filters (e.g., confidence → median → SavGol).  
-- **Export Workflows**: Save/load filter configurations as JSON.  
+- **Export Workflows**: Save/load filter in netCDF file format (or any other decided after discussion with the mentor).  
 - **Community Presets**: Curated settings for common use cases (e.g., fruit fly locomotion).  
 - **Hardware Acceleration**: GPU-backed filtering.  
 
