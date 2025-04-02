@@ -14,7 +14,7 @@ Please include the following information:
     [Fix progress bar text in cell detection widget](https://github.com/brainglobe/cellfinder/pull/510)
 
 - **Proposal discussion link**
-    Please link to the pull request where you discussed your project proposal with the community. 
+    [#43: brainglobe-cellfinder:improve-cellfinder's-classification-algorithm (FatmaElsharkawy)](https://github.com/neuroinformatics-unit/gsoc/pull/43) 
 
 ## Project proposal 
 
