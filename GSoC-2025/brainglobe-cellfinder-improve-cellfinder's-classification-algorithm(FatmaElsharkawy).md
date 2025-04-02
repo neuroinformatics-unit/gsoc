@@ -9,7 +9,7 @@ Please include the following information:
 - **GitHub username** FatmaElsharkawy
 - **Zulip username** FatmaElsharkawy
 - **Location & time-zone** Cairo (GMT+2)
-- **Personal website / project portfolio** (optional)
+- **Personal website / project portfolio** [Resume](https://drive.google.com/file/d/1bc4Yg1LuYDoU28bitd9_uP_SvJfGp0Kz/view?usp=sharing)
 - **Code contribution**
     [Fix progress bar text in cell detection widget](https://github.com/brainglobe/cellfinder/pull/510)
 
