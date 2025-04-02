@@ -84,5 +84,54 @@ Please include the following information:
 
     The plan is flexible and open to refinements based on the mentor preferences. 
 
+## Personal statement
+
+
+- **Past experience.** 
+  
+    **1.	Experience with Data science, Deep learning and machine learning:** 
+    - **ChestQuest project:** A CT Chest CAD System to Classify between Pneumonia and Normal Scans using both ML and DL techniques. After preprocessing pipeline, over six experimental scenarios were done trying different CNN architectures: VGG19, LeNet, and "CT image pretrained" models in DL and SVM classifier in ML with final accuracy of 95%. The project achieved **First Place in the 10th Undergraduate Research Forum at Cairo University, and Third Place in IEEE Egyptian Paper Contest**
+    [paper link](https://drive.google.com/file/d/1sORzBD_7GoABaVTcCcn07FOwvXlW6thZ/view?usp=sharing) 
+    - **Computational neuroscience project:** working with Allen dataset and analyzing the effect of rewards on SST neurons of mice using statistical methods.
+    - **NASA space apps challenge**: I worked to implement a CNN-LSTM model to forecast future climate changes as part of terratales team project [link](https://terratalesjourney.netlify.app/). The team became **a global winner for 2024**
+
+    **2.	Experience with software development:**
+
+    Here is [a series of five python with Qt desktop apps](https://github.com/DSP-Projects) specialized in digital signal processing tools I contributed in. The org contains six projects, each repo has a readme with full demonstration of the application.
+
+- **Motivation: why this project?**
+ 
+    Although I have navigated many gsoc orgs and projects, but I am interested in this project specifically due to three main reasons:
+
+    1. I want to pursue a master’s degree related to AI and neuroscience.
+    2.	I have been enhancing my skills in research, AI, software, neuroscience for over three years, so this will allow me to have hands-on experience in real project that benefit whole neuroscience community.
+    3.	The benefits to neuroscientists by facilitating brain exploration, which in turn make advancements faster.
+
+- **Match: why you?**
+  
+    I already came from a biomedical background that combines biological and technological aspects for benefiting science and healthcare sector. I also worked on with similar project (ChestQuest, mentioned above) that was doing very similar task: classification of medical images. In addition, I have neuroscience background from both college courses and Neuromatch academy where I worked on neural data from mice. I have strong research skills and I was a research assistant in Assistive technologies lab in my college. Moreover, I have strong communication and presentation skills with flexibilty in both dealing and learning.
+
+- **Availability**
+    
+    There will be an overlap between my final exams and community bonding period. I may also have a travel to Washington in the very first week of coding phase for NASA celebration. Surely, I will work during this period as mentioned in the timeline, but I will dedicate longer hours from the second week to compensate for any delays. For other weeks, generally in normal conditions, I work +50 hours per week, so I will give GSoc from 20 to 30 hours, and for remaining time, I will check for any other responsibilities or self-development. 
+
+## GSoC
+
+- **GSoC experience**
+
+    What do you expect from the program?
+1. Enhances my coding skills and make me professional in open-source contributions. 
+2.	Makes me dive deeper in DL 
+3.	Makes me have more knowledge in neuroscience 
+4.	Great opportunity for networking and mentoring
+
+
+- **Are you also applying to projects with other organisations in GSoC 2025?**
+- 
+   No.
+
+
+
+
 
 
