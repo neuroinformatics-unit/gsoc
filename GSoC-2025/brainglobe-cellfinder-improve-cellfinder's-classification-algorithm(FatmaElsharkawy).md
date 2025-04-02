@@ -71,8 +71,9 @@ Please include the following information:
 
 
 - **Notes** 
-  1. I will have a backup plan for risk mitigation.  
-  2. I am open to experimenting with more than three models if needed, as deep learning requires extensive experimentation. From past experience, I understand that even within the same architecture, refining and tuning hyperparameters is crucial. My approach will be guided by both literature and hands-on experimentation, ensuring we explore the most promising architectures and reaching the optimum classifier.  
+  1. I will have a backup plan for risk mitigation. 
+  2. I have already read the cellfinder paper and go through the cellfinder module, but I'll repeat this by diving more deeply during community bonding period.
+  3. I am open to experimenting with more than three models if needed, as deep learning requires extensive experimentation. From past experience, I understand that even within the same architecture, refining and tuning hyperparameters is crucial. My approach will be guided by both literature and hands-on experimentation, ensuring we explore the most promising architectures and reaching the optimum classifier.  
 
 
 - **Communication plan**
