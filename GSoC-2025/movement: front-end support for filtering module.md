@@ -8,7 +8,7 @@
 - **Code contributions**:  
   1. [Made `report_nan_stats` and `calculate_nan_stats` more permissive about dimensions.](https://github.com/neuroinformatics-unit/movement/pull/481)  
   2. [Added support for exporting bboxes in VIA-tracks.](https://github.com/neuroinformatics-unit/movement/pull/497)  
-  3. [Added a Widget for drawing region of interest in napari (feature discussed in #378).](https://github.com/neuroinformatics-unit/movement/pull/489)
+  3. [Added a Widget for drawing region of interest in napari (feature discussed in #378).](https://github.com/neuroinformatics-unit/movement/pull/489) 
   4. [Fix Runtime Warning raised by ROI plot test](https://github.com/neuroinformatics-unit/movement/pull/534)
 - **Proposal discussion link**:   
 
@@ -34,15 +34,15 @@ This project aims to develop an intuitive napari plugin for Movement’s filteri
   - Real-time overlay of raw vs. filtered data.  
 - **Testing Framework**:  
   - Unit tests for filter logic and UI components.  
-  - Performance benchmarks (latency <500ms for 10k data points).  
+  - Performance benchmarks.  
 - **Documentation**:  
   - Jupyter notebook tutorials with sample datasets.  
   - Contributor guidelines for extending the widget.  
-- **Video Tutorial**: 5-minute demo for all the filters, covering how and when to use each.  
+- **Export Workflows**: Save/load filter configurations as netCDF.  
+- **Video Tutorial**: 5-minute demo for all the filters, covering how and when to use each. 
 
 ### 2. **Extended Deliverables (Aspirational)**  
 - **Filter Chaining**: Sequential application of filters (e.g., confidence → median → SavGol).  
-- **Export Workflows**: Save/load filter in netCDF file format (or any other decided after discussion with the mentor).  
 - **Community Presets**: Curated settings for common use cases (e.g., fruit fly locomotion).  
 - **Hardware Acceleration**: GPU-backed filtering.  
 
@@ -57,20 +57,21 @@ This project aims to develop an intuitive napari plugin for Movement’s filteri
 | CB3  | Finalize widget CSS theme; draft Jupyter notebook | 5 | PR for docs infrastructure |  
 
 ### **Coding Period** *(June 2 – August 24)*  
+
 | Week | Focus Area | Critical Deliverables | Hours |  
 |------|------------|------------------------|-------|  
 | 1    | Widget Framework | Base widget class; confidence threshold UI | 15 |  
 | 2    | Median Filter | Rolling window logic; unit tests | 14 |  
 | 3    | SavGol Filter | Polynomial order control; benchmarks | 16 |  
 | 4    | Preview System | Live parameter tuning; visualization | 14 |  
-| 5    | Error Handling | Tooltip explanations; logging | 13 |  
+| 5    | Error Handling | Tooltip explanations; logging , Filter chaining (extended deliverable) | 18 |  
 | 6    | **Midterm** | Cross-platform tests; user docs v1 | 14 |  
-| 7    | Advanced Features | Filter chaining; undo/redo stack | 12 |  
-| 8    | Testing | Codecov integration; release pipeline | 15 |  
-| 9    | Documentation | Video tutorial; accessibility audit | 14 |  
-| 10   | Optimization | Memory leak fixes; batch processing | 12 |  
-| 11   | Polish | Keyboard shortcuts; contributor guide | 13 |  
-| 12   | Validation | Final benchmarks; release checklist | 12 |  
+| 7    | Advanced Features | Filter chaining; netCDF schema design for workflows/data | 16 |  
+| 8    | Export Implementation | UI elements for exporting (buttons, file dialogs)<br>Save/load workflows to netCDF<br>Export filtered data to netCDF;<br>Validation tests | 18 |  
+| 9    | Testing & Docs | Codecov integration;<br>Video tutorial (export demo);<br>Jupyter notebook updates | 15 |  
+| 10   | Optimization | Memory leak fixes;<br>Batch processing for large exports | 12 |  
+| 11   | Polish | Keyboard shortcuts;<br>Contributor guide for export features | 13 |  
+| 12   | Validation | Final benchmarks;<br>Release checklist | 12 |  
 
 ---
 
