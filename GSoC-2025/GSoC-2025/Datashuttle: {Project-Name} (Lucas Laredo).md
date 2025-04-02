@@ -26,17 +26,23 @@
 
 - **Implementation timeline**
 
-    Please include the following information:
-    1. A bullet point list with **minimal set of deliverables**
-    2. Additional **stretch goals** or "if time allows" deliverables (optional)
-    3. A detailed **weekly timeline**: when do you plan to do what? 
-        - Please use a week as a minimal unit of time, and include any planned vacations or other commitments. 
-        - This timeline could be formatted as a table. 
-        - Remember to also include the number of hours per week you plan to work on the GSoC project. 
-        - When estimating the required time for a task, keep in mind deliverables should include investigation/research, coding and documentation. 
-        - The default schedule for GSoC is 12 weeks - see the [GSoC timeline](https://developers.google.com/open-source/gsoc/timeline) for precise dates. 
-        - Also please specify any prep work you plan to do during the "Community bonding period".
-        - Usually week 1's deliverables already include some code. Week 6 marks the mid-term point, where usually more than half of the project should be completed. At the end of week 11 you may want to try to "freeze" the code and complete any remaining tests or documentation in weeks 11 and 12.
+| Week  | Tasks | Hours |
+|-----------|----------|-----------------|
+| Community Bounding | ... | 15h |
+| Week 1 | Start researching different cross-platform distribution methods. | 25h |
+| Week 2 | Evaluate compatibility, compare approaches, and decide on the best approach for PoC. Start the writing the documentation | 25h |
+| Week 3 | Start implementing PoC using the selected method, identify roadblocks. | 30h |
+| Week 4 | Conclute PoC implementation and validate it. Test on different OS environments and refine the approach. | 25h |
+| Week 5 | Integrate the selected method into Datashuttle, ensure compatibility, implement CLI support, and conduct preliminary tests. | 30h |
+| Week 6 | Integrate the selected method into Datashuttle, ensure compatibility, implement CLI support, and conduct preliminary tests. | 25h |
+| Week 7 | Refactor for retrocompatibility, optimize performance, test on different system configurations, and address issues. | 30h |
+| Week 8 | Refactor for retrocompatibility, optimize performance, test on different system configurations, and address issues. | 25h |
+| Week 9 | Write unit and integration tests, implement GitHub CI workflows, update documentation, and conduct a final review. | 25h |
+| Week 10 | Write unit and integration tests, implement GitHub CI workflows, update documentation, and conduct a final review. | 25h |
+| Week 11 | Perform final cross-platform testing, bug fixing, engage with the community for feedback, and submit final implementation. | 25h |
+| Week 12 | Perform final cross-platform testing, bug fixing, engage with the community for feedback, and submit final implementation. | 25h |
+
+
 
 - **Communication plan**
 
