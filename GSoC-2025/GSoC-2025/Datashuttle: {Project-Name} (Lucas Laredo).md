@@ -58,14 +58,14 @@
 
 - **Availability**
 
-    I plan to dedicate around 20 hours per week to the GSoC project while balancing my part-time internship. I am confident in my ability to manage both commitments. Additionally, I have 15 days of vacation, which I plan to use to further focus on the project.
+    I plan to dedicate around 25 hours per week to the GSoC project while balancing my part-time internship. I am confident with my ability to manage both commitments, specially since during the period of the program I will be on vacation from uni and which I plan to use it to further focus on the project.
 
 ## GSoC
 
 - **GSoC experience**
 
-    What do you expect from the program?
-
+    I perceive GSoC as a gateway to open-source collaboration. In other words, I expect from this program an opportunity to introduce myself to the open-source community and effectively contribute to it. Regarding specifically to the NIU team, I also believe that this is a great chance to create a lasting professional and collaborative relationship with the crew and to learn more about the Neuroscience field. 
+  
 - **Are you also applying to projects with other organisations in GSoC 2025?**
 
-    If so, which ones? What would be your preference in case of a tie?
+    I am not submitting any other proposals. 
