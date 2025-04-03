@@ -6,11 +6,12 @@
 - **GitHub username**: TheAnkushAgarwal
 - **Zulip username**: Ankush Agarwal
 - **Location & time-zone**: India (IST - Indian Standard Time, UTC +5:30)
-- **Personal website / project portfolio**: [Optional - Add if you have one]
+- **Personal website / project portfolio** (optional)
 - **Code contribution**:
   - [PR #481](https://github.com/neuroinformatics-unit/datashuttle/pull/481): Add v* in workflow tags to solve issue [#440](https://github.com/neuroinformatics-unit/datashuttle/issues/440). This PR got merged and is very useful for ensuring that incorrect-formatted tags are not accidentally pushed.
   - [PR #476](https://github.com/neuroinformatics-unit/datashuttle/pull/476): Enable the 'save' button on configs when widget input is changed to solve issue [#330](https://github.com/neuroinformatics-unit/datashuttle/issues/330). This PR closes the issue [#330](https://github.com/neuroinformatics-unit/datashuttle/issues/330) as the benefits of the functionality added were outweighed by costs in code implementation, due to edge cases that the original issue [#330](https://github.com/neuroinformatics-unit/datashuttle/issues/330) did not consider.
-- **Proposal discussion link**: [Add link if applicable]
+- **Proposal discussion link**: 
+    
 
 ## Project proposal
 
@@ -29,17 +30,17 @@ The main goals are to:
 
 ### Implementation timeline
 
-#### Minimal set of deliverables:
-- A thorough research of different methods to include Textual interfaces with Python applications for packaging.
-- Cross-platform executable distribution of datashuttle for Windows, macOS, and Linux
-- The application benefits from an automated testing solution that utilizes GitHub CI to build projects.
-- Documentation for maintenance and future development and preparing the installation guide which will cover all deployment platforms supported by our application.
+- #### Minimal set of deliverables:
+  - A thorough research of different methods to include Textual interfaces with Python applications for packaging.
+  - Cross-platform executable distribution of datashuttle for Windows, macOS, and Linux
+  - The application benefits from an automated testing solution that utilizes GitHub CI to build projects.
+  - Documentation for maintenance and future development and preparing the installation guide which will cover all deployment platforms supported by our application.
 
-#### Stretch goals:
-- Auto-update functionality for the standalone application
+- #### Stretch goals:
+  - Auto-update functionality for the standalone application
 
 
-#### Weekly timeline :
+- #### Weekly timeline :
 
 | Week | Tasks | Hours |
 |------|-------|-------|
@@ -69,7 +70,7 @@ I will maintain flexible meeting hours to address time zone differences because 
 
 ## Personal statement
 
-### Past experience
+- ### Past experience
 
 My skills in Python programming create a solid base while I remain a new developer in the open-source community. I proved my ability to read and modify datashuttle codebase through my recent work.
 
@@ -78,7 +79,7 @@ My skills in Python programming create a solid base while I remain a new develop
 
 I started my open-source contribution with the Neuroinformatics Unit organisation in March 2025. In such a short span of time, I was able to contribute to the dattashuttle repository and tried solving 2 issues along with my mid-term examinations at my university. My first open-source PR got merged with NIU and this organisation will remain close to my heart forever. 
 
-### Motivation: why this project?
+- ### Motivation: why this project?
 
 
 As from the past 1 month I am contributing to dattashuttle repository and I am familiar with the codebase. I have past experience in working with Python and this project excites me as I will be able to learn and grow. 
@@ -87,7 +88,7 @@ The past development of [Narrative Vision](https://narrative-vision.vercel.app/)
 
 Developing cross-platform packages with Textual interfaces presents a difficult but worthwhile process to increase my mastery of Python packaging approaches. The successful deployment of this implementation would help datashuttle users while establishing design criteria for Textual application interfaces across the entire Python environment.
 
-### Match: why you?
+- ### Match: why you?
 
 I am currently pursuing my Bachelor of Technology degree in Information Technology branch from Dr. B.R. Ambedkar National Institute of Technology Jalandhar. In my 3rd year of undergrad, I served as a founder in building the product [ColdScribe](https://www.producthunt.com/products/coldscribe#coldscribe). Coldscribe is an AI tool which generates customised cold emails. It uses Nextjs, Django and AWS services. Moreover, I have built a [Next.js landing page template](https://theankushagarwal.gumroad.com/l/NextjsLandingPage) and sold it on Gumroad, showcasing my passion for technology and continuous learning. 
 
@@ -101,7 +102,7 @@ Additionally, I like to write detailed-oriented and well-documented code. I will
 
 Apart from this, in the past, I have cleared JEE Mains examination and secured [98.75](https://drive.google.com/file/d/1CIgjOKSJvJNsuo1A_1i1n2a6zRfnDQwV/view?usp=sharing) percentile. It is considered one of the toughest logical examinations of India and around 1 million students appear for this examination. 
 
-**Availability**
+- **Availability**
 
 I am fully available to commit approximately 30 hours per week or more (as per project requirement of 350 total hours ) to this project throughout the GSoC period. I have no other major commitments during this time. Moreover, I will be having summer break from my university (Dr. B.R. Ambedkar National Institute of Technology Jalandhar) and I will not be involved in any other work during this period.
 
