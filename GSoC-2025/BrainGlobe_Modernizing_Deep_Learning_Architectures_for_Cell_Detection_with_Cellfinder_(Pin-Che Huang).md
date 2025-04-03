@@ -6,6 +6,7 @@
 **Email**: jerry40902@gmail.com  
 **GitHub username**: PinChe69 
 **Zulip username**: PinChe (ID: 894498)
+
 **Location & Time-zone**: Taiwan (GMT+8)  
 
 ---
@@ -16,7 +17,7 @@ I am currently preparing a contribution to `cellfinder` by building a minimal Py
 ---
 
 ### Proposal Discussion Link
-(TBD)
+[(TBD)](https://github.com/neuroinformatics-unit/gsoc/pull/48#issue-2970062488)
 
 ---
 
