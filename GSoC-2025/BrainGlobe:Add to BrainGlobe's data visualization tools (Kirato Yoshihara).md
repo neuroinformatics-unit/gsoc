@@ -46,16 +46,12 @@
 
 - **Synopsis**
 
-  This project aims to extend the powerful visualization capabilities of brainrender by integrating it with the widely-used napari image viewer. The goal is to make atlas-registered brain data visualization accessible to users without programming expertise. This is important because it democratizes access to advanced neuroimaging tools, fostering broader collaboration and enhancing data reproducibility in the open source community. The deliverables include the napari widget implementation, comprehensive tests for the new functionality, and detailed documentation, all of which will empower researchers and enthusiasts to leverage high-quality brain data more efficiently.
+This project integrates brainrender with the napari image viewer to enable atlas-registered brain data visualization for non-programmers. By combining these tools, it democratizes advanced neuroimaging capabilities, fostering collaboration and enhancing reproducibility in open source research.
 
-- **Implementation**
-
-  A bullet point list with **minimal set of deliverables**:
+- **Minimal set of deliverables**
 
   - A Python implementation of a napari widget that allows users to download and visualize atlas-registered data.
-  - Tests to cover any added functionality.
-  - Documentation for the new functionality.
-  - Preparation of mid-term and final reports.
+  - Tests and documentation to cover any added functionality.
 
 - **Implementation timeline**
 
@@ -69,187 +65,77 @@
   </thead>
   <tbody>
     <tr>
-      <td><b>Community Bonding Period</b><br>Mon 5/8 - Sun 6/1</td>
+      <td><b>Community Bonding</b><br>Mon 5/8 - Sun 6/1</td>
       <td>
         <ol type="1">
-          <li>Discuss project details with mentor and understand the codebase</li>
-          <li>Study the <a href="https://elifesciences.org/articles/65751" target=_blank>paper</a> on atlas-registered data and visualization methods</li>
-          <li>Set up the development environment and resolve dependencies</li>
-          <li>Initial exploration of brainglobe-data-api requirements (ref: <a href="https://github.com/brainglobe/BrainGlobe/issues/77">brainglobe/BrainGlobe#77</a>)</li>
-          <li>Familiarize with existing data resources (BrainTrawler, etc.)</li>
+          <li>Discuss project details with mentor and understand codebase</li>
+          <li>Study the <a href="https://elifesciences.org/articles/65751" target=_blank>paper</a> and focus on atlas-registered data and visualization methods</li>
         </ol>
       </td>
       <td>20</td>
     </tr>
     <tr>
-      <td><b>Week 1</b><br>Mon 6/2 - Sun 6/8<br><i>(Exam period)</i></td>
+      <td><b>Week 1</b><br>Mon 6/2 - Sun 6/8<br><i>(Exam)</i></td>
       <td>
         <ol type="1">
-          <li>Create technical specifications document for the widget</li>
+          <li>Create technical specifications document for widget</li>
         </ol>
       </td>
       <td>5</td>
     </tr>
     <tr>
-      <td><b>Week 2</b><br>Mon 6/9 - Sun 6/15</td>
+      <td><b>Week 2 ~ 5</b><br>Mon 6/9 - Sun 7/6</td>
       <td>
         <ol type="1">
-          <li>Design and initial planning for brainglobe-data-api architecture</li>
-          <li>Define data sources and API interfaces</li>
-          <li>Create project structure for brainglobe-data-api</li>
+          <li>Define interfaces focusing on streamlines data</li>
+          <li>Implement core data fetching for projection streamlines and basic retrieval API</li>
+          <li>Develop configuration for projection data sources</li>                    
         </ol>
       </td>
-      <td>20</td>
+      <td>80</td>
     </tr>
     <tr>
-      <td><b>Week 3</b><br>Mon 6/16 - Sun 6/22</td>
-      <td>
-        <ol type="1">
-          <li>Implement core data fetching components for brainglobe-data-api</li>
-          <li>Develop data structure definitions</li>
-          <li>Implement API endpoints for basic data retrieval</li>
-        </ol>
-      </td>
-      <td>20</td>
-    </tr>
-    <tr>
-      <td><b>Week 4</b><br>Mon 6/23 - Sun 6/29</td>
-      <td>
-        <ol type="1">
-          <li>Implement caching system for brainglobe-data-api</li>
-          <li>Develop configuration management for data sources</li>
-          <li>Add error handling and logging</li>
-        </ol>
-      </td>
-      <td>20</td>
-    </tr>
-    <tr>
-      <td><b>Week 5</b><br>Mon 6/30 - Sun 7/6</td>
-      <td>
-        <ol type="1">
-          <li>Integrate brainglobe-data-api with atlasapi</li>
-          <li>Implement data validation and preprocessing</li>
-        </ol>
-      </td>
-      <td>20</td>
-    </tr>
-    <tr>
-      <td><b>Week 6</b><br>Mon 7/7 - Sun 7/13<br><i>(Exam Prep Period)</i></td>
+      <td><b>Week 6 ~ 9</b><br>Mon 7/7 - Sun 8/3<br><i>(Exam weeks)</i></td>
       <td>
         <ol type="1">
           <li>Review implementation progress</li>
-          <li>Documentation planning for brainglobe-data-api</li>
-        </ol>
-      </td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td><b>Week 7</b><br>Mon 7/14 - Sun 7/20<br><i>(Exam Prep Period)</i></td>
-      <td>
-        <ol type="1">
-          <li>Bug fixes and minor improvements</li>
-          <li>Prepare integration plan for napari widget</li>
-        </ol>
-      </td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td><b>Week 8</b><br>Mon 7/21 - Sun 7/27<br><i>(Exam Prep Period)</i></td>
-      <td>
-        <ol type="1">
+          <li>Prepare napari widget integration plan</li>
           <li>Create mid-term project report</li>
-        </ol>
-      </td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td><b>Week 9</b><br>Mon 7/28 - Sun 8/3<br><i>(Exam Period)</i></td>
-      <td>
-        <ol type="1">
-          <li>Fix identified issues</li>
-          <li>Prepare for post-exam implementation phase</li>
-        </ol>
-      </td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td><b>Week 10</b><br>Mon 8/4 - Sun 8/10<br><i>(Post-Exam)</i></td>
-      <td>
-        <ol type="1">
-          <li>Begin napari widget implementation</li>
-          <li>Integrate widget with brainglobe-data-api</li>
-          <li>Implement basic widget functionality</li>
         </ol>
       </td>
       <td>20</td>
     </tr>
     <tr>
-      <td><b>Week 11</b><br>Mon 8/11 - Sun 8/17<br><i>(Summer break)</i></td>
+      <td><b>Week 10</b><br>Mon 8/4 - Sun 8/10</td>
       <td>
         <ol type="1">
-          <li>Continue basic widget functionality implementation</li>
-          <li>Design detailed widget UI components</li>
-          <li>Implement data source selection interface</li>
+          <li>Integrate napari widget with brainglobe-data-api</li>
+          <li>Create UI for streamlines data selection</li>
         </ol>
       </td>
-      <td>40</td>
+      <td>20</td>
     </tr>
     <tr>
-      <td><b>Week 12</b><br>Mon 8/18 - Sun 8/24<br><i>(Summer break)</i></td>
+    <td><b>Week 11 ~ 14</b><br>Mon 8/11 - Sun 9/8<br><i>(Summer break)</i></td>
       <td>
         <ol type="1">
-          <li>Complete widget UI implementation</li>
-          <li>Implement query interface for different data types</li>
-          <li>Add data visualization components
-          </li>
+          <li>Develop streamlines data query interface</li>
+          <li>Complete streamlines visualization components</li>
+          <li>Integrate visualization with napari layers and implement results display for connection data</li>
+          <li>Implement single neuron morphology and gene expression visualization</li>             
         </ol>
       </td>
-      <td>40</td>
+      <td>150</td>
     </tr>
     <tr>
-      <td><b>Week 13</b><br>Mon 8/25 - Sun 9/1<br><i>(Summer break)</i></td>
-      <td>
-        <ol type="1">
-          <li>Add data visualization components</li>
-          <li>Implement results display interface</li>
-          <li>Integrate visualization with napari layers</li>
-        </ol>
-      </td>
-      <td>35</td>
-    </tr>
-    <tr>
-      <td><b>Week 14</b><br>Mon 9/2 - Sun 9/8<br><i>(Summer break)</i></td>
-      <td>
-        <ol type="1">
-          <li>Complete implementation of remaining planned features</li>
-          <li><b>CODE FREEZE at end of week</b></li>
-        </ol>
-      </td>
-      <td>35</td>
-    </tr>
-    <tr>
-      <td><b>Week 15</b><br>Mon 9/9 - Sun 9/15<br><i>(Summer break)</i></td>
+      <td><b>Week 15 ~ 16</b><br>Mon 9/9 - Sun 9/22<br><i>(Summer break)</i></td>
       <td>
         <ol type="1">
           <li>Conduct comprehensive testing</li>
-          <li>Implement integration tests</li>
-          <li>Fix identified issues</li>
-          <li>Begin user documentation</li>
+          <li>Complete user documentation and prepare for the final evaluation</li>          
         </ol>
       </td>
-      <td>30</td>
-    </tr>
-    <tr>
-      <td><b>Week 16 (Last Week)</b><br>Mon 9/16 - Sun 9/22<br><i>(Summer break)</i></td>
-      <td>
-        <ol type="1">
-          <li>Complete user documentation</li>
-          <li>Prepare final demonstration</li>
-          <li>Discuss the final evaluation with my mentor</li>
-          <li>Reflect on and summarize the tasks I have completed so far</li>
-        </ol>
-      </td>
-      <td>25</td>
+      <td>55</td>
     </tr>
     <tr>
       <td><b>Stretch Goals (If time allows)</b></td>
@@ -265,21 +151,21 @@
 
 - **Communication plan**
 
-  For general discussions with my mentor, I'm planning to communicate via applications like Zulip or Slack, and for technical questions, through GitHub pull requests. Additionally, it would be helpful to have weekly video calls to report on progress and receive feedback for improvements.
+  I'll communicate with my mentor via Zulip or Slack for general discussions and use GitHub PR for technical questions. I would appreciate having weekly video calls for progress updates and feedback.
 
 ## Personal statement
 
 - **Past experience.**
 
-  I am currently conducting research at the Graduate School of Medicine at Osaka University, where my work focuses on using Diffusion Models to visualize human brain imagery. This research has given me valuable experience in neuroimaging techniques and data visualization. In addition, I have honed my Python skills in real-world settings through positions at two AI startups, where I developed image recognition models and built RAG systems. My technical expertise extends to finance, demonstrated during my summer internship at Goldman Sachs where I developed an AI model for FX trading. Throughout these experiences, I've continuously refined my skills in Python programming, data visualization, and machine learning - a combination particularly relevant to creating effective neuroimaging visualization tools. These diverse yet complementary experiences have equipped me with the technical capabilities and domain knowledge needed to successfully implement the brainrender-napari integration.
+  I am conducting research at Osaka University, focusing on Diffusion Models for visualizing human brain imagery. This work has provided valuable neuroimaging and data visualization experience. I also refined my Python skills at two AI startups, developing image recognition models and building RAG systems, and at Goldman Sachs, where I created an AI model for FX trading. These experiences combine to give me the technical and domain knowledge needed for successfully implementing the brainrender-napari integration.
 
 - **Motivation: why this project?**
 
-  My research on visualizing human brain imagery through Diffusion models is deeply intertwined with neuroscience, requiring advanced visualization techniques in Python. This project represents a perfect alignment with both my technical skills and research interests. The potential impact of this open-source tool particularly motivates me - by making atlas visualization more accessible to researchers without extensive programming expertise, we can democratize access to sophisticated neuroimaging tools. This accessibility will accelerate neuroscience research by lowering technical barriers and enabling more scientists to effectively visualize and analyze brain data.
+  I’m motivated by the opportunity to combine my Diffusion model–based brain imaging research with advanced Python visualization techniques. This open-source tool will lower technical barriers and make neuroimaging more accessible, accelerating neuroscience research by enabling more scientists to visualize and analyze brain data effectively.
 
 - **Match: why you?**
 
-  I am uniquely qualified for this project as evidenced by my multiple contributions to brainrender-napari, where I've successfully submitted several feature enhancement PRs. This demonstrates my ability to properly implement, test, and document code within this specific ecosystem. My experience with the project also ensures I can effectively communicate with mentors and understand the development workflow. Additionally, my background includes Python-focused internships where I gained valuable experience working on real-world projects with practical constraints and timelines. This combination of project-specific contributions and broader development experience gives me strong confidence in my ability to successfully complete this project and deliver high-quality results that benefit the community.
+  I bring specialized experience from my feature enhancement PRs to brainrender-napari, demonstrating my ability to implement, test, and document code within this ecosystem. My background in Python-focused internships further honed my real-world development skills. Together, these experiences give me confidence in delivering high-quality results for this project and its community.
 
 - **Availability**
 
