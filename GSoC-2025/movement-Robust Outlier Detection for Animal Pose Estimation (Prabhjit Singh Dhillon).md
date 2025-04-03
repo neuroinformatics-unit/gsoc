@@ -12,12 +12,11 @@
   - [Add trajectory complexity measures - implement straightness index](https://github.com/neuroinformatics-unit/movement/pull/514)
   - [Check log messages in tests](https://github.com/neuroinformatics-unit/movement/pull/512)
   - [Improve point trajectory estimation by aggregating across sources](https://github.com/neuroinformatics-unit/movement/pull/511)
-
-
+    -[Add bidirectional option to filter_by_displacement](https://github.com/neuroinformatics-unit/movement/pull/531)
 ## Project proposal
 
 ### Synopsis
-Animal pose estimation frameworks have advanced the study of animal behavior, yet their outputs can be marred by occasional inaccuracies such as keypoints that "jump" to implausible locations. This project proposes the design and implementation of a comprehensive outlier detection module for the movement package. By integrating methods based on temporal smoothness, pose plausibility, and multi-view consistency, this solution aims to automatically flag a high percentage of erroneous keypoint predictions while maintaining low false positive rates, thereby significantly improving the quality control process in animal behavior research.
+Animal pose estimation frameworks have advanced the study of animal behavior, yet their outputs can be marred by occasional inaccuracies such as keypoints that "jump" to implausible locations. This project proposes the design and implementation of a comprehensive outlier detection module for the movement package. By integrating methods based on temporal smoothness, pose plausibility, and multi-view consistency, this solution aims to automatically flag a high percentage of faulty keypoint predictions while maintaining low false positive rates, thereby significantly improving the quality control process in animal behavior research.
 
 ### Implementation timeline
 
@@ -80,10 +79,21 @@ I plan to communicate with my mentors (@niksirbi and @sfmig) through:
 ## Personal statement
 
 ### Past experience
-I hold a Bachelor's degree with a dual major in Computer Science and Applied Mathematics (CGPA: 3.7/4.0) from San Jose State University. I've worked as a Machine Learning Engineer until December 2024, where I built scalable machine learning models. I have extensive experience in Python, C++, JavaScript, and deep learning frameworks (PyTorch, TensorFlow). I've contributed to high-impact open-source projects such as DeepMind OpenSpiel and DeepMind TORAX, and most recently to the movement package through several pull requests.
+I hold a Bachelor's degree with a dual major in Computer Science and Applied Mathematics (CGPA: 3.7/4.0) from San Jose State University. I've worked as a Machine Learning Engineer until December 2024, where I built scalable machine learning models. I have extensive experience in Python, C++, JavaScript, and deep learning frameworks (PyTorch, TensorFlow). I've contributed to high-impact open-source projects such as Google DeepMind OpenSpiel, DeepMind Torax, DeepMind Mujoco, google generative ai js/python and fortran libraries, and  most recently to the movement package through several pull requests.
+
+(https://github.com/demoncoder-crypto/Deeplense_gravitational-Images)
+My Highlight project - Deeplense Gravitational Imaging - This project implements and evaluates deep learning models for classifying simulated gravitational lensing images into three categories: no substructure (no_sub), Cold Dark Matter substructure (cdm), and Axion vortex substructure (axion). The core methodology involves comparing a standard deep learning architecture (ResNet-18) against a custom Convolutional Neural Network (CNN) whose architecture is specifically inspired by gravitational lensing physics.
+
+- Key Components: Data Handling: A robust pipeline loads and preprocesses .npy image data (64x64 pixels), handling the unique data structure of the 'axion' class. Data is split into training, validation, and test sets (80:10:10), with standard augmentations (rotations, flips) and normalization applied. PyTorch Datasets and DataLoaders ensure efficient batching.
+- Model Architectures: Baseline Model: A ResNet-18 architecture, adapted for single-channel grayscale input, serves as a standard deep learning benchmark.
+- Physics-Inspired CNN: A custom CNN architecture featuring elements chosen to potentially better capture lensing features, such as varying kernel sizes (5x5 to detect arc-like structures) and concatenated global average and max pooling to summarize spatial information effectively.
+- Ensemble Model: Combines the predictions (probabilities) of the ResNet and Physics-Inspired CNN, weighted potentially by their validation performance, aiming for improved accuracy and robustness.
+- Training: Models are trained using a standard supervised learning procedure with the Adam optimizer, Cross-Entropy loss, and a learning rate scheduler (ReduceLROnPlateau) based on validation accuracy. The best performing model weights during training (based on validation accuracy) are saved.
 
 ### Motivation: why this project?
-Animal behavior research is a critical field that increasingly relies on accurate pose estimation. The current limitations in detecting outliers can lead to erroneous conclusions or require excessive manual work. I'm motivated to tackle this challenge because it combines my technical skills in machine learning and signal processing with a meaningful application in scientific research. Creating a robust outlier detection system will significantly enhance data quality and research reproducibility in this field.
+Animal behavior research increasingly depends on accurate pose estimation, yet current frameworks often produce inaccuracies that can lead to erroneous conclusions or require labor-intensive manual corrections. I'm motivated to tackle this challenge because it combines my technical expertise in machine learning and signal processing with a meaningful application in scientific research. Developing a robust outlier detection system will significantly enhance data quality and research reproducibility by automating the identification of errors, which is especially critical for large-scale studies.
+
+In addition to addressing these technical challenges, I have a keen interest in neuroscience. I aspire to pursue higher education and eventually work in an AI biology lab (hopefully this), and this project represents a unique opportunity to bridge my current skills with my long-term career goals. By working on this project, I will gain hands-on experience with advanced computational techniques, explore innovative approaches to biological data analysis, and establish a solid foundation for future studies in neuroscience. This integration of technical and scientific inquiry not only advances animal behavior research but also sets a clear path for my future endeavors in AI-driven biological research.
 
 ### Match: why you?
 My unique combination of academic background, industry experience, and open-source contributions makes me well-suited for this project. My dual major in Computer Science and Applied Mathematics provides the theoretical foundation needed for implementing statistical methods like PCA and Kalman filters. My experience as a Machine Learning Engineer has equipped me with practical skills in developing scalable, production-quality code. Additionally, my prior contributions to the movement package demonstrate my familiarity with the codebase and my ability to implement features that meet the project's standards.
@@ -97,4 +107,4 @@ I will be dedicating 30-35 hours per week to this project throughout the GSoC pe
 From the GSoC program, I expect to gain valuable experience in collaborative open-source development, working with domain experts, and creating software that has a real impact on scientific research. I look forward to improving my skills in Python, testing methodologies, and documentation practices while contributing to the neuroinformatics community.
 
 ### Are you also applying to projects with other organisations in GSoC 2025?
-Yes
+No, this is the only project I am applying to.
