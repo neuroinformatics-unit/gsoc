@@ -10,11 +10,8 @@
 * **Personal website / project portfolio**: [https://github.com/angkul07](https://github.com/angkul07) & [https://www.kaggle.com/angkul/](https://www.kaggle.com/angkul/)  
 * **Code Contribution**:
 
-| Issue | Pull request | Description |
-| :---- | :---- | :---- |
-| [\#454](https://github.com/neuroinformatics-unit/movement/issues/454) | [\#455](https://github.com/neuroinformatics-unit/movement/pull/455) | Added a generall filter function for mean, median, min and max filters. |
-| [\#326](https://github.com/neuroinformatics-unit/movement/issues/326) | [\#500](https://github.com/neuroinformatics-unit/movement/pull/500) | Extended the interpolate\_over\_time to bfill, ffill, nearest and constant functionality. |
-| [\#10](https://github.com/neuroinformatics-unit/movement/issues/10) | [\#457](https://github.com/neuroinformatics-unit/movement/pull/457)(draft) | Working on the implementation of Kalman Filter for movement. |
+  i. [Added a generall filter function for mean, median, min and max filters](https://github.com/neuroinformatics-unit/movement/pull/455)
+  <br>ii. [Extended the interpolate\_over\_time to bfill, ffill, nearest and constant functionality](https://github.com/neuroinformatics-unit/movement/pull/500)
 
 * **Proposal discussion link:** [https://github.com/neuroinformatics-unit/gsoc/pull/4](https://github.com/neuroinformatics-unit/gsoc/pull/4)
 
