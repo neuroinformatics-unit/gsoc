@@ -11,7 +11,7 @@
   - [PR #481](https://github.com/neuroinformatics-unit/datashuttle/pull/481): Add v* in workflow tags to solve issue [#440](https://github.com/neuroinformatics-unit/datashuttle/issues/440). This PR got merged and is very useful for ensuring that incorrect-formatted tags are not accidentally pushed.
   - [PR #476](https://github.com/neuroinformatics-unit/datashuttle/pull/476): Enable the 'save' button on configs when widget input is changed to solve issue [#330](https://github.com/neuroinformatics-unit/datashuttle/issues/330). This PR closes the issue [#330](https://github.com/neuroinformatics-unit/datashuttle/issues/330) as the benefits of the functionality added were outweighed by costs in code implementation, due to edge cases that the original issue [#330](https://github.com/neuroinformatics-unit/datashuttle/issues/330) did not consider.
 - **Proposal discussion link**: 
-    
+  - [neuroinformatics-unit#50](https://github.com/neuroinformatics-unit/gsoc/pull/50)
 
 ## Project proposal
 
@@ -120,4 +120,4 @@ Google Summer of Code will deliver the following benefits to me:
 
 - **Are you also applying to projects with other organisations in GSoC 2025?**
 
-I am not applying to any other GSoC organisation. I have chosen Datashuttle because it combines my skills perfectly and provides me with existing knowledge of the codebase due to earlier work.
+I am not applying to any other GSoC organisation. I have chosen Neuroinformatic Unit (datashuttle) because it combines my skills perfectly and provides me with existing knowledge of the codebase due to earlier work.
