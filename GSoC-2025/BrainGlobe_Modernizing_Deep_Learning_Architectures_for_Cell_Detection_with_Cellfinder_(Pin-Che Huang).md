@@ -2,11 +2,11 @@
 
 ### Personal Details
 
-**Full name**: Pin-Che Huang  
-**Email**: jerry40902@gmail.com  
-**GitHub username**: PinChe69 
-**Zulip username**: PinChe (ID: 894498)
-**Location & Time-zone**: Taiwan (GMT+8)  
+- **Full name**: Pin-Che Huang  
+- **Email**: jerry40902@gmail.com  
+- **GitHub username**: PinChe69 
+- **Zulip username**: PinChe (ID: 894498)
+- **Location & Time-zone**: Taiwan (GMT+8)  
 
 ---
 
@@ -16,7 +16,7 @@ I am currently preparing a contribution to `cellfinder` by building a minimal Py
 ---
 
 ### Proposal Discussion Link
-https://github.com/neuroinformatics-unit/gsoc/pull/48#issue-2970062488
+Link: https://github.com/neuroinformatics-unit/gsoc/pull/48#issue-2970062488
 
 ---
 
@@ -65,7 +65,7 @@ I have experience in Python (NumPy, OpenCV, Tkinter), C, C++, HTML/CSS/JS, and e
 
 In 2024, I interned at Stanford’s Wu Tsai Neurosciences Institute, contributing to EasyEVO—a hardware-software platform for directed evolution. I worked on circuit design, embedded debugging, and lab automation.
 
-As vice captain of NTHU’s iGEM team, I oversee the coordination between wet and dry lab teams. In our 2024 project “Pandage,” I led dry lab modeling: building an ODE system inspired by Lotka–Volterra to simulate the interaction of Gram bacteria, probiotics (L. lactis), and antimicrobial peptides. I used Python (`scipy.integrate.odeint`) for simulation and trained an MLP neural network with >3600 synthetic datasets to recommend personalized drug dosing strategies. I also ran Ansys simulations for drug diffusion and modeled discrete hydrogel contraction for dosage control.
+As vice captain of NTHU’s iGEM team, I oversee the coordination between wet and dry lab teams. In our 2024 project “Pandage,” I led dry lab modeling: building an ODE system inspired by Lotka–Volterra to simulate the interaction of Gram bacteria, probiotics (L. lactis), and antimicrobial peptides. I used Python for simulation and trained an MLP neural network with >3600 synthetic datasets to recommend personalized drug dosing strategies. I also ran Ansys simulations for drug diffusion and modeled discrete hydrogel contraction for dosage control.
 
 This project deepened my understanding of how modeling and machine learning can drive personalized biomedical applications—insight I hope to bring to `cellfinder`.
 
