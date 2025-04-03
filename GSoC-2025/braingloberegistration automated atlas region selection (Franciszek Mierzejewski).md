@@ -60,7 +60,7 @@ I’m Franciszek Mierzejewski, a 1<sup>st</sup> year student from the University
 
 I have worked on an open-source project before – DryPi, a team submission to the 2023 AstroPi competition (hosted by European Space Agency and Raspberry Pi Foundation) that with Artificial Intelligence used images taken from a Rapberry Pi 4 Model 4 to calculate NDVI (Normalised Difference Vegetation Index) values that analysed near-infrared and red light reflectance (a grayscale image) to map to a colourmap to generate into a false-colour image. This false-color image, alongside the International Space Station (ISS) coordinates at the time of the image being taken, was then used to compare with historical open-source data to look at how vegetation density has changed on different continents in the last few decades. It achieved ‘Flight Status’ on the ISS in May 2023. The code for DryPi can be found at: [GitHub - DryPi](https://github.com/FranciszekMierzejewski/AstroPi-Team-DryPi)
 
-![NDVI Usage Image](https://imgur.com/a/NSF75o3)
+![NDVI Usage Image]("C:\Users\frane\OneDrive\Documents\Coding\Open Source Projects\NDVI usage example.png")
 
 Figure 1 - Example of NDVI usage
 
