@@ -1,9 +1,9 @@
-# Datashuttle: {Project-Name} (Lucas Laredo)  
+# datashuttle: Deploy datashuttle as an installable package (Lucas Laredo)  
 
 ## Personal details
 - **Full name** Lucas Rocha Laredo
 - **Email** devlucaslaredo@gmail.com
-- **GitHub username** [laredoo](github.com/laredoo)
+- **GitHub username** [laredoo](https://github.com/laredoo/)
 - **Zulip username** [Lucas Laredo](https://neuroinformatics.zulipchat.com/#user/890277)
 - **Location & time-zone** Belo Horizonte, Brazil & GMT-3 (BRT)
 - **Personal website / project portfolio** [GitHub Portfolio](https://github.com/laredoo/)
@@ -22,27 +22,37 @@
 
 - **Synopsis**
 
-    Briefly explain: what is the project about? Why is it important? What are the goals? What are the deliverables? How would the open source community benefit from this project?
+    Datashuttle currently relies on dependency and environment managers (i.e. Conda, uv, Poetry) to use. In order to ensure more accessibility for those without coding skills, this proposal aims to implement an executable version to all available platforms.
+  
+  **Deliverables:**
+
+1. Research approaches for cross-platform distribution of Datashuttle
+2. A proof of concept (PoC) implementing the researched packages/approaches for cross-platform distributions
+4. A retrocompatible version of Datashuttle implementing a version using the best cross-platform executable package.
+5. Updated documentation and tests (unit/integration) implementation in the project's GitHub CI
+
+   **Stretch Goals:**
+   
+1. A Datashuttle web application version. This means implementing an early Datashuttle REST API and a front-end web interface.
+2. Containerize (using Docker) both the REST API and web interface to facilitate deployment.
 
 - **Implementation timeline**
 
 | Week  | Tasks | Hours |
 |-----------|----------|-----------------|
-| Community Bounding | ... | 15h |
+| Community Bounding | Project refinement: Discuss the proposal with the menthor and understand/plan the best approach. Further familiarize with the project standard packages and expected results. | 15h/20h |
 | Week 1 | Start researching different cross-platform distribution methods. | 25h |
-| Week 2 | Evaluate compatibility, compare approaches, and decide on the best approach for PoC. Start the writing the documentation | 25h |
-| Week 3 | Start implementing PoC using the selected method, identify roadblocks. | 30h |
-| Week 4 | Conclute PoC implementation and validate it. Test on different OS environments and refine the approach. | 25h |
-| Week 5 | Integrate the selected method into Datashuttle, ensure compatibility, implement CLI support, and conduct preliminary tests. | 30h |
-| Week 6 | Integrate the selected method into Datashuttle, ensure compatibility, implement CLI support, and conduct preliminary tests. | 25h |
-| Week 7 | Refactor for retrocompatibility, optimize performance, test on different system configurations, and address issues. | 30h |
-| Week 8 | Refactor for retrocompatibility, optimize performance, test on different system configurations, and address issues. | 25h |
-| Week 9 | Write unit and integration tests, implement GitHub CI workflows, update documentation, and conduct a final review. | 25h |
-| Week 10 | Write unit and integration tests, implement GitHub CI workflows, update documentation, and conduct a final review. | 25h |
-| Week 11 | Perform final cross-platform testing, bug fixing, engage with the community for feedback, and submit final implementation. | 25h |
-| Week 12 | Perform final cross-platform testing, bug fixing, engage with the community for feedback, and submit final implementation. | 25h |
-
-
+| Week 2 | Evaluate compatibility, compare approaches, and decide on the best approach for PoC. Start the writing the documentation. | 30h |
+| Week 3 | Start implementing PoC using the selected method, identify roadblocks. | 25h |
+| Week 4 | Conclude PoC implementation and validate it. Test on different OS environments and refine the approach. | 30h |
+| Week 5 | Integrate the selected method into Datashuttle, ensure compatibility. | 25h |
+| Week 6 | Implement Python API support, and conduct preliminary tests. First mentor review for mid-term point. | 25h |
+| Week 7 | Test on different system configurations, and address issues. | 25h |
+| Week 8 | Validate/Optimize performance. | 25h |
+| Week 9 | Write further unit and integration tests and update documentation | 30h |
+| Week 10 | Implement GitHub CI workflows. | 20h/25h |
+| Week 11 | Final cross-platform testing, address any remaning bug and engage with the community for feedback. | 30h |
+| Week 12 | Final mentor review. Prepare for final submission. | 30h |
 
 - **Communication plan**
 
