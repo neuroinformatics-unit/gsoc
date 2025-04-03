@@ -140,6 +140,7 @@ As neuroscience projects grow in size, Datashuttle helps such projects manage th
             <td>
                 <ul>
                     <li>Complete testing for Google Drive transfers and update documentation for setting up Google Drive as central storage.</li>
+                    <li> Refactor the codebase if needed. </li>
                     <li>Implement Rclone's config setup for AWS buckets and expose it in Datashuttle's Python API.</li>
                 </ul>
             </td>
