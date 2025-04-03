@@ -43,7 +43,7 @@ Minimal Deliverables:
 Stretch Goals:
 1. Enhancing the TUI and  developing support for transfer progress visualization in the TUI
 2. Optimization for large dataset transfers
-3. Support for additional storage solutions, based on community needs such as Ceph, Cloudflare, FTP. (FTP would be my priority as it's a universal protocol that would enable compatibility with many existing lab setups and institutional servers.)
+3. Support for additional storage solutions, based on community needs such as Ceph, Cloudflare, FTP.
 4. Scope for implementing additional features after consulting with my mentor and completing all remaining work throughout the journey of development.
 
 
