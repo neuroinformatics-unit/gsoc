@@ -16,7 +16,7 @@
 
 - **Proposal discussion link**
 
-    ---
+    [#46](https://github.com/neuroinformatics-unit/gsoc/pull/46)
 
 ## Project proposal 
 
