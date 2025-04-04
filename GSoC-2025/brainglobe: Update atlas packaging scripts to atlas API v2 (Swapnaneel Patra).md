@@ -66,6 +66,12 @@ and enhanced reproducibility in neuroanatomical research.
 
 I plan to dedicate around 15 hours per week throughout the program.
 
+- **Communication plan**
+  
+  - Github: Issue tracking and PR review
+  - Zulip: Regular weekly updates/questions related to day-to-day activity
+  - Email: if needed
+
 
 
 ## GSoC
