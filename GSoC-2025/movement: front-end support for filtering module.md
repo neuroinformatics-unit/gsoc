@@ -77,7 +77,7 @@ This project aims to develop an intuitive napari plugin for Movement’s filteri
 | Channel | Purpose | Frequency |  
 |---------|---------|-----------|  
 | Zulip   | Daily updates; progress tracking | Daily (Mon–Fri) |  
-| Zoom    | Weekly sync meetings; demos | Weekly (Thursdays) |  
+| Zoom    | Weekly sync meetings; demos | Weekly (Friday) |  
 | GitHub  | PR reviews; issue tracking | Per milestone |  
 
 ---
