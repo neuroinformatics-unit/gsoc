@@ -14,7 +14,7 @@
 
 - **Proposal discussion link**
 
-    Please link to the pull request where you discussed your project proposal with the community. 
+    [Proposal Discussion](https://github.com/neuroinformatics-unit/gsoc/pull/57)
 
 ## Project proposal 
 - **Synopsis**
