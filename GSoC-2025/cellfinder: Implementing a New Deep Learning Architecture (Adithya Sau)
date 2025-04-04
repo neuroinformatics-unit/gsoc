@@ -16,8 +16,10 @@
 
 https://github.com/brainglobe/brainglobe.github.io/pull/314
 -Added an Examples of brainreder in sphinx documentation
-https://github.com/neuroinformatics-unit/ethology/pull/80
+https://github.com/neuroinformatics-unit/ethology/pull/82
 -Added a python program that can extract evenly spaced frames over a specified interval.
+https://github.com/neuroinformatics-unit/ethology/pull/81
+-Added a python program and can track object(cars) when user selects on the detected object
 ---
 
 
