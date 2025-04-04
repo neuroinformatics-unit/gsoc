@@ -1,0 +1,153 @@
+## Personal details
+
+- **Full name** Parikshit Singh Rathore
+- **Email** 14.parikshitsingh@gmail.com
+- **GitHub username** parikshit14
+- **Zulip username** PSRathore
+- **Location & time-zone** Bengaluru, India | IST (GMT +5:30)
+- **Personal website / project portfolio** https://sites.google.com/view/parikshit-singh-rathore
+- **Code contribution**
+
+    1. https://github.com/neuroinformatics-unit/ethology/pull/58 (ethology)
+    2. https://github.com/neuroinformatics-unit/movement/pull/526 (movement)
+    3. https://github.com/brainglobe/cellfinder/pull/494 (cellfinder)
+    4. https://github.com/brainglobe/brainglobe-workflows/pull/145 (brainglobe-workflow)
+
+- **Proposal discussion link**
+
+    Please link to the pull request where you discussed your project proposal with the community. 
+
+## Project proposal 
+_Length: max 1 page_
+
+- **Synopsis**
+
+    Understanding every pixel in a video and tracking their motions is a fundamental task in computer vision, which is of great importance to video object tracking, segmentation, action recognition, and physical world understanding. Previously solved using opticalflow, but fails during occlusion. TAP models have gained recent popularity because of there ability to model long range point motion which can include occlusion. Any-point trackers enable detailed monitoring of animal movements and behaviors without invasive methods.
+
+    references -
+    TAP Models : https://paperswithcode.com/task/point-tracking
+    - TAPTR - 
+        paper: https://arxiv.org/html/2403.13042v1
+        code: https://github.com/IDEA-Research/TAPTR
+    - Co-Tracker - 
+        paper: https://arxiv.org/abs/2307.07635
+        code: https://github.com/facebookresearch/co-tracker
+    - TAPIR - 
+        paper: https://arxiv.org/abs/2306.08637
+        code: https://github.com/google-deepmind/tapnet
+
+
+- **Implementation timeline**
+
+    **deliverables**:
+    - Add support for SOTA track-any-point models to ethology. Current SOTA include [SPOT](https://arxiv.org/abs/2503.06471) , [TAPTR](https://arxiv.org/html/2403.13042v1), and [Spatial tracker](https://arxiv.org/abs/2404.04319). Depending upon the feasibility, acurracy vs inference-time trade-off
+
+    - Napari support to interact with these models
+        1. Drop-down for supported trackers
+        2. Query modes: Grid (with customizable size) / specific query points / random query points
+        3. Load videos, project the first frame, custom select the point using cursor/ X,Y coordinates.
+        4. Customizeable parameters for TAP models
+
+    - Combining detection with TAP models
+        Get the centroid of the detected bounding box (yolo/rt-detr/co-detr) -> Extract the coordinates of the centroid -> Apply TAP module on the coordinates -> compare how TAP models work vs standard trackers (Bytetrack/BoT-SORT)
+
+    - Integration with any movements dataset
+
+    - Exporting the generated trajectories/videos as a movements dataset.
+
+    I feel 30% of the efforts will go into developing the napari plugins while the remaining 70% in the backend support and customizations.
+
+    **stretch goals**:
+    - Benchmarking these TAP models on dataset of interest (with ground truth)
+    - Solve existing issues in ethology, some interesting ones include (not an exhaustive list):
+        1. https://github.com/neuroinformatics-unit/ethology/issues/5 : Identity the spikes in the TAP trajectories using difference in kalman-filter predictions vs the actual TAP trajectory
+        2. https://github.com/neuroinformatics-unit/ethology/issues/15 : Bounding box centroid -> SAM/SAMURAI input prompt coordinates -> Video with segmentation masks on the detected objects with preseved object-id
+    - Implement low-shot detectors like [ABA OSOL](https://openaccess.thecvf.com/content/WACV2023/papers/Hsieh_Aggregating_Bilateral_Attention_for_Few-Shot_Instance_Localization_WACV_2023_paper.pdf) for labeling large dataset.
+    
+    **community bonding period**:
+    - Get to know the core-team and co-interns
+    - Checkout how the team prefer to communicate and adapt
+    - Convey the expectations and deliverables
+    - Add detail and further breakdown on the weekly deliverables
+    - Contribute to some issues
+    - Brainstorming on the future path for the project
+    - Setup devlogs for weekly updates during the coding period
+
+    **weekly timeline**:
+    | Week | Task                                                                                     | Hours/Week |
+    |------|------------------------------------------------------------------------------------------|------------|
+    | 1    | Research and implement initial support for SPOT tracker in ethology.                    | 30         |
+    | 2    | Add support for TAPTR tracker and test integration with ethology.                       | 30         |
+    | 3    | Video features in Napari: <br> 1. support for loading video <br> 2. taking input on the video (coordinates of points to track) <br> | 30         |
+    | 4    | Napari plugins to add support for customizing the model parameters: model checkpoints, offline/online, dropdown with supported models, and query modes (grid/point/bbox centroid) | 30         |
+    | 5    | Check the feasibility of each tracker with a benchmark metric to check the the efficiency of each of these TAP models. (on a dataset of interest)                   | 30         |
+    | 6    | Continued benchmarking: Benchmarking on Occlusion Accuracy, fraction of visible points tracked within 1, 2, 4, 8 and 16 pixels (averaged over thresholds), Average Jaccard (measuring tracking and occlusion prediction accuracy together) [these metrics were used in co-tracker evaluation] | 30         |
+    | 7    | Integrate detection models like YOLOv8, Rt-Detr (from original repository or ultralytics) | 30         |
+    | 8    | Compare TAP models with state of the art tracking algorithms like ByteTrack, BotSORT, SMILETrack for tracking centroid of detection bounding box    | 30         |
+    | 9    | Add napari plugins for detection and tracking                         | 30         |
+    | 10   | Implement exporting trajectories/videos as movement datasets. | 30         |
+    | 11   | Solve existing issues in ethology (e.g., trajectory spikes, segmentation masks).        | 30         |
+    | 12   | Finalize code, write leftout tests, and prepare documentation and submit final deliverables.                    | 30         |
+
+
+- **Communication plan**
+
+    1. During the initial days, we can have introductory meeting with the entire team. Getting to know each other, familirizing with the work culture of the team.
+
+    2. Communication can happen via PRs, Zulip and Video calls. 
+
+    3. Time availability 
+        - Chat (07:00 - 00:00 IST)
+        - Video calls/Meetings (18:00 - 00:00 IST)
+        - Meetings can be held twice a week/once a week for an hour discussing the progress/blockers (with mentors)
+        - Once a week/bi-weekly meeting with the entire team  
+    4. Weekly devlogs 
+
+## Personal statement
+
+_Length: max 0.75 page_
+
+- **Past experience.** 
+
+    **Open-Source contributions**
+    1. Previously interned at outreachy (https://www.outreachy.org/) similar to GSoC. The organization I participated under was ModECI (https://github.com/ModECI) under Padraig Gleeson (UCL) and Ankur Sinha (UCL). My contributions include the following repositories [MDF](https://github.com/ModECI/MDF/issues?q=is%3Apr%20state%3Aclosed%20author%3Aparikshit14) & [modelspec](https://github.com/ModECI/modelspec/issues?q=is%3Apr+author%3Aparikshit14). 
+    2. I have also contributed to [Keras-CV](https://github.com/keras-team/keras-cv/pull/186), [tardis](https://github.com/tardis-sn/tardis/pull/1562), [TrainYourOwnYOLO](https://github.com/AntonMu/TrainYourOwnYOLO/pull/192)
+
+    **Programming Experience**
+    1. Currently working as a Junior Research Fellow at Indian Institute of Science working towards solving transportation issues using AI (2023-Current)
+    2. Worked as an SRE intern at Motorola Solution (2021-2022)
+        - Buit GitHub Advanced security workflows for static code scanning with CodeQL
+        - Migrated Datadog dashboards to Grafana
+    3. Data-Science intern at Quantum AI Systems (2020)
+        - Deployed a binary classification based loan approval Web-App using Django
+        - Implemented facial landmark detection deep-learning models
+
+
+- **Motivation: why this project?**
+
+    Ethology facilitate the application of a wide range of computer vision tasks to animal behaviour research at a single place align with my goal of AI for Impact. Any-point trackers enable detailed monitoring of animal movements and behaviors without invasive methods, preserving naturalistic observation. My passion for AI for impact led me to a research role at IISc, where I tackle Bengaluru’s severe traffic congestion using multi-object tracking and UAV-based solutions. I presented our work at ICVES conference. Earlier, I focused on AI for agriculture, developing a low-complexity weed recognition model published at HiPC. I also interned at Princeton’s ModECI, standardizing computational model exchanges, and contributed to open-source projects like Keras-CV and TARDIS.
+
+
+- **Match: why you?**
+
+    - In my current work, I work with object detection and tracking models for UAVs to monitor traffic. I have extensively benchmarked the SOTA tracking models on metrics including HOTA, Identity, MOTA. Published a paper titled: Benchmarking Object Detection and Tracking for UAVs (proceeding under way). Moving cameras add lot of complexity in terms of trajectory analysis, motion blur, etc
+    - Experience with edge deployment, particularly nvidia jetson orin nano and RPi. We can take this project and add edge-feasibility perspective as well
+    - I have worked with a very similar org previously working on neuro-science and ML intersection: ModECI, which works towards interoperability of computational models in computational neuro-science and Machine Learning, making me a perfect fit for this organization
+
+- **Availability**
+
+    - Currently, I am working as a researcher at a university. I have enough time to manage both GSoC and my full time research role.
+    - I was recently selected as a visiting scholar at MIT and was invited to visit the campus in first week of June for 5-6 days. So will be unavailable during that period if my visa stuff get sorted, but will make sure to compensate on the lost time.
+    - Dont have any other planned events as of now, if in case something arise, will make sure to put in extra effort.
+
+## GSoC
+
+_Length: max 0.25 page_
+
+- **GSoC experience**
+
+    I expect research outcomes, collaborators for long time, improvement in my programming and communication skills, join the core team :grin: (not in any order).
+
+- **Are you also applying to projects with other organisations in GSoC 2025?**
+
+    I am not.
