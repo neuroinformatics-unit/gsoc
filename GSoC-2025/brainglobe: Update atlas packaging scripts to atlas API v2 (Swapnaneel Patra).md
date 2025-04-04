@@ -15,4 +15,4 @@ Please include the following information:
 
 - **Proposal discussion link**
 
-    Please link to the pull request where you discussed your project proposal with the community.
+    https://github.com/neuroinformatics-unit/gsoc/pull/56
