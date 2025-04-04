@@ -70,7 +70,6 @@ _Length: max 1 page_
 
 
     **Weekly timeline**
-    Below is the revised timeline table with 3–4 bullet points per period, excluding any mention of runtime_metrics.json and ensuring that improvements on existing code (including TODO areas) are addressed in the later weeks:
 
 | **Timeline** | **Deliverables & Testing Objectives** |
 |--------------|-----------------------------------------|
