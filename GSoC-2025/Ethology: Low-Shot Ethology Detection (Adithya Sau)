@@ -14,6 +14,8 @@
 
 https://github.com/brainglobe/brainglobe.github.io/pull/314
 -Added an Examples of brainreder in sphinx documentation
+https://github.com/neuroinformatics-unit/ethology/pull/80
+-Added a python program that can extract evenly spaced frames over a specified interval.
 
 ---
 - **Proposal discussion link:** [Link to discussion PR]
