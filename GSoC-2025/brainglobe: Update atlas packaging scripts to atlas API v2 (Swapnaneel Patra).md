@@ -31,3 +31,17 @@ The deliverables include modifications to the atlas packaging Python code, adapt
 comprehensive tests, and updated documentation.
 The open source community will benefit through improved data interoperability, ease of integration for new atlases,
 and enhanced reproducibility in neuroanatomical research.
+
+- **Implementation timeline**
+
+    Please include the following information:
+    1. A bullet point list with **minimal set of deliverables**
+        - Update atlas packaging Python code to output OpenMINDS SANDS compliant files.
+        - Adapt at least one existing packaging script to utilize the new functionality.
+        - Develop and run unit and integration tests covering the updated functionality.
+        - Update and expand documentation to reflect new usage and features.
+
+    2. Additional **stretch goals** or "if time allows" deliverables
+        - Extend support to additional packaging scripts within the BrainGlobe ecosystem.
+        - Develop conversion utilities for legacy atlas data.
+        - Create example notebooks and tutorials demonstrating the new capabilities.
