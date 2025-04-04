@@ -79,7 +79,8 @@ _Length: max 0.75 page_
     - Working on this project will help me develop my skills in Python, data standards, and collaborative coding, which are essential for my professional growth and will establish a foundation for future academic pursuits in neuroscience.
     - I envision this project benefiting the open-source community by making neuroanatomical data more consistent and usable, encouraging greater collaboration and innovation in neuroscience research.
 
-
+- **Match: why you?**: My experience as a software engineer, combined with my academic background, has equipped me with practical skills in developing well-documented, production-quality code. I enjoy tackling unfamiliar concepts, learning them on the job, and implementing innovative ideas.
+  
 - **Availability**: I am fully available for the complete duration of GSoC in its entirety, with no major conflicting commitments.
 
 
