@@ -52,7 +52,7 @@
   | Week 5 (Jun 30 – Jul 6)  | Finalize core logic, integrate into brainglobe-registration |            
   | Week 6 (Jul 7 – Jul 13)  | Midterm evaluation, code cleanup |                       
   | Week 7 (Jul 14 – Jul 20) | Add configuration options, begin documentation |                        
-  | Week 8 (Jul 21 – Jul 27) | Write unit/integration tests, refactor code |                           
+  | Week 8 (Jul 21 – Jul 27) | Documentation, integration tests, refactor code |                           
   | Week 9 (Jul 28 – Aug 3)  | Begin ML-based heuristic, continue docs |                
   | Week 10 (Aug 4 – Aug 10) | Finalize ML method (if feasible), complete documentation |              
   | Week 11 (Aug 11 – Aug 17)| Code freeze, testing, write blog post |                                 
