@@ -15,18 +15,18 @@ Please include the following information:
 
 
 - **Code contribution**
-    - [Automate Sphinx Documentation Deployment with Versioned Switcher](https://github.com/neuroinformatics-unit/datashuttle/pull/486)  
+    - [Automate Sphinx Documentation Deployment with Versioned Switcher](https://github.com/neuroinformatics-unit/datashuttle/pull/486) : 
     Automates Sphinx docs deployment using GitHub Actions, deploying tagged releases to versioned directories, updating switcher.json, and maintaining the latest release.
     
-    - [Enhance Existing Slurm test](https://github.com/neuroinformatics-unit/spikewrap/pull/229): This PR ensures that the synchronization file is correctly saved by asserting its existence in the specified directory.
+    - [Enhance Existing Slurm test](https://github.com/neuroinformatics-unit/spikewrap/pull/229) : This PR ensures that the synchronization file is correctly saved by asserting its existence in the specified directory.
 
-    - [Add option to delete a project](https://github.com/neuroinformatics-unit/datashuttle/issues/436)
+    - [Add option to delete a project](https://github.com/neuroinformatics-unit/datashuttle/issues/436) :
         Developed a function to delete both the DataShuttle project configuration and associated data from local and central paths. The implementation is currently on hold until it is requested by a user. But, the issue is left open and serves as a reference for future extensions.
 
-    - [Completing Docstring for parameters of get_next_sub ](https://github.com/neuroinformatics-unit/datashuttle/pull/482)-
+    - [Completing Docstring for parameters of get_next_sub ](https://github.com/neuroinformatics-unit/datashuttle/pull/482) :
         Adding docstrings for the parameters of get_next_sub function.This PR was prompted by a previous comment, leading to the opening of a related issue [#483](https://github.com/neuroinformatics-unit/datashuttle/issues/483)
     
-    - [Implemented New Getters](https://github.com/neuroinformatics-unit/datashuttle/pull/480)
+    - [Implemented New Getters](https://github.com/neuroinformatics-unit/datashuttle/pull/480) :
     This PR introduces two new methods to streamline folder lookups within the datashuttle. 
 
     **Merged** : 
@@ -77,7 +77,7 @@ _Length: max 1 page_
 | **Pre GSoC Period (April 1 – May 7)** | • Explore the codebase and identify key modules (Sorting, Preprocessing, RawRun). <br> • Map test targets (e.g., invalid sorter names, Docker/Singularity path issues). <br> • Work on Existing Issues and Create Pull Requests for them.
 | **Community Bonding Period (May 8 – June 1)** | • Collaborate with my mentor to review the tests document and refine test cases. <br> • Finalize the test suite structure into Sorting, Preprocessing, and Raw Data tests. <br>|
 | **Week 1-2 (June 2 – June 15)** | • Implement core Sorting tests for parameter validation (e.g., invalid `per_shank`, `concat_runs`, and sorter names). <br> • Develop tests for error handling in invalid cases (e.g., missing Docker/Singularity images). <br> • Begin drafting tests for missing preprocessing functions such as `phase_shift` and `bandpass_filter`. |
-| **Week 3-4 (June 16 – June 29)** | •  Develop tests for Docker integration, ensuring automatic image downloads and consistent execution outputs in both local and CI environments. <br> • Implement Singularity tests to ensure proper image download and execution in shared paths. <br> • Enhance SLURM tests by validating job scripts, **exposing `"module load matlab"` in SLURM scripts**, and tracking dependencies. |
+| **Week 3-4 (June 16 – June 29)** | •  Develop tests for Docker integration, ensuring automatic image downloads and consistent execution outputs in both local and CI environments. <br> • Implement Singularity tests to ensure proper image download and execution in shared paths. <br> • Enhance SLURM tests by validating job scripts, adding support for loading required modules (e.g., MATLAB) in SLURM scripts, and tracking dependencies effectively.|
 | **Week 5-6 (June 30 – July 13)** | • Validate sorting outputs: check non-empty spike data and correct overwrite behavior when simulating existing outputs. <br> • Verify that **sorter outputs are saved in the correct locations**. <br> • Test preprocessing step orders, invalid parameters (e.g., `freq_min > freq_max`), and output key naming conventions. <br> • Continue drafting tests for additional preprocessing functions (e.g.`common_reference`). |
 | **Week 7-8 (July 14 – July 27)** | • Implement tests for raw data loading, probe extraction, and sync channel operations in RawRun, SeparateRawRun, and ConcatRawRun. <br> • Validate sync channel operations (silence, save, plot) against raw data lengths. <br> • Validate that mixed preprocessing approaches (e.g., per-shank vs. non-per-shank) do not cause inconsistencies when loading from disk. |
 | **Week 9-10 (July 28 – August 10)** | • Integrate all tests across Sorting, Preprocessing, and Raw Data modules to ensure comprehensive coverage. <br> • Develop tests for parallel sorting execution and concurrency, confirming that downstream functions correctly load outputs. <br> • Ensure that temporary test files are properly deleted after execution. <br> • Finalize detailed inline documentation and technical comments for all tests. |
