@@ -56,7 +56,7 @@ and enhanced reproducibility in neuroanatomical research.
 | Week 3     | Implement core modifications in the packaging code for OpenMINDS SANDS support; begin writing unit tests.                                     |
 | Week 4     | Adapt one selected packaging script to use the new functionality; continue developing tests and refining the conversion process.             |
 | Week 5     | Integrate mentor feedback; refine code and tests; update documentation draft with examples and usage instructions.                           |
-| Week 6     | **Mid-term:** Ensure more than half of the project is complete; perform integration tests; address any major issues or blockers.              |
+| Week 6  **Mid-term:**     | Ensure more than half of the project is complete; perform integration tests; address any major issues or blockers.              |
 | Week 7     | Implement stretch goals (if feasible); extend test coverage; review and improve code performance and readability.                             |
 | Week 8     | Polish code; perform extensive manual testing with various atlas datasets; update documentation based on test outcomes.                        |
 | Week 9     | Finalize additional features; prepare comprehensive test suites; conduct peer reviews with mentors and community contributors.              |
@@ -64,3 +64,18 @@ and enhanced reproducibility in neuroanatomical research.
 | Week 11    | Final refinements; complete any remaining tests; draft the final report and submission documentation.                              |
 | Week 12    | Finalize the project deliverables; ensure all documentation, tests, and code are up-to-date; prepare for final project submission and review. |
 
+
+
+
+## GSoC
+
+_Length: max 0.25 page_
+
+- **GSoC experience**
+
+    What do you expect from the program?
+    I'm excited to be participating in GSoC for the first time. I've always been passionate about neuroscience, I see this program as an opportunity to break into the field while getting hands-on experience with open-source development and collaborative coding. I hope to learn valuable insights about pursuing a career in neuroscience and create software that makes a difference in scientific research. I'm eager to contribute meaningful improvements to the project and pick up best practices for maintaining and advancing scientific software tools, and I believe this experience will also be a great asset in my graduate studies.
+
+- **Are you also applying to projects with other organisations in GSoC 2025?**
+
+    No, I am not applying to any other projects with other organisations.
