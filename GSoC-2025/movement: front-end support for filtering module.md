@@ -30,9 +30,9 @@ This project aims to develop an intuitive napari plugin for Movement’s filteri
 - **Napari Widget Suite**:  
   - Dropdown menus for confidence filters (threshold-based outlier removal).  
   - Sliders/inputs for Median filter (window size) and SavGol filter (window size, polynomial order).  
-  - Real-time overlay of raw vs. filtered data.  
+  - Show overlay of filtered vs the original data
 - **Testing Framework**:  
-  - Unit tests for filter logic and UI components.  
+  - Pytests for filter logic and UI components.  
   - Performance benchmarks.  
 - **Documentation**:  
   - Tutorials on how to use the new widget on sample datasets.  
@@ -44,6 +44,7 @@ This project aims to develop an intuitive napari plugin for Movement’s filteri
 - **Filter Chaining**: Sequential application of filters (e.g., confidence → median → SavGol).  
 - **Community Presets**: Curated settings for common use cases (e.g., fruit fly locomotion).  
 - **Acceleration**: Integrate parallel processing with [dask](https://www.dask.org/?utm_source=xarray-docs) where ever possible.  
+- **Napari Widget addtion** Real-time preview of filtered data. 
 
 ---
 
@@ -59,7 +60,7 @@ This project aims to develop an intuitive napari plugin for Movement’s filteri
 | Week | Focus Area | Critical Deliverables | Hours (estimated)|  
 |------|------------|------------------------|-------|  
 | 1    | Widget Framework | Base widget class; confidence threshold UI | 15 |  
-| 2    | Median Filter | Rolling window logic; unit tests | 14 |  
+| 2    | Median Filter | Rolling window logic with "median", "mean", "min", and "max" being various options.| 14 |  
 | 3    | SavGol Filter | Polynomial order control; benchmarks | 16 |  
 | 4    | Preview System | Live parameter tuning; visualization | 14 |  
 | 5    | Error Handling | Tooltip explanations; logging , Filter chaining (extended deliverable) | 18 |  
