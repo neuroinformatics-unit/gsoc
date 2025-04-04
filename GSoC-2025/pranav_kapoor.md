@@ -1,138 +1,73 @@
-# Application template
+- **Full name:** Pranav Kapoor  
+- **Email:** pranav33317@gmail.com  
+- **GitHub username:** pranav33317  
+- **Zulip username:** Pranav Kapoor  
+- **Location & time-zone:** New Delhi, India (IST, GMT+5:30)  
+- **Personal website / project portfolio:** [github.com/pranav33317](https://github.com/pranav33317)  
+- **Code contribution:**  
+  - PR: [Disable parallel mesh creation (PR #546)](https://github.com/brainglobe/brainglobe-atlasapi/pull/546#pullrequestreview-2729541724)  
+    (I worked on disabling parallel mesh creation in various files while addressing [Issue #429](https://github.com/brainglobe/brainglobe-atlasapi/issues/429).)  
+- **Proposal discussion link:**  
+  - [Proposal Discussion (PR #554)](https://github.com/brainglobe/brainglobe-atlasapi/pull/554)  
+    (This closed PR includes a new file containing the wrapper function to convert atlas data to an OpenSANDS object and return its file path.)
 
-> [!CAUTION]
-> Do not edit this template directly!
-> Instead use it to open a new PR as explained in the [README](../README.md#steps).
+---
 
+## Project proposal
 
-Please use the following template to submit your application to the NIU GSoC 2025 program, and to discuss your proposal with the community. 
+### Synopsis
+The BrainGlobe brainrender tool is a widely used resource for visualizing brain data within a common coordinate framework defined by a “brain atlas.” However, its command-line interface makes it inaccessible to many researchers who lack programming expertise. The brainrender‑napari tool seeks to change this by bringing brainrender’s powerful visualization capabilities into napari—a popular open-source graphical image viewer.
 
-The more closely you follow this template, the easier it will be for us to review your application! Please include clear headings for all the different sections.
+Despite the overlap in functionality between brainrender and brainrender‑napari, certain publicly available atlas‑registered datasets, particularly those from mouse and fish brains, remain unsupported in the napari version. This project will implement code to enable users to seamlessly download and visualize atlas‑registered data from these species via a dedicated napari widget. By making brainrender functionality more accessible, this project will help democratize neuroinformatics research and foster greater collaboration within the open source community.
 
-## Project title
-Follow the following format for the proposal title: `<Package Name>:<Project Name> (<Your-Name>)` and provide it in your pull request as a new markdown file of the same name, i.e.   `<Package Name>:<Project Name> (<Your-Name>).md`
+**Project Goals & Deliverables:**
+- **Minimal Deliverables:**
+  - Develop a Python napari widget that enables users to download and visualize atlas‑registered data from mouse and fish brains.
+  - Implement comprehensive tests covering all new functionality.
+  - Create clear and concise documentation for the new features.
+- **Stretch Goals (if time permits):**
+  - Extend support for additional species or imaging modalities.
+  - Integrate schema validation using tools like `jsonschema` to ensure compliance with data standards.
+  - Develop a conversion utility to update existing atlas packages to the new standard.
 
-E.g. "movement: support for Kalman filters (Jane Doe)". 
+### Implementation timeline
 
-Please use the same title when you submit your proposal to the GSoC application site!
+I plan to commit 30–35 hours per week toward this project. Below is my detailed 12‑week timeline:
 
-## Personal details
-Please include the following information:
-- **Full name**  Pranav Kapoor
-- **Email** pranav33317@gmail.com
-- **GitHub username** pranav33317
-- **Zulip username** Pranav Kapoor 
-- **Location & time-zone** New Delhi,India and IST (GMT+5:30)
-- **Personal website / project portfolio** (optional) www.github.com/pranav33317
-- **Code contribution**
+| **Week** | **Tasks & Deliverables**                                                                                                                                                                                                                                         | **Hours** |
+|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| 1–2      | **Community Bonding & Research:**<br>- Deeply explore the BrainGlobe brainrender and brainrender‑napari codebases.<br>- Study publicly available atlas‑registered data for mouse and fish brains.<br>- Engage with mentors and set up a focused development environment.      | 30        |
+| 3–4      | **Design & Planning:**<br>- Map the current atlas data to a format suitable for brainrender‑napari.<br>- Design a modular napari widget with wireframes for the download and visualization workflow.<br>- Outline minimal deliverables and document initial design decisions.                                      | 30        |
+| 5–6      | **Core Development – Part 1:**<br>- Implement the new widget and its supporting data download module.<br>- Integrate basic visualization capabilities using brainrender functions within napari.<br>- Adapt the Allen Human atlas packaging script to test the new workflow.                         | 30        |
+| 7–8      | **Core Development – Part 2:**<br>- Enhance error handling, refine data mapping, and add initial unit tests.<br>- Begin writing documentation and gather early feedback from mentors and the community.                                  | 30        |
+| 9–10     | **Testing & Feedback:**<br>- Develop comprehensive tests to validate the functionality of the widget.<br>- Incorporate mentor and community feedback to refine the user interface and code.<br>- Ensure smooth integration with existing BrainGlobe tools.                                                  | 30        |
+| 11–12    | **Finalization:**<br>- Polish the code and complete documentation.<br>- Finalize all tests and prepare a final demonstration video of the widget in action.<br>- Reserve extra time to resolve any unforeseen issues and ensure a robust deliverable.                                            | 30        |
 
-    Please link a pull request, ideally submitted to your chosen project or one of the NIU tools. Applications without a code contribution won't be considered. It must be publicly visible and represent your own work, although you may have help from other developers in the community to further improve it. It must be meaningful code contribution (i.e. not just fixing a minor spelling mistake). While AI tools (such as Copilot etc) can be a very useful, contributions mostly created by AI are unlikely to be useful, and will not be accepted. You can link more than one pull request if desired.
-    Ans.  PR : https://github.com/brainglobe/brainglobe-atlasapi/pull/546#pullrequestreview-2729541724
-    I tried to disable parallel mesh creation in various files to simplify mesh creation and simultaneosly working on https://github.com/brainglobe/brainglobe-atlasapi/issues/429. 
+### Communication plan
+I will keep open communication with my mentors through daily updates on Zulip and hold weekly video calls for deeper discussions on progress and challenges. I will also post regular updates on GitHub issues and pull requests to ensure complete transparency and prompt feedback throughout the project.
 
-- **Proposal discussion link**
-
-    Please link to the pull request where you discussed your project proposal with the community. 
-    https://github.com/brainglobe/brainglobe-atlasapi/pull/554
-    This is a closed PR where I created a new file which contained the wrapper function to convert atlas to OpenSANDS object and its file path.
-
-## Project proposal 
-_Length: max 1 page_
-
-- **Synopsis**
-
-    Briefly explain: what is the project about? Why is it important? What are the goals? What are the deliverables? How would the open source community benefit from this project?
-
-    As someone deeply fascinated by the intricate workings of the brain, I have always admired how neuroanatomical atlases empower researchers to navigate complex brain structures with ease. BrainGlobe’s Atlas API stands out as a robust tool that consolidates atlas‑registered data into a unified Python interface. There is now an exciting opportunity to further enhance this system by adopting the OpenMINDS SANDS standard—a community‑driven format that delivers more interoperable brain data. This upgrade will enable researchers to derive deeper, more accurate insights.
-    
-    My project aims to enhance the utility of the BrainGlobe ecosystem by updating the atlas packaging scripts so they output data in the OpenMINDS SANDS format. This upgrade is critical for researchers who need consistent, comprehensive data to integrate findings across studies and species. By delivering a modular, well-documented solution complete with rigorous testing, I will enable both seasoned neuroscientists and new entrants in the field, making advanced neuroinformatics more accessible to all.
-
-- **Implementation timeline**
-
-    Please include the following information:
-    1. A bullet point list with **minimal set of deliverables**
-    1.Modify existing atlas packaging code to output atlas data conforming to the OpenMINDS SANDS standard.
-    2.Adapt at least one packaging script (e.g., the Allen Human atlas script) to incorporate this new functionality.
-    3.Develop comprehensive tests covering all new and modified features.
-    4.Update the documentation to guide users on how to generate and utilize OpenMINDS SANDS‑compliant atlases.
-    2. Additional **stretch goals** or "if time allows" deliverables (optional)
-    1.Extend support for additional species or imaging modalities.
-    2.Integrate schema validation using tools like jsonschema to ensure full compliance with OpenMINDS SANDS.
-    3.Create a conversion utility for existing atlas packages to the new standard.
-    3. A detailed **weekly timeline**: when do you plan to do what? 
-        - Please use a week as a minimal unit of time, and include any planned vacations or other commitments. 
-        - This timeline could be formatted as a table. 
-        - Remember to also include the number of hours per week you plan to work on the GSoC project. 
-        - When estimating the required time for a task, keep in mind deliverables should include investigation/research, coding and documentation. 
-        - The default schedule for GSoC is 12 weeks - see the [GSoC timeline](https://developers.google.com/open-source/gsoc/timeline) for precise dates. 
-        - Also please specify any prep work you plan to do during the "Community bonding period".
-        - Usually week 1's deliverables already include some code. Week 6 marks the mid-term point, where usually more than half of the project should be completed. At the end of week 11 you may want to try to "freeze" the code and complete any remaining tests or documentation in weeks 11 and 12.
-        1.        
-        Minimal Deliverables:
-        Modify existing atlas packaging code to output atlas data conforming to the OpenMINDS SANDS standard.
-        Adapt at least one packaging script (e.g., the Allen Human atlas script) to incorporate this new functionality.
-        Develop comprehensive tests covering all new and modified features.
-        Update the documentation to guide users on how to generate and utilize OpenMINDS SANDS‑compliant atlases.
-        2.
-        Stretch Goals (if time permits):
-        Extend support for additional species or imaging modalities.
-        Integrate schema validation using tools like jsonschema to ensure full compliance with OpenMINDS SANDS.
-        Create a conversion utility for existing atlas packages to the new standard.
-
-
-        3.
-        I will be devoting 30-35 hours per week towards this GSoC project.
-        Week 1–2 : Immerse myself in the BrainGlobe Atlas API, current packaging scripts, and OpenMINDS SANDS documentation. Engage with mentors to clarify requirements and set up a focused development environment.
-        Week 3–4 : Map the existing atlas data to the OpenMINDS SANDS schema. Design a modular function (e.g., wrapup_atlas_to_openminds) and create clear wireframes for the conversion workflow.
-        Week 5–6 :  Develop the new wrap‑up function in a separate module (e.g., openminds_wrapup.py). Adapt the Allen Human atlas packaging script to integrate this function and produce the new output.
-        Week 7–8 : Enhance error handling, refine the field mappings, and write initial unit tests. Begin documenting the new process and gather early feedback from mentors and community members.	30
-        Week 9–10 : Develop comprehensive tests to validate the JSON output against the OpenMINDS SANDS schema. Incorporate community and mentor feedback, addressing any emerging issues.
-        Week 11–12	Finalization: Polish the code and documentation, complete remaining tests, and prepare a final demo video. Reserve extra time to resolve unforeseen challenges and ensure high-quality deliverables.
-
-- **Communication plan**
-
-    Please explain: how do you plan to communicate with your mentor? How often? (e.g., daily or weekly stand-ups, longer meetings..?) What communication channels will you use? (e.g., video calls, Zulip chat...?)
-    
-    I plan to maintain an open line of communication with my mentors through daily updates on Zulip and weekly video calls to discuss progress and challenges. I’ll also post regular status updates on GitHub issues and pull requests, ensuring transparency and timely feedback throughout the project.
+---
 
 ## Personal statement
 
-_Length: max 0.75 page_
+### Past experience
+I am a third-year undergraduate at IIIT Delhi with a strong passion for programming and neuroscience. My journey began when I learned Python, networking, and SQL in high school, and I built projects like a simple password manager early on. Over the years, I have completed several significant neuroscience assignments that involved processing and visualizing complex experimental data. For example, I created raster and peri-stimulus time plots to analyze neuronal activity, statistically analyzed behavioral data from decision-making experiments, and generated detailed figures to illustrate experimental findings. These projects have given me a robust foundation in handling neurophysiological data. Additionally, my coursework in data structures, operating systems, and embedded systems has taught me to approach problems methodically and collaborate effectively. While I have not yet worked professionally with widget implementation or advanced image processing, my academic projects have prepared me well to tackle new challenges. I am excited about the opportunity to contribute to the BrainGlobe brainrender‑napari project and bring my passion for accessible neuroinformatics to a wider audience.
 
-- **Past experience.** 
+### Motivation: Why This Project?
+The intersection of neuroscience and open source deeply intrests ,e. I have seen firsthand how diverse and incompatible data formats can hinder scientific progress during a neuroscience course with Prof. Mrinmoy Chakroborty. This project excites me because it directly addresses these challenges by enhancing the interoperability of neuroanatomical data through a user-friendly napari widget. By enabling researchers to easily download and visualize atlas‑registered data from mouse and fish brains, we can remove significant technical barriers and accelerate research. I am driven by the chance to create a tool that makes complex data more accessible, thereby empowering a global community of scientists to collaborate more effectively.
 
-    Please describe your past experience with programming, open source, or any other experience you deem relevant for the project you are applying for. Any successful open source projects, published work or content of the like should definitely be highlighted.
+### Match: Why You?
+I believe I am uniquely positioned for this project due to my solid programming background and my deep interest in neuroscience. My experiences—from learning Python in high school and college to executing detailed neuroscience assignments at IIIT Delhi—have equipped me with the practical skills necessary to develop robust data analysis and visualization tools. Although I haven’t directly worked with widget developmeny or advanced image processing in a professional setting, my hands-on projects have given me a strong understanding of neurophysiological data. My commitment, motivation and my eagerness to learn new technologies make me a suitable  candidate for the project.
 
-    I am well-suited for this project due to my solid programming background and my practical experience working on neuroscience assignments during my studies at IIIT Delhi. I started learning Python in high school and have since developed small projects, such as a simple password manager and various data analysis scripts. In my coursework, I completed three neuroscience projects that involved processing and visualizing complex experimental data. For example, I created raster and peri-stimulus time plots to analyze neuronal activity across different stimuli, statistically analyzed behavioral data from decision-making experiments, and generated figures that brought experimental results to life. 
+### Availability
+I have a flexible schedule during the GSoC period with no conflicting commitments. I am currently attending IIIT Delhi and have a low course load this semester, allowing me ample time to contribute meaningfully to the project. I can reliably dedicate approximately 15 hours per week, with additional hours on weekends if needed, ensuring steady progress throughout the program.
 
-   While I have not directly worked on mesh generation or image data processing in a professional context, these coursework have given me a strong foundation in handling and interpreting neurophysiological data. My experience in coursework related to data structures, operating systems, and embedded systems has taught me to approach problems methodically and learn collaboratively while still learning comprehensively. I’m genuinely excited about the opportunity to contribute to the BrainGlobe Atlas API project and I am eager to learn and grow through this experience.
-- **Motivation: why this project?**
-
-    Why are you interested in this specific project? What aspects of it motivate you to work on it? How does it link to your personal or professional interests? How do you envision its impact in the open source community?
-
-   The intersection of neuroscience and open source has always been a source of fascination for me since its where where rigorous science meets accessible technology. During a course on neuroscience with Prof. Mrinmoy Chakroborty, I experienced firsthand the frustration researchers face when working with diverse and incompatible data formats. This project excites me because it tackles a real, pressing issue: enhancing the interoperability of neuroanatomical atlases by standardizing data output. By modifying the Atlas API to output data in a more comprehensive and consistent format, I believe we can unlock new possibilities for integrating brain atlas data with microservices and other research tools. I am driven by the opportunity to create a solution that not only supports innovative research but also empowers a global community of scientists to collaborate more effectively. This project perfectly aligns with my passion for making complex data accessible and impactful, and I am eager to contribute to it.
-- **Match: why you?**
-
-    Why should we choose you for this project? What unique skills or experiences can you bring to the project and the community? Is there something you have worked on in the past that makes you particularly well-suited for this project?
-    I am currently a third-year undergraduate student at IIIT Delhi with a deep passion for programming and neuroscience. My journey began in class 11 when I first learned Python, networking, and SQL—a foundation that quickly evolved as I secured 94% in my Class 12 Computer Science board exam. Over the years, I have built several projects, including an elementary password manager using Python and SQL, and in my first year, I worked on diverse projects such as solving equations using RREF and extensive file handling in Python. In addition to Python, I have a solid background in C++ and have successfully completed courses in data structures, algorithms, and operating systems. I also pursued courses in embedded systems using open source software like Yosys, Vivado, and GTKWAVE simulator. More recently, I used Python for data analysis in a neuroscience project where I analyzed cortical neuron activity from different brain regions using experimental datasets. These experiences have not only strengthened my technical expertise but have also instilled a passion for applying programming to solve real-world problems in neuroscience and beyond.
-- **Availability**
-
-    Please state if you have any other plans for the work period (school work, another job, planned vacation)? If so, how do you plan to combine them with your GSoC work?
-
-    I have a flexible schedule with no conflicting commitments during the GSoC period.I am curretly attending my college IIIT Delhi but have a low course load this sememster which will allow me a lot of time to meaningfully contribute to the project. I can reliably dedicate approximately 15 hours per week to this project, with additional time available on weekends if needed. I plan to integrate my work seamlessly with my academic and personal responsibilities, ensuring consistent progress throughout the program.
+---
 
 ## GSoC
 
-_Length: max 0.25 page_
+### GSoC experience
+I view GSoC as a transformative opportunity to work closely with experienced open source developers and to enhance my technical expertise through real-world project work. I expect to gain invaluable insights into best practices for scientific software development, refine my collaborative skills, and contribute significantly to a project that impacts neuroinformatics research. This experience will help me build lasting connections in the open source community while advancing my technical skills.
 
-- **GSoC experience**
-
-    What do you expect from the program?
-
-    I view GSoC as a transformative opportunity to collaborate with seasoned open source developers and to deepen my technical expertise by working in a real‑world project. I expect to gain valuable insights into best practices for scientific software development, enhance my collaborative skills, and contribute meaningfully to a project with a significant impact in neuroinformatics. The program will not only refine my technical capabilities but also allow me to build lasting connections within the open source community.
-
-- **Are you also applying to projects with other organisations in GSoC 2025?**
-
-    If so, which ones? What would be your preference in case of a tie?
-    I am focusing solely on this project with BrainGlobe for GSoC 2025, as it aligns perfectly with my interests and professional goals. This project is my top priority and I am fully committed to its success.
-
+### Are you also applying to projects with other organisations in GSoC 2025?
+I am focusing solely on this project with BrainGlobe for GSoC 2025, as it aligns perfectly with my interests and professional goals. This project is my top priority, and I am fully committed to its success.
