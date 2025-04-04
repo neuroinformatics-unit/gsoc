@@ -32,7 +32,7 @@ BrainGlobe-Registration is an open-source Napari plugin for brain image registra
 
 ### Timeline
 
-The [project description](https://neuroinformatics.dev/get-involved/gsoc/projects_2025/brainglobe.html) details either a medium (~175 hours) or large (~350 hours) duration. Given my experience, I have chosen to apply for medium (~175 hours) duration. The timetable constructed is formed with end of year university exams in mind. These exams run from the 15-23<sup>rd</sup> of May.
+The [project description](https://neuroinformatics.dev/get-involved/gsoc/projects_2025/brainglobe.html) details either a medium (~175 hours) or large (~350 hours) duration. Given my experience, I have chosen to apply for medium (~175 hours) duration. The timetable constructed is formed with end of year university exams in mind. These exams run from the 15<sup>th</sup> to the 23<sup>rd</sup> of May.
 
 | Stage | Title | Start Date | End Date | Hours Assigned |
 | --- | --- | --- | --- | --- |
