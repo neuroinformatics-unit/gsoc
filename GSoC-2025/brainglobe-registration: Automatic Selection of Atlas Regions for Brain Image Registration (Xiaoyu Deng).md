@@ -12,6 +12,7 @@
     https://github.com/brainglobe/brainglobe-registration/pull/84
 
 - **Proposal discussion link**
+	https://github.com/neuroinformatics-unit/gsoc/pull/52
 
 
 
