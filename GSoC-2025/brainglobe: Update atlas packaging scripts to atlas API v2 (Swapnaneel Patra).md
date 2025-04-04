@@ -71,6 +71,12 @@ I plan to dedicate around 20 hours per week throughout the program.
   - Email: if needed
 
 
+## Personal statement
+
+_Length: max 0.75 page_
+
+- **Availability**: I am fully available for the complete duration of GSoC in its entirety, with no major conflicting commitments.
+
 
 ## GSoC
 
