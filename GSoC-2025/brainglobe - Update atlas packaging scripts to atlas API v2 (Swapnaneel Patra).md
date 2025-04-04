@@ -1,9 +1,11 @@
-## brainglobe: Update atlas packaging scripts to atlas API v2 (Swapnaneel Patra)
+# brainglobe: Update atlas packaging scripts to atlas API v2 (Swapnaneel Patra)
 
 ## Personal details
+
 Please include the following information:
+
 - **Full name**: Swapnaneel Patra
-- **Email**: swapnaneel06@gmail.com
+- **Email**: <swapnaneel06@gmail.com>
 - **GitHub username**: thisisrick25
 - **Zulip username**: Swapnaneel
 - **Location & time-zone**: Kolkata, India, GMT+5:30
@@ -12,20 +14,37 @@ Please include the following information:
 
 - **Proposal discussion link**
 
-    Please link to the pull request where you discussed your project proposal with the community. 
+    Please link to the pull request where you discussed your project proposal with the community.
 
-## Project proposal 
+## Project proposal
+
 _Length: max 1 page_
 
 - **Synopsis**
 
-    Briefly explain: what is the project about? Why is it important? What are the goals? What are the deliverables? How would the open source community benefit from this project?
+This project aims to update the BrainGlobe Atlas API by integrating OpenMINDS SANDS standard for neuroanatomical atlases.
+Currently, atlas packaging scripts convert public atlas data to a limited standard format; by adapting these scripts to produce output compliant with OpenMINDS SANDS,
+the project will enable consistent, interoperable data representations across BrainGlobe tools.
+This standardization is critical for improving data accessibility and integration within the neuroinformatics community.
+The deliverables include modifications to the atlas packaging Python code, adaptation of at least one packaging script to use the new functionality,
+comprehensive tests, and updated documentation.
+The open source community will benefit through improved data interoperability, ease of integration for new atlases,
+and enhanced reproducibility in neuroanatomical research.
 
 - **Implementation timeline**
 
     Please include the following information:
     1. A bullet point list with **minimal set of deliverables**
-    2. Additional **stretch goals** or "if time allows" deliverables (optional)
+        - Update atlas packaging Python code to output OpenMINDS SANDS compliant files.
+        - Adapt at least one existing packaging script to utilize the new functionality.
+        - Develop and run unit and integration tests covering the updated functionality.
+        - Update and expand documentation to reflect new usage and features.
+
+    2. Additional **stretch goals** or "if time allows" deliverables
+        - Extend support to additional packaging scripts within the BrainGlobe ecosystem.
+        - Develop conversion utilities for legacy atlas data.
+        - Create example notebooks and tutorials demonstrating the new capabilities.
+
     3. A detailed **weekly timeline**: when do you plan to do what? 
         - Please use a week as a minimal unit of time, and include any planned vacations or other commitments. 
         - This timeline could be formatted as a table. 
