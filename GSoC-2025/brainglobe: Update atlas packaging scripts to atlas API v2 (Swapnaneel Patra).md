@@ -75,6 +75,8 @@ I plan to dedicate around 20 hours per week throughout the program.
 
 _Length: max 0.75 page_
 
+- **Past experience**: I graduated in 2023 and have worked on multiple personal projects. Until November 2024, I worked as a Junior Software Engineer. I have a strong background in programming languages such as C/C++, Python, JavaScript, and TypeScript. I also have experience working with medical imaging formats (such as NIfTI and DICOM) while working on the [cardiac image segmentation](https://github.com/thisisrick25/heart-image-segmentation) project.
+
 - **Availability**: I am fully available for the complete duration of GSoC in its entirety, with no major conflicting commitments.
 
 
