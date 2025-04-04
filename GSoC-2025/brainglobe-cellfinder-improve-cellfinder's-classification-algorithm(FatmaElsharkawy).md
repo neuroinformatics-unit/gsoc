@@ -20,24 +20,28 @@ Please include the following information:
 
 - **Synopsis**
 
-    This project aims to enhance the deep learning classifier in the BrainGlobe cellfinder tool, which detects cells in large-scale brain microscopy images. Currently, cellfinder uses a ResNet-based model for classifying cell candidates, but newer architectures may offer better accuracy, speed, or efficiency. The goal is to implement and evaluate modern alternatives to ResNet, ensuring cellfinder remains at the cutting edge of cell detection. 
-    
-    **It's important because** other DL techniques may outperform the current architecture making cell detection and classification faster, robust, and hence more reliable by neuroscientists. With the very fast development of DL approaches, cellfinder has to be up-to-date to add a true value for neuroscience research. detecting and mapping cells in 3D throughout the entire mammalian brain is crucial for faster brain understanding and developments in neuroscience.
+    This project aims to enhance the deep learning classifier in the BrainGlobe cellfinder tool, which detects cells in large-scale brain microscopy images. The current architecture use ResNet, and with the fast evolution in deep learning, experiementing other architectures can give better performance.
 
-    **The Open-Source Community Benefits**
+    **Importance of cellfinder:** Detecting and mapping cells in 3D mammalian brain images is important for faster brain understanding and developments in neuroscience. Manual segmentation is both a difficult and slow task that can be affected by human expertise and fatigue.
+    
+    **Importance of this project:** other DL techniques may outperform the current architecture making cell detection and classification faster, robust, and hence more reliable by neuroscientists. This is acheivable by addressing weaknesses of current approach, enhancing dataset using current model and generative models, try use one input channel only, and decreasing false positive as much as possible. Trying state-of-art models performance, so cellfinder can be up-to-date to add a true value for neuroscience research. 
+
+    **The Open-Source Community Benefits:**
     1. Better Neuroscience Tools: Enhances cellfinder’s accuracy/speed, accelerating brain research worldwide.
     2. Reproducible Benchmarks: Clear model comparisons help researchers choose optimal architectures for similar tasks.
     3. Extensible & Well-Documented Code that is harmonized with DL rapid advancements.
     4. Blog posts and tutorials help newcomers in bioimage analysis and deep learning.
+    5. Addressing weaknesses published in cellfinder paper.
 
 
 - **Implementation timeline**
 
-    Please include the following information:
-    1. A bullet point list with **minimal set of deliverables**
-       - A Python implementation of at least one new Deep Learning network architecture in cellfinder
+    1. **Minimal set of deliverables**
+       - Complete review of image analysis steps for cell detection. 
+  
+       - According to my plan, python implementation of three new Deep Learning approaches for cell classification (Required minimum of one.) Three approaches are: use 3D U-Net, R-CNN, Swim 3D transformer. Also, try primary channel only as input while second channel can be used as auxilary input (this is more demonstrated on timeline)
 
-       - Quantitative comparison between the current and new architecture
+       - Quantitative comparison between the current and new architectures based on criteria (mentioned in timeline)
 
        - Tests to cover any added functionality.
 
@@ -45,35 +49,73 @@ Please include the following information:
 
        - A blog explaining the new network and its advantages and disadvantages.
 
-    2. Additional **stretch goals** or "if time allows" deliverables (optional)
-   
+    2. Additional **stretch goals** or "if time allows" deliverables: 
        - Writing a paper that document the technicallities and be an extension to the cellfinder original paper.
        - Make a UML diagram for the cellfinder package, as this will extremely facilitate the navigation of the contributers between classes and make them understand code faster to add contribution easily. 
+       - Trying to be beyond by adding active learning module for continual learning and improvment
+       - If data is available, try multi class DL model for multi-class cell classification.
 
-    3. A detailed **weekly timeline**: when do you plan to do what? 
+     ## Weekly Timeline Project Plan
 
 
-        | **Phase**               | **Week & Dates**             |    **Tasks** | **Hours/Week** |
-        |---------------------|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-        | Community Bonding  | Week 1 (May 8 – May 14)  | Study neuroscientific background: How are cells manually identified? Study how cell candidates are extracted and classified. Explore datasets. Start reading literature on state-of-the-art (SOTA) cell classification networks. | 15-20 |
-        |                     | Week 2 (May 15 – May 21) | Deep dive into cellfinder codebase (module by module). Undertand preprocessing. Identify potential bottlenecks in the pipeline. Define evaluation criteria (F1-score, speed, etc.). | 10 (shorter time allocated due to my final exams in the college) |
-        |                     | Week 3 (May 22 – June 1) | Make a short research summary of SOTA architectures. Discuss findings with mentors and finalize strategy. Evaluate transfer learning vs. training from scratch. Understand documentation of current model performance. | 10 (shorter time allocated due to my final exams in the college) |
-        | Coding Phase 1     | Week 4 (June 2 – June 8) | Investigate possible preprocessing improvements. Implement pre-processing improvements. Develop tests for preprocessing to ensure consistency and correctness. Evaluate changes on model performance. Ensure the preprocessing pipeline is efficient and well-documented. | 15-20 (NASA trip may affect availability, as I was global winner 2024 in Space Apps and may travel to attend celebration in Washington) |
-        |                     | Week 5 (June 9 – June 15) | Implement First Alternative Model. Train on dataset and log initial results. Optimize hyperparameters. Implement unit tests for data loading and preprocessing. Ensure pipeline efficiency. | 30-40 (compensating for travel) |
-        |                     | Week 6 (June 16 – June 22) | Compare Baseline vs. New Model. Identify speed vs. accuracy trade-offs. Perform error analysis. Explore Vision Transformers (ViTs) or other promising architecture. Work on documentation of model changes. | 25 |
-        |                     | Week 7 (June 23 – June 29) | Implement Second Alternative Model if needed. Train and compare with previous models. Conduct further error analysis. Assess potential improvements for better generalization. | 25-30 |
-        |                     | Week 8 (June 30 – July 6) | Prepare Midterm Evaluation report. Finalize comparison of models. Ensure experimental results are well-documented for mentors. | 25-30 |
-        | Coding Phase 2     | Week 9 (July 7 – July 13) | Implement final refinements based on mentor feedback. Optimize inference speed and memory usage. Expand unit tests for the entire pipeline. Implement other model or experiment with transfer learning and check the results. | 25-30 |
-        |                     | Week 10 (July 14 – July 20) | Work on paper/blog documenting findings. Prepare tutorials for future contributors. Run final tests and make any necessary optimizations. | 20-25 |
-        |                     | Week 11 (July 21 – July 27) | Address final feedback from mentors. Ensure open-source release is well-documented. Start preparing final GSoC submission report. | 20 |
-        |                     | Week 12 (July 28 – August 3) | Submit final code, documentation, and report. Present findings to mentors and the community. Wrap-up and reflections. | 15-20 |
-        | Finalization       | Week 13 (August 4 – September 1) | Final refinements, mentor discussions, and community engagement. Contribute to open-source improvements beyond my project scope. | 15-20 |
+ 
+
+    | Week & Dates                        | Tasks                                                                                                 | Hours/Week                                           |
+    |-------------------------------------|-------------------------------------------------------------------------------------------------------|------------------------------------------------------|
+    | **Community Bonding Start**         |                                                                                                       |                                                      |
+    | **Week 1 (May 8 – May 14)**         | - Study neuroscientific background: Study how cell candidates are extracted and classified.           | 15-20                                                |
+    |                                     | - Explore dataset (check biases for certain cell types as this may be used later for cell type detection) |                                                      |
+    |                                     | - Make sure of fully understand the cellfinder paper (I already read it)                               |                                                      |
+    |                                     | - Start reading literature on state-of-the-art cell classification networks.                          |                                                      |
+    | **Week 2 (May 15 – May 21)**        | - Deep dive into cellfinder codebase (module by module).                                               | 10 (shorter time allocated due to my final exams in the college) |
+    |                                     | - Investigate possible preprocessing improvements.                                                     |                                                      |
+    |                                     | - Identify potential bottlenecks in the pipeline.                                                     |                                                      |
+    |                                     | - Define evaluation criteria (F1-score, speed, etc.)                                                   |                                                      |
+    | **Week 3 (May 22 – June 1)**        | - Full understanding of current model performance with limitations                                    | 10 (shorter time allocated due to my final exams in the college) |
+    |                                     | - Decide deep learning candidate architectures for the classification task (ResNet alternatives)       |                                                      |
+    |                                     | - Evaluate transfer learning vs. training from scratch.                                               |                                                      |
+    |                                     | - Discuss findings with mentors and finalize strategy.                                                |                                                      |
+    | **Coding Phase 1**                  |                                                                                                       |                                                      |
+    | **Week 4 (June 2 – June 8)**        | - Implement improvements for pre-processing/ classical image processing step, and make sure input data is standardized. | 15-20 (NASA trip may affect availability) |
+    |                                     | - Develop tests for preprocessing to ensure consistency and correctness.                               |                                                      |
+    |                                     | - Data Augmentation using GANs and baseline model (3D ResNet). This step will need verification of data from neuroscientist. |                                                      |
+    |                                     | - Discuss the generalization of the dataset, i.e., can this model be used for microscope brand used for imaging? |                                                      |
+    | **Week 5 (June 9 – June 15)**       | - Plan for efficient input data pipeline, e.g., data loader and on fly augmentation and store data as TFRecord. | 30-40 (compensating for travel) |
+    |                                     | - Enhancement of the existing model to use single channel and secondary channel will fed as auxiliary input. (3D ResNet with Auxiliary Input). |                                                      |
+    |                                     | - Comparison between both models based on speed and accuracy to check if the second method is promising, then we can experiment with other models using one channel. |                                                      |
+    |                                     | - Train on dataset and log initial results. Optimize hyperparameters.                                 |                                                      |
+    |                                     | - Based on the results, we can go with another approach to use one channel input, e.g., knowledge distillation (student and teacher models) |                                                      |
+    | **Week 6 (June 16 – June 22)**      | - Implement another model (I prefer to start with 3D U-Net). Can be implemented using one channel only or experiment with two scenarios (with one channel and then with two channels) based on previous week results. | 25-30 |
+    |                                     | - Make a comparison analysis based on: F1 score, False Positives, model size, and training time.       |                                                      |
+    |                                     | - Discuss whether neglecting one channel as input is a good choice to continue with or not.            |                                                      |
+    | **Week 7 (June 23 – June 29)**      | - Implement Second Alternative Model. I prefer to experiment Swin Transformer 3D.                       | 25-30                                                |
+    |                                     | - Train and compare with previous models. Conduct further error analysis. Assess potential improvements for better generalization. |                                                      |
+    |                                     | - Analyze: Does it give good performance vs. complexity tradeoff? Are more complex models for this problem more promising or just waste of resources? |                                                      |
+    | **Week 8 (June 30 – July 6)**       | - Continue any delayed work from previous weeks.                                                     | 25-30                                                |
+    |                                     | - Prepare Midterm Evaluation report. Finalize comparison of models.                                    |                                                      |
+    |                                     | - Ensure experimental results are well-documented for mentors.                                         |                                                      |
+    | **Coding Phase 2**                  |                                                                                                       |                                                      |
+    | **Week 9 (July 7 – July 13)**       | - Implement refinements based on mentor feedback.                                                     | 25-30                                                |
+    |                                     | - Optimize inference speed and memory usage if needed                                                |                                                      |
+    |                                     | - Expand unit tests for the entire pipeline.                                                           |                                                      |
+    |                                     | - Based on previous results: try implementing another model, I prefer this time to use R-CNN.          |                                                      |
+    | **Week 10 (July 14 – July 20)**     | - Work on paper/blog documenting findings                                                              | 30-40                                                |
+    |                                     | - Continue any remaining comparison analysis.                                                         |                                                      |
+    |                                     | - Complete any remaining tests.                                                                        |                                                      |
+    |                                     | - Going further, either by:                                                                            **1.** Use graph Neural Networks (GNNs) to detect relation between detected cells.                    **2.** Add a napari module for active learning to keep improving model performance.                    |                                                      |
+    | **Week 11 (July 21 – July 27)**     | - Address final feedback from mentors.                                                                 | 25-30                                                |
+    |                                     | - Continue working on code documentation and paper.                                                   |                                                      |
+    |                                     | - Continue working on further deliverables (either the GNN or active learning)                        |                                                      |
+    | **Week 12 (July 28 – August 3)**    | - Submit final code, documentation, and report. Present findings to mentors and the community. Wrap-up and reflections. | 20-25 |
+    | **Week 13 (August 4 – September 1)**| - Final refinements, mentor discussions, and community engagement.                                     | 20-25                                                |
+    |                                     | - Continue working on any remaining additional work.                                                   |                                                      |
+
 
 
 - **Notes** 
   1. I will have a backup plan for risk mitigation. 
-  2. I have already read the cellfinder paper and go through the cellfinder module, but I'll repeat this by diving more deeply during community bonding period.
-  3. I am open to experimenting with more than three models if needed, as deep learning requires extensive experimentation. From past experience, I understand that even within the same architecture, refining and tuning hyperparameters is crucial. My approach will be guided by both literature and hands-on experimentation, ensuring we explore the most promising architectures and reaching the optimum classifier.  
+  2. I am open to experimenting with more than three models if needed, as deep learning requires extensive experimentation. From past experience, I understand that even within the same architecture, refining and tuning hyperparameters is crucial. My approach will be guided by both literature and hands-on experimentation, ensuring we explore the most promising architectures and reaching the optimum classifier.  
+  3. For paper writing and stretch goals, if time ended while still working on them, I have no problem to keep improving them with the community. 
 
 
 - **Communication plan**
@@ -109,25 +151,25 @@ Please include the following information:
 
 - **Match: why you?**
   
-    I already came from a biomedical background that combines biological and technological aspects for benefiting science and healthcare sector. I also worked on with similar project (ChestQuest, mentioned above) that was doing very similar task: classification of medical images. In addition, I have neuroscience background from both college courses and Neuromatch academy where I worked on neural data from mice. I have strong research skills and I was a research assistant in Assistive technologies lab in my college. Moreover, I have strong communication and presentation skills with flexibilty in both dealing and learning.
+    I already came from a biomedical background that combines biological and technological aspects for benefiting science and healthcare sector. I also worked on similar project (ChestQuest, mentioned above) that was doing very similar task: classification of medical images. In addition, I have neuroscience background from both college courses and Neuromatch academy where I worked on neural data (allen dataset) from mice. I have strong research skills and I was a research assistant in Assistive technologies lab in my college. Moreover, I have strong communication and presentation skills with flexibilty in both dealing and learning.
 
 - **Availability**
     
-    There will be an overlap between my final exams and community bonding period. I may also have a travel to Washington in the very first week of coding phase for NASA celebration. Surely, I will work during this period as mentioned in the timeline, but I will dedicate longer hours from the second week to compensate for any delays. For other weeks, generally in normal conditions, I work +50 hours per week, so I will give GSoc from 20 to 30 hours, and for remaining time, I will check for any other responsibilities or self-development. 
+    There will be an overlap between my final exams and community bonding period. I may also have a travel to Washington in the very first week of coding phase for NASA celebration. Surely, I will work during this period as mentioned in the timeline, but I will dedicate longer hours from the second week to compensate for any delays. For other weeks, generally in normal conditions, I work +50 hours per week, so I will give GSoc from 25 to 35 hours on average, and for remaining time, I will check for any other responsibilities or self-development. 
 
 ## GSoC
 
 - **GSoC experience**
 
-    What do you expect from the program?
-1. Enhances my coding skills and make me professional in open-source contributions. 
-2.	Makes me dive deeper in DL 
-3.	Makes me have more knowledge in neuroscience 
-4.	Great opportunity for networking and mentoring
+    I expect the program will:
+  1. Enhance my coding skills and make me professional in open-source contributions. 
+  2.	Make me dive deeper in DL, hopefully become professional into DL  
+  3.	Enahnces my neuroscience knowledge and enable me to benefit the neuroscience community, since I want to be join them :) 
+  4.	Great opportunity for networking and mentoring
 
 
 - **Are you also applying to projects with other organisations in GSoC 2025?**
-- 
+  
    No.
 
 
