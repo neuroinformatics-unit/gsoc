@@ -1,5 +1,5 @@
 
-# brainglobe: Update atlas packaging scripts to atlas API v2 (Swapnaneel Patra)
+## brainglobe: Update atlas packaging scripts to atlas API v2 (Swapnaneel Patra)
 
 ## Personal details
 
