@@ -9,7 +9,8 @@
 - **Location & time-zone**: India, Indian Standard Time (GMT+5:30)
 - **Code contribution**
 
-    Please link a pull request, ideally submitted to your chosen project or one of the NIU tools. Applications without a code contribution won't be considered. It must be publicly visible and represent your own work, although you may have help from other developers in the community to further improve it. It must be meaningful code contribution (i.e. not just fixing a minor spelling mistake). While AI tools (such as Copilot etc) can be a very useful, contributions mostly created by AI are unlikely to be useful, and will not be accepted. You can link more than one pull request if desired.
+    I have submitted a draft pull request for the prototype version of the Jupyter-based GUI for movement. This prototype introduces video playback with overlaid pose tracks, enabling researchers to interactively explore pose estimation data within notebook environments.
+  [Link to Pull Request] (https://github.com/neuroinformatics-unit/movement/pull/542)
 
 - **Proposal discussion link**
 
