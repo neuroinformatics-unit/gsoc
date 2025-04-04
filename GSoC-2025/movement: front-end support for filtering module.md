@@ -11,8 +11,7 @@
   3. [Extended interpolate_over_time to bfill, ffill, nearest and constant functionality](https://github.com/neuroinformatics-unit/movement/pull/537)
   4. [Added a Widget for drawing region of interest in napari (feature discussed in #378).](https://github.com/neuroinformatics-unit/movement/pull/489) 
   5. [Fix Runtime Warning raised by ROI plot test](https://github.com/neuroinformatics-unit/movement/pull/534)
-- **Proposal discussion link**:   
-
+- **Proposal discussion link**:   [link](https://github.com/neuroinformatics-unit/gsoc/pull/41)
 ---
 
 ## Project Proposal  
@@ -22,7 +21,6 @@ This project aims to develop an intuitive napari plugin for Movement’s filteri
 **Why It Matters**  
 - **Accessibility Gap**: Most biologists/neuroscientists lack coding skills but rely on pose-tracking data.  
 - **Time Efficiency**: Manual data cleaning consumes research time; real-time filtering previews streamline workflows.  
-- **Reproducibility**: GUI-driven workflows ensure standardized filtering across labs.  
 - **Open Science**: Democratizes advanced tools for underrepresented institutions with limited computational resources.  
 
 ---
@@ -37,15 +35,15 @@ This project aims to develop an intuitive napari plugin for Movement’s filteri
   - Unit tests for filter logic and UI components.  
   - Performance benchmarks.  
 - **Documentation**:  
-  - Jupyter notebook tutorials with sample datasets.  
+  - Tutorials on how to use the new widget on sample datasets.  
   - Contributor guidelines for extending the widget.  
-- **Export Workflows**: Save/load filter configurations as netCDF.  
-- **Video Tutorial**: 5-minute demo for all the filters, covering how and when to use each. 
+- **Export Workflows**: Save/load filter configurations as YAML.  
+- **Blog posts with video Tutorial**: Will write a [blog](https://movement.neuroinformatics.dev/blog/index.html) about the introduction of the new widget with a small video tutorial embeded in the blog. 
 
 ### 2. **Extended Deliverables (Aspirational)**  
 - **Filter Chaining**: Sequential application of filters (e.g., confidence → median → SavGol).  
 - **Community Presets**: Curated settings for common use cases (e.g., fruit fly locomotion).  
-- **Hardware Acceleration**: GPU-backed filtering.  
+- **Acceleration**: Integrate parallel processing with [dask](https://www.dask.org/?utm_source=xarray-docs) where ever possible.  
 
 ---
 
@@ -54,12 +52,11 @@ This project aims to develop an intuitive napari plugin for Movement’s filteri
 | Week | Tasks | Hours | Output |  
 |------|-------|-------|--------|  
 | CB1  | Study napari plugin architecture; draft wireframes with mentors | 7 | Environment setup guide |  
-| CB2  | Profile filter performance; create UML diagrams; setup Sphinx docs | 8 | Technical design doc |  
-| CB3  | Finalize widget CSS theme; draft Jupyter notebook | 5 | PR for docs infrastructure |  
-
+| CB2  | Study about various file formats and continue with wireframes with mentors | 8 |Increase techenical understanding |  
+| CB3  |   Profile filter performance; create UML diagrams; setup Sphinx docs | 8 | Technical design doc |  
 ### **Coding Period** *(June 2 – August 24)*  
 
-| Week | Focus Area | Critical Deliverables | Hours |  
+| Week | Focus Area | Critical Deliverables | Hours (estimated)|  
 |------|------------|------------------------|-------|  
 | 1    | Widget Framework | Base widget class; confidence threshold UI | 15 |  
 | 2    | Median Filter | Rolling window logic; unit tests | 14 |  
@@ -67,10 +64,10 @@ This project aims to develop an intuitive napari plugin for Movement’s filteri
 | 4    | Preview System | Live parameter tuning; visualization | 14 |  
 | 5    | Error Handling | Tooltip explanations; logging , Filter chaining (extended deliverable) | 18 |  
 | 6    | **Midterm** | Cross-platform tests; user docs v1 | 14 |  
-| 7    | Advanced Features | Filter chaining; netCDF schema design for workflows/data | 16 |  
-| 8    | Export Implementation | UI elements for exporting (buttons, file dialogs)<br>Save/load workflows to netCDF<br>Export filtered data to netCDF;<br>Validation tests | 18 |  
-| 9    | Testing & Docs | Codecov integration;<br>Video tutorial (export demo);<br>Jupyter notebook updates | 15 |  
-| 10   | Optimization | Memory leak fixes;<br>Batch processing for large exports | 12 |  
+| 7    | Advanced Features | Filter chaining <br> YAML schema design for workflows(chains).| 16 |  
+| 8    | Export Implementation | UI elements for exporting (buttons, file dialogs)<br>Save/load workflows to YAML<br>Export filtered data to netCDF<br>Validation tests | 18 |  
+| 9    |  Documentation |  Write Blog post<br> Video tutorial (export demo) | 15 |  
+| 10   | Optimization | Memory leak fixes;<br>Batch processing for large exports <br> parallel processing with  [dask](https://www.dask.org/?utm_source=xarray-docs)| 12 |  
 | 11   | Polish | Keyboard shortcuts;<br>Contributor guide for export features | 13 |  
 | 12   | Validation | Final benchmarks;<br>Release checklist | 12 |  
 
@@ -96,7 +93,7 @@ The chance to contribute to open-source tools that accelerate scientific researc
 
 **Match: Why Me?**  
 
-You should choose me for my blend of Python expertise, signal processing knowledge, and GUI development experience. I’ve built ML models using Python/NumPy nad pandas, studied DSP (SavGol/median filters), and designed intuitive GUIs like a SCADA system for non-technical users at Goa Shipyard. My contributions to Movement demonstrate codebase familiarity and collaboration skills. My goal is to empower researchers by automating tedious tasks, letting them focus on discovery. 
+I should be chosen because I have a combination of signal processing understanding, GUI programming skills, and Python expertise. I've studied DSP (SavGol/median filters), created ML models with Python/NumPy and pandas, and created user-friendly GUIs for non-technical users at Goa Shipyard, such as a SCADA system. My contributions to Movement show my familiarity with the codebase and my ability to work with others. By automating time-consuming activities, I hope to empower researchers so they can concentrate on making discoveries. 
 
 **Availability**  
 My end-semester exams conclude in early May, freeing me to commit fully to GSoC.  
