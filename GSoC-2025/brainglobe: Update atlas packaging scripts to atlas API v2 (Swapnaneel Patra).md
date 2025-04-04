@@ -10,10 +10,7 @@
 - **Location & time-zone**: Kolkata, India, GMT+5:30
 - **Personal website / project portfolio**: [github.com](https://github.com/thisisrick25)
 - **Code contribution**: [https://github.com/brainglobe/brainglobe-atlasapi/pull/555](https://github.com/brainglobe/brainglobe-atlasapi/pull/555)
-
-- **Proposal discussion link**
-
-    https://github.com/neuroinformatics-unit/gsoc/pull/56
+- **Proposal discussion link**: https://github.com/neuroinformatics-unit/gsoc/pull/56
 
 ## Project proposal
 
@@ -32,7 +29,6 @@ and enhanced reproducibility in neuroanatomical research.
 
 - **Implementation timeline**
 
-    Please include the following information:
     1. A bullet point list with **minimal set of deliverables**
         - Update atlas packaging Python code to output OpenMINDS SANDS compliant files.
         - Adapt at least one existing packaging script to utilize the new functionality.
