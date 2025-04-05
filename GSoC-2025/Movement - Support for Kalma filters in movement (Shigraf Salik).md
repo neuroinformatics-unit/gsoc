@@ -1,3 +1,21 @@
+# Personal Details
+
+- **Full name:** Shigraf Salik
+- **Email:** salikshigraf@gmail.com
+- **GitHub username:** ShigrafS
+- **Zulip username:** ShigrafS (User ID )
+- **Location & time-zone:** Kolkata, India. IST.
+- **Code contribution:**
+    
+    https://github.com/neuroinformatics-unit/movement/pull/480
+
+- **Proposal discussion link:**
+
+    https://github.com/neuroinformatics-unit/gsoc/pull/
+    
+
+# Project Proposal 
+
 ## *Synopsis*
 
 The goal of this project is to add Kalman filter support to the movement Python library to enhance its capabilities for cleaning and filtering pose estimation data. Kalman filters are powerful tools for smoothing noisy time-series data and estimating latent states such as velocity and acceleration. This project will provide a modular, extensible Kalman filter implementation that can be used to post-process tracking data, improving data quality for downstream behavioral analysis.
