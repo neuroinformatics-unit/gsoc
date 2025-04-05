@@ -18,6 +18,7 @@
 
 - **Proposal discussion link:**
 
+    https://github.com/neuroinformatics-unit/gsoc/pull/65
     
 
 # Project Proposal 
