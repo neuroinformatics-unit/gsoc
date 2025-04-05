@@ -2,7 +2,7 @@
 
 To discuss your project proposal with the us, open a PR in this repo and add a new markdown file under the `GSoC 2025` directory following [our template](GSoC-2025/application_template.md).
 
-We will discuss and polish your proposal in the PR review process ✨
+Please note that at this stage we will only review the project proposal (i.e. the one page outline of the planned work) to check that it is feasible. We're also happy to answer any other questions. We won't be reviewing the personal statement etc, as only you can make that as good as possible :)
 
 ❗Please note that project proposals that have not previously discussed in this repo will not be considered
 
