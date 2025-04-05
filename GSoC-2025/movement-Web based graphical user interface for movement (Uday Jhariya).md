@@ -2,16 +2,16 @@
 
 ## Personal Details
 - **Full Name**: Uday Jhariya
-- **Email**: jhariyauday60@gmail.com
+- **Email**: [jhariyauday60@gmail.com](mailto:jhariyauday60@gmail.com)
 - **GitHub**: [Udayscode](https://github.com/Udayscode)
 - **Zulip**: Uday Jhariya
 - **Location**: Jabalpur, India | **Time Zone**:  Asia/Kolkata UTC+5:30
 - **Portfolio**: [https://github.com/Udayscode](https://github.com/Udayscode)
 
 ## Code Contribution
-  1.[Rename source format](https://github.com/neuroinformatics-unit/movement/pull/525)
-  2.[LinAlgError: SVD did not converge in tests on main branch](https://github.com/neuroinformatics-unit/movement/issues/532)
-  3.[Ensure Windows CI uses D: drive](https://github.com/neuroinformatics-unit/movement/pull/518)
+- **Rename source format**: [PR #525](https://github.com/neuroinformatics-unit/movement/pull/525)
+- **LinAlgError: SVD did not converge in tests on main branch**: [Issue #532](https://github.com/neuroinformatics-unit/movement/issues/532)
+- **Ensure Windows CI uses D: drive**: [PR #518](https://github.com/neuroinformatics-unit/movement/pull/518)
 
 ## Proposal Discussion Link
 - **PR Discussion**: [Link to Proposal Discussion Thread](https://github.com/neuroinformatics-unit/gsoc/pull/your-discussion-pr-number)
@@ -21,9 +21,9 @@
 ### Synopsis
 What if researchers could explore animal behavior data effortlessly, regardless of their coding expertise? This project brings that vision to life by building a web-based GUI for Movement, using Fastplotlib and Dash to seamlessly integrate with Jupyter Notebooks. The goals are clear and impactful:
 
-1. **Cloud-based collaboration** for multi-institution research teams
-2. **Interactive data exploration** without local installation barriers
-3. **Real-time visualization** of complex trajectory datasets
+1. **Cloud-based collaboration for multi-institution research teams:** Allowing researchers in different locations to access the same data and tools, streamlining collaboration.
+2. **Interactive data exploration without local installation barriers:** Providing immediate feedback through JavaScript interactions using fastplotlib/Dash, improving data insight.
+3. **Real-time visualization of complex trajectory datasets:** Utilizing WebGL to quickly render detailed graphics within the browser.
 
 **Core Deliverables**:
 - **HDF5/CSV Data Loader**:    
@@ -46,23 +46,19 @@ What if researchers could explore animal behavior data effortlessly, regardless 
 - **SLEAP/DeepLabCut Direct Import**: Integrate direct import capabilities for data from popular pose estimation frameworks.
 
 ### Implementation Timeline
-
 | Week | Key Tasks | Hours |
 |------|-----------|-------|
-| **Pre-GSoC** | Study Movement architecture; Prototype basic Dash components to understand the UI framework and start building a minimal viable product (MVP). This includes setting up the development environment and familiarizing yourself with Fastplotlib and Dash. | 20 |
-| **1-2** | Implement HDF5 parser with xarray integration. This involves designing a data loading module that can efficiently handle HDF5 files, leveraging xarray for data manipulation and analysis. Ensure that the module includes progress indicators to enhance user experience. | 35 |
-| **3-4** | Develop WebGL video overlay using Fastplotlib. Focus on creating an interactive visualization system that overlays trajectories on videos, ensuring seamless frame synchronization. This will involve optimizing WebGL rendering for performance. | 35 |
-| **5-6** | Build interactive filters and timeline controls. Implement dynamic filtering capabilities to allow users to focus on specific animals, keypoints, or time ranges. Ensure that filters are intuitive and provide clear visual feedback. | 35 |
-| **7-8** | Create an export system with FFmpeg.js integration. Develop functionality to export visualizations as MP4 videos or PNG images, preserving relevant metadata. This will involve integrating FFmpeg.js for video encoding and ensuring metadata preservation. | 35 |
-| **9-10** | Perform performance optimization and stress testing. Focus on optimizing the application for large datasets, ensuring that it can handle various input sizes without significant performance degradation. Conduct thorough stress testing to identify and fix any bottlenecks. | 25 |
-| **11-12** | Finalize documentation and create Jupyter notebook tutorials. Develop comprehensive documentation for users and contributors, including step-by-step guides on how to use the web GUI. Create interactive Jupyter notebook tutorials to help users get started with the tool. | 25 |
-| **Total**: 210 hours (~18 hrs/week)
+| **Pre-GSoC** | - Study Movement architecture.<br>- Prototype basic Dash components to understand the UI framework.<br>- Start building a minimal viable product (MVP).<br>- Set up the development environment.<br>- Familiarize with Fastplotlib and Dash. | 20 |
+| **1-2** | - Implement HDF5 parser with xarray integration.<br>- Design a data loading module to handle HDF5 files efficiently.<br>- Leverage xarray for data manipulation and analysis.<br>- Include progress indicators to enhance user experience. | 35 |
+| **3-4** | - Develop WebGL video overlay using Fastplotlib.<br>- Create an interactive visualization system for trajectories on videos.<br>- Ensure seamless frame synchronization.<br>- Optimize WebGL rendering for performance. | 35 |
+| **5-6** | - Build interactive filters and timeline controls.<br>- Implement dynamic filtering for animals, keypoints, or time ranges.<br>- Ensure filters are intuitive with clear visual feedback. | 35 |
+| **7-8** | - Create an export system with FFmpeg.js integration.<br>- Develop functionality to export visualizations as MP4 or PNG.<br>- Preserve relevant metadata during export.<br>- Integrate FFmpeg.js for video encoding. | 35 |
+| **9-10** | - Perform performance optimization for large datasets.<br>- Ensure handling of various input sizes without degradation.<br>- Conduct stress testing to identify and fix bottlenecks. | 25 |
+| **11-12** | - Finalize documentation for users and contributors.<br>- Create step-by-step guides on using the web GUI.<br>- Develop interactive Jupyter notebook tutorials for users. | 25 |
+| **Total**: 210 hours (~18 hrs/week over 12 weeks)
 
 ### Communication Plan
-- **Daily**: Zulip updates & PR reviews
-- **Bi-weekly**: Video demos with mentors
-- **Milestone Reviews**: Week 3, 6, 9
-- **Emergency Protocol**: Discord voice channel
+I’ll dedicate 4-5 hours/day on weekdays and 6 hours on weekends to ensure consistent progress on the project. Share progress and seek feedback through daily Zulip updates. Conduct regular check-ins with mentors via weekly video calls (Zoom/Google Meet) to discuss progress, challenges, and next steps.
 
 ## Personal Statement
 
