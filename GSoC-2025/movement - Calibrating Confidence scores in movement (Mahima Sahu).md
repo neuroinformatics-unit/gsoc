@@ -14,7 +14,7 @@
     
 
 - **Proposal discussion link**
-    THe current PR being viewed
+    [PR](https://github.com/neuroinformatics-unit/gsoc/pull/70/files)
 
 
 ## Project proposal 
