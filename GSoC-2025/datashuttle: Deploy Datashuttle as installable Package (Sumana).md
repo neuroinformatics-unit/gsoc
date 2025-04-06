@@ -64,7 +64,7 @@ Datashuttle is a tool that helps users easily transfer and organize data between
 - Automate updates and improvements using GitHub CI/CD for seamless maintenance.
 
 **Stretch Goals** <br/>
-- Build a web-based interface using Textual-web to run datashuttle in a browser.
+- Build a web-based interface using [Textual-web](https://github.com/Textualize/textual-web) to run datashuttle in a browser.
 - Test the web interface to ensure it integrates well with datashuttle's core features.
 
 **Implementation Timeline** <br/>
@@ -77,65 +77,79 @@ Datashuttle is a tool that helps users easily transfer and organize data between
   </thead>
   <tbody>
     <tr>
-      <td><b>Community Bonding Period</b><br>Mon 5/8 - Sun 6/1</td>
+      <td><strong>Community Bonding Period</strong><br>Mon 5/8 - Sun 6/1</td>
       <td>
-        ➢ Familiarizing more with the community and clearing my doubts regarding the project.<br>
-        ➢ Research about existing implementations, packaging textual in cross-platform executables.<br>
-        ➢ Experiment with standard approaches such as <a href="https://textual.textualize.io/how-to/package-with-hatch/">Hatch</a> and <a href="https://github.com/Textualize/textual-web">Textual-Web</a>.
+        <ul>
+          <li>Familiarizing more with the community and clearing my doubts regarding the project.</li>
+          <li>Research packaging tools: PyInstaller, Briefcase, Nuitka, etc.</li>
+          <li>Set up basic cross-platform environment on local and cloud and discuss CI/CD strategies.</li>
+          <li>Document tool compatibility (macOS notarization, Windows signing, Linux dependencies).</li>
+        </ul>
       </td>
     </tr>
     <tr>
-      <td><b>Week (1 & 2)</b><br>Mon 6/2 - Sat 6/14</td>
+      <td><strong>Week (1 &amp; 2)</strong><br>Mon 6/2 - Sat 6/14</td>
       <td>
-        ➢ Explore different packaging tools like PyInstaller, Hatch, Briefcase.<br>
-        ➢ Plan how to handle cross-platform support Windows, macOS, Linux.
+        <ul>
+          <li>Finalize packaging tool(s) for each platform based on tests.</li>
+          <li>Test local builds for Windows, macOS, and Linux using shortlisted tools.</li>
+          <li>Create platform-specific configuration files and test minimal reproducible builds.</li>
+        </ul>
       </td>
     </tr>
     <tr>
-      <td><b>Week (3 & 4)</b><br>Mon 6/16 - Sat 6/28</td>
+      <td><strong>Week (3 &amp; 4)</strong><br>Mon 6/16 - Sat 6/28</td>
       <td>
-        ➢ Create a simple prototype that bundles datashuttle on one platform.<br>
-        ➢ Test basic installation steps and fix early issues.
+        <ul>
+          <li>Set up GitHub Actions workflow to build binaries on push and tags.</li>
+          <li>Use Windows, macOS, and Linux runners for platform-specific builds.</li>
+          <li>Automate artifact upload for each build (to GitHub Releases or artifacts tab).</li>
+        </ul>
       </td>
     </tr>
     <tr>
-      <td><b>Week (5 & 6)</b><br>Mon 6/30 - Sat 7/12</td>
+      <td><strong>Week (5 &amp; 6)</strong><br>Mon 6/30 - Sat 7/12</td>
       <td>
-        ➢ Extend the prototype to run on all targeted platforms.<br>
-        ➢ Fix any remaining issues and finalize deliverables for the midterm evaluation.
+        <ul>
+          <li>Package standalone installers.</li>
+          <li>Begin testing installer usability and OS integration.</li>
+          <li>Begin user-friendly documentation (installation instructions).</li>
+        </ul>
       </td>
     </tr>
     <tr>
-      <td><b>Week (7 & 8)</b><br>Mon 7/14 - Sat 7/26</td>
+      <td><strong>Week (7 &amp; 8)</strong><br>Mon 7/14 - Sat 7/26</td>
       <td>
-        ➢ Set up Continuous Integration (CI) to automate builds.<br>
-        ➢ Refine the packaging process based on testing feedback.
+        <ul>
+          <li>Optimize bundled builds by removing unnecessary files from builds.</li>
+          <li>Ensure fonts/assets used by TUI are bundled correctly.</li>
+          <li>Explore optional compression (UPX, etc.) to reduce binary size.</li>
+          <li>Improve error reporting/logging when users run the packaged app.</li>
+        </ul>
       </td>
     </tr>
     <tr>
-      <td><b>Week (9 & 10)</b><br>Mon 7/28 - Sat 8/9</td>
+      <td><strong>Week (9 &amp; 10)</strong><br>Mon 7/28 - Sat 8/9</td>
       <td>
-        ➢ Fix bugs and improve performance.<br>
-        ➢ Write clear installation documentation.
+        <ul>
+          <li>Run testing on target OS versions (Windows 10+, Ubuntu LTS, macOS).</li>
+          <li>Fix platform-specific issues (e.g., terminal size bugs, color rendering, fonts).</li>
+          <li>Integrate basic crash/error feedback mechanism (e.g., logs or messages).</li>
+          <li>Add versioning and changelogs in builds.</li>
+        </ul>
       </td>
     </tr>
     <tr>
-      <td><b>Week (11 & 12)</b><br>Mon 8/11 - Sat 8/23</td>
+      <td><strong>Week (11 &amp; 12)</strong><br>Mon 8/11 - Sat 8/23</td>
       <td>
-        ➢ Apply any final fixes and suggestions.<br>
-        ➢ Finalize documentation and project deliverables.
-      </td>
-    </tr>
-    <tr>
-      <td><b>Week 13</b><br>Mon 8/25 - Mon 9/1</td>
-      <td>
-        ➢ Discuss the final evaluation with the project mentor.<br>
-        ➢ Document all the progress made in my GSoC blog about GSoC’25 journey.
+        <ul>
+          <li>Finalize all documentation including local build instructions, CI/CD process, installation and usage instructions.</li>
+          <li>Prepare and publish a final GitHub Release.</li>
+        </ul>
       </td>
     </tr>
   </tbody>
 </table>
-
 
 **Communication Plan** <br/>
 I will communicate with my mentor through Zulip chat whenever needed. However, I feel that having a weekly stand-up meeting via video call would be beneficial for discussing the detailed plan for the week and identifying areas for further improvement. That said, I am completely open to any mode of communication based on my mentor’s availability and preference.
@@ -155,7 +169,7 @@ I’ve contributed to various open-source projects purely out of curiosity and a
   
 ## GSoC
 - **GSoC experience** <br/>
-  I hope to gain hands-on experience in building Terminal User Interfaces and further improve my proficiency in Python programming. Additionally, I am eager to explore NIU's other projects beyond Datashuttle and learn more about innovative ideas like it. I also look forward to building a collaborative and professional relationship with the people at NIU and continuing my contributions even after the program ends.
+  I hope to gain hands-on experience in packaging Terminal User Interfaces and further improve my proficiency in Python programming. Additionally, I am eager to explore NIU's other projects beyond Datashuttle and learn more about innovative ideas like it. I also look forward to building a collaborative and professional relationship with the people at NIU and continuing my contributions even after the program ends.
   
 - **Are you also applying to projects with other organisations in GSoC 2025?** <br/>
   No, I am not submitting proposals anywhere else other than datashuttle.
