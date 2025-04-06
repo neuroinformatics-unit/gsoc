@@ -11,7 +11,7 @@
 https://github.com/neuroinformatics-unit/movement/pull/507
 
 - **Proposal discussion link**
-
+https://github.com/neuroinformatics-unit/gsoc/pull/14
 
 ## **Project Proposal**
 
@@ -24,21 +24,33 @@ This project aims to calibrate confidence scores produced by pose estimation fra
 - **Open-Source Impact:** Provides reproducible tools and standardized evaluation practices, benefiting the open-source community.  
 
 ### **Goals**  
-Implement a Python function for calibrating confidence scores produced by various pose estimation frameworks. The function will allow users to specify calibration schemes via parameters and will be accompanied by a benchmark to assess the effectiveness of the calibration methods.
+Develop a flexible calibration module for confidence scores from pose estimation models, supporting multiple calibration techniques configurable by the user.
+Additionally, create a benchmarking framework to evaluate and compare these methods, aiming to offer practical guidance on choosing the right calibration strategy.
 
-### **Deliverables**  
+**Minimum:**
 
-**Minimum:**  
-- Implement the method proposed in keypoint-moseq, fitting a regression line to the log(confidence) vs. log(error) pairs obtained from annotations.  
-- Implement functionality to directly fit ground truth keypoint datasets and corresponding confidence scores.  
-- Implement a calibration scheme based on error distance thresholds to determine prediction success for confidence calculation.
-- Implement a calibration scheme based on error to compute new confidence scores (and experiment with multiple error-to-confidence mapping functions).
-- Test all added functionalities and write documentation for the new features.  
-- Provide an example use case document from a sample dataset.
+**Regression-based Calibration:**  
+Fit a regression line between log(confidence) and log(error) using ground truth keypoints, following the keypoint-moseq approach.
 
-**Extended:**  
-- Design a benchmark function that uses basic datasets and existing confidence-based functionalities to evaluate the quality of confidence calibration methods based on the performance of downstream tasks.   
-- Conduct experiments based on the benchmark function to identify the optimal new confidence calibration scheme or highlight the strengths and weaknesses of each method. 
+**Direct Ground Truth Input:**  
+Support calibration using raw keypoint data (e.g. from sensors), eliminating the need for manual annotation.
+
+**Threshold-based Classification:**  
+Define prediction success by error thresholds and calibrate confidence as the probability of success.
+
+**Error-to-Confidence Mapping:**  
+Apply functions (e.g. inverse, exponential, ReLU) to map error distances to calibrated confidence scores in [0,1].
+
+**Tests & Example:**  
+Test all methods, document them, and provide a sample use case.
+
+**Benchmarking Framework:**  
+Build a benchmark to evaluate calibration quality across methods using standard metrics and downstream task performance.
+
+**Extended:**
+
+**Experimental Comparison:**  
+Run experiments to identify the most effective calibration strategies and summarize trade-offs.
 
 ### **Implementation Timeline**  
 (*~25-30 hours per week*)  
@@ -64,7 +76,7 @@ I will communicate with my mentor via Zulip chat for daily questions and discuss
     I am currently a Master's student in Data Science at the University of Chicago. Previously, I worked at ByteDance as a data analyst, where I gained experience in machine learning and data processing. I have also studied data interaction techniques and developed several web pages to better present data. Additionally, I have conducted research on *real-time spatial positioning and attitude recognition based on Kalman filtering*, giving me a certain level of understanding of pose estimation frameworks. Although I have extensive programming experience, I am new to open source. The *movement* project is my first participation in the open-source community, where I submitted a pull request to implement a feature requested in an issue.
 - **Motivation: why this project?**
 
-    I hope to engage in computational neuroscience research in the future and apply my data science skills to this field. During my undergraduate laboratory internship, I was involved in studies related to brain science and animal behavior. I believe that the *movement* project is very helpful for such research.
+    I hope to engage in computational neuroscience research in the future and apply my data science skills to this field. During my undergraduate laboratory internship, I was involved in studies related to brain science and animal behavior. I am mainly involved in some research exploring the connection between neural activity and animal behavior. I think the movement library can help us get more accurate animal behavior data and help this kind of research.
 - **Match: why you?**
 
     There is currently no widely accepted best method for calibrating confidence scores in regression models. I hope to leverage my data analysis skills to design a benchmark that evaluates the strengths and weaknesses of the various calibration methods we will implement, aiming to identify an optimal approach or provide simple guidelines for selecting the appropriate method. I have won awards (Top 1-2%) in mathematical modeling competitions such as MCM/ICM and CUMCM, which makes me particularly skilled in this type of work.
