@@ -93,4 +93,4 @@ I’m excited about GSoC as a platform to apply my open-source skills to healthc
 I’m eager to continue growing as a researcher and developer, and GSoC will help me sharpen technical and collaborative skills while building something meaningful. More importantly, I want to remain active in the NIU community beyond GSoC, especially as I graduate and look to stay connected with mission-driven research teams.
 
 ### Are you also applying to projects with other organisations in GSoC 2025?  
-I have applied to PyDataStructs and NIU’s Ethology project. However, Spikewrap remains my top preference due to its perfect alignment with my interests in neuroscience and AI. If all applications succeed, my primary choice is Spikewrap, and I am committed to focusing my efforts here throughout GSoC and beyond.
+I am considering submitting proposals to PyDataStructs and NIU’s Ethology project as well(if we're allowed to submit for two projects under NIU). In case of a tie, I would prioritize working on a NIU project. I am committed to focusing my efforts on this project throughout GSoC and beyond, and I look forward to deepening my contributions to the NIU community.
