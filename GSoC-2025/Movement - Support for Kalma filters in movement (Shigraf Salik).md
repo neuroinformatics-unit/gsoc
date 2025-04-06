@@ -427,3 +427,16 @@ The `movement` codebase is assumed to include:
 - **Weeks 7–8 (July 14–27, 60 hours):** Stretch goal prototype developed.
 - **Weeks 9–10 (July 28–August 10, 60 hours):** Stretch goal finalized with tests/docs.
 - **Weeks 11–12 (August 11–24, 60 hours):** Final polish and submission.
+
+Below is a draft for the remaining sections of your GSoC proposal for the "Support for Kalman Filters in Movement" project. I've tailored them to fit your 30-hour-per-week commitment and the context of the project, leaving placeholders (e.g., `[mention relevant programming languages]`) for you to fill in with your specific experiences and preferences. Feel free to customize these further!
+
+---
+
+### Communication Plan
+I plan to communicate with my mentors (@niksirbi, @sfmig) through weekly synchronous check-ins via video call (Zoom or Google Meet) to discuss progress, blockers, and next steps. These meetings will be scheduled at a mutually convenient time. For daily updates and asynchronous discussions, I will use the `NIU` community’s preferred platform Zulip and email to share progress reports, ask questions, and seek feedback. I’ll provide detailed updates at least twice a week, including code snippets, test results, or documentation drafts as needed. I’ll also be responsive to mentor messages within 24 hours and remain flexible for ad-hoc discussions if urgent issues arise. My goal is to maintain clear, proactive communication to ensure alignment throughout the GSoC period.
+
+---
+
+### Personal Statement
+
+#### Past Experience
