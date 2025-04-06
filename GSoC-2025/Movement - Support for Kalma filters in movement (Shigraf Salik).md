@@ -440,3 +440,20 @@ I plan to communicate with my mentors (@niksirbi, @sfmig) through weekly synchro
 ### Personal Statement
 
 #### Past Experience
+I have previously interned at a medical AI startup, where I trained models to diagnose neurological disorders such as epilepsy, where I worked on large medical datasets and EEG files to train models. There I also learnt signal processing and Cloud Computing. Apart from this, I have also worked on Text-to-Speech models and OCR models for local languages. 
+
+#### Motivation: Why This Project?
+This project aligns closely with my interests in data science and signal processing. The technical challenge of implementing Kalman filters to improve tracking data excites me, as does the opportunity to contribute to a cutting-edge research tool like movement. I’m especially interested in the intersection of machine learning and motion analysis, and this project enables me to explore that. I’m motivated by the potential impact of cleaner, more reliable tracking data on scientific research, particularly in fields like neuroscience or ecology.
+
+#### Match: Why You?
+I bring a mix of technical skills,  and a genuine passion for impactful software. My familiarity with machine leraning in the field of neurology, combined with a proactive learning mindset, makes me confident I can deliver both the core deliverables and the stretch goal. I’ve already demonstrated my commitment through working on the movement codebase, and I’m prepared to dive deeper into pose estimation frameworks or state-space modeling as needed. My experience with neurological data at a startup ensures I can produce high-quality, maintainable contributions that align with movement’s standards.
+
+#### Availability
+I have no major academic or job commitments during the GSoC period (late May to mid-August 2025) and can dedicate around 30 hours per week to this project. In case of minor overlaps (e.g., exams or personal events), I will plan ahead to maintain my weekly hours and inform my mentors in advance via our agreed communication channels. My schedule is flexible, allowing me to adjust work hours to accommodate mentor availability or project needs. 
+
+---
+
+#### GSoC Experience
+Through GSoC, I hope to gain real-world experience working in a collaborative development environment, improve my design and coding skills, and contribute to an open-source ecosystem that aligns with my interests in application of machine learning and it's application in neurology. I’m excited to learn from experienced mentors, refine my ability to write production-ready code, and deepen my understanding of signal processing and tracking algorithms. This project with NIU’s movement is an ideal opportunity to grow as a developer while making a tangible impact on a tool used by researchers worldwide. 
+
+I'm applying to this project because of my passion for machine learning and neuroinformatics and to get started with Open-Source Contributions. 
