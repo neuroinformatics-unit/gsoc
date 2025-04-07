@@ -10,7 +10,7 @@
 - **Code contribution**
 
     I have submitted a draft pull request for the prototype version of the Jupyter-based GUI for movement. This prototype introduces video playback with overlaid pose tracks, enabling researchers to interactively explore pose estimation data within notebook environments.
-  [Link to Pull Request] (https://github.com/neuroinformatics-unit/movement/pull/542)
+[Link to Pull Request](https://github.com/neuroinformatics-unit/movement/pull/542)
 
 - **Proposal discussion link**
 
