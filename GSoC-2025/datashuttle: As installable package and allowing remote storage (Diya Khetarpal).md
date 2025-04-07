@@ -12,7 +12,7 @@
     - Established a dedicated [Continuous Integration (CI)](https://github.com/sunpy/sunpy/pull/8010#) workflow for sunpy.coordinates (OpenAstronomy) to enhance testing efficiency.
     - [Implemented](https://github.com/sunpy/sunpy/pull/7953#issuecomment-2581136449) handling mechanisms for missing values to improve data robustness.
     - Adds support for ellipsis in [NDCube](https://github.com/sunpy/ndcube/pull/818) allowing users to slice objects using ellipsis.
-- **Proposal discussion link:** [datashuttle installable package and remote storage feature]()
+- **Proposal discussion link:** [datashuttle installable package and remote storage feature](https://github.com/neuroinformatics-unit/gsoc/pull/73)
 
 ## Project proposal
 
