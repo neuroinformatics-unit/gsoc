@@ -17,33 +17,32 @@
 
 ### Synopsis
 
-Users face a substantial challenge when using the datashuttle project because it needs conda to operate. The project development targets datashuttle's transformation into a stand-alone executable program that functions across Windows, macOS and Linux platforms without user coding or dependencies.The main obstacle to overcome is that datashuttle's terminal user interface stems from Textual software which produces inadequate display results in original system terminal programs. The solution requires collecting information about adding terminal emulators to software packages. By leveraging packaging tools like Hatch, PyInstaller, or Briefcase, we can create cross-platform distribution of a datashuttle executable. Moreover, [textualitty](https://github.com/lllama/textualitty) can also be explored for macOS.  
+Users face a substantial challenge when using the datashuttle project because it needs conda to operate. The project development targets datashuttle's transformation into a stand-alone executable program that functions across Windows, macOS and Linux platforms without user coding or dependencies.The main obstacle to overcome is that datashuttle's terminal user interface stems from Textual software which produces inadequate display results in original system terminal programs. The solution requires collecting information about adding terminal emulators to software packages. By leveraging packaging tools like PyInstaller, Hatch or Briefcase, we can create cross-platform distribution of a datashuttle executable. And by leveraging tools like Rich or PyTermGUI, we can create cross-platform terminal UI. 
 
 Enhancing datashuttle will expand its user base by allowing researchers who require its functionality to use it without needing technical skills. Removing the conda requirement helps to remove entry obstacles thus expanding available user numbers.
 
 ### Implementation timeline
 
 - #### Minimal set of deliverables:
-  - A thorough research of different methods to include Textual interfaces with Python applications for packaging.
+  - A thorough research and evaluation of packaging tools (PyInstaller, Hatch, Briefcase) and terminal UI libraries (Rich, PyTermGUI)
   - Cross-platform executable distribution of datashuttle for Windows, macOS, and Linux
-  - The application benefits from an automated testing solution that utilizes GitHub CI to build projects.
-  - Documentation for maintenance and future development and preparing the installation guide which will cover all deployment platforms supported by our application.
+  - The application benefits from an automated testing solution that utilizes GitHub CI to build projects
+  - Documentation for maintenance and future development and preparing the installation guide which will cover all deployment platforms supported by our application
 
 - #### Stretch goals:
   - Auto-update functionality for the standalone application
 
-
-- #### Weekly timeline (12 weeks * 30 hours = ~360 hours) :
+- #### Weekly timeline (12 weeks * 30 hours = ~360 hours):
 
 | Week | Tasks | Hours per week |
 |------|-------|-------|
-| Community bonding | Create a development environment while conducting research about Python packaging systems | 30 |
-| Week 1-2 | Deep dive into Python packaging tools (PyInstaller, cx_Freeze, etc.), evaluate compatibility with Textual, Research tools for terminal emulator bundling, tests Textual rendering under different system conditions. | 30-35 |
-| Week 3-4 |Prototyping packaging with the most promising approach on Windows, Develop the prototype for macOS along with resolving platform-specific issues  | 30-35 |
-| Week 5-6 | Develop the prototype for Linux along with resolving platform-specific issues, Refine approach based on prototype results | 30-35 |
-| Week 7-8 | Set up Continuous Integration (CI) pipeline for automated builds, Set up testing framework for packaged applications | 30-35 |
-| Week 9-10 | Optimize package size and performance, Creating user documentation| 30-35 |
-| Week 11-12 | Code freeze, focus on final testing and bug fixes, Documentation finalization, prepare final deliverables | 30-35 |
+| Community bonding | Create a development environment, research Python packaging systems and terminal UI libraries, set up initial testing environment | 30 |
+| Week 1-2 | Evaluate packaging tools (PyInstaller, Hatch, Briefcase) and terminal UI libraries (Rich, PyTermGUI), create proof-of-concept implementations, document findings and recommendations | 30-35 |
+| Week 3-4 | Implement chosen packaging solution for Windows, develop prototype with selected terminal UI library, resolve platform-specific issues | 30-35 |
+| Week 5-6 | Extend implementation to macOS, test terminal UI rendering across different macOS versions, optimize performance | 30-35 |
+| Week 7-8 | Implement Linux support, ensure consistent terminal UI behavior across different Linux distributions and terminal emulators | 30-35 |
+| Week 9-10 | Set up CI/CD pipeline for automated builds across platforms, implement comprehensive testing framework for packaged applications | 30-35 |
+| Week 11-12 | Optimize package size and performance, finalize documentation, prepare release packages, conduct final testing and bug fixes | 30-35 |
 
 - **Communication Plan**
 
