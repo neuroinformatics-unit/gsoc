@@ -58,7 +58,7 @@ and enhanced reproducibility in neuroanatomical research.
 | Week 11    | Final refinements; complete any remaining tests; draft the final report and submission documentation.                              |
 | Week 12    | Finalize the project deliverables; ensure all documentation, tests, and code are up-to-date; prepare for final project submission and review. |
 
-I plan to dedicate around 20 hours per week throughout the program.
+I plan to dedicate approximately 30 hours per week throughout the program.
 
 - **Communication plan**
   
