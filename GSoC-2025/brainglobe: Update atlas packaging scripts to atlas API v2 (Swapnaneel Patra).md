@@ -46,15 +46,15 @@ and enhanced reproducibility in neuroanatomical research.
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | **Community Bonding**| Become familiar with the BrainGlobe Atlas API and OpenMINDS SANDS spec; set up development environment; initial discussions with mentors.      |
 | Week 1     | Investigate current packaging scripts; analyze differences between existing format and OpenMINDS SANDS; draft initial design ideas.          |
-| Week 2     | Prepare a detailed design document outlining required code changes and data schema adjustments; start initial code modifications.            |
+| Week 2     | Prepare a detailed design document outlining required code changes and data schema adjustments; start initial code modifications with accompanying unit tests.            |
 | Week 3     | Implement core modifications in the packaging code for OpenMINDS SANDS support; begin writing unit tests.                                     |
-| Week 4     | Adapt one selected packaging script to use the new functionality; continue developing tests and refining the conversion process.             |
+| Week 4     | Adapt one selected packaging script to use the new functionality; write unit tests and initial integration tests for the script adaptation.             |
 | Week 5     | Integrate mentor feedback; refine code and tests; update documentation draft with examples and usage instructions.                           |
-| Week 6  **Mid-term**     | Verify core SANDS writing code, first adapted script, and initial tests are functional. Address major blockers.              |
+| Week 6  **Mid-term**     | Verify core SANDS writing code, first adapted script, and initial passing tests (unit & integration) are functional. Address major blockers.              |
 | Week 7     | Refine core implementation based on mid-term feedback. Improve test coverage (unit & integration). Address bugs.                             |
-| Week 8     | Polish code; perform extensive manual testing with various atlas datasets; update documentation based on test outcomes.                        |
-| Week 9     | Finalize additional features; prepare comprehensive test suites; conduct peer reviews with mentors and community contributors.              |
-| Week 10    | Address stretch goals (e.g., adapt another script, add validation). Begin code freeze process; focus on bug fixes, documentation polishing, and ensuring all deliverables meet the OpenMINDS SANDS standard.      |
+| Week 8     | Polish code; ensure high test coverage; update documentation based on test outcomes.                        |
+| Week 9     | Finalize additional features; Finalize test suite (unit & integration); conduct peer reviews with mentors and community contributors.              |
+| Week 10    | Address stretch goals (e.g., adapt another script, add validation), ensuring tests accompany any new code. Begin code freeze process; focus on bug fixes, documentation polishing, and ensuring all deliverables meet the OpenMINDS SANDS standard.      |
 | Week 11    | Final refinements; complete any remaining tests; draft the final report and submission documentation.                              |
 | Week 12    | Finalize the project deliverables; ensure all documentation, tests, and code are up-to-date; prepare for final project submission and review. |
 
