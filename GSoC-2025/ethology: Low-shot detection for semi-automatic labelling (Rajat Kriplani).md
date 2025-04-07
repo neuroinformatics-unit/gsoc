@@ -57,7 +57,7 @@ This project aims to integrate low-shot object detection into the ethology Pytho
 | 8    | Mid July                  | *If pursuing stretch goal:* Integrate second model (e.g., CountGD) OR *If sticking to minimal:* Add more robust testing for backend and frontend interactions.           |
 | 9    | Mid/Late July             | Develop the Example demonstrating the full workflow. Refine and polish the Guide documentation.                                                                                                                 |
 | 10   | Late July/Early August    | Thorough end-to-end testing. Bug fixing. Address identified edge cases (e.g., no detections, poor prompts, varying image conditions, performance with many frames/boxes, errors during model loading/inference).                                             |
-| 11   | Early August              | Finalize all tests and documentation (Guide + Example). Ensure code quality and full adherence to contribution guidelines across the project.                                                               |
+| 11   | Early August              | Finalize all tests and documentation (Guide, and Example taking reference from 'movement').                          |
 | 12   | Mid August                | Final code review buffer, final submission preparation, potentially create a short demo/screencast.                                                                                     |
 
 
