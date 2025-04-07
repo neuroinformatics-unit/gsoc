@@ -6,7 +6,7 @@
 - **GitHub username:** [Diya910](https://github.com/Diya910)
 - **Zulip username:** [Diya Khetarpal](https://neuroinformatics.zulipchat.com/#user/895220)
 - **Location & time-zone:** New Delhi, India (UTC+5:30)
-- **Personal website / project portfolio:** [Diya Khetarpal](https://www.linkedin.com/in/diya-khetarpal)
+- **Personal website / project portfolio:** [Diya Khetarpal](https://www.linkedin.com/in/diya-khetarpal-b22a56249/)
 - **Code contribution:**
     - I worked under Atulit to form a CLI command for [Xander Corp](https://github.com/Xander-AI-Main/xander-cli), a no-code AI solution which you can check out on [PyPI](https://pypi.org/project/xander-cli/).
     - Established a dedicated [Continuous Integration (CI)](https://github.com/sunpy/sunpy/pull/8010#) workflow for sunpy.coordinates (OpenAstronomy) to enhance testing efficiency.
