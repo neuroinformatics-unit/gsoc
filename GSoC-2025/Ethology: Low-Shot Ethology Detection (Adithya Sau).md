@@ -36,35 +36,33 @@ This project aims to integrate low-shot detection models (GeCo and CountGD) into
 
 #### **Minimal Deliverables**
 
-- **Adapter Classes**:  
-  - Develop PyTorch-compatible adapter classes for **GeCo** (tile-based processing, COCO format normalization) and **CountGD** (text-to-embedding conversion using HuggingFace `transformers`, dynamic confidence thresholds).  
+- Develop PyTorch-compatible adapter classes for **GeCo** (tile-based processing, COCO format normalization) and **CountGD** (text-to-embedding conversion using HuggingFace `transformers`, dynamic confidence thresholds).  
 
-- **Unified I/O Handling**:  
-  - Implement bounding box format conversion (COCO ↔ YOLO ↔ PascalVOC) using OpenCV and NumPy.  
-  - Extract CLIP-based prompt embeddings for text-based detection.  
-  - Ensure multi-frame consistency with optical flow tracking (5-frame window).  
+- Implement bounding box format conversion (COCO ↔ YOLO ↔ PascalVOC) using OpenCV and NumPy.  
 
-- **Inference API**:  
-  - Design endpoints like `/detect` for batch processing and `/annotations` for JSON-based storage.  
-  - Optimize inference with mixed precision (FP16) and default frame resizing (640×640).  
+- Extract CLIP-based prompt embeddings for text-based detection.  
 
-- **Napari Widget**:  
-  - Enable video loading (MP4/AVI/TIFF) with lazy loading.  
-  - Provide a dual-layer canvas for predictions and manual edits.  
-  - Include real-time FPS and GPU memory monitoring.  
+- Ensure multi-frame consistency with optical flow tracking (5-frame window).  
 
-- **Configuration Panel**:  
-  - Allow model selection (GeCo/CountGD), adjustable confidence sliders (0.1–0.9), and preset modes for Speed (FP16), Accuracy (FP32), and Balanced performance.  
+- Design inference API endpoints like `/detect` for batch processing and `/annotations` for JSON-based storage.  
 
-- **Import/Export**:  
-  - Support CSV format for frame-wise detections and JSON schema for metadata + annotations.  
-  - Implement zlib compression (level 3) for large files.  
+- Optimize inference with mixed precision (FP16) and default frame resizing (640×640).  
 
-- **Optimization Targets**:  
-  - Achieve >15 FPS at 480p resolution, <80% GPU memory usage, and <2 false positives per frame.  
+- Enable video loading (MP4/AVI/TIFF) with lazy loading in a Napari widget.  
 
-- **Trade-off Controls**:  
-  - Include resolution scaling sliders (360p–720p), adaptive batch sizes (1–4 frames), and optional frame skipping with optical flow validation.  
+- Provide a dual-layer canvas in the widget for predictions and manual edits.  
+
+- Include real-time FPS and GPU memory monitoring in the widget.  
+
+- Allow model selection (GeCo/CountGD), adjustable confidence sliders (0.1–0.9), and preset modes for Speed (FP16), Accuracy (FP32), and Balanced performance in the configuration panel.  
+
+- Support CSV format for frame-wise detections and JSON schema for metadata + annotations during import/export.  
+
+- Implement zlib compression (level 3) for large files during import/export.  
+
+- Achieve >15 FPS at 480p resolution, <80% GPU memory usage, and <2 false positives per frame as optimization targets.  
+
+- Include resolution scaling sliders (360p–720p), adaptive batch sizes (1–4 frames), and optional frame skipping with optical flow validation as trade-off controls.
 
 #### **Stretch Goals**
 - Add **interactive correction tools** (brush/eraser) for refining annotations directly in the UI.
