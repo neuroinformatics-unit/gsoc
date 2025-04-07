@@ -10,9 +10,9 @@
 - **Personal website:** [hargunkaur.vercel.app](https://hargunkaur.vercel.app)  
 
 ### Code contributions:
-- [neuroinformatics-unit/spikewrap#232](https://github.com/neuroinformatics-unit/spikewrap/pull/232)  
-- [neuroinformatics-unit/spikewrap#231](https://github.com/neuroinformatics-unit/spikewrap/pull/231)  
-- [neuroinformatics-unit/ethology#78](https://github.com/neuroinformatics-unit/ethology/pull/78)
+- [neuroinformatics-unit/spikewrap#232](https://github.com/neuroinformatics-unit/spikewrap/pull/232) - Automatically save plot_probe
+- [neuroinformatics-unit/spikewrap#231](https://github.com/neuroinformatics-unit/spikewrap/pull/231) - Update the feature roadmap
+- [neuroinformatics-unit/ethology#78](https://github.com/neuroinformatics-unit/ethology/pull/78) - Added YOLO for detecting bounding boxes per frame on an input video
 
 ### Proposal discussion link:
 - [neuroinformatics-unit/gsoc#69](https://github.com/neuroinformatics-unit/gsoc/pull/69)
@@ -21,7 +21,9 @@
 
 ### Synopsis
 
-This project aims to integrate motion correction functionality into the `spikewrap` Python package by leveraging SpikeInterface's drift correction capabilities. During extracellular neural recordings, mechanical drift can misalign spike waveforms over time, significantly impacting the reliability of spike sorting and subsequent neuron tracking [source](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7417864/). Currently, drift correction is only internally available in select sorters such as Kilosort2.5. This project generalizes drift correction by implementing it as a standardized preprocessing step within `spikewrap`. By utilizing SpikeInterface’s high-level API ([`spikeinterface.preprocessing.correct_motion()`](https://spikeinterface.readthedocs.io/)), which localizes spikes, estimates probe movement, and realigns traces in real-time, I will develop a wrapper in `spikewrap` to seamlessly apply motion correction prior to spike sorting. 
+This project aims to integrate motion correction functionality into the `spikewrap` Python package by leveraging SpikeInterface's drift correction capabilities. During extracellular neural recordings, mechanical drift can misalign spike waveforms over time, significantly impacting the reliability of spike sorting and subsequent neuron tracking (see e.g. Steinmetz et al. (2019), Nature for multi-region recordings with notable probe drift). Currently, drift correction is only internally available in select sorters such as Kilosort2.5. This project generalizes drift correction by implementing it as a standardized preprocessing step within `spikewrap`.
+
+We will use SpikeInterface’s high-level API ([`spikeinterface.preprocessing.correct_motion()`](https://spikeinterface.readthedocs.io/)), which localizes spikes, estimates probe movement, and realigns the signal. By building a user-friendly wrapper around these capabilities, `spikewrap` will allow researchers to apply drift correction prior to spike sorting, thus improving data quality and reproducibility.
 
 The main goals of this project are to:
 - Integrate motion correction into `spikewrap`'s preprocessing workflow, with intuitive configuration and CLI support.
