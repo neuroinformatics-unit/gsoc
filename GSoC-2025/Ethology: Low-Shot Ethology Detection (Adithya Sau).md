@@ -5,27 +5,29 @@
 - **Full Name:** Adithya Sau  
 - **Email:** adithyasau@gmail.com  
 - **GitHub Username:** https://github.com/Adisauz  
-- **Zulip Username:** https://neuroinformatics.zulipchat.com/#recent_topics  
+- **Zulip Username:** https://neuroinformatics.zulipchat.com/#user/882256  
 - **Location & Time Zone:** Pune, India (UTC+5:30)  
 
 ---
 
 ## **Code Contribution**
 
-https://github.com/brainglobe/brainglobe.github.io/pull/314
--Added an Examples of brainreder in sphinx documentation
-https://github.com/neuroinformatics-unit/ethology/pull/82
--Added a python program that can extract evenly spaced frames over a specified interval.
-https://github.com/neuroinformatics-unit/ethology/pull/81
--Added a python program and can track object(cars) when user selects on the detected object
+- [brainglobe.github.io#314](https://github.com/brainglobe/brainglobe.github.io/pull/314)  
+  Added an example of `brainrender` usage in the Sphinx documentation to improve clarity and usability for new users.
+
+- [ethology#82](https://github.com/neuroinformatics-unit/ethology/pull/82)  
+  Developed a Python script to extract evenly spaced frames from a video within a specified interval, useful for data preprocessing and annotation.
+
+- [ethology#81](https://github.com/neuroinformatics-unit/ethology/pull/81)  
+  Implemented a Python tool that enables object tracking (e.g., cars) based on user selection of a detected object, enhancing manual control during analysis.
 
 ---
-- **Proposal discussion link:** [Link to discussion PR]
+- **Proposal discussion link:** https://github.com/neuroinformatics-unit/gsoc/pull/51
 
 ## Project proposal 
 
 ### Synopsis
-EthoDetector aims to integrate low-shot detection models (GeCo and CountGD) into a unified ethology detection tool with a napari-based GUI. The project involves developing API adapters for these models, creating an interactive napari widget for annotation, and optimizing model inference for performance. Deliverables include a working napari plugin, batch-processing support, and benchmarked performance metrics.
+This project aims to integrate low-shot detection models (GeCo and CountGD) into a unified ethology detection tool with a napari-based GUI. The project involves developing API adapters for these models, creating an interactive napari widget for annotation, and optimizing model inference for performance. Deliverables include a working napari plugin, batch-processing support, and benchmarked performance metrics.
 
 ### **Implementation Timeline**
 
@@ -62,7 +64,7 @@ EthoDetector aims to integrate low-shot detection models (GeCo and CountGD) into
 
 #### Work Commitment
 - **Hours per week:** ~25-35
-- **Planned vacation:** [Specify if any]
+- **Planned vacation:** May 15 - June 1
 
 ### Communication Plan
 - **Mentor Meetings:** Weekly video calls
@@ -71,9 +73,9 @@ EthoDetector aims to integrate low-shot detection models (GeCo and CountGD) into
 
 ## Personal statement
 
-I am a third-year undergraduate at BITS Pilani, KK Birla Goa Campus, pursuing a Bachelor's degree in Electronics and Electrical Engineering. With a strong foundation in software engineering, I specialize in Python, machine learning, and building scalable systems.I am a software engineer with expertise in Python, machine learning, and scalable systems. Currently, I am working on a research paper titled "Cognitive Neuroscape: Gamified Frameworks for Multi-Dimensional Cognitive Assessment in Neurodegeneration". This project focuses on designing goal-based games to evaluate cognitive performance across age groups, leveraging machine learning to identify early biomarkers for neurodegenerative diseases.
+I am a third-year undergraduate at BITS Pilani, KK Birla Goa Campus, pursuing a Bachelor's degree in Electronics and Electrical Engineering. With a strong foundation in software engineering, I specialize in Python, machine learning, and building scalable systems. My current research, "Cognitive Neuroscape: Gamified Frameworks for Multi-Dimensional Cognitive Assessment in Neurodegeneration," explores the use of goal-oriented games to evaluate cognitive performance across age groups. We leverage machine learning to identify early biomarkers of neurodegenerative diseases.
 
-This aligns closely with the cellfinder project, as both involve applying advanced computational methods to neuroscience challenges. My experience developing scalable AI solutions, such as a multilingual speech recognition app using AWS services and StickerForecast—a market forecasting model ranked in the global top 500 out of 10000 —has equipped me with the skills to implement and optimize new architectures for cellfinder. By contributing to this project, I aim to advance open-source tools that empower researchers in neuroscience.
+This work closely aligns with the Ethology project, as both involve applying computational techniques to neuroscience challenges. My experience building scalable AI solutions, such as a multilingual speech recognition app using AWS, and StickerForecast, a market forecasting model ranked in the global top 500 out of 10,000, has equipped me to implement and optimize novel architectures for platforms like cellfinder. I’m eager to contribute to open-source tools that advance neuroscience research and accessibility.
 ### Past Experience
 I have experience in Python, machine learning, and scalable systems, with prior work in deep learning-based detection models. Familiar with PyTorch, OpenCV, and napari, I have built ML-based tools for real-world applications, including annotation pipelines.
 
@@ -84,7 +86,7 @@ I'm passionate about computer vision and ethology. This project excites me becau
 With expertise in deep learning, experience in API design, and familiarity with napari, I am well-suited for this project. My past work on ML-driven object detection and optimization aligns with the project's goals.
 
 ### Availability
-I have no conflicting commitments till Mid - August after that I may have a mandatory internship from mid-August at my college, but I will find 3 hours/day for GSOC work and get the rest of the work done over the weekend
+I have no conflicting commitments until mid-August, so I’ll be able to fully focus on GSoC during the community bonding and early coding period. From mid-August onward, I may have a mandatory internship as part of my college curriculum. However, I’ve planned my schedule to ensure I can dedicate at least 3 hours per day on weekdays and more time over weekends to continue making consistent progress on the project.
 
 ## GSoC
 
