@@ -19,8 +19,8 @@ _Length: max 1 page_
 - **Synopsis**
 
 This project aims to update the BrainGlobe Atlas API by integrating the OpenMINDS SANDS standard for neuroanatomical atlases.
-Currently, atlas packaging scripts convert public atlas data to a limited standard format; by adapting these scripts to produce output compliant with OpenMINDS SANDS,
-The project will enable consistent, interoperable data representations across BrainGlobe tools.
+Currently, atlas packaging scripts convert public atlas data to a limited standard format; by adapting these scripts to produce output compliant with OpenMINDS SANDS.
+This project will facilitate the collaboration between different neuroinformatics tools. By improving how atlas data is shared and used, researchers and developers can collaborate more effectively, sparking innovations in neuroanatomical research.
 This standardization is critical for improving data accessibility and integration within the neuroinformatics community.
 The deliverables include modifications to the Atlas packaging Python code, adaptation of at least one packaging script to use the new functionality,
 comprehensive tests, and updated documentation.
