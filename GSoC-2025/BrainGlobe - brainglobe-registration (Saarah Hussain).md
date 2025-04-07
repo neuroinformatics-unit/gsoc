@@ -72,7 +72,7 @@ My ongoing research project at UCL MPBE: “Investigating Radiotherapy Response:
 Contributed to BrainGlobe during a two-week summer placement at the SWC. A number of my PRs were merged. Please see below for a few examples:
   - **Load atlas with no Internet**: I updated get_all_atlases_lastversions() to support offline use by checking for internet connectivity and GIN availability. If offline, it attempts to load a local last_versions.conf, warning the user that the list may be outdated. If no local file exists, it prompts the user to connect to the internet to fetch the atlas list.
   -	**Filter Images**: Functionality for user to filter fixed and moving image before registration.
-  -	I**nfo message when running BrainGlobe Registration plugin with no atlas installed**: If user has no atlases installed, I created a widget which informs user that they need to install atlas(es) before they are able to use BrainGlobe Registration plugin.
+  -	**Info message when running BrainGlobe Registration plugin with no atlas installed**: If user has no atlases installed, I created a widget which informs user that they need to install atlas(es) before they are able to use BrainGlobe Registration plugin.
   -	**Communicate napari layer deletions appropriately to the plugin**: Overcame the issue of undefined behaviour and out of bounds errors when user deletes the atlas or moving image. Layer deletions are now communicated appropriately and the plugin can handle restarting the entire workflow without having to restart the plugin.
 
 
