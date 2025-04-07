@@ -41,17 +41,15 @@ This automation directly benefits my research on spatiotemporal brain developmen
 
   | Week                         | Tasks                                                                                                                                             |
   |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-  | Week 0  (W/B Jun 2)          | Community bonding: explore codebases, review literature, align project scope with mentors. |
-  | Weeks 1-2 (Jun 9 - Jun 20)   | Implement and refine baseline region selection method (e.g., grid search). Integrate into pipeline with test coverage and toggle for manual/auto mode.      |
+  | Week 0, (Jun 2 – Jun 6)      | Community bonding: explore codebases, review literature, align project scope with mentors. |
+  | Weeks 1-2 (Jun 9 - Jun 20)   | Implement and refine baseline region selection method (e.g., grid search). Integrate into pipeline with test coverage. Add toggle for manual/auto mode. Internal review and cleanup.      |
   | Weeks 3-4 (Jun 23 - Jul 4)   | Develop and integrate alternative method (Bayesian/ML). Run early performance checks.                                                                                        |
-  | Week 5 (W/B Jul 7)           | Evaluate both methods across datasets (e.g., similarity, accuracy). Compare performance.                                                                                  |
-  | Week 6 (W/B Jul 14)          | Code cleanup, CLI integration, midterm report, and mentor check-in.                                                                                      |
-  | Weeks 7-8 (Jul 21 - Aug 1)   | Add tests for edge cases, improve UI/logging. Begin user documentation and usage tutorials.                                                                                       |
-  | Week 9 (W/B Aug 4)           | Benchmark both methods across atlases. Optimise default parameters.                                                                                       |
-  | Week 10 (W/B Aug 25)         | Draft blog post with visuals and results. Gather mentor feedback.                                                                                             |
-  | Weeks 11-12 (Sep 1 - Sep 12) | Finalise docs, blog, and code. Submit report and prepare follow-up PRs/stretch goals.                                                                                            |
+  | Week 5 (Jul 7 - Jul 11)      | Evaluate both methods on representative datasets (e.g., region similarity, accuracy). Visualise and document results. Submit midterm report. Mentor check-in.                            |
+  | Week 6 (Jul 14 - Jul 18)     | Benchmark both methods across atlases. Optimise runtime and default parameters. Code cleanup, API integration.                                                                          |
+  | Weeks 7-8 (Jul 21 - Aug 1)   | Add tests for edge cases and improve logging/UI. Optimise default parameters. Start user documentation and usage tutorials.                                                               |
+  | Week 9 (Aug 4 - Aug 7)       | Finalise documentation, blog post, and visuals. Submit final report. Gather mentor feedback and prepare follow-up PRs/stretch goals.                                                      |
 
-Time commitment: 40hr / week, Mon-Fri
+Time commitment: 40hr / week, Mon-Fri (except Week 9, which is Mon-Thu).
 
 ## Communication Plan
 
