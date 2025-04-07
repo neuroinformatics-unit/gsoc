@@ -34,21 +34,25 @@ Deliverables include the new model implementation, integration into the training
 | Week | Dates | Tasks |
 |------|-------|-------|
 | **Community Bonding** | May 8 – June 1 | Review codebase, run ResNet training, select alternative architectures, mentor discussion |
-| **Week 1** | June 2 – June 8 | Implement EfficientNet or ConvNeXt; basic integration test |
-| **Week 2** | June 9 – June 15 | Complete integration; begin training on sample data |
-| **Week 3** | June 16 – June 22 | Benchmark initial results; tune hyperparameters |
+| **Week 1** | June 2 – June 8 | Implement EfficientNet model, integrate into pipeline |
+| **Week 2** | June 9 – June 15 | Train EfficientNet on sample data, implement metrics tracking |
+| **Week 3** | June 16 – June 22 | Tune hyperparameters, run comparisons to ResNet baseline |
 | **Week 4** | June 23 – June 29 | Add CLI/config model selector; document model logic |
 | **Week 5** | June 30 – July 6 | Implement optional second model (e.g., MobileNetV3) |
-| **Week 6** | July 7 – July 13 | Finalize testing; prepare for midterm evaluation |
-| **Week 7** | July 14 – July 21 | Midterm Evaluation: models, benchmarks, documentation submitted |
-| **Week 8** | July 22 – July 28 | (Military service begins) Weekend: blog writing, bug fixes |
-| **Week 9–10** | July 29 – August 11 | Weekend-only: finalize blog/tutorial, adjust documentation |
-| **Week 11** | August 12 – August 18 | Code freeze; finalize testing, clean-up |
-| **Week 12** | August 19 – August 25 | Submit final report and receive mentor feedback |
+| **Week 6** | July 7 – July 13 | Finalize tests and benchmarks; prepare midterm evaluation |
+| **Week 7** | July 14 – July 21 | Midterm Evaluation: Submit models, benchmarks, documentation |
+| **Week 8** | July 22 – July 28 | (Military service begins) Weekend: start writing blog/tutorial, fix minor bugs |
+| **Week 9** | July 29 – August 4 | Weekend-only: review feedback, add architecture config polish |
+| **Week 10** | August 5 – August 11 | Weekend-only: complete blog/tutorial draft and CLI help docs |
+| **Week 11** | August 12 – August 18 | Code freeze; finalize all testing, cleanup, refactor |
+| **Week 12** | August 19 – August 25 | Final report and feedback from mentor |
 | **Final Submission** | August 25 – September 1 | Submit final deliverables to GSoC portal |
-| **Extension (if needed)** | Sept 2 – Sept 15 | Optional polish/follow-up (weekends only) |
+| **Extension Week 1** | September 2 – September 8 | Add third model (e.g., ConvNeXt) or optimize for speed |
+| **Extension Week 2** | September 9 – September 15 | Write second blog post; assist with future contributor docs |
+| **Extension Week 3** | September 16 – September 22 | Assist mentor in integrating feedback, finalize polish |
+| **Extension Week 4** | September 23 – September 30 | Optional stretch: packaging, install guide, community Q&A |
 
-**Weekly Hours**: ~20 hrs/week before July 21, ~6–8 hrs/week after (weekends only)
+**Weekly Hours**: ~28-30 hrs/week before July 21 and after September 16, ~8 hrs/week during July 22 to September 15 (weekends only)
 
 ### Communication Plan
 - Weekly mentor meetings via Zoom/Google Meet  
