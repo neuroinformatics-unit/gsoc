@@ -43,16 +43,16 @@ What if researchers could explore animal behavior data effortlessly, regardless 
   - Enable users to export visualizations as MP4 videos or PNG images, preserving relevant metadata.
 
 **Stretch Goals**:
-- **Collaborative Annotation System**: Allow multiple users to annotate data collaboratively.
-- **SLEAP/DeepLabCut Direct Import**: Integrate direct import capabilities for data from popular pose estimation frameworks.
+- **Interactive Data Editing Tools:** Allow users to correct tracking errors directly within the GUI. This could include tools for adding/deleting points, adjusting their positions, and interpolating missing data.
+- **Automated Report Generation:** Create a feature that generates summary reports of analyses, including key statistics and visualizations.
 
 ### Implementation Timeline
 | Week | Key Tasks | Hours |
 |------|-----------|-------|
 | **Pre-GSoC** | - Study Movement architecture.<br>- Prototype basic Dash components to understand the UI framework.<br>- Start building a minimal viable product (MVP).<br>- Familiarize with Dash Plotly. | 10 |
-| **1-2** | - Integrate data loading: Enhance load_poses with chunking for HDF5/CSV efficiency. <br>- Add a sleek Dash progress bar for real-time feedback.<br>- Test with multi-individual datasets (e.g., DeepLabCut .h5). | 25 |
+| **1-2** | - Choose framework: Test [Dash vs. fastplotlib](https://docs.google.com/spreadsheets/d/1p4WGtZzIGzQM3vsmPGarMBFh3qxguin-I7uqNzKSd4w/edit?gid=738887384#gid=738887384) for video overlay, commit to Dash  <br>- Integrate data loading: Enhance load_poses with chunking for HDF5/CSV efficiency. <br>- Add a sleek Dash progress bar for real-time feedback.<br>- Test with multi-individual datasets (e.g., DeepLabCut .h5). | 25 |
 | **3-4** | - Overlay trajectories on HTML5 video with Dash WebGL. <br>- Create an interactive visualization system for trajectories on videos.<br>- Ensure seamless frame synchronization.<br>- Optimize WebGL rendering for performance. | 30 |
-| **5-6** | - Build interactive filters and timeline controls.<br>- Implement dynamic filtering for animals, keypoints, or time ranges.<br>- Ensure filters are intuitive with clear visual feedback. | 30 |
+| **5-6** | - Build interactive filters and imeline controls.<br>- Implement dynamic filtering for animals, keypoints, or time ranges.<br>- Ensure filters are intuitive with clear visual feedback. | 30 |
 | **7-8** | - Create an export system with ffmpeg-python integration.<br>- Develop functionality to export visualizations as MP4 or PNG.<br>- Preserve relevant metadata during export.<br>- Integrate download button in Dash UI. | 30 |
 | **9-10** | - Perform performance optimization for large datasets.<br>- Ensure handling of various input sizes without degradation.<br>- Conduct stress testing to identify and fix bottlenecks. | 20 |
 | **11-12** | - Finalize documentation for users and contributors.<br>- Create step-by-step guides on using the web GUI.<br>- Develop interactive Jupyter notebook tutorials for users. | 20 |
