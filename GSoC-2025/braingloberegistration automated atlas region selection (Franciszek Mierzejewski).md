@@ -27,7 +27,19 @@ Project Discussion Link: https://github.com/neuroinformatics-unit/gsoc/pull/53
 
 ### Synopsis
 
-BrainGlobe-Registration is an open-source Napari plugin for brain image registration. In this proposal, I aim to create a new preprocessing step that will automatically select the region of the atlas to be used as the registration target and will ensure it is stable. This automation means researchers can focus on analysis rather than spending valuable time and resources on preprocessing.
+The BrainGlobe-Registration tool currently manually aligns atlas regions for 2D or 3D brain images to brain atlases, this process is time-expensive, prone to errors and inefficient. The aim of this project is to tackle these issues by the means of automating optimal atlas regions identification through methods such as Convolutional Neural Networks (CNNs), Bayesian Optimisation and Adaptive Grid Search. This approach will ensure a higher accuracy and reproducibility of results that is crucial in scientific cross-examination.
+
+### Deliverables
+
+The minimum set of deliverables I aim to achieve are:
+- Implement a new preprocessing step to automatically select the optimal atlas region.
+- Compare at least two region-selection methods (e.g., CNNs and Adapative Grid Search).
+- Perform extensive tests to ensure stability with existing brainglobe-registration workflow.
+- Provide clear documentation detailing usage instructions and example cases.
+- Write a blog post showcasing the features of the project and its impact
+
+If time allows it, I'll complete the following:
+- Implement another method to select optimal atlas region.
 
 ### Timeline
 
