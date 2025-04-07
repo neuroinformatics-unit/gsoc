@@ -15,8 +15,9 @@
     - [Pin setuptools lower bound to >v64 #141](https://github.com/neuroinformatics-unit/python-cookiecutter/pull/141)
     - [Deploy on: main branch pushes OR tags OR manual trigger #140](https://github.com/neuroinformatics-unit/python-cookiecutter/pull/140)
     - [Add website #134](https://github.com/neuroinformatics-unit/python-cookiecutter/pull/134)
+    - [Retrieve version in docs [In ref to PR #75 ] #76](https://github.com/neuroinformatics-unit/ethology/pull/76)
     
-- **Proposal discussion link:** [Discussion PR # ]()
+- **Proposal discussion link:** [Discussion PR #12 ](https://github.com/neuroinformatics-unit/gsoc/pull/12)
 
 ## Project Proposal
 
