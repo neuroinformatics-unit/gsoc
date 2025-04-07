@@ -51,10 +51,10 @@ and enhanced reproducibility in neuroanatomical research.
 | Week 4     | Adapt one selected packaging script to use the new functionality; continue developing tests and refining the conversion process.             |
 | Week 5     | Integrate mentor feedback; refine code and tests; update documentation draft with examples and usage instructions.                           |
 | Week 6  **Mid-term**     | Verify core SANDS writing code, first adapted script, and initial tests are functional. Address major blockers.              |
-| Week 7     | Implement stretch goals (if feasible); extend test coverage; review and improve code performance and readability.                             |
+| Week 7     | Refine core implementation based on mid-term feedback. Improve test coverage (unit & integration). Address bugs.                             |
 | Week 8     | Polish code; perform extensive manual testing with various atlas datasets; update documentation based on test outcomes.                        |
 | Week 9     | Finalize additional features; prepare comprehensive test suites; conduct peer reviews with mentors and community contributors.              |
-| Week 10    | Begin code freeze process; focus on bug fixes, documentation polishing, and ensuring all deliverables meet the OpenMINDS SANDS standard.      |
+| Week 10    | Address stretch goals (e.g., adapt another script, add validation). Begin code freeze process; focus on bug fixes, documentation polishing, and ensuring all deliverables meet the OpenMINDS SANDS standard.      |
 | Week 11    | Final refinements; complete any remaining tests; draft the final report and submission documentation.                              |
 | Week 12    | Finalize the project deliverables; ensure all documentation, tests, and code are up-to-date; prepare for final project submission and review. |
 
