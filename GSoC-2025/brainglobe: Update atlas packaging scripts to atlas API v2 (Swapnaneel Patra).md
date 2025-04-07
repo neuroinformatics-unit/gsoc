@@ -36,9 +36,9 @@ and enhanced reproducibility in neuroanatomical research.
         - Update and expand documentation to reflect new usage and features.
 
     2. Additional **stretch goals** or "if time allows" deliverables
-        - Extend support to additional packaging scripts within the BrainGlobe ecosystem.
-        - Develop conversion utilities for legacy atlas data.
-        - Create example notebooks and tutorials demonstrating the new capabilities.
+        - Update more of the existing BrainGlobe atlas packaging scripts (beyond the minimally required one) to generate output compliant with OpenMINDS SANDS. The ideal goal would be to update all major scripts.
+        - Add checks within the updated packaging code to validate the generated output against the OpenMINDS SANDS schema, ensuring correctness and compliance.
+        - Create detailed example notebooks or tutorials showcasing how to use the updated packaging scripts for different atlases and potentially demonstrating how to query/use the resulting OpenMINDS SANDS data structure.
 
     3. A detailed **weekly timeline**: when do you plan to do what?
 
