@@ -39,10 +39,10 @@ Enhancing datashuttle will expand its user base by allowing researchers who requ
 | Community bonding | Create a development environment, research Python packaging systems and terminal UI libraries, set up initial testing environment | 30 |
 | Week 1-2 | Evaluate packaging tools (PyInstaller, Hatch, Briefcase) and terminal UI libraries (Rich, PyTermGUI), create proof-of-concept implementations, document findings and recommendations | 30-35 |
 | Week 3-4 | Implement chosen packaging solution for Windows, develop prototype with selected terminal UI library, resolve platform-specific issues | 30-35 |
-| Week 5-6 | Extend implementation to macOS, test terminal UI rendering across different macOS versions, optimize performance | 30-35 |
-| Week 7-8 | Implement Linux support, ensure consistent terminal UI behavior across different Linux distributions and terminal emulators | 30-35 |
-| Week 9-10 | Set up CI/CD pipeline for automated builds across platforms, implement comprehensive testing framework for packaged applications | 30-35 |
-| Week 11-12 | Optimize package size and performance, finalize documentation, prepare release packages, conduct final testing and bug fixes | 30-35 |
+| Week 5-6 | Start implementation to macOS, test terminal UI rendering across different macOS versions| 30-35 |
+| Week 7-8 | Start implementation to Linux, test terminal UI rendering across different Linux versions | 30-35 |
+| Week 9-10 | Set up Continuous Integration (CI) pipeline for automated builds, implement testing framework for packaged applications | 30-35 |
+| Week 11-12 | Optimize code, create documentation, focus on final testing and bug fixes, prepare final deliverables | 30-35 |
 
 - **Communication Plan**
 
