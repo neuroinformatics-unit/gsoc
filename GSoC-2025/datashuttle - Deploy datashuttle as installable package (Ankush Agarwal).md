@@ -1,4 +1,4 @@
-# datashuttle: Deploy datashuttle as installable package (Ankush Agarwal)
+# datashuttle - Deploy datashuttle as installable package (Ankush Agarwal)
 
 ## Personal details
 - **Full name**: Ankush Agarwal
