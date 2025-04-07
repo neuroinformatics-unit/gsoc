@@ -50,7 +50,7 @@ and enhanced reproducibility in neuroanatomical research.
 | Week 3     | Implement core modifications in the packaging code for OpenMINDS SANDS support; begin writing unit tests.                                     |
 | Week 4     | Adapt one selected packaging script to use the new functionality; continue developing tests and refining the conversion process.             |
 | Week 5     | Integrate mentor feedback; refine code and tests; update documentation draft with examples and usage instructions.                           |
-| Week 6  **Mid-term**     | Ensure more than half of the project is complete; perform integration tests; address any major issues or blockers.              |
+| Week 6  **Mid-term**     | Verify core SANDS writing code, first adapted script, and initial tests are functional. Address major blockers.              |
 | Week 7     | Implement stretch goals (if feasible); extend test coverage; review and improve code performance and readability.                             |
 | Week 8     | Polish code; perform extensive manual testing with various atlas datasets; update documentation based on test outcomes.                        |
 | Week 9     | Finalize additional features; prepare comprehensive test suites; conduct peer reviews with mentors and community contributors.              |
@@ -65,6 +65,9 @@ I plan to dedicate around 20 hours per week throughout the program.
   - Github: Issue tracking and PR review
   - Zulip: Regular weekly updates/questions related to day-to-day activity
   - Email: if needed
+    
+  Progress will be tracked via regular updates and PRs. If significant delays occur approaching the mid-term, I will proactively communicate with mentors to diagnose issues and, if needed, collaboratively adjust the project scope or plan to ensure successful completion of core goals.
+
 
 
 ## Personal statement
