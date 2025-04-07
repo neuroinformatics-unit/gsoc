@@ -15,7 +15,7 @@
 
     *(I confirm these contributions represent my own work, incorporating valuable feedback and guidance received from the community.)*
 *   **Proposal Discussion Link:**
-    *   [Link to the PR discussing this proposal]()
+    *   [Link to the PR discussing this proposal](https://github.com/neuroinformatics-unit/gsoc/pull/60)
 
 ---
 
@@ -30,35 +30,35 @@ This project aims to integrate low-shot object detection into the ethology Pytho
 
 **Minimal Deliverables:**
 
-*   Backend functionality in `ethology` to run inference using at least one pre-trained low-shot detection model (e.g., GeCo), taking user-provided examples as input and outputting an `ethology` annotation DataFrame.
+*   Backend functionality in `ethology` to run inference using at least one pre-trained low-shot detection model (e.g., GeCo), taking user-provided examples (prompts) as input and outputting an `ethology` annotation DataFrame.
 *   Backend API designed to potentially support multiple similar models (e.g., CountGD).
 *   A functional Napari widget that allows users to:
     *   Load image frames.
-    *   Draw/select bounding boxes as examples ("shots").
+    *   Draw/select bounding boxes as examples ("prompts").
     *   Trigger backend inference using the chosen model.
-    *   Display model-generated bounding boxes.
-    *   Allow basic review and correction (e.g., deleting incorrect boxes, adjusting existing ones, adding missed ones).
+    *   Display model-generated bounding boxes on the Napari canvas.
+    *   Facilitate review and correction by leveraging Napari's built-in shape layer tools (e.g., for selecting, deleting, and modifying boxes) and allowing users to add new manual boxes where needed.
     *   Export the final set of annotations (manual + reviewed/corrected) in a format compatible with `ethology` (e.g., save to COCO JSON or directly as a DataFrame).
-*   Unit tests covering the core backend functionality and basic widget interactions.
-*   User documentation explaining the workflow, usage of the Napari widget, and any model-specific considerations.
+*   Unit tests covering the core backend functionality and essential widget interactions/workflow steps.
+*   User documentation a step-by-step Guide and Example pages within the main ethology documentation detailing the workflow, usage of the Napari widget, and any model-specific considerations.
 
 **Detailed Weekly Timeline:**
 
 | Week | Dates (Approx. GSoC 2025) | Planned Tasks                                                                                                                                                              |
 | :--- | :------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **CB** | (Community Bonding)       | Deep dive into GeCo & CountGD papers/code. Set up dev environment thoroughly. Experiment with Napari widget basics. Draft detailed API & preliminary widget UI mockups. Discuss designs with mentors. |
-| 1    | Late May                  | Finalize API design for backend inference. Set up backend module structure in `ethology`. Implement basic image/annotation loading for backend function. Start Napari widget boilerplate (loading images). |
-| 2    | Late May/Early June       | Implement core inference logic for the first model (e.g., GeCo) in the backend, focusing on processing input examples and running the model.                               |
-| 3    | Early June                | Refine backend inference output to standardized DataFrame format. Add backend unit tests. Implement basic bounding box drawing/selection tool in Napari widget.        |
-| 4    | Mid June                  | Integrate backend inference call into Napari widget. Display model output boxes on Napari canvas.                                                                        |
-| 5    | Mid/Late June             | Implement review/correction features in Napari: selecting, deleting model-generated boxes.                                                                               |
-| 6    | Late June/Early July      | Implement review/correction features in Napari: adjusting/editing model boxes, adding new manual boxes. **(Midterm: Core workflow demonstrable)**                         |
-| 7    | Early July                | Refactor backend API for potential second model integration. Implement saving/exporting functionality for the final annotations from Napari.                             |
+| 1    | Late May                  | Finalize API design for backend inference. Set up backend module structure in `ethology`. Implement basic image/annotation loading for backend function. Start Napari widget boilerplate (loading images). Write initial backend tests. |
+| 2    | Late May/Early June       | Implement core inference logic for the first model (e.g., GeCo) in the backend, focusing on processing prompts and running model. Refine backend tests. Draft basic backend API usage docs (internal).                               |
+| 3    | Early June                | Refine backend inference output to standardized DataFrame format. Add backend unit tests. Implement basic bounding box drawing/selection tool in Napari widget for creating prompts.        |
+| 4    | Mid June                  | Integrate backend inference call into Napari widget. Display model output boxes on Napari canvas. Write initial integration tests & draft widget usage section for Guide.                                                                        |
+| 5    | Mid/Late June             |Implement review/correction workflow using Napari's shape layer tools: enabling selection and deletion of model-generated boxes. Refine tests & Guide section for review features.                                                                               |
+| 6    | Late June/Early July      | Enhance review workflow: leverage Napari tools for adjusting existing boxes, allow adding new manual boxes to correct misses. Ensure smooth interaction between layers. **(Midterm: Core workflow demonstrable)**                         |
+| 7    | Early July                | Implement saving/exporting functionality for the final annotations from Napari. Refactor backend API for potential second model integration (if applicable). Write tests & docs for export.                             |
 | 8    | Mid July                  | *If pursuing stretch goal:* Integrate second model (e.g., CountGD) OR *If sticking to minimal:* Add more robust testing for backend and frontend interactions.           |
-| 9    | Mid/Late July             | Write user documentation (workflow guide, widget usage).                                                                                                                 |
-| 10   | Late July/Early August    | Thorough end-to-end testing, bug fixing, and code cleanup based on feedback. Address edge cases identified during testing.                                             |
-| 11   | Early August              | Finalize tests and documentation. Ensure code quality and adherence to contribution guidelines. Code freeze.                                                               |
-| 12   | Mid August                | Final review, buffer time for unexpected issues, prepare final submission materials.                                                                                     |
+| 9    | Mid/Late July             | Develop the Example demonstrating the full workflow. Refine and polish the Guide documentation.                                                                                                                 |
+| 10   | Late July/Early August    | Thorough end-to-end testing. Bug fixing. Address identified edge cases (e.g., no detections, poor prompts, varying image conditions, performance with many frames/boxes, errors during model loading/inference).                                             |
+| 11   | Early August              | Finalize all tests and documentation (Guide + Example). Ensure code quality and full adherence to contribution guidelines across the project.                                                               |
+| 12   | Mid August                | Final code review buffer, final submission preparation, potentially create a short demo/screencast.                                                                                     |
 
 
 ## Communication Plan
@@ -73,7 +73,7 @@ I plan to communicate actively and transparently throughout the project. I am fl
 
 My programming foundation is in Python, with machine learning experience gained via a Coursera ML certification using TensorFlow (covering pipelines, evaluation, preprocessing). I am actively transitioning to PyTorch, focusing on research-relevant skills like `nn.Module`, dynamic graphs, `torchvision`, and `Datasets`/`DataLoaders`.
 
-My open-source journey started with Hacktoberfest (Python contributions, testing), leading to active involvement in the Liquid Galaxy community. Recently, I've contributed documentation and features to `ethology` (PRs #74, #77, #79), gaining familiarity with its codebase, workflow, and Git/GitHub best practices.
+My open-source journey started with Hacktoberfest (Python contributions, testing), leading to active involvement in the Liquid Galaxy community. While the core [Liquid Galaxy repository](https://github.com/LiquidGalaxyLAB/liquid-galaxy) shows limited recent activity (the last PR was merged five years ago), the ecosystem thrives through community projects; I am an active contributor within this broader ecosystem, currently developing Project FLARE which focuses on leveraging platform capabilities. Recently, I've contributed documentation and features to `ethology` (PRs #74, #77, #79), gaining familiarity with its codebase, workflow, and Git/GitHub best practices.
 
 While new to Napari plugin development, I am enthusiastic about learning it; my work on the UI/UX-focused Project FLARE provides transferable skills. My computer vision knowledge is foundational, built during ML studies, and I am actively learning more about object detection and transformers relevant to this project's low-shot context.
 
