@@ -21,14 +21,14 @@
 
 - **Synopsis**:
   
-    The project aims to calibrate the confidence scores produced by pose estimation frameworks (e.g., DeepLabCut, SLEAP) in the movement ecosystem so that they better reflect the actual     probability of a keypoint being correctly detected. Implementing methods for improving confidence calibration will improve result reliability, model comparison, and overall         
+    The project aims to calibrate the confidence scores produced by pose estimation frameworks (e.g., DeepLabCut, SLEAP) in the movement ecosystem so that they better reflect the actual probability of a keypoint being correctly detected. Implementing methods for improving confidence calibration will improve result reliability, model comparison, and overall         
    interpretability for research and other purposes.
 
 - **Implementation timeline**
     - **Minimal Deliverables**
-        - Implement a calibration method for confidence scores in at least one supported pose estimation framework (e.g., DeepLabCut or SLEAP), comparing multiple approaches such as logistic or log-log regression.
+        - Implement a calibration method for confidence scores in supported pose estimate framework using log-log regression, Histogram binning, Temperature sensing, or isotonic regressions
 
-        - Evaluate calibration performance using reliability diagrams and metrics such as Expected Calibration Error (ECE), and assess its effect on downstream tasks like behavioral classification.
+        - Evaluate calibration performance using reliability diagrams (predicted confidence vs. true accuracy) and metrics such as Expected Calibration Error, and its effect on downstream tasks like behavioral classification.
 
         - Develop unit tests to ensure correctness and stability of the implemented calibration methods.
 
@@ -41,21 +41,23 @@
 
         - Semi-Supervised Calibration: Use high-confidence predictions as pseudo-labels to improve calibration when ground truth is limited.
 
-        - Behavior-Based Filtering Tool: Develop a utility that filters or weights keypoints using calibrated scores to enhance behavior classification performance.
+        - Develop a Behavior-Based Filtering Tool that weights keypoints using calibrated scores to enhance behavior classification performance (based on Random Forest/LSTM and evaluated through metrics like F1 score and ECE) 
+
 
 
 ## 🗓️ Weekly Timeline
-| **Week & Dates**                         | **Tasks & Deliverables**                                                                                                                                                                                                                                  |
-|------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Community Bonding (May 8 – June 1)**   | <ul><li>Explore pose estimation tools (DLC/SLEAP) and understand the movement’s tracking/confidence structure.</li><li>Review calibration techniques like log-log regression, binning, and temperature scaling.</li><li>Finalize datasets and evaluation metrics (ECE, Brier Score, Accuracy).</li><li>Plan implementation pipeline.</li></ul> |
-| **Week 1–2 (June 2 – June 15)**          | <ul><li>Preprocess data: normalize confidence scores and align keypoints with ground truth.</li><li>Implement log-log regression calibration and validate using movement datasets.</li><li>Generate histograms and KDE plots to visualize score spread and model uncertainty.</li><li>Compute Expected Calibration Error (ECE) and plot reliability diagrams to assess score alignment with accuracy.</li></ul> |
-| **Week 3–4 (June 16 – June 29)**         | <ul><li>Add histogram binning and temperature scaling calibration methods.</li><li>Benchmark methods using ECE and confidence histograms.</li><li>Begin integration of these techniques into Movement’s workflow.</li></ul> |
-| **Week 5–6 (June 30 – July 13) : Midterm Evaluation**         | <ul><li>Compare calibration methods on quality, keypoint accuracy, and behavior classification.</li><li>Finalize the best-performing method.</li><li>Add unit tests and docstrings.</li><li>Submit midterm evaluation and draft technical blog post.</li></ul> |
-| **Week 7–8 (July 14 – July 27)**         | <ul><li>Integrate the final calibration method into Movement with batch processing.</li><li>Test across diverse datasets (multi-animal, EPM) and under varied conditions.</li><li>Add Gaussian noise and mask keypoints to test calibration under occlusion & noise.</li><li>Apply min-max and z-score scaling to assess sensitivity to confidence score ranges and check robustness using ECE, MCE, and reliability diagrams.</li></ul> |
-| **Week 9 (July 28 – August 3)**          | <ul><li>Use a buffer week to fix edge cases and incorporate mentor feedback.</li><li>Stabilize calibration logic and begin behavior-based filtering using calibrated scores to enhance downstream classification tasks.</li></ul> |
-| **Week 10–11 (August 4 – August 17)**    | <ul><li>Develop an interactive calibration visualization tool (Napari or Jupyter widget).</li><li>Analyze confidence distributions and reliability diagrams.</li><li>Extend pipeline to support both DLC and SLEAP via a unified API.</li><li>Finalize modular code and write additional test cases.</li></ul> |
-| **Week 12 (August 18 – August 25)**      | <ul><li>Freeze codebase, Finalize documentation, notebooks, and tutorials.</li><li>Write and publish the final blog post summarizing project outcomes, key learnings, and future potential.</li><li>Submit final evaluation.</li></ul> |
-| **Post-GSoC**                            | <ul><li>Maintain and improve features.</li><li>Explore semi-supervised calibration with pseudo-labels.</li><li>Continue contributing to the Movement’s ecosystem and pose estimation tools.</li></ul> |
+
+| **Week & Dates**                         | **Tasks & Deliverables** |
+|------------------------------------------|---------------------------|
+| **Community Bonding (May 8 – June 1)**   | - Explore pose estimation tools (DLC/SLEAP) and understand Movement’s tracking/confidence structure. <br> - Review calibration techniques like log-log regression, binning, and temperature scaling. <br> - Start working with datasets and evaluation metrics (ECE, Brier Score) and plan the implementation pipeline. |
+| **Week 1–2 (June 2 – June 15)**          | - Normalize confidence scores and align keypoints with available ground truth; annotate a small, diverse subset if not available. <br> - Implement log-log regression and validate calibration on Movement datasets. <br> - Visualize confidence distributions using histograms and KDE plots. <br> - Perform initial calibration evaluation using ECE and reliability diagrams. |
+| **Week 3–4 (June 16 – June 29)**         | - Add histogram binning and temperature scaling calibration methods. <br> - Benchmark methods using ECE and confidence histograms. <br> - Begin integration of these techniques into Movement’s workflow. |
+| **Week 5–6 (June 30 – July 13)** <br> *Midterm Evaluation* | - Compare calibration methods on quality, keypoint accuracy, and behavior classification. <br> - Finalize the best-performing method. <br> - Add unit tests and docstrings. <br> - Submit midterm evaluation and draft technical blog post. |
+| **Week 7–8 (July 14 – July 27)**         | - Integrate the final calibration method with support for batch processing. <br> - Evaluate robustness across varied datasets (multi-animal, EPM) and under occlusion/noise (Gaussian noise, masked keypoints). <br> - Apply min-max and z-score scaling to assess sensitivity to confidence score ranges. <br> - Summarize results using ECE, MCE, and reliability diagrams. |
+| **Week 9 (July 28 – August 3)**          | - Use a buffer week to fix edge cases and incorporate mentor feedback. <br> - Ensure calibration methods generalize across datasets. <br> - Begin behavior-based filtering using calibrated scores to improve downstream classification. |
+| **Week 10–11 (August 4 – August 17)**    | - Develop an interactive calibration visualization tool (Napari or Jupyter widget). <br> - Analyze confidence distributions and reliability diagrams. <br> - Extend pipeline to support both DLC and SLEAP via a unified API. <br> - Finalize modular code and write additional test cases. |
+| **Week 12 (August 18 – August 25)**      | - Freeze codebase and finalize documentation, notebooks, and tutorials. <br> - Write and publish final blog post summarizing outcomes, learnings, and future potential. <br> - Submit final evaluation. |
+| **Post-GSoC**                            | - Maintain and improve features. <br> - Explore semi-supervised calibration with pseudo-labels. <br> - Continue contributing to Movement and pose estimation tools. |
 
 
 ---
@@ -78,7 +80,7 @@
 
 - **Match: why you?**
 
-    My background spans NLP, vision, and audio classification, with hands-on experience in model calibration, evaluation metrics, and performance visualization. I’ve worked in team-based open-source environments and enjoy writing clean,w testable code. I believe my prior experience makes me well-suited to contribute effectively and efficiently to this project.
+    My background spans NLP, vision, and audio classification, with hands-on experience in model calibration, evaluation metrics, and performance visualization. I’ve worked on projects like [CNN-based model](https://github.com/https-kanika/Audio-Genre-Classification-DS203-E7-Project-24/tree/main), [RL_Quant](https://github.com/Mahi7828/RL_Agent_Quant) and [LLM_Enhancements](https://github.com/Mahi7828/Contextual_LLM_Enhancements) etc. I have also worked as a *Web Coordinator* for Mood Indigo 2024, contributing in the development of different webpages for fest. I  enjoy writing clean, testable code. I believe my prior experience makes me well-suited to contribute effectively and efficiently to this project.
 
 - **Availability** : 
     I will be fully available throughout the GSoC period, as I have my summer break, with no conflicting commitments, and can dedicate 25+ hours per week to this project.
