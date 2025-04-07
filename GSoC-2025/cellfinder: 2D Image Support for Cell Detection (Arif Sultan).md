@@ -1,4 +1,4 @@
-# cellfinder: 2D Image Support for Cell Detection (Arif Sultan)
+# cellfinder - 2D Image Support for Cell Detection (Arif Sultan)
 
 ## Personal Details
 
@@ -15,7 +15,7 @@
 
 ### Proposal discussion link
 
-- [Discussion on Github](https://github.com/neuroinformatics-unit/gsoc)
+- [Discussion on Github](https://github.com/neuroinformatics-unit/gsoc/pull/66)
 
 --- 
 
@@ -57,7 +57,7 @@
 
   - Support for 2D Blob Detection Algorithm in PyTorch (U-Net, ResNet etc.) alongside the 3D algortihm
   - Making sure the PyTorch model is on par accuracy with manually counting
-  - Modify classification logic for dual 2D/3D support while maintaining backward compatibility.
+  - Modify classification logic for dual 2D/3D support for cells/non-cells.
   - Add unit tests and write developer/user documentation.
   - Publish a blog demonstrating 2D pipeline results with visuals and examples.
 
