@@ -8,10 +8,10 @@
 - **Personal website / project portfolio** https://sites.google.com/view/parikshit-singh-rathore
 - **Code contribution**
 
-    1. https://github.com/neuroinformatics-unit/ethology/pull/58 (ethology)
-    2. https://github.com/neuroinformatics-unit/movement/pull/526 (movement)
-    3. https://github.com/brainglobe/cellfinder/pull/494 (cellfinder)
-    4. https://github.com/brainglobe/brainglobe-workflows/pull/145 (brainglobe-workflow)
+    1. https://github.com/neuroinformatics-unit/ethology/pull/58 (Support for Tracking-Any-Point)
+    2. https://github.com/neuroinformatics-unit/movement/pull/526 (Aggregating multiple source for better trajectory)
+    3. https://github.com/brainglobe/cellfinder/pull/494 (Sub-volume crop support for cell detection)
+    4. https://github.com/brainglobe/brainglobe-workflows/pull/145 (Workflow update to rectify failing test of sub-volume crop)
 
 - **Proposal discussion link**
     https://github.com/neuroinformatics-unit/gsoc/pull/54
@@ -21,35 +21,36 @@ _Length: max 1 page_
 
 - **Synopsis**
 
-    Understanding every pixel in a video and tracking their motions is a fundamental task in computer vision, and of great importance to video object tracking, segmentation, action recognition, and physical world understanding. Previously solved using optical-flow, but fails during occlusion. Thats where Tracking-Any-Point (TAP) models have gained recent popularity, because of there ability to model long range point motion which can include occlusion. Any-point trackers enable detailed monitoring of animal movements and behaviors for ethological studies. The aim of this proposal is to add support of the Tracking-Any-Point in the ethology repository to enable researcher track keypoints/individuals and further facilitate analysis using a sister repository `movement`. TAP is particularly important because that will enable researchers to analyse how the animal is moving even in moving camera conditions (by subtracting relative camera motion by applying TAP on the background points). With the possibility to add all functionalities like detection, tracking, and TAP will create an uncanny under one hood repository for ethological researchers to be benefitted.
+    Understanding complex motion in a scenario and the physical interaction with it, is a fundamental task in computer vision, and of great importance to video object tracking, segmentation, action recognition, and physical world understanding. Previously solved using optical-flow, but fails during occlusion. Thats where Tracking-Any-Point (TAP) models have gained recent popularity, not only because of there ability to model long range point motion which can include occlusion but also its ability to track any diverse set of points. Any-point trackers enable detailed monitoring of animal movements and behaviors for ethological studies. The aim of this proposal is to add support of the Tracking-Any-Point in the ethology repository to enable researcher track keypoints/individuals and further facilitate analysis using a sister repository `movement`. TAP is particularly important because that will enable researchers to analyse how the animal is moving even in moving camera conditions (by subtracting relative camera motion by applying TAP on the background points). With the possibility to add all functionalities like detection, tracking, and TAP will create an uncanny under one hood repository for ethological researchers to be benefitted.
 
 
 - **Implementation timeline**
 
     **Deliverables**:
-    - Add support for SOTA track-any-point models to ethology. Current SOTA include [SPOT](https://arxiv.org/abs/2503.06471) , [TAPTR](https://arxiv.org/html/2403.13042v1), and [Spatial tracker](https://arxiv.org/abs/2404.04319). Depending upon the feasibility, accuracy vs inference-time trade-off
+    - Add support for SOTA track-any-point models to `ethology`. Current SOTA include [LocoTrack](https://arxiv.org/abs/2407.15420), and [BootsTAP](https://openaccess.thecvf.com/content/ACCV2024/papers/Doersch_BootsTAP_Bootstrapped_Training_for_Tracking-Any-Point_ACCV_2024_paper.pdf) depending upon the feasibility, compatibility and ease of use with `ethology`
 
     - Napari support to interact with TAP models
         1. Drop-down for supported trackers
-        2. Query modes: Grid (with customizable size) / specific query points / random query points
+        2. Query modes: Grid (with customizable size) / specific query points / default query points (like the center of the video)
         3. Load videos, project the first frame, custom select the point using cursor/ X,Y coordinates.
-        4. Customizable parameters for TAP models
+        4. Customizable parameters for TAP models (weight files, offline/online/version of model architecture, type of model)
 
     - Combining detection with TAP models
         Get the centroid of the detected bounding box (yolo/rt-detr/co-detr) -> Extract the coordinates of the centroid -> Apply TAP module on the coordinates -> compare how TAP models perform vs standard trackers (Bytetrack/BoT-SORT). Issues https://github.com/neuroinformatics-unit/ethology/issues/13 , https://github.com/neuroinformatics-unit/ethology/issues/12
 
-    - Integration with any movement repository
+    - Integration of TAP with movement repository
         1. Ensure proper serialization to/from movement repo
         2. Translating keypoints & individuals to some entity in TAP model 
 
     I feel 30% of the efforts will go into developing the Napari plugins while the remaining 70% in the backend support and customizations.
 
     **Stretch goals**:
-    - Benchmarking these TAP, Detection and Tracking models on dataset of interest (with ground truth)
-    - Solve existing issues in ethology, some interesting ones include (not an exhaustive list):
-        1. https://github.com/neuroinformatics-unit/ethology/issues/5 : Identity the spikes in the TAP trajectories using difference in Kalman-filter predictions vs the actual TAP trajectory
-        2. https://github.com/neuroinformatics-unit/ethology/issues/15 : Bounding box centroid -> SAM/SAMURAI input prompt coordinates -> Video with segmentation masks on the detected objects with preserved object-id
-    - Implement low-shot detectors like [ABA OSOL](https://openaccess.thecvf.com/content/WACV2023/papers/Hsieh_Aggregating_Bilateral_Attention_for_Few-Shot_Instance_Localization_WACV_2023_paper.pdf) for labeling large dataset.
+    - Benchmarking these TAP, Detection and Tracking models on dataset of interest. Labeling techniques:
+        1. Using semi-supervised approach for training a TAP model as suggested in [BootsTAP](https://openaccess.thecvf.com/content/ACCV2024/papers/Doersch_BootsTAP_Bootstrapped_Training_for_Tracking-Any-Point_ACCV_2024_paper.pdf) using a semi supervised approach to prepare ground truth from a "trained TAP" model (large model) with some human feedback
+    - Solve existing issues in `ethology`, some interesting ones include (not an exhaustive list):
+        1. https://github.com/neuroinformatics-unit/ethology/issues/5 : Grid on the first frame -> Apply TAP on these points -> TAP return the visibility of these points across the frames -> statistics for outlier detection
+        2. https://github.com/neuroinformatics-unit/ethology/issues/15 : Bounding box centroid -> SAM/SAMURAI input prompt coordinates -> Video with segmentation masks on the detected objects (in subsequent frames we can apply segmentation with input prompt point directly from TAP model output for that frame instead of apply detection again)
+    - Implement low-shot detectors like [CD-ViTO](https://arxiv.org/pdf/2402.03094) for labeling large dataset.
     
     **Community bonding period**:
     - Get to know the core-team and co-interns
@@ -63,17 +64,17 @@ _Length: max 1 page_
     **Weekly timeline**:
     | Week | Task                                                                                     | Hours/Week |
     |------|------------------------------------------------------------------------------------------|------------|
-    | 1    | Research and implement initial support for SPOT tracker in ethology: <br> - Read paper of SPOT <br> - Find drawbacks of cotracker/tapir, compare what they propose vs what we want <br> - Integrate SPOT as a dependency                    | 30         |
-    | 2    | Add support for TAPTR tracker and test integration with ethology (same steps as SPOT)                      | 30         |
+    | 1    | Research and implement initial support for LocoTrack(S/B) TAP in `ethology`: <br> - Read paper of LocoTrack <br> - Find drawbacks of cotracker/tapir, compare what they propose vs what we want <br> - Integrate LocoTrack as a dependency                    | 30         |
+    | 2    | Add support for bootsTAP tracker checkpoint and test integration with `ethology` (probably some few addons to TAPIR support)                      | 30         |
     | 3    | Video features in Napari: <br> - Support for loading video <br> - Taking input on the video (coordinates of points to track) <br> - Plot trajectories using a standard color coded meaning-full format (eg: `individual_1` colored *blue* and its keypoints differing by some $\alpha$ gradient)| 30         |
-    | 4    | Napari plugins to add support for customizing the TAP pipeline parameters: <br> - Load model parameters like weight files, offline/online/version(v1, v2, v3...) of model architecture, type of model (TAPIR/Co-Tracker/TAPTR) <br> - Video options like display results, save results, display first frame to draw keypoints <br> - Query point selection options grid, point, bbox centroid | 30         |
+    | 4    | Napari plugins to add support for customizing the TAP pipeline parameters: <br> - Load model parameters like weight files, offline/online/version(v1, v2, v3...) of model architecture, type of model (TAPIR/Co-Tracker/LocoTrack) <br> - Video options like display results, save results, display first frame to draw keypoints <br> - Query point selection options grid, point, bbox centroid | 30         |
     | 5    | Integrate detection models like YOLOv8, Rt-Detr, Co-Detr <br> - Each detection model has different sized architectures check feasibility <br> - Integrate as a dependency from original repository | 30         |
     | 6    | Compare TAP models with state of the art tracking algorithms like ByteTrack, BotSORT, SMILETrack for tracking centroid of detection bounding box    | 30         |
     | 7    | Integrate working example of each of the proposed approach for incoming new users: <br> - Tracking-Any-Point generic example <br> - Detection + Tracker vs Detection + TAP  | 30        |
     | 8    | Add napari plugins for detection and tracking: <br> - Ability to select all combination of detector + tracker <br> - Customizable parameters like re-ID weight file, track buffer, min confidence threshold, etc                     | 30         |
     | 9    | Check the feasibility of each tracker with a benchmark metric to check the the efficiency: <br> - Object-Detection <br> - Tracking <br> - TAP models <br> on dataset of interest (in increasing order of difficulty to benchmark)                   | 30         |
     | 10    | Benchmarking Continued: Benchmarking on Occlusion Accuracy, fraction of visible points tracked within 1, 2, 4, 8 and 16 pixels (averaged over thresholds), Average Jaccard (measuring tracking and occlusion prediction accuracy together) [these metrics were used in co-tracker evaluation] | 30         |
-    | 11   | Solve existing issues in ethology <br> - Trajectory spikes https://github.com/neuroinformatics-unit/ethology/issues/5 <br> - Segmentation masks https://github.com/neuroinformatics-unit/ethology/issues/15       | 30         |
+    | 11   | Solve existing issues in `ethology` <br> - Trajectory spikes https://github.com/neuroinformatics-unit/ethology/issues/5 <br> - Segmentation masks https://github.com/neuroinformatics-unit/ethology/issues/15       | 30         |
     | 12   | Finalize code, write leftout tests, and prepare documentation and submit final deliverables                   | 30         |
 
     `NOTE: Haven't mentioned tests explicitly in each week's contribution, but have them in each weeks plans` 
@@ -157,9 +158,13 @@ _Length: max 0.25 page_
 
 #### Additional references -
     - TAP Models : https://paperswithcode.com/task/point-tracking
-    - TAPTR - 
-        paper: https://arxiv.org/html/2403.13042v1
-        code: https://github.com/IDEA-Research/TAPTR
+    - Few-shot Detectors : https://paperswithcode.com/task/few-shot-object-detection#benchmarks
+    - LocoTrack - 
+        paper: https://arxiv.org/abs/2407.15420
+        code: https://github.com/cvlab-kaist/locotrack
+    - BootsTAP -
+        paper: https://arxiv.org/html/2402.00847v1
+        code: https://bootstap.github.io/
     - Co-Tracker - 
         paper: https://arxiv.org/abs/2307.07635
         code: https://github.com/facebookresearch/co-tracker
