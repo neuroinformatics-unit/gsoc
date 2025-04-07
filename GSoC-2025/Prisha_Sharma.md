@@ -181,9 +181,9 @@ This project aims to enhance CellFinder by adding multi-channel support for brai
 - **Communication plan**
 
   -	For any immediate doubts, I will prefer using Zulip for quick conversations.
- - For technical discussions and progress tracking, I will primarily use GitHub pull requests and issues.
--	Additionally, I would appreciate weekly video calls to discuss updates and receive feedback
--	I will maintain full transparency with my mentor and use these modes of communication wisely to ensure everything runs smoothly and this project turns out be success.
+  - For technical discussions and progress tracking, I will primarily use GitHub pull requests and issues.
+  -	Additionally, I would appreciate weekly video calls to discuss updates and receive feedback
+  -	I will maintain full transparency with my mentor and use these modes of communication wisely to ensure everything runs smoothly and this project turns out be success.
 
 ## Personal statement
 
@@ -191,37 +191,36 @@ _Length: max 0.75 page_
 
 - **Past experience**
 
--	I have been actively contributing to open-source organizations for a while, including a contribution to SunPy ( #8068, #8038), NumFOCUS (#146) and actively in NIU.
+  -	I have been actively contributing to open-source organizations for a while, including a contribution to SunPy ( #8068, #8038), NumFOCUS (#146) and actively in NIU.
 
--	My research paper, "Integration of Modern-Era Retrospective Analysis for Research and Applications, Version 2 (MERRA-2) Data and Lightning Detection Sensor (LDS) Data for Lightning Event Prediction", has been accepted by the Journal of Geomatics (Confirmation).
+  -	My research paper, "Integration of Modern-Era Retrospective Analysis for Research and Applications, Version 2 (MERRA-2) Data and Lightning Detection Sensor (LDS) Data for Lightning Event Prediction", has been accepted by the Journal of Geomatics (Confirmation).
 
--	I have been working in the field of Machine Learning and Deep Learning for the past two years, with experience in both Keras and PyTorch. Additionally, I have interned at the Indian Space Research Organisation (ISRO), where I applied advanced ML techniques for scientific research (Certificate)
+  -	I have been working in the field of Machine Learning and Deep Learning for the past two years, with experience in both Keras and PyTorch. Additionally, I have interned at the Indian Space Research Organisation (ISRO), where I applied advanced ML techniques for scientific research (Certificate)
 
--	I was appointed as an AI and ML Engineer at NOT@MRP Pvt. Ltd., where I developed a personalized recommendation system and an intelligent chatbot for customer support.
-
+  -	I was appointed as an AI and ML Engineer at NOT@MRP Pvt. Ltd., where I developed a personalized recommendation system and an intelligent chatbot for customer support.
 
 Additionally, I was selected as a Grand Finalist in the Bhartiya Antariksh Hackathon organized by NRSC (National Remote Sensing Centre, ISRO centre that manages satellite and aerial data), ranking in the top 10 out of over 34,000 participating teams. I was also among the top 5 finalists in the India Festival Space Hackathon organized by ISRO (Indian Space Research Organisation), competing against more than 4,000 teams from across the country.
 
 - **Motivation: why this project?**
 
   This project perfectly aligns with my interests in deep learning and scientific data processing. While working on a patient-doctor LLM-based project with the University of Ulster, I found myself deeply inspired by how AI can drive real impact in scientific research. I’ve worked extensively with multi-dimensional scientific datasets during my research on lightning prediction using MERRA-2 and LDS data. My experience lies in handling complex image data, particularly using tools like NumPy and Pandas to process, and extract insights from large-scale arrays and tabular datasets.
-In a previous project, I enhanced low-resolution images from the Moon’s South Pole, gaining hands-on experience with pre-processing raster image data (.tiff files). Currently, I’m applying similar skills in an AI-driven 3D terrain reconstruction system that converts 2D drone imagery into high-resolution DSMs and 3D geospatial meshes using customised Mega NERF model.
 
+  In a previous project, I enhanced low-resolution images from the Moon’s South Pole, gaining hands-on experience with pre-processing raster image data (.tiff files). Currently, I’m applying similar skills in an AI-driven 3D terrain reconstruction system that converts 2D drone imagery into high-resolution DSMs and 3D geospatial meshes using customised Mega NERF model.
+  
+  What excites me the most about this NIU project is how closely it aligns with my experience and interests. I’m genuinely committed to contributing to the neuroinformatics community, and I see this project as a powerful way to support meaningful scientific discovery.
 
-What excites me the most about this NIU project is how closely it aligns with my experience and interests. I’m genuinely committed to contributing to the neuroinformatics community, and I see this project as a powerful way to support meaningful scientific discovery.
+  I specifically chose the topic “Support for Arbitrary Number of Channels” because neuroscience datasets often include multiple imaging channels, and hardcoding fixed channel numbers limits experimentation and research flexibility. By contributing to this enhancement, I aim to improve usability handling diverse brain imaging data, helping tools better adapt to real-world scientific needs.
 
-I specifically chose the topic “Support for Arbitrary Number of Channels” because neuroscience datasets often include multiple imaging channels, and hardcoding fixed channel numbers limits experimentation and research flexibility. By contributing to this enhancement, I aim to improve usability handling diverse brain imaging data, helping tools better adapt to real-world scientific needs.
-
-For me, this isn’t just about writing code, it’s about using ML to push the boundaries. It’s a chance to bring together everything I love, research, AI, and open-source, to make a real difference.
+  For me, this isn’t just about writing code, it’s about using ML to push the boundaries. It’s a chance to bring together everything I love, research, AI, and open-source, to make a real difference.
 
 
 - **Match: why you?**
 
   With a background in complex data set handling and AI, I believe I’m a great fit for this project. I’ve worked with tools like PyTorch, Keras, and Python, and one of my most rewarding projects involved increasing the SNR ratio of lunar South Pole images from -8 dB to 14 dB using advanced enhancement techniques (Github).
 
+  Working with organizations like OpenAstronomy (SunPy) and NumFOCUS taught me how to contribute effectively to open-source, writing clean code and following community best practices. These experiences are especially relevant to a project like Support for Arbitrary Number of Channels, where flexibility and quality code matter.
 
-Working with organizations like OpenAstronomy (SunPy) and NumFOCUS taught me how to contribute effectively to open-source, writing clean code and following community best practices. These experiences are especially relevant to a project like Support for Arbitrary Number of Channels, where flexibility and quality code matter.
-Interning at ISRO also shaped my approach—I learned the value of discipline, transparency, and staying committed even when tackling complex, high-stakes problems. I bring that same mindset to every project I 
+  Interning at ISRO also shaped my approach—I learned the value of discipline, transparency, and staying committed even when tackling complex, high-stakes problems. I bring that same mindset to every project I 
 
 
 - **Availability**
@@ -236,7 +235,7 @@ _Length: max 0.25 page_
 
   No, I have not participated in GSoC before.
 
-Through GSoC, I aim to deepen my open-source collaboration skills, improve my technical implementation abilities, and develop practical, well-documented solutions for the community.
+  Through GSoC, I aim to deepen my open-source collaboration skills, improve my technical implementation abilities, and develop practical, well-documented solutions for the community.
 
 - **Are you also applying to projects with other organisations in GSoC 2025?**
 
