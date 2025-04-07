@@ -39,7 +39,7 @@ By project completion, users will easily enable drift correction, significantly 
 - Updated documentation and tutorial notebook  
 
 #### Stretch goals (if time permits):
-- Multiple motion correction algorithm support  
+- Multiple motion correction algorithm support. (eg: Kilosort2.5-based, DREDge, etc.) 
 - Advanced CLI options for fine-tuning  
 - Benchmarking impact on spike sorting quality and runtime  
 
@@ -64,7 +64,7 @@ By project completion, users will easily enable drift correction, significantly 
 ### Communication Plan
 
 - **Daily Updates:** Quick daily posts on NIU Zulip.
-- **Weekly Meetings:** Weekend video calls for detailed updates.
+- **Weekly Meetings:** End of the week video calls for detailed updates.
 - **Progress Logs:** Regular updates via GitHub drafts or devlogs.
 - **Flexible Style:** Open to asynchronous video or text updates.
 - **Community Updates:** Frequent progress sharing with NIU community.
