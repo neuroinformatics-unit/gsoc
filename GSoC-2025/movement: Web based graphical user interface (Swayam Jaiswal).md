@@ -53,22 +53,22 @@ Over the past few days, I have developed a working Jupyter prototype using **mat
 
 ### **Weekly Timeline**
 
-| **Week**              | **Deliverable**                                                   | **Hours**     |
-|-----------------------|-------------------------------------------------------------------|---------------|
-| Community Bonding     | Finalize features with mentors, explore visualization frameworks | 11–13 hrs     |
-| Week 1                | Setup project structure, evaluate Dash/Plotly/Bokeh, baseline UI | 14–15 hrs     |
-| Week 2                | Implement data loader for video and pose formats                 | 19–21 hrs     |
-| Week 3                | Create overlay logic for keypoints and filtering widgets         | 17–20 hrs     |
-| Week 4                | Add animal_id support, build playback controls                   | 19–22 hrs     |
-| Week 5                | Midterm polish and user testing in notebooks                     | 8–10 hrs      |
-| Week 6                | Replace matplotlib with scalable rendering (e.g., Plotly/Dash)   | 17–19 hrs     |
-| Week 7                | Add trajectory visualization, refine filters                     | 21–23 hrs     |
-| Week 8                | Implement export options (images/videos)                         | 20–22 hrs     |
-| Week 9                | Refactor, test in various environments (Colab, Binder)           | 8–10 hrs      |
-| Week 10               | Final polish and bug fixing                                      | 8–10 hrs      |
-| Week 11               | Documentation, user guide, finalize code freeze                  | 8–10 hrs      |
-| Week 12               | Final evaluation prep, video walkthrough, wrap-up                | 7–9 hrs       |
-| **Total**             |                                                                   | **~175 hrs**  |
+| **Week**              | **Deliverable**                                                                 | **Hours**     |
+|-----------------------|----------------------------------------------------------------------------------|---------------|
+| Community Bonding     | Finalize feature list with mentors, evaluate visualization frameworks           | 11–13 hrs     |
+| Week 1                | Set up project structure, initialize Dash/Plotly-based GUI scaffold              | 14–15 hrs     |
+| Week 2                | Implement video and pose data loading (SLEAP, DLC, LightningPose)                | 19–21 hrs     |
+| Week 3                | Add keypoint overlay logic, build filtering UI for body parts                    | 17–20 hrs     |
+| Week 4                | Add animal_id-based filtering, implement frame navigation and playback controls  | 19–22 hrs     |
+| Week 5                | Polish core UI, integrate components, and begin user testing in notebooks        | 8–10 hrs      |
+| Week 6                | Implement trajectory visualization and refine interactive controls               | 17–19 hrs     |
+| Week 7                | Add export functionality for annotated frames/videos                             | 21–23 hrs     |
+| Week 8                | Optimize performance, finalize filtering interactions                            | 20–22 hrs     |
+| Week 9                | Test in Colab, Binder, and other notebook environments                           | 8–10 hrs      |
+| Week 10               | Final UI polish, bug fixes, and small enhancements                               | 8–10 hrs      |
+| Week 11               | Write documentation, develop user guide, prepare for code freeze                 | 8–10 hrs      |
+| Week 12               | Record final walkthrough video, prepare for final submission and wrap-up         | 7–9 hrs       |
+| **Total**             |                                                                                  | **~175 hrs**  |
 
 ---
 
