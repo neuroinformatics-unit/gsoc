@@ -15,7 +15,7 @@
 - [neuroinformatics-unit/ethology#78](https://github.com/neuroinformatics-unit/ethology/pull/78)
 
 ### Proposal discussion link:
-Couldn't discuss as the mentor was unavailable for pre-submission discussion.
+- [neuroinformatics-unit/gsoc#69](https://github.com/neuroinformatics-unit/gsoc/pull/69)
 
 ## Project proposal  
 
