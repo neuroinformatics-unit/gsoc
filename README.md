@@ -15,7 +15,7 @@ We will discuss and polish your proposal in the PR review process ✨
     - Fork this repo.
     - Clone your fork to your local machine.
     - Create a new branch for your proposal.
-    - Add a new markdown file under the `GSoC-2025` directory following [our template](GSoC-2025/application_template.md) and filename format `<Package Name>:<Project Name> (<Your-Name>)`. 
+    - Add a new markdown file under the `GSoC-2025` directory following [our template](GSoC-2025/application_template.md) and filename format `<Package Name>-<Project Name> (<Your-Name>)`. 
     - Add content to your proposal and commit the changes regularly.
     - When you are ready, push your changes to GitHub and open a draft pull request.
     - Check all is good, and when you are ready, mark the PR as "Ready for review"
