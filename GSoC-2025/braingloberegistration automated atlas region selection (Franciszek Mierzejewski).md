@@ -20,9 +20,8 @@ Timezone: GMT+1
 
 Language: English
 
-Code Contribution Link: &lt;to be completed, will be included in final proposal&gt;
-
-Project Discussion Link: &lt;to be completed, will be included in final proposal&gt;
+Code Contribution Link: https://github.com/brainglobe/brainglobe-registration/pull/87
+Project Discussion Link: https://github.com/neuroinformatics-unit/gsoc/pull/53
 
 ## Project Proposal
 
