@@ -64,7 +64,7 @@ _Length: max 1 page_
 
     **Stretch Goals**
 
-    - Refine Existing Code – Address TODO comments in the main execution code to enhance functionality.
+    - Refine Existing Code – Address TODO comments in the main execution code to enhance functionality. [Example](https://github.com/neuroinformatics-unit/spikewrap/blob/1285936fe7a88f5660744f26135df353ff24076f/spikewrap/structure/_preprocess_run.py#L47)
     - Work along with the motion detection team to further develop the project.
 
 
@@ -76,7 +76,7 @@ _Length: max 1 page_
 | **Community Bonding Period (May 8 – June 1)** | • Work with my mentor to review the tests document and refine test cases. <br> • Finalize the test suite structure for Sorting, Preprocessing, and Raw Data tests. <br>|
 | **Week 1-2 (June 2 – June 15)** | • Implement Sorting tests for validating parameters  (e.g., invalid `per_shank`, `concat_runs`, and sorter names). <br> • Develop tests for handling invalid cases (e.g., missing Docker/Singularity images). <br> • Continue tests for missing preprocessing functions (`phase_shift` and `bandpass_filter`.) |
 | **Week 3-4 (June 16 – June 29)** | •  Develop tests for Docker integration, ensuring automatic image downloads and consistent outputs in both local and CI environments. <br> • Implement Singularity tests to ensure proper image download and execution in shared paths. <br> 
-| **Week 5-6 (June 30 – July 13)** | • Validate sorting outputs: check non-empty spike data and correct overwrite behavior when simulating existing outputs. <br> • Verify that sorter outputs are saved in the correct locations. <br> • Test preprocessing step orders and invalid parameters 
+| **Week 5-6 (June 30 – July 13)** | • Validate sorting outputs: check for non-empty spike data and correct overwrite behavior when simulating existing outputs. <br> • Verify that sorter outputs are saved in the correct locations. <br> • Test preprocessing step orders and invalid parameters 
 | **Week 7-8 (July 14 – July 27)** | • Implement tests for loading raw data, probe extraction, and sync channel operations in RawRun, SeparateRawRun, and ConcatRawRun. <br> • Validate that mixed preprocessing approaches (e.g., per-shank vs. non-per-shank) do not raise errors when loaded from the disk. |
 | **Week 9-10 (July 28 – August 10)** | • Develop tests for parallel sorting execution to make sure that downstream functions correctly show outputs. <br> • Validate sync channel operations (silence, save, plot) for the raw data. <br> Finalize docstring/documentation for all tests. |
 | **Week 11-12 (August 11 – August 27)** | • Ensure that temporary test files are properly deleted after execution. <br> • Run the complete tests in all environments for compatibility and file permissions check. <br> • Address pending issues and refine tests based on feedback from previous runs. |
@@ -108,6 +108,7 @@ _Length: max 0.75 page_
     Having worked with python for over 2 years, I am confident in my ability to write clean and efficient code. I am also a quick learner and can adapt to new technologies quickly
     Experience building production-level applications at 
     [NIMHANS Lab](https://www.iiitb.ac.in/media/iiitbangalore-and-nimhans-collaborate-to-deliver-the-tele-manas-app-for-247-mental-health-support) at IIIT-Bangalore has equipped me to handle technical challenges and adapt to evolving project requirements.
+    The desire of proving myself always keeps me motivated to accomplish and tackle new challenges.
 
 
  
