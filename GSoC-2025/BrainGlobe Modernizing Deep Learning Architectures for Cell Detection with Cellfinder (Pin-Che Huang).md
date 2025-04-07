@@ -35,26 +35,29 @@ Deliverables include the new model implementation, integration into the training
 
 | Week | Dates | Tasks |
 |------|-------|-------|
-| **Community Bonding** | May 8 – June 1 | Review codebase, run ResNet training, select alternative architectures, mentor discussion |
-| **Week 1** | June 2 – June 8 | Implement EfficientNet model, integrate into pipeline |
-| **Week 2** | June 9 – June 15 | Train EfficientNet on sample data, implement metrics tracking |
-| **Week 3** | June 16 – June 22 | Tune hyperparameters, run comparisons to ResNet baseline |
-| **Week 4** | June 23 – June 29 | Add CLI/config model selector; document model logic |
-| **Week 5** | June 30 – July 6 | Implement optional second model (e.g., MobileNetV3) |
-| **Week 6** | July 7 – July 13 | Finalize tests and benchmarks; prepare midterm evaluation |
-| **Week 7** | July 14 – July 21 | Midterm Evaluation: Submit models, benchmarks, documentation |
-| **Week 8** | July 22 – July 28 | (Military service begins) Weekend: start writing blog/tutorial, fix minor bugs |
-| **Week 9** | July 29 – August 4 | Weekend-only: review feedback, add architecture config polish |
-| **Week 10** | August 5 – August 11 | Weekend-only: complete blog/tutorial draft and CLI help docs |
-| **Week 11** | August 12 – August 18 | Code freeze; finalize all testing, cleanup, refactor |
-| **Week 12** | August 19 – August 25 | Final report and feedback from mentor |
-| **Final Submission** | August 25 – September 1 | Submit final deliverables to GSoC portal |
-| **Extension Week 1** | September 2 – September 8 | Add third model (e.g., ConvNeXt) or optimize for speed |
-| **Extension Week 2** | September 9 – September 15 | Write second blog post; assist with future contributor docs |
-| **Extension Week 3** | September 16 – September 22 | Assist mentor in integrating feedback, finalize polish |
-| **Extension Week 4** | September 23 – September 30 | Optional stretch: packaging, install guide, community Q&A |
+| **Community Bonding** | May 8 – June 1 | Familiarize with the `cellfinder` codebase, run ResNet training, explore EfficientNet structure, and discuss integration plans with mentor |
+| **Week 1** | June 2 – June 8 | Add basic EfficientNet model structure in PyTorch and integrate it into the `cellfinder` model pipeline |
+| **Week 2** | June 9 – June 15 | Refine data flow and preprocessing for the new model; begin small-scale training and confirm output compatibility |
+| **Week 3** | June 16 – June 22 | Add evaluation metrics (accuracy, speed) and implement simple logging for model comparison |
+| **Week 4** | June 23 – June 29 | Add CLI/config support for switching between ResNet and EfficientNet; begin initial documentation |
+| **Week 5** | June 30 – July 6 | Clean up codebase, write internal comments and developer notes for future maintainers |
+| **Week 6** | July 7 – July 13 | Midterm preparation: run benchmarks, generate model plots or metrics, finish initial documentation |
+| **Week 7** | July 14 – July 21 | Midterm Evaluation: Submit models, benchmarks, and documentation for mentor review |
+| **Week 8** | July 22 – July 28 | (Military service begins) Weekend: begin writing tutorial/blog post and test scripts |
+| **Week 9** | July 29 – August 4 | Weekend-only: Improve model training settings and documentation polish |
+| **Week 10** | August 5 – August 11 | Weekend-only: Finalize blog post, prepare user-facing CLI documentation |
+| **Week 11** | August 12 – August 18 | Code freeze; final bug fixes and testing clean-up |
+| **Week 12** | August 19 – August 25 | Submit final report and ensure mentor feedback is addressed |
+| **Final Submission** | August 25 – September 1 | Submit deliverables to GSoC portal |
+| **Week 13** | September 2 – September 8 | Extension: Experiment with input shape changes or additional model tweaks |
+| **Week 14** | September 9 – September 15 | Extension: Add support for default config file improvements and better error handling |
+| **Week 15** | September 16 – September 22 | Write a follow-up blog post reflecting on the EfficientNet implementation journey |
+| **Week 16** | September 23 – September 29 | Help close remaining PRs and review other contributors' questions or related issues |
+| **Week 17–18** | September 30 – October 13 | Continue light weekend maintenance, improve usability, test on real datasets if possible |
+| **Week 19–20** | October 14 – October 27 | Final polish, assist in writing integration summary, and document post-GSoC transition plan |
 
-**Weekly Hours**: ~30 hrs/week before July 21 and after September 16, ~8 hrs/week during July 22 to September 15 (weekends only)
+
+**Weekly Hours**: ~28 hrs/week before July 21 and after September 16, ~6-8 hrs/week during July 22 to September 15 (weekends only)
 
 ### Communication Plan
 - Weekly mentor meetings via Zoom/Google Meet  
