@@ -15,7 +15,7 @@
 
 ### Proposal discussion link
 
-(https://github.com/neuroinformatics-unit/gsoc/pull/38#issue-2961522261)
+(https://github.com/neuroinformatics-unit/gsoc/pull/59#issue-2972616901)
 
 ## Project proposal 
 
@@ -29,21 +29,21 @@ Goals and Deliverables
 4. Documentation: Updated user guides explaining how to train, fine-tune, and use the 2D pipeline.  
 5. Blog Post: A technical write-up demonstrating the 2D workflow and comparing its performance to the current 3D approach.
 
-- **Implementation timeline**
 
 ### **Implementation Timeline**
 
 I plan to dedicate approximately 30 hours/week. Recognizing that adapting the blob detection code and develop a new 2D CNN will be more time-consuming, I will allocate extra effort there early on.
 
-| **Phase**                          | **Tasks**                                                                                                                                                                                                                                                                                               | **Notes**                                                                                 |
-|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| **Community Bonding** (4 weeks) | - Familiarize with Cellfinder’s current 3D pipeline. <br/> - Explore suitable 2D CNN architectures (e.g., ResNet, EfficientNet). <br/> -  Discuss approach with mentors. <br/> - Review BrainGlobe development guidelines. <br/> - Gather and examine training data for 2D slice experiments. | Emphasis on planning, codebase understanding, and setting clear objectives.               |
-| **Week 1–2**                       | - Refactoring the existing pipeline to handle both 2D and 3D inputs, ensuring correct integration with cellfinder’s pipeline. <br/> - Implement basic tests to confirm cell candidate detection works consistently for 2D/3D.                                                                                                                          | Ensuring a unified approach across dimensions.                        |
-| **Week 3–4**                       | - Continue optimizing 2D detection (tuning parameters, handling edge cases). <br/> - Implement a 2D CNN classifier (e.g., ResNet or EfficientNet). <br/> -Set up an initial training loop and consider basic data augmentation.                                                   | Moving toward a functional classifier integration.                   |
-| **Week 5–6**                       | - Finish any pending tasks (e.g., unresolved implementation details). <br/> - Train and fine-tune the 2D CNN on sample data (adjust batch size, learning rate, augmentations). <br/> - Write tests for the classifier (data flow, forward pass, etc.).                     | Major classifier development and testing milestone.                                       |
-| **Week 7–8**                       | - Continue refining the 2D architecture based on mid-phase results. <br/> - Conclude testing tasks. <br/> - Evaluate the network in terms of accuracy and speed (precision-recall for cell vs. no-cell detection, and inference speed) and, if necessary, implement improvements. <br/> - Begin drafting the blog post or user-facing documentation. | Iterative improvements and start of user-facing deliverables.                             |
-| **Week 9–10**                      | - Continue refining the technical blog content. <br/> - Conclude user-facing documentation. <br/> - Prepare any performance benchmarks for inclusion in the blog post.                                                                                   | Approaching finalization with comprehensive testing and documentation.                    |
-| **Week 11–12**                     | - Finalize all code, ensuring extensive test coverage. <br/> - Publish the blog post, including relevant performance observations. <br/> - Merge PRs, address mentor feedback, and prepare for project conclusion.                                                                              | Final wrap-up, polishing deliverables, and integrating all feedback before project end.   |
+| **Phase**                          | **Tasks**                                                                                                                                                                                                                                                                                               |
+|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Community Bonding** (4 weeks) | - Familiarize with Cellfinder’s current 3D pipeline. <br/> - Explore suitable 2D CNN architectures (e.g., ResNet, EfficientNet). <br/> -  Discuss approach with mentors. <br/> - Review BrainGlobe development guidelines. <br/> - Gather and examine training data for 2D slice experiments. |
+| **Week 1–3**                       | - Refactor the existing pipeline to handle both 2D and 3D inputs, ensuring correct integration with cellfinder’s pipeline. <br/> - Implement basic tests to confirm cell candidate detection works consistently for 2D/3D.                                                                                      |
+| **Week 4–5**                       | - Begin implementing a 2D CNN classifier (e.g., ResNet or EfficientNet). <br/> -Set up an initial training loop and consider basic data augmentation.                                               |
+| **Week 6–7**                       | - Finish any pending tasks (e.g., unresolved implementation details). <br/> - Train and fine-tune the 2D classifier on sample data (adjust batch size, learning rate, augmentations). <br/> - Begin writing tests for the classifier (data flow, forward pass, etc.).                 |
+| **Week 8–9**                       | - Continue refining the 2D architecture based on mid-phase results. <br/> - Conclude testing tasks. <br/> - Evaluate the network in terms of accuracy and speed (precision-recall for cell vs. no-cell detection, and inference speed) and, if necessary, implement improvements. <br/> - Begin drafting the blog post or user-facing documentation. |
+| **Week 10–11**                      | - Continue refining the technical blog content. <br/> - Conclude user-facing documentation. <br/> - Prepare any performance benchmarks for inclusion in the blog post.                                                                                 |
+| **Week 12**                     | - Finalize all code, ensuring extensive test coverage. <br/> - Publish the blog post, including relevant performance observations. <br/> - Merge PRs, address mentor feedback, and prepare for project conclusion.    
+
 
 Note on availability:
 
