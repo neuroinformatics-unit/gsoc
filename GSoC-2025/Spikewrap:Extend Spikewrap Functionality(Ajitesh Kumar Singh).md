@@ -48,20 +48,19 @@ _Length: max 1 page_
 
   
     **Goals:**
-    - Expanding test coverage for critical but under-tested components (sync channel handling, preprocessing, sorting ,raw data).
-    - Eliminating gaps in edge-case validation (invalid configurations, cross-run consistency).
-    - Test Containerized Execution – Implement tests for Docker and Singularity environments to ensure consistent performance( Image Availability,Container Execution and Output Consistency).
-    - Provide clear documentation to support and encourage community contributions.
+    - Expanding test coverage for the most important but under-tested components (sync channel handling, preprocessing, sorting ,raw data).
+    - Completing edge-case validation of the already implemented tests(invalid configurations, cross-run consistency).
+    - Test Containers – Implement tests for Docker and Singularity environments to ensure consistent performance (Image Availability,Container Execution and Output Consistency).
+    - Provide clear documentation for others to contribute.
 
 - **Implementation timeline**
     
     **Deliverables**
 
-
     1. **Expanded Test Suite** – Comprehensive tests for sync handling, preprocessing, and sorting.  
     2. **Edge-Case Validation** – Tests for invalid configs, missing data, and cross-run consistency.  
     3. **Container Testing** – Docker/Singularity execution tests with image validation.  
-    4. **Contributor Docs** – Clear test guidelines for community-driven improvements.
+    4. **Contributor Docs** – Clear test guidelines for others to contribute.
 
     **Stretch Goals**
 
@@ -73,15 +72,15 @@ _Length: max 1 page_
 
 | **Timeline** | **Deliverables & Testing Objectives** |
 |--------------|-----------------------------------------|
-| **Pre GSoC Period (April 1 – May 7)** | • Explore the codebase and identify key modules (Sorting, Preprocessing, RawRun). <br> • Map test targets (e.g., invalid sorter names, Docker/Singularity path issues). <br> • Work on Existing Issues and Create Pull Requests for them.
-| **Community Bonding Period (May 8 – June 1)** | • Collaborate with my mentor to review the tests document and refine test cases. <br> • Finalize the test suite structure into Sorting, Preprocessing, and Raw Data tests. <br>|
-| **Week 1-2 (June 2 – June 15)** | • Implement core Sorting tests for parameter validation (e.g., invalid `per_shank`, `concat_runs`, and sorter names). <br> • Develop tests for error handling in invalid cases (e.g., missing Docker/Singularity images). <br> • Begin drafting tests for missing preprocessing functions such as `phase_shift` and `bandpass_filter`. |
-| **Week 3-4 (June 16 – June 29)** | •  Develop tests for Docker integration, ensuring automatic image downloads and consistent execution outputs in both local and CI environments. <br> • Implement Singularity tests to ensure proper image download and execution in shared paths. <br> • Enhance SLURM tests by validating job scripts, adding support for loading required modules (e.g., MATLAB) in SLURM scripts, and tracking dependencies effectively.|
-| **Week 5-6 (June 30 – July 13)** | • Validate sorting outputs: check non-empty spike data and correct overwrite behavior when simulating existing outputs. <br> • Verify that **sorter outputs are saved in the correct locations**. <br> • Test preprocessing step orders, invalid parameters (e.g., `freq_min > freq_max`), and output key naming conventions. <br> • Continue drafting tests for additional preprocessing functions (e.g.`common_reference`). |
-| **Week 7-8 (July 14 – July 27)** | • Implement tests for raw data loading, probe extraction, and sync channel operations in RawRun, SeparateRawRun, and ConcatRawRun. <br> • Validate sync channel operations (silence, save, plot) against raw data lengths. <br> • Validate that mixed preprocessing approaches (e.g., per-shank vs. non-per-shank) do not cause inconsistencies when loading from disk. |
-| **Week 9-10 (July 28 – August 10)** | • Integrate all tests across Sorting, Preprocessing, and Raw Data modules to ensure comprehensive coverage. <br> • Develop tests for parallel sorting execution and concurrency, confirming that downstream functions correctly load outputs. <br> • Ensure that temporary test files are properly deleted after execution. <br> • Finalize detailed inline documentation and technical comments for all tests. |
-| **Week 11-12 (August 11 – August 27)** | • Run the complete test suite across environments (Linux/macOS, CI/CD with Docker/Singularity) to ensure cross-platform compatibility and proper file permissions. <br> • Address pending issues and refine tests based on feedback from previous runs. <br> • Work on improving existing code where TODOs have been mentioned, ensuring the improvements integrate smoothly with the test suite. |
-| **Week 12 (August 28 – September 1)** | • Use the buffer period to resolve any final issues and optimize test execution times. <br> • Conduct a last round of code improvements on existing modules marked with TODOs. <br> • Finalize and submit the comprehensive project report with complete documentation of the testing strategy and code enhancements. |
+| **Pre GSoC Period (April 1 – May 7)** | • Explore the codebase and understand key modules (Sorting, Preprocessing, RawRun).  <br> • Work on existing issues and create PR for them.
+| **Community Bonding Period (May 8 – June 1)** | • Work with my mentor to review the tests document and refine test cases. <br> • Finalize the test suite structure for Sorting, Preprocessing, and Raw Data tests. <br>|
+| **Week 1-2 (June 2 – June 15)** | • Implement Sorting tests for validating parameters  (e.g., invalid `per_shank`, `concat_runs`, and sorter names). <br> • Develop tests for handling invalid cases (e.g., missing Docker/Singularity images). <br> • Continue tests for missing preprocessing functions (`phase_shift` and `bandpass_filter`.) |
+| **Week 3-4 (June 16 – June 29)** | •  Develop tests for Docker integration, ensuring automatic image downloads and consistent outputs in both local and CI environments. <br> • Implement Singularity tests to ensure proper image download and execution in shared paths. <br> 
+| **Week 5-6 (June 30 – July 13)** | • Validate sorting outputs: check non-empty spike data and correct overwrite behavior when simulating existing outputs. <br> • Verify that sorter outputs are saved in the correct locations. <br> • Test preprocessing step orders and invalid parameters 
+| **Week 7-8 (July 14 – July 27)** | • Implement tests for loading raw data, probe extraction, and sync channel operations in RawRun, SeparateRawRun, and ConcatRawRun. <br> • Validate that mixed preprocessing approaches (e.g., per-shank vs. non-per-shank) do not raise errors when loaded from the disk. |
+| **Week 9-10 (July 28 – August 10)** | • Develop tests for parallel sorting execution to make sure that downstream functions correctly show outputs. <br> • Validate sync channel operations (silence, save, plot) for the raw data. <br> Finalize docstring/documentation for all tests. |
+| **Week 11-12 (August 11 – August 27)** | • Ensure that temporary test files are properly deleted after execution. <br> • Run the complete tests in all environments for compatibility and file permissions check. <br> • Address pending issues and refine tests based on feedback from previous runs. |
+| **Week 12 (August 28 – September 1)** | •  Resolve any final issues in buffer time <br> • Finalize and submit the report with complete documentation 
 
 
 
@@ -102,13 +101,14 @@ _Length: max 0.75 page_
 
 - **Motivation: why this project?**
 
-    Writing tests for the Spikewrap is a great way to learn about the project and its features. It demonstrates a strong understanding of code quality, debugging, and software development best practices, which are highly valued qualities in a developer. This project is a great opportunity to learn and grow in these areas, Plus, it’s a great chance for me to contribute to an open-source project that directly supports scientific research while learning from experienced developers along the way. I am highly motivated to work on this project and bring an impactful contribution to the community.
+    Writing tests for a young project like Spikewrap is a great way for me to learn about its features. To do this, I need to have a good understanding of code quality, debugging, and software development best practices, which are highly valued qualities in any developer. This project is a great opportunity to learn and grow in these areas, Plus, it will be a great chance for me to contribute to an open-source project that directly supports scientific research at the same time learning from experienced developers . I am highly motivated to work on this project and bring an impactful contribution to the community.
         
 - **Match: why you?**
 
     Having worked with python for over 2 years, I am confident in my ability to write clean and efficient code. I am also a quick learner and can adapt to new technologies quickly
     Experience building production-level applications at 
-    [NIMHANS Lab](https://www.iiitb.ac.in/media/iiitbangalore-and-nimhans-collaborate-to-deliver-the-tele-manas-app-for-247-mental-health-support) at IIIT-Bangalore has equipped me to handle technical challenges and adapt to evolving project requirements. 
+    [NIMHANS Lab](https://www.iiitb.ac.in/media/iiitbangalore-and-nimhans-collaborate-to-deliver-the-tele-manas-app-for-247-mental-health-support) at IIIT-Bangalore has equipped me to handle technical challenges and adapt to evolving project requirements.
+
 
  
 - **Availability**
@@ -123,7 +123,8 @@ _Length: max 0.75 page_
 _Length: max 0.25 page_
 
 - **GSoC experience**
-    Through the GSoC program, I will gain valuable experience not only in the open-source community but also in industry-level software development. This will allow me to collaborate with experienced developers, improve my coding and problem-solving skills, and learn best practices for working in a professional development environment. Additionally, I will gain firsthand experience in contributing to real-world projects, enhancing my ability to work effectively within a team.
+    From the GSoC program, I will get industry-level experience as well as hands-on experience not only within the open-source domain but also at the industry level in terms of software development. I will learn best practices regarding work within an industry-standard development environment. It will give me a firsthand experience with real-world contribution, thus ensuring I become highly proficient at work within a team environment.
+
 
 - **Are you also applying to projects with other organisations in GSoC 2025?**
     
