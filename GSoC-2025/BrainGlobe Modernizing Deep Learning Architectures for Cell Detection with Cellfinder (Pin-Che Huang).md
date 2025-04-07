@@ -10,8 +10,10 @@
 
 ---
 
-### Code Contribution
-I am currently preparing a contribution to `cellfinder` by building a minimal PyTorch implementation of a modern deep learning architecture such as EfficientNet, and benchmarking it against the current ResNet model. This will be submitted as a draft pull request or issue during the community bonding period.
+### Code Contribution 
+I have submitted a draft PR to `cellfinder`, where I begin integrating a modern deep learning architecture to replace ResNet. 
+Link: https://github.com/brainglobe/cellfinder/pull/520
+
 
 ---
 
@@ -52,7 +54,7 @@ Deliverables include the new model implementation, integration into the training
 | **Extension Week 3** | September 16 – September 22 | Assist mentor in integrating feedback, finalize polish |
 | **Extension Week 4** | September 23 – September 30 | Optional stretch: packaging, install guide, community Q&A |
 
-**Weekly Hours**: ~28-30 hrs/week before July 21 and after September 16, ~8 hrs/week during July 22 to September 15 (weekends only)
+**Weekly Hours**: ~30 hrs/week before July 21 and after September 16, ~8 hrs/week during July 22 to September 15 (weekends only)
 
 ### Communication Plan
 - Weekly mentor meetings via Zoom/Google Meet  
