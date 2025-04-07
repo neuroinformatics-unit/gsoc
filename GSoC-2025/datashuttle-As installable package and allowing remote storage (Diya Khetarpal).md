@@ -21,7 +21,7 @@ This project aims to enhance datashuttle in two significant ways: (1) extending 
 
 Cloud storage integration via RClone will allow researchers to securely transfer neuroinformatics data between local filesystems and popular cloud platforms with standardized structures and metadata validation. The cross-platform executable distribution will eliminate dependency on conda/Python expertise, making datashuttle accessible to a broader scientific community regardless of technical background.
 
-This project addresses a critical yet overlooked barrier to scientific collaboration and reproducibility by streamlining data organization and transfer processes, allowing researchers to focus on scientific discovery rather than infrastructure challenges.
+The dual objectives of cloud storage integration and cross-platform packaging are achievable within the 350-hour period through strategic use of existing technologies: leveraging RClone's robust cloud connectors (rather than building from scratch) and using a modular development approach where components can be developed in parallel. The timeline is structured to allow cloud integration work in the first half of the program, with packaging work beginning while finalizing cloud features, ensuring efficient use of development time.
 
 ### Implementation timeline
 
@@ -35,7 +35,7 @@ This project addresses a critical yet overlooked barrier to scientific collabora
 
 **Stretch goals:**
 - Additional cloud provider support (Dropbox, Azure)
-- Plugin architecture for community-contributed extensions
+- Plugin architecture for community-contributed extensions(e.g., specialized storage connectors for institutional repositories, custom data validators for specific experiment types, visualization tools for tracking data transfer metrics)
 - Integration with institutional storage systems
 - Bandwidth optimization for large dataset transfers
 
@@ -95,7 +95,6 @@ My experience with cloud services (AWS deployment of [Xander CLI](https://pypi.o
 During the GSoC period, I'll be on summer break from university, allowing me to commit 30+ hours weekly to the project. I have no other professional commitments during this time and have planned my academic schedule to avoid conflicts.
 
 ## GSoC
-_Length: max 0.25 page_
 
 ### GSoC experience
 From GSoC, I expect to gain valuable experience in open-source collaboration while making a tangible contribution to scientific research infrastructure. I look forward to:
