@@ -21,6 +21,9 @@ Please include the following information:
     - Here is a link to the documentation of the testing of the tool against benchmarks authored by me - https://shraddhabharadwaj.medium.com/scflash-python-library-for-scrna-preprocessing-867eeaadbd85
     -  You can find the released Python package here - https://pypi.org/project/scFlash/#description
     - I have two years of work experience with Git repository management and have a good understanding of code review, pull requests, fork, branching and merging and conflict resolution.
+-  **Proposal discussion link** 
+    - https://github.com/neuroinformatics-unit/gsoc/pull/68
+    - 
 
 ## Project proposal 
 
@@ -114,7 +117,7 @@ Please include the following information:
 - **Motivation: why this project?**
 
     This project is a very good amalgamation of my interests in behavior and spike data analysis, computational tool development, and mathematical modeling and analysis. I have experience in working with niche data that requires specialized and accurate data processing and workflow building. Movement is one such package that can help beneficial inferences from data by allowing innovative features that will help in important inference and I want to be part of its community.
-    
+
 - **Match: why you?**
 
     I have worked in the past on using Kalman filters and also analysis of neuroinformatics data. I have worked with transcriptomics and phylogenetics data and I have realised how important data aggregation and analysis tools are. Biological data analysis requires multiple levels of analysis. I myself search for the best tool that can help me process the data as I need. Being able to integrate multiple tools seamlessly for a scientifically significant analysis is any researcher's requirement and sometimes a cause for roadblocks when required tools are not present. I want to be part of a community that solves that and this is such an opportunity for me.
