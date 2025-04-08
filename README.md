@@ -17,6 +17,7 @@ A Python toolbox for analysing animal body movements across space and time.
 
 ---
 
+
 ### Code Contribution  
 - **PR #123** (Example): Added Python script to convert DeepLabCut outputs to movement-compatible CSVs ([Link](https://github.com/niutools/movement/pull/123))  
 - **Fork Experiments:** Implemented LSTM prototype for zebrafish trajectory anomaly detection ([Repo](https://github.com/livingmuqash/movement-fork))  
@@ -86,3 +87,13 @@ A Python toolbox for analysing animal body movements across space and time.
 - *None – 100% committed to NIU’s mission.*  
 
 --- 
+=======
+2. When you are ready to discuss your proposal with us, open a PR in this repo. To do this:
+    - Fork this repo.
+    - Clone your fork to your local machine.
+    - Create a new branch for your proposal.
+    - Add a new markdown file under the `GSoC-2025` directory following [our template](GSoC-2025/application_template.md) and filename format `<Package Name>-<Project Name> (<Your-Name>)`. 
+    - Add content to your proposal and commit the changes regularly.
+    - When you are ready, push your changes to GitHub and open a draft pull request.
+    - Check all is good, and when you are ready, mark the PR as "Ready for review"
+
