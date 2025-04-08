@@ -56,10 +56,10 @@
 
 ## Project proposal
 **Synopsis** <br/>
-Datashuttle is a tool that helps users easily transfer and organize data between local and remote systems. It supports the open-source community by making data management simpler, improving collaboration, and ensuring research is more reproducible. The goal of this project is to make datashuttle easily installable as a cross-platform executable, removing its dependency on Conda. Currently, users need technical expertise to set it up, limiting accessibility. By leveraging packaging tools like hatch, PyInstaller, or Briefcase, this project will create an easy-to-install executable for Windows, macOS, and Linux while ensuring smooth Textual UI rendering in native terminals. Additionally, the project will automate deployment using GitHub CI/CD and provide comprehensive documentation. This will enhance usability, increase adoption, and make datashuttle more accessible to non-technical users.
+Datashuttle is a tool that helps users easily transfer and organize data between local and remote systems. It supports the open-source community by making data management simpler, improving collaboration, and ensuring research is more reproducible. The goal of this project is to make datashuttle easily installable as a cross-platform executable, removing its dependency on Conda. Currently, users need technical expertise to set it up, limiting accessibility. By packaging tools like PyInstaller, Briefcase, Nuitka, etc., this project will create an easy-to-install executable for Windows, macOS, and Linux while ensuring smooth Textual UI rendering in native terminals. Additionally, the project will automate deployment using GitHub CI/CD and provide documentation. This will enhance usability, increase adoption, and make datashuttle more accessible to non-technical users.
   
 **Deliverables** <br/>
-- Make datashuttle easy to install without requiring Conda, allowing users to set it up with a simple command.
+- Make datashuttle easy to install without requiring Conda, allowing users to set it up with a graphical installer (alongside a CLI based option).
 - Ensure smooth functionality across Windows, macOS, and Linux terminals without display issues.
 - Automate updates and improvements using GitHub CI/CD for seamless maintenance.
 
@@ -144,6 +144,7 @@ Datashuttle is a tool that helps users easily transfer and organize data between
       <td>
         <ul>
           <li>Finalize all documentation including local build instructions, CI/CD process, installation and usage instructions.</li>
+          <li>Develop a graphical installer (alongside a CLI based option) to help users locate and install the packaged files across platforms</li>
           <li>Prepare and publish a final GitHub Release.</li>
         </ul>
       </td>
