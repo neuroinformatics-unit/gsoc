@@ -7,13 +7,12 @@
 - **Zulip username:** Srutanik Bhaduri
 - **Location & time-zone:** Bhopal, Madhya Pradesh, India (UTC+5:30)
 - **Personal website / project portfolio:** 
+
 - **Code contribution:**
     [https://github.com/brainglobe/cellfinder/pull/513](https://github.com/brainglobe/cellfinder/pull/513)
-    *Brief description of your contribution(s).*
-
+    This pull request addresses the issue of clarifying and refactoring of the API of the detect and classify module of cellfinder. This is not a final PR since it has a couple of breaking changes that need to be adressed in future commits.
 - **Proposal discussion link:**
-    <!-- Link to the PR where this proposal is being discussed (this PR!) -->
-    [Link to the Pull Request for this proposal]
+    https://github.com/neuroinformatics-unit/gsoc/pull/83
 
 ## Project proposal
 
@@ -33,49 +32,49 @@
 
    1. **Models:** Python implementations integrated within the `cellfinder` framework:
       * **3D CNN + Attention Gate:** Implementation of a modern 3D CNN backbone (e.g., EfficientNet3D) combined with an Attention Gate mechanism. The goal is to enhance relevant spatial feature extraction for potentially improved classification accuracy compared to the baseline ResNet-50. ([Ref Paper Link](https://arxiv.org/abs/1808.08114))
-      * **3D PIP-Net Adaptation:** Implementation adapting the Patch-based Intuitive Prototypes Network (PIP-Net) for 3D volumetric data. This aims to provide interpretable classification by learning representative 3D prototypical patches and utilizing a sparse scoring-sheet reasoning mechanism. ([Ref Paper Link](https://openaccess.thecvf.com/content/CVPR2023/papers/Nauta_PIP-Net_Patch-Based_Intuitive_Prototypes_for_Interpretable_Image_Classification_CVPR_2023_paper.pdf))
-      * **(Stretch Goal) 3D WaveMix Adaptation:** Implementation adapting the WaveMix concept, using 3D Discrete Wavelet Transforms (DWT) for multi-scale context modeling as a potentially more computationally efficient alternative to dense attention mechanisms. ([Ref Paper Link](https://arxiv.org/abs/2205.14375))
-      * **(Stretch Goal) Ensemble Model:** Implementation of an ensemble method (e.g., weighted averaging of predictions) combining the outputs of the best-performing newly implemented models (e.g., Attention-based + PIP-Net) to potentially maximize overall classification accuracy and robustness.
+      * **3D WaveMix Adaptation:** Implementation adapting the WaveMix concept, using 3D Discrete Wavelet Transforms (DWT) for multi-scale context modeling as a potentially more computationally efficient alternative to dense attention mechanisms. ([Ref Paper Link](https://arxiv.org/abs/2205.14375))
+      * **(Stretch Goal) 3D PIP-Net Adaptation:** Implementation adapting the Patch-based Intuitive Prototypes Network (PIP-Net) for 3D volumetric data. This aims to provide interpretable classification by learning representative 3D prototypical patches and utilizing a sparse scoring-sheet reasoning mechanism. ([Ref Paper Link](https://openaccess.thecvf.com/content/CVPR2023/papers/Nauta_PIP-Net_Patch-Based_Intuitive_Prototypes_for_Interpretable_Image_Classification_CVPR_2023_paper.pdf))
+      * **(Stretch Goal) Ensemble Model:** Implementation of an ensemble method (e.g., weighted averaging of predictions) combining the outputs of the best-performing newly implemented models (e.g., Attention-based + WaveMix) to potentially maximize overall classification accuracy and robustness.
 
    2. **Analysis, Documentation, and Tests:**
-      * **Comparative Analysis:** Deep comparative analysis of the implemented architectures against the ResNet-50 baseline, using standard classification metrics (F1 score, sensitivity/recall, specificity, accuracy, AUC, loss curves) and computational performance metrics (inference time, training time, GPU memory usage). Results will be presented clearly, likely with tables and plots.
+      * **Comparative Analysis:** Deep comparative analysis of the implemented architectures against the ResNet-50 baseline, using standard classification metrics (F1 score, sensitivity/recall, specificity, accuracy, AUC, loss curves) and computational performance metrics (inference time, training time, GPU memory usage in flops). Results will be presented clearly, with tables and plots.
+      * **Explainable Model Outputs:** Implementation of Grad-CAM and Guided Grad-CAM techniques to provide visual explanations of model decisions, highlighting regions in the 3D volumes that contributed most to classification outcomes, enhancing interpretability and trust in the model predictions.
+      ([Ref Paper Link](https://arxiv.org/abs/1610.02391))
       * **Documentation & Blog Post:** Comprehensive documentation integrated into `cellfinder`'s existing documentation, detailing the new architectures, the rationale for their use, instructions for usage (training, inference), configuration options, and a summary of the comparative analysis findings including advantages and disadvantages of each technique in the `cellfinder` context. A blog post will be written to communicate the project's goals, methods, and key results to the broader community.
       * **Testing:** Robust test suite including unit tests for core functions within the new model implementations (e.g., custom layers, loss functions) and integration tests to ensure the new models integrate correctly with `cellfinder`'s existing data loading, preprocessing, training, and inference pipelines.
 
 ### Implementation Timeline
 
 * **Minimal Set of Deliverables:**
-  1. Model Implementations: **3D CNN + Attention Gate** and **3D PIP-Net Adaptation** (first two bullet points under deliverable 1).
-  2. Analysis, Documentation, and Tests: All items under deliverable 2 covering the implemented models and baseline.
+  1. Model Implementations: **3D CNN + Attention Gate** and **3D WaveMix Adaptation** (first two bullet points under deliverable 1).
+  2. Analysis, Documentation, and Tests: All items under deliverable 2 covering the implemented models and baseline, including Grad-CAM/Guided Grad-CAM implementations.
 
 * **Stretch Goals:**
-  1. Model Implementation: **3D WaveMix Adaptation** (third bullet point under deliverable 1).
+  1. Model Implementation: **3D PIP-Net Adaptation** (third bullet point under deliverable 1).
   2. Model Implementation: **Ensemble Model** (fourth bullet point under deliverable 1).
-  3. Exploration of **Self-Supervised Pre-training** for model backbones.
 
-* **Weekly Timeline** (Approx. 40 hours/week; Aligned with GSoC 2025 Dates)
+* **Weekly Timeline** (Approx. 40 hours/week)
 
 | **Dates** | **GSoC Phase** | **Key Tasks & Milestones** |
 |-----------|----------------|----------------------------|
-| May 8 – June 1 | **Community Bonding** | - Finalize architecture details (backbones, attention type, PIP-Net specifics) with mentors.<br>- Deep dive into `cellfinder` classification codebase & data handling.<br>- Set up environment & baseline ResNet benchmarking framework. |
+| May 8 – June 1 | **Community Bonding** | - Finalize architecture details (backbones, attention type, WaveMix specifics) with mentors.<br>- Deep dive into `cellfinder` classification codebase & data handling.<br>- Set up environment & baseline ResNet benchmarking framework. |
 | June 2 – June 22 | **Weeks 1-3** | - Implement **3D CNN + Attention Gate** model.<br>- Integrate into `cellfinder`.<br>- Develop/adapt training script. Unit tests. Initial training/debugging. |
-| June 23 – July 6 | **Weeks 4-5** | - Tune & rigorously train Attention model.<br>- **Benchmark #1:** Compare Attention vs. ResNet-50 (Accuracy, Speed etc.).<br>- Analyze results, start documentation/blog draft. |
-| July 7 – July 13 | **Week 6** | - Finalize Attention model benchmarking & analysis.<br>- Prepare Midterm Evaluation materials.<br>- Plan detailed implementation for 3D PIP-Net adaptation. |
-| July 14 – July 18 | **Midterm Evaluation** | - Submit evaluation. Discuss progress & PIP-Net plan. |
-| July 19 – Aug 10 | **Weeks 7-9** | - Implement **3D PIP-Net adaptation** (architecture, 3D losses, 2-phase training).<br>- Integrate into `cellfinder`. Unit tests. Initial training/debugging (both phases). |
-| Aug 11 – Aug 24 | **Weeks 10-11** | - Tune & rigorously train/evaluate PIP-Net.<br>- **Benchmark #2:** Compare PIP-Net vs. ResNet/Attention.<br>- **Begin Stretch Goals:** Start WaveMix/Ensemble if time permits.<br>- Write integration tests for both models. |
-| Aug 25 – Sep 1 | **Week 12 (Final)** | - **Finalize Minimal Deliverables:** Complete code, benchmarks, tests, documentation, blog post for Attention & PIP-Net models.<br>- Finalize stretch goals if undertaken. Prepare code PRs. Submit final work. |
-| Sep 1 – Sep 8 | **Mentor Evaluation** | - Address final feedback. Ensure smooth handover. |
+| June 23 – July 6 | **Weeks 4-5** | - Tune & rigorously train Attention model.<br>- **Benchmark #1:** Compare Attention based CNN vs. ResNet-50 (all metrics).<br>- Begin implementing Grad-CAM and Guided Grad-CAM visualization techniques.<br>- Analyze results, start documentation/blog draft. |
+| July 7 – July 13 | **Week 6** | - Finalize Attention model benchmarking & analysis.<br>- Complete Grad-CAM implementation for the Attention model .<br>- Plan detailed implementation for 3D WaveMix adaptation. |
+| July 14 – July 18 | **Midterm Evaluation** | - Submit evaluation. Discuss progress & WaveMix plan. |
+| July 19 – Aug 10 | **Weeks 7-9** | - Implement **3D WaveMix adaptation**.<br>- Integrate into `cellfinder`. Unit tests. Initial training/debugging.<br>- Extend Grad-CAM implementation to work with WaveMix architecture. |
+| Aug 11 – Aug 24 | **Weeks 10-11** | - Tune & rigorously train/evaluate WaveMix.<br>- **Benchmark #2:** Compare WaveMix vs. ResNet and Attention based CNN.<br>- Finalize Guided Grad-CAM implementation for all models.<br>- **Begin Stretch Goals:** Start PIP-Net/Ensemble (more focus on Ensemble Techniques) if time permits.<br>- Write integration tests for both models. |
+| Aug 25 – Sep 1 | **Week 12 (Final)** | - **Finalize Minimal Deliverables:** Complete code, benchmarks, tests, documentation, blog post for Attention & WaveMix models and explainability techniques.<br>- Finalize stretch goals if undertaken. Prepare code PRs. Submit final work. |
 
 ### Project Length
 Large (350 hours)
 
-*(Justification: Implementing and thoroughly evaluating two distinct and potentially complex deep learning architectures (Attention-based and Prototype-based) in 3D, including necessary adaptations, training, rigorous benchmarking against a baseline, plus documentation and testing, requires a significant time investment suitable for a large project.)*
+*(Justification: Implementing and thoroughly evaluating two distinct and potentially complex deep learning architectures (Attention-based and WaveMix-based) in 3D, including necessary adaptations, training, rigorous benchmarking against a baseline, plus explainability techniques, documentation and testing, requires a significant time investment suitable for a large project.)*
 
 ### Communication plan
 I plan to dedicate approximately **40 hours per week** to this project (as stated in Availability). My communication strategy involves:
 * Frequent asynchronous updates (aiming for daily or every other day) on progress, blockers, and findings via the BrainGlobe Zulip channel (`#cellfinder` stream) and relevant GitHub issues/PRs.
-* Weekly synchronous video calls (e.g., Zoom/Google Meet) with mentors (@IgorTatarnikov, @alessandrofelder) for in-depth discussion, feedback, and planning.
+* Weekly video calls (e.g., Zoom/Google Meet) with mentors (@IgorTatarnikov, @alessandrofelder) for in-depth discussion, feedback, and planning.
 * Prompt responses to mentor feedback and community questions.
 * Maintaining clear commit messages and PR descriptions documenting changes.
 
@@ -100,3 +99,11 @@ From the program, I expect to build meaningful connections with researchers and 
 
 ### Are you also applying to projects with other organisations in GSoC 2025?
 No, I am applying only to this project.
+
+***
+
+## Mini-proposal for working on API of the detect and classify module
+
+Apart from the work plan in the proposal described above, I would like to take on an additional work during this period of time. That includes finishing up my work on refactoring and clarifying the API as stated in my PR (in **Code Contribution**).
+
+That seems like a very interesting problem from a software point-of-view and as suggested by @alessandrofelder in his review, I would love to devote some time to this as well. 
