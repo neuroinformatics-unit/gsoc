@@ -14,7 +14,7 @@ Please include the following information:
 
 - **Proposal discussion link**
 
-    TODO
+    [#87](https://github.com/neuroinformatics-unit/gsoc/pull/87)
 
 ## Project proposal
 
