@@ -10,7 +10,7 @@ Please use the following template to submit your application to the NIU GSoC 202
 The more closely you follow this template, the easier it will be for us to review your application! Please include clear headings for all the different sections.
 
 ## Project title
-Follow the following format for the proposal title: `<Package Name>:<Project Name> (<Your-Name>)` and provide it in your pull request as a new markdown file of the same name, i.e.   `<Package Name>:<Project Name> (<Your-Name>).md`
+Follow the following format for the proposal title: `<Package Name>-<Project Name> (<Your-Name>)` and provide it in your pull request as a new markdown file of the same name, i.e.   `<Package Name>-<Project Name> (<Your-Name>).md`
 
 E.g. "movement: support for Kalman filters (Jane Doe)". 
 
@@ -18,12 +18,12 @@ Please use the same title when you submit your proposal to the GSoC application 
 
 ## Personal details
 Please include the following information:
-- **Full name**  
-- **Email** 
+- **Full name** (include preferred name if desired)
+- **Email**
 - **GitHub username**
-- **Zulip username**  
-- **Location & time-zone** 
-- **Personal website / project portfolio** 
+- **Zulip username**
+- **Location & time-zone**
+- **Personal website / project portfolio** (optional)
 - **Code contribution**
 
     Please link a pull request, ideally submitted to your chosen project or one of the NIU tools. Applications without a code contribution won't be considered. It must be publicly visible and represent your own work, although you may have help from other developers in the community to further improve it. It must be meaningful code contribution (i.e. not just fixing a minor spelling mistake). While AI tools (such as Copilot etc) can be a very useful, contributions mostly created by AI are unlikely to be useful, and will not be accepted. You can link more than one pull request if desired.
@@ -31,7 +31,6 @@ Please include the following information:
 - **Proposal discussion link**
 
     Please link to the pull request where you discussed your project proposal with the community. 
-    
 
 ## Project proposal 
 _Length: max 1 page_
@@ -44,14 +43,7 @@ _Length: max 1 page_
 
     Please include the following information:
     1. A bullet point list with **minimal set of deliverables**
-    1.Modify existing atlas packaging code to output atlas data conforming to the OpenMINDS SANDS standard.
-    2.Adapt at least one packaging script (e.g., the Allen Human atlas script) to incorporate this new functionality.
-    3.Develop comprehensive tests covering all new and modified features.
-    4.Update the documentation to guide users on how to generate and utilize OpenMINDS SANDS‑compliant atlases.
     2. Additional **stretch goals** or "if time allows" deliverables (optional)
-    1.Extend support for additional species or imaging modalities.
-    2.Integrate schema validation using tools like jsonschema to ensure full compliance with OpenMINDS SANDS.
-    3.Create a conversion utility for existing atlas packages to the new standard.
     3. A detailed **weekly timeline**: when do you plan to do what? 
         - Please use a week as a minimal unit of time, and include any planned vacations or other commitments. 
         - This timeline could be formatted as a table. 
@@ -72,7 +64,6 @@ _Length: max 0.75 page_
 - **Past experience.** 
 
     Please describe your past experience with programming, open source, or any other experience you deem relevant for the project you are applying for. Any successful open source projects, published work or content of the like should definitely be highlighted.
-
 - **Motivation: why this project?**
 
     Why are you interested in this specific project? What aspects of it motivate you to work on it? How does it link to your personal or professional interests? How do you envision its impact in the open source community?
@@ -92,3 +83,5 @@ _Length: max 0.25 page_
     What do you expect from the program?
 
 - **Are you also applying to projects with other organisations in GSoC 2025?**
+
+    If so, which ones? What would be your preference in case of a tie?
