@@ -18,7 +18,6 @@ Please include the following information:
 - **GitHub username** MoffittAndrew
 - **Zulip username** Andrew Moffitt
 - **Location & time-zone** Edinburgh, UK (BST, UTC +01:00)
-- **Personal website / project portfolio** (optional)
 - **Code contribution**
 
     Please link a pull request, ideally submitted to your chosen project or one of the NIU tools. Applications without a code contribution won't be considered. It must be publicly visible and represent your own work, although you may have help from other developers in the community to further improve it. It must be meaningful code contribution (i.e. not just fixing a minor spelling mistake). While AI tools (such as Copilot etc) can be a very useful, contributions mostly created by AI are unlikely to be useful, and will not be accepted. You can link more than one pull request if desired.
