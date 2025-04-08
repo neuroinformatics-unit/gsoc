@@ -63,7 +63,6 @@ Please include the following information:
 
 ## Personal statement
 
-
 - **Past experience.** 
   
     **1.	Experience with Data science, Deep learning and machine learning:** 
