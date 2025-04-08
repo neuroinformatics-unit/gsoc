@@ -47,24 +47,25 @@ _Length: max 0.75 page_
 - **Past experience.** 
 
     Please describe your past experience with programming, open source, or any other experience you deem relevant for the project you are applying for. Any successful open source projects, published work or content of the like should definitely be highlighted.
+
 - **Motivation: why this project?**
 
     Why are you interested in this specific project? What aspects of it motivate you to work on it? How does it link to your personal or professional interests? How do you envision its impact in the open source community?
+
 - **Match: why you?**
 
     Why should we choose you for this project? What unique skills or experiences can you bring to the project and the community? Is there something you have worked on in the past that makes you particularly well-suited for this project?
+
 - **Availability**
 
-    Please state if you have any other plans for the work period (school work, another job, planned vacation)? If so, how do you plan to combine them with your GSoC work?
+    I have exams until the 23rd of May, however I will still be free to participate during the community bonding period (but unable to commit large portions of my time). I will be unavailable during the week beginning 30th June, and the week beginning 4th August, leaving 10 weeks during the standard coding period in which I can work 35 hours a week to allow enough time to complete the project. I will also be unavailable during the week beginning the 1st September - this is after the standard coding period ends, but will have an impact if the time to complete the project is extended.
 
 ## GSoC
 
-_Length: max 0.25 page_
-
 - **GSoC experience**
 
-    What do you expect from the program?
+    From this program, I am hoping to gain valuable experience working with a mentor who has in-depth knowledge and experience in the world of open source, 
 
 - **Are you also applying to projects with other organisations in GSoC 2025?**
 
-    If so, which ones? What would be your preference in case of a tie?
+    I am not applying to any other projects.
