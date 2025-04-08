@@ -26,7 +26,7 @@
 
 2. **Why is it important and how would the Open-Source Community benefit from this project?** 
    
-   From my minimal knowledge about neuroscience, I realize that manual  cell labelling is a very hectic task from a scientists’    perspective. So automatic and accurate detection and  classification using Deep Learning based systems become   important so that more time can be devoted to post analysis.  them greatly.
+   From my limited knowledge about neuroscience, I realize that manual  cell labelling is a very hectic task from a scientists’    perspective. So automatic and accurate detection and  classification using Deep Learning based systems become   important so that more time can be devoted to post analysis.
 
 3. **What are the deliverables?** 
    
@@ -55,11 +55,11 @@
   1. Model Implementation: **3D PIP-Net Adaptation** (third bullet point under deliverable 1).
   2. Model Implementation: **Ensemble Model** (fourth bullet point under deliverable 1).
 
-* **Weekly Timeline** (Approx. 40 hours/week)
+* **Weekly Timeline** (Approx. 25-30 hours/week)
 
 | **Dates** | **GSoC Phase** | **Key Tasks & Milestones** |
 |-----------|----------------|----------------------------|
-| May 8 – June 1 | **Community Bonding** | - Finalize architecture details (backbones, attention type, WaveMix specifics) with mentors.<br>- Deep dive into `cellfinder` classification codebase & data handling.<br>- Set up environment & baseline ResNet benchmarking framework. |
+| May 8 – June 1 | **Community Bonding** | - Perfrom  trials with architecture types  (backbones, attention type, WaveMix specifics) after discussion with mentors.<br>- Deep dive into `cellfinder` classification codebase & data handling.<br>- Set up environment & baseline ResNet benchmarking framework. |
 | June 2 – June 22 | **Weeks 1-3** | - Implement **3D CNN + Attention Gate** model.<br>- Integrate into `cellfinder`.<br>- Develop/adapt training script. Unit tests. Initial training/debugging. |
 | June 23 – July 6 | **Weeks 4-5** | - Tune & rigorously train Attention model.<br>- **Benchmark #1:** Compare Attention based CNN vs. ResNet-50 (all metrics).<br>- Begin implementing Grad-CAM and Guided Grad-CAM visualization techniques.<br>- Analyze results, start documentation/blog draft. |
 | July 7 – July 13 | **Week 6** | - Finalize Attention model benchmarking & analysis.<br>- Complete Grad-CAM implementation for the Attention model .<br>- Plan detailed implementation for 3D WaveMix adaptation. |
@@ -92,7 +92,7 @@ While looking for project that might interest me, I came across cellfinder's pro
 I believe my expertise in classification based models which I have learnt while working on my BS Thesis, makes me a good fit for this particular project. I also have Open Source Contribution experience during my last stint as a GSoC contributor in 2023. Both of these make me confident that I would be able to contribute greatly to a project of such importance.
 
 ### Availability
-I am ready to devote 40 hours a week during my GSoC period. I am not taking part in any other internships or projects during this period.
+I am ready to devote 25-30 hours a week during my GSoC period. I am not taking part in any other internships or projects during this period.
 
 ## GSoC
 
