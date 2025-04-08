@@ -74,7 +74,7 @@ Large (350 hours)
 *(Justification: Implementing and thoroughly evaluating two distinct and potentially complex deep learning architectures (Attention-based and WaveMix-based) in 3D, including necessary adaptations, training, rigorous benchmarking against a baseline, plus explainability techniques, documentation and testing, requires a significant time investment suitable for a large project.)*
 
 ### Communication plan
-I plan to dedicate approximately **40 hours per week** to this project (as stated in Availability). My communication strategy involves:
+I plan to dedicate approximately **25-30 hours per week** to this project (as stated in Availability). My communication strategy involves:
 * Frequent asynchronous updates (aiming for daily or every other day) on progress, blockers, and findings via the BrainGlobe Zulip channel and relevant GitHub issues/PRs.
 * Weekly video calls (e.g., Zoom/Google Meet) with mentors (@IgorTatarnikov, @alessandrofelder) for in-depth discussion, feedback, and planning.
 * Prompt responses to mentor feedback and community questions.
