@@ -54,7 +54,7 @@ The reason why this specific project interests me the most is because I am deepl
 I believe I match quite well with this project as it pertains to my personal interests as well my professional and academic ones due in part to my experience with neuroscience and programming. My hands-on experience with neural data and my background in python should be the right technical fit for developing the widget. Although I haven't worked exactly with widget creation before, I believe my coding contribution for BrainGlobe and my previously mentioned projects should indicate my adaptiveness and willingness to learn new technologies in order to achieve my goal for any project. Plus, I am very willing to learn and collaborate with a community of neuroscience and programming enthusiasts such as myself.
 
 ### Availability
-For available, I should be available for most of the summer with the exception of the first two weeks as my school is on a quarterly system so that would mean that my final exams do end at around June 12th so, I was hoping to coordinate my mentor the beginning of week 1 a bit further than the start of June 1st in order to properly acclimate at the start of the project.
+For availability, I should be available for most of the summer with the exception of the first two weeks as my school is on a quarterly system so that would mean that my final exams do end at around June 12th so, I was hoping to coordinate my mentor the beginning of week 1 a bit further than the start of June 1st in order to properly acclimate at the start of the project.
 
 ## GSoC
 
