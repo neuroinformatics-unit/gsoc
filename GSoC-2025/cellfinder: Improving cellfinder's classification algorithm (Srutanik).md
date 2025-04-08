@@ -75,7 +75,7 @@ Large (350 hours)
 
 ### Communication plan
 I plan to dedicate approximately **40 hours per week** to this project (as stated in Availability). My communication strategy involves:
-* Frequent asynchronous updates (aiming for daily or every other day) on progress, blockers, and findings via the BrainGlobe Zulip channel (`#cellfinder` stream) and relevant GitHub issues/PRs.
+* Frequent asynchronous updates (aiming for daily or every other day) on progress, blockers, and findings via the BrainGlobe Zulip channel and relevant GitHub issues/PRs.
 * Weekly video calls (e.g., Zoom/Google Meet) with mentors (@IgorTatarnikov, @alessandrofelder) for in-depth discussion, feedback, and planning.
 * Prompt responses to mentor feedback and community questions.
 * Maintaining clear commit messages and PR descriptions documenting changes.
