@@ -13,6 +13,14 @@ Please include the following information:
 - **Location & time-zone** Atlanta, Georgia, United States, EST
 - **Personal website/project portfolio** https://github.com/shraddha5bharadwaj
 
+- **Code contribution**
+    - I have contributed to an open-source project to build a tool to preprocess single-cell RNA processing annotated data with multistep workflow offering algorithms for Denoising and Dimensionality reduction making the data suitable for downstream processing. [https://github.com/bayeslabs/scFlash]
+    - I am one of the original authors of this tool and have not made a pull request as we migrated the completed repository, small changes to main were made before release as a Python package. The design patterns used in this project are similar to pytorch lightning.
+    - Please find a link to one of my contributions which is an implementation of dimensionality reduction using Variational Autoencoder - https://github.com/bayeslabs/scFlash/blob/main/scFlash/Dim_reduction/VAE.py
+    - Here is a link to the commit history with my username shraddha5bharadwaj - https://github.com/bayeslabs/scFlash/commits/main/ 
+    - Here is a link to the documentation of the testing of the tool against benchmarks authored by me - https://shraddhabharadwaj.medium.com/scflash-python-library-for-scrna-preprocessing-867eeaadbd85
+    -  You can find the released Python package here - https://pypi.org/project/scFlash/#description
+    - I have two years of work experience with Git repository management and have a good understanding of code review, pull requests, fork, branching and merging and conflict resolution.
 
 ## Project proposal 
 
@@ -68,6 +76,10 @@ Please include the following information:
         - Aug 12 - Aug 18 
             - Test the data wrapper, data aggregator and engineering algorithms, and the Kalman Filter and prepare for release.
         - Aug 19 - Aug 25 GSoC contributors submit their final work product and their final mentor evaluation.
+    3. Contribution Hours
+        - The project chosen is a Medium (~175 hours).
+        - Each week I am able to contribute 20 hours.
+        - Totally I am able to contribute roughly 240 hours for the project.
 
 
 - **Communication plan**
@@ -102,9 +114,10 @@ Please include the following information:
 - **Motivation: why this project?**
 
     This project is a very good amalgamation of my interests in behavior and spike data analysis, computational tool development, and mathematical modeling and analysis. I have experience in working with niche data that requires specialized and accurate data processing and workflow building. Movement is one such package that can help beneficial inferences from data by allowing innovative features that will help in important inference and I want to be part of its community.
+    
 - **Match: why you?**
 
-    I have worked in the past on using Kalman filters and also analysis of neuroinformatics data. I have transcriptomics and phylogenetics and I have realised how important data aggregation tools are. Biological data analysis requires multiple levels. Of analysis I myself search for the best tool that can help me process the data as I need. Being able to integrate multiple tools seamlessly for a scientifically significant analysis is any researcher's requirement and sometimes a cause for roadblocks when required tolls are not present I want to be part of a community that solves that and this is such an opportunity for me.
+    I have worked in the past on using Kalman filters and also analysis of neuroinformatics data. I have worked with transcriptomics and phylogenetics data and I have realised how important data aggregation and analysis tools are. Biological data analysis requires multiple levels of analysis. I myself search for the best tool that can help me process the data as I need. Being able to integrate multiple tools seamlessly for a scientifically significant analysis is any researcher's requirement and sometimes a cause for roadblocks when required tools are not present. I want to be part of a community that solves that and this is such an opportunity for me.
 
 - **Availability**
 
@@ -116,10 +129,10 @@ Please include the following information:
 - **GSoC experience**
 
     - In-depth look into the workings of mathematical trajectory modeling.
-    - Achieve clean data handling and aggregation.
+    - Achieve clean data handling and aggregation modules that can be used dor downstream analysis.
     - Become an open source contributor for a tool
     - Experiment and learn integrations of latent factor modeling into computational frameworks.
 
 - **Are you also applying to projects with other organizations in GSoC 2025?**
 
- Nothing else, I came across this package which is very close to what I have been working on in the past year, and am applying to this out of pure enthusiasm for behavior modelling
+ Nothing else, I came across this package which is very close to what I have been working on in the past year, and am applying to this out of pure enthusiasm for behavior modeling\
