@@ -13,7 +13,7 @@
 - **Code Contributions**:
   - [PR: Test scene from sample data #543](https://github.com/neuroinformatics-unit/movement/pull/543#issuecomment-2781009563)
 - **Proposal Discussion**:
-  - [Discussion PR](https://github.com/neuroinformatics-unit/movement/pull/543#issuecomment-2781009563)
+  - [Discussion PR](https://github.com/neuroinformatics-unit/gsoc/pull/77)
 
 ---
 
@@ -30,43 +30,39 @@ This project aims to build a modern, web-based GUI for the `movement` package, a
 
 #### Minimal Set of Deliverables
 - **Interactive Trajectory Viewer** - Build an intuitive interface to visualize keypoint trajectories over time, with zoom, pan, and playback controls.
-
 - **File Loader & Video Sync** - Load pose estimation data and synchronize it with video playback, overlaying trajectories frame-accurately.
-
 - **Live Filter Tuning** - Integrate Kalman and particle filters with sliders or input fields to tune parameters in real time.
-
 - **Batch Processing Interface** - Support filtering and analyzing multiple sessions in one go, with options to manage large datasets easily.
-
 - **Export & Sharing Tools** - Enable users to export processed results as videos, plots, or structured files (like CSV), ready for sharing or downstream analysis.
 
 #### Stretch Goals *(If Time Permits)*
 
 - **Authentication & Session Storage** - Add user login and the ability to save filter settings and sessions.
-
 - **Side-by-Side Filter Comparison** - Allow parallel comparison of different filtering strategies on the same trajectory.
-
 - **Cloud Dataset Integration** - Connect with platforms like Google Drive or AWS S3 to load/save data from the cloud.
+- **Real-Time Streaming Support** - Visualize trajectories live from incoming pose estimation streams via WebSockets or REST APIs.
 
----
+
 ### Google Summer of Code 2025 – Weekly Timeline
 
-| **Week & Dates**                  | **Hours/week** | **Tasks & Deliverables**                                                                                                 |
-|----------------------------------|----------------|--------------------------------------------------------------------------------------------------------------------------|
-| **Community Bonding (May 8 – June 1)**   | 10             | - Finalize technology stack and architecture<br>- Design initial UI wireframes and mockups<br>- Explore relevant `napari` plugins for visualization<br>- Engage with mentors to finalize scope and milestones |
-| **Week 1 (June 2 – June 8)**            | 20             | - Implement the file upload module for user data (JSON/CSV formats)<br>- Develop the basic trajectory plotting component using `napari` viewer<br>- Integrate basic zoom and pan functionality for trajectory inspection |
-| **Week 2 (June 9 – June 15)**           | 20             | - Design and build the trajectory filtering interface (e.g., by subject, body part, or confidence threshold)<br>- Connect filtering parameters to the backend logic for real-time updates<br>- Modularize codebase for scalability |
-| **Week 3 (June 16 – June 22)**          | 18             | - Integrate interactive controls for parameter tuning with live plot refresh<br>- Introduce color-coded visualization based on uncertainty or confidence levels<br>- Refine UI responsiveness and state management |
-| **Week 4 (June 23 – June 29)**          | 20             | - Develop video overlay system to superimpose pose trajectories over video frames<br>- Synchronize pose playback with video timeline controls<br>- Add seek, pause, and frame-by-frame navigation support |
-| **Week 5 (June 30 – July 6)**           | 20             | - Implement batch processing support for multiple datasets<br>- Enable export of filtered trajectories in user-defined formats (CSV/JSON)<br>- Ensure metadata preservation during export |
-| **Week 6 (July 7 – July 13)**           | 20             | - Finalize the core pipeline: data upload → filter → visualize → playback → export<br>- Conduct code cleanup and add docstrings/comments<br>- Prepare and submit midterm deliverables and documentation |
-| **Midterm Evaluation (July 14 – July 18)** | —              | - Submit midterm evaluation form and mentor feedback<br>- Present a working demo showcasing key features and progress so far |
-| **Week 7 (July 14 – July 20)**          | 18             | - Add session management features: configuration save/load, state persistence<br>- Introduce support for selecting and comparing multiple tracked subjects<br>- Begin handling edge cases in user inputs |
-| **Week 8 (July 21 – July 27)**          | 20             | - Develop reporting tools for exporting summaries (CSV, PDF) with trajectory statistics<br>- Add ability to capture and export annotated screenshots of visualizations<br>- Ensure compatibility with major OS and browsers |
-| **Week 9 (July 28 – August 3)**         | 20             | - Enhance timeline controls: zoom in/out, play speed adjustment, and hover tooltips<br>- Optimize large dataset performance and improve rendering speed<br>- Conduct end-to-end tests with real sample data |
-| **Week 10 (August 4 – August 10)**      | 15             | - Polish overall UI/UX: align design consistency, add animations, improve layout<br>- Improve accessibility (keyboard navigation, alt-texts)<br>- Fix minor bugs from community testing feedback |
-| **Week 11 (August 11 – August 17)**     | 12             | - Finalize all documentation (developer guide, user manual, setup instructions)<br>- Conduct usability testing sessions with sample users<br>- Prepare feedback form and implement last-minute improvements |
-| **Week 12 (August 18 – August 25)**     | 10             | - Freeze the codebase and tag final release version<br>- Submit all final deliverables and evaluation<br>- Publish project blog post summarizing contributions, learnings, and future scope |
-| **Post-GSoC (August 26 onwards)**       | —              | - Continue refining features and performance<br>- Extend support for other file formats and datasets<br>- Engage with the community and contribute to issue tracking, documentation, and future roadmap |
+| Week & Dates                        | Hours/week | Tasks and Deliverables |
+|------------------------------------|------------|-------------------------|
+| **Community Bonding (May 8 – June 1)** | 10         | • Explore relevant napari plugins and collaborate with mentors to define the project scope and milestones  <br> • Finalize the overall technology stack, UI wireframes, and system architecture for the tool |
+| **Week 1 (June 2 – June 8)**       | 20         | • Implement the file upload module for user data (JSON/CSV formats) <br> • Develop the basic trajectory plotting component using napari viewer <br> • Integrate basic zoom and pan functionality for trajectory inspection |
+| **Week 2 (June 9 – June 15)**      | 20         | • Design and build the trajectory filtering interface (e.g., by subject, body part, or confidence threshold) <br> • Connect filtering parameters to backend logic for real-time updates <br> • Modularize codebase for scalability |
+| **Week 3 (June 16 – June 22)**     | 18         | • Integrate interactive controls for parameter tuning with live plot refresh <br> • Introduce color-coded visualization based on uncertainty levels <br> • Refine UI responsiveness and state management |
+| **Week 4 (June 23 – June 29)**     | 20         | • Develop video overlay system to superimpose pose trajectories over frames <br> • Synchronize pose playback with video timeline controls <br> • Add seek, pause, and frame-by-frame navigation support |
+| **Week 5 (June 30 – July 6)**      | 20         | • Implement batch processing support for multiple datasets <br> • Enable export of filtered trajectories in user-defined formats (CSV/JSON) <br> • Ensure metadata preservation during export |
+| **Week 6 (July 7 – July 13)**      | 20         | • Finalize the core pipeline: data upload → filter → visualize → playback → export <br> • Conduct code cleanup and add docstrings/comments <br> • Prepare and submit midterm deliverables and documentation |
+| **Midterm Evaluation (July 14 – July 18)** | —          | • Submit midterm evaluation form and mentor feedback <br> • Present a working demo showcasing key features and progress so far |
+| **Week 7 (July 14 – July 20)**     | 18         | • Add session management features: configuration save/load, state function <br> • Introduce support for selecting and comparing multiple tracked subjects <br> • Begin handling edge cases in user inputs |
+| **Week 8 (July 21 – July 27)**     | 20         | • Develop reporting tools for exporting summaries (CSV, PDF) with trajectory statistics <br> • Add ability to capture and export annotated screenshots of visualizations ensuring compatibility with major OS and browsers |
+| **Week 9 (July 28 – August 3)**    | 20         | • Enhance timeline controls: zoom in/out, play speed adjustment, and hover tooltips <br> • Optimize large dataset performance and improve rendering speed <br> • Conduct end-to-end tests with real sample data |
+| **Week 10 (August 4 – August 10)** | 15         | • Polish overall UI/UX: design consistency, add animations, improve layout <br> • Improve accessibility (keyboard navigation, alt-texts) <br> • Fix minor bugs from community testing feedback |
+| **Week 11 (August 11 – August 17)**| 12         | • Finalize all documentation (developer guide, user manual, setup instruction) <br> • Conduct usability testing sessions with sample users <br> • Prepare feedback form and implement last-minute improvements |
+| **Week 12 (August 18 – August 25)**| 10         | • Submit all final deliverables and evaluation <br> • Publish project blog post summarizing contributions, and future scope |
+| **Post-GSoC (August 26 onwards)** | —          | • Continue refining features and performance <br> • Engage with the community and contribute to issue tracking, documentation, and future roadmap |
+
 
 ## Communication Plan
 - **Primary Channel**: Zulip (daily async updates)
@@ -96,4 +92,4 @@ I’ll be on a 3-month summer break after my end-semester exams in April, with n
 I see GSoC as an opportunity to contribute meaningfully to open-source and work closely with mentors on impactful projects. This proposal balances scientific relevance with practical usability, and I'm eager to build something that truly helps the community.
 
 ### Other Applications
-I'm applying solely to the Neuroinformatics Unit for GSoC 2025. This project is my top and only choice.
+I'm applying solely to the Neuroinformatics Unit for GSoC 2025. This project is my top and only choice. I am genuinely interested in contributing to this project's goals and see strong alignment with my skills and long-term interests.
