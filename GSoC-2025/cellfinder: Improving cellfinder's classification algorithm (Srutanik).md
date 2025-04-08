@@ -7,6 +7,8 @@
 - **Zulip username:** Srutanik Bhaduri
 - **Location & time-zone:** Bhopal, Madhya Pradesh, India (UTC+5:30)
 - **Personal website / project portfolio:** 
+  * GitHub: [srutanik](https://github.com/srutanik)
+  * LinkedIn: [Srutanik Bhaduri](https://www.linkedin.com/in/srutanik-bhaduri-3a9a691b9/)
 
 - **Code contribution:**
     [https://github.com/brainglobe/cellfinder/pull/513](https://github.com/brainglobe/cellfinder/pull/513)
@@ -24,7 +26,7 @@
 
 2. **Why is it important and how would the Open-Source Community benefit from this project?** 
    
-   Manual cell labelling is a significant bottleneck in neuroscience research. Providing a more accurate, efficient, and potentially interpretable automated classification system within the open-source `cellfinder` tool is crucial. This benefits the BrainGlobe community and neuroscience researchers by saving valuable time, enabling larger-scale analyses, increasing reproducibility, and allowing focus to shift towards scientific interpretation rather than manual annotation.
+   From my minimal knowledge about neuroscience, I realize that manual  cell labelling is a very hectic task from a scientists’    perspective. So automatic and accurate detection and  classification using Deep Learning based systems become   important so that more time can be devoted to post analysis.  them greatly.
 
 3. **What are the deliverables?** 
    
@@ -37,10 +39,10 @@
       * **(Stretch Goal) Ensemble Model:** Implementation of an ensemble method (e.g., weighted averaging of predictions) combining the outputs of the best-performing newly implemented models (e.g., Attention-based + WaveMix) to potentially maximize overall classification accuracy and robustness.
 
    2. **Analysis, Documentation, and Tests:**
-      * **Comparative Analysis:** Deep comparative analysis of the implemented architectures against the ResNet-50 baseline, using standard classification metrics (F1 score, sensitivity/recall, specificity, accuracy, AUC, loss curves) and computational performance metrics (inference time, training time, GPU memory usage in flops). Results will be presented clearly, with tables and plots.
-      * **Explainable Model Outputs:** Implementation of Grad-CAM and Guided Grad-CAM techniques to provide visual explanations of model decisions, highlighting regions in the 3D volumes that contributed most to classification outcomes, enhancing interpretability and trust in the model predictions.
+      * **Comparative Analysis:** Analysis of the implemented architectures against the ResNet-50 baseline, using standard classification metrics (F1 score, sensitivity/recall, specificity, accuracy, AUC, loss curves) and computational performance metrics (inference time, training time, GPU memory usage in flops).
+      * **Explainable Model Outputs:** Implementation of Grad-CAM and Guided Grad-CAM techniques to provide visual explanations of model decisions, highlighting regions in the 3D volumes that contributed most to classification outcomes with the help of saliency maps.
       ([Ref Paper Link](https://arxiv.org/abs/1610.02391))
-      * **Documentation & Blog Post:** Comprehensive documentation integrated into `cellfinder`'s existing documentation, detailing the new architectures, the rationale for their use, instructions for usage (training, inference), configuration options, and a summary of the comparative analysis findings including advantages and disadvantages of each technique in the `cellfinder` context. A blog post will be written to communicate the project's goals, methods, and key results to the broader community.
+      * **Documentation & Blog Post:** Comprehensive documentation integrated into `cellfinder`'s existing documentation, detailing the new architectures, the rationale for their use, instructions for usage (training, inference), configuration options, and a summary of the comparative analysis findings including advantages and disadvantages of each technique in the `cellfinder` context. A blog post will be written to communicate the project's goals, methods, and key results.
       * **Testing:** Robust test suite including unit tests for core functions within the new model implementations (e.g., custom layers, loss functions) and integration tests to ensure the new models integrate correctly with `cellfinder`'s existing data loading, preprocessing, training, and inference pipelines.
 
 ### Implementation Timeline
