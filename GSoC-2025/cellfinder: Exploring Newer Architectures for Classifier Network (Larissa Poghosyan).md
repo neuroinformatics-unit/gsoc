@@ -8,16 +8,16 @@
 - **Location & time-zone** London, UK (GMT+1 British Summer Time)
 - **Personal website / project portfolio** https://github.com/larissapoghosyan
 - **Code contribution**
+    - https://github.com/aimhubio/aim/pull/3319
+    - https://github.com/codezonediitj/pydatastructs/pull/595
     - https://github.com/brainglobe/cellfinder/pull/495
-      
-      This Pull Request adds a significant part of the Vision 
-      Transformers implementation for the classifier network in `cellfinder` project. It's completely compatible with the current abstractions of the library.
+
+      This PR presents a functional proof-of-concept Vision Transformer classifier, fully compatible with existing cellfinder architecture.
 
 - **Proposal discussion link**
     - https://github.com/brainglobe/cellfinder/pull/495
 
-      I used the same PR in the original repository to present the proof-of-concept implementation, list todos, and invite the community to discussion.
-      This PR also presents a structured study, with references to existing codebases, related literature, and open questions for further exploration.
+      This PR presents the PoC implementation, references to related codebases and literature, and invites the community to discussion.
 
 ## Project proposal 
 - **Synopsis**
@@ -29,30 +29,32 @@ This project aims to improve detection accuracy and robustness without increasin
 
 - **Implementation timeline**
 
-    - [x] Implement ViT in Keras, while keeping the classifier network abstractions compatible
-    - [ ] Full-scale training, and quantitative comparison with current ResNet classifier
-    - [ ] Performance testing on CPUs and GPUs
-    - [ ] Changes in BrainGlobe repo using Cellfinder to expose the new functionality
-    - [ ] Add support of loading and fine-tuning pretrained backbone models
-    - [ ] Add unit tests to cover all the changes
-    - [ ] Add documentation
-    - [ ] Write a blogpost
-    - [ ] 2D support for ViT 
+    - Implement ViT in Keras, while keeping the classifier network abstractions compatible
+    - Full-scale training, and quantitative comparison with current ResNet classifier
+    - Performance testing on CPUs and GPUs
+    - Add changes to relevant BrainGlobe repos (e.g., [brainglobe-workflows](https://github.com/brainglobe/brainglobe-workflows/blob/main/brainglobe_workflows/brainmapper/main.py)) to integrate the new functionality into full the workflow.
+    - Add support of loading and fine-tuning pretrained backbone models
+    - Add unit tests to cover all the changes
+    - Add documentation
+    - Write a blogpost
+
+- **Stretch goal:**
+    - Add support for 2D ViT, if the necessary framework and data adjustments for 2D cell detection are completed in time.
 
     ---
 
 | **Week**      | **Dates**         | **Deliverables**   |
 |---------------|-------------------|--------------------|
 | **Week 0** <br>COMMUNITY BONDING | May 8 - Jun 1 | - Refine the existing ViT implementation (current PR).<br>- Start testing on large-scale data.<br>- Finalize benchmarking plan and GPU setup.<br>- Monitor upstream PRs (e.g. #493) for compatibility. |
-| **Week 1**    | Jun 2 - Jun 9     | - Add ViT model configs to the training pipeline.<br>- Set up experiment tracking (e.g. with Weights & Biases) and create a public project board.<br>- Launch full-scale training runs on GPU. |
+| **Week 1**    | Jun 2 - Jun 9     | - Add ViT model configs to the training pipeline.<br>- Set up experiment tracking (e.g. with Weights & Biases) and create a public project board. <br>- Launch full-scale training runs on GPU. <br>- Implement changes in [cellfinder_train CLI](https://github.com/brainglobe/cellfinder/blob/main/cellfinder/core/train/train_yaml.py) to enable the ViT classifier.|
 | **Week 2**    | Jun 10 - Jun 16   | - Begin performance analysis on CPU vs GPU.<br>- Collect accuracy, loss, and training speed metrics.<br>- Compare with current ResNet model.<br>- Log results to experiment tracker. |
 | **Week 3**    | Jun 17 - Jun 23   | - Add support for loading pretrained 3D ViT backbones.<br>- Implement fine-tuning mechanism.<br>- Test with public pretrained ViTs (if available). |
-| **Week 4**    | Jun 24 - Jun 30   | - Modularize architecture selection in CLI, Python API, and Napari plugin.<br>- Continue benchmarking on multiple datasets.<br>- Polish training scripts/configs. |
+| **Week 4**    | Jun 24 - Jun 30   | - Ensure compatibility of external repositories (cellfinder_download, brainmapper) with the new changes. <br>- Modularize architecture selection and Python API. <br>- Continue benchmarking on multiple datasets.<br>- Polish training scripts/configs. |
 | **Week 5** <br>PRE-MIDTERM PREP | Jul 1 - Jul 7    | - Finalize and analyze benchmarking results (ViT vs ResNet).<br>- Sync with mentors for midterm prep.<br>- Address any issues in API/plugin integration. |
 | **Week 6** <br>MIDTERM         | Jul 8 - Jul 14   | - Submit midterm evaluation.<br>- Share benchmarking summary and gather feedback.<br>- Plan next steps with mentor input. |
 | **Week 7**    | Jul 15 - Jul 21   | - Write unit tests for ViT classifier pipeline.<br>- Ensure compatibility with data loader refactor (`#493`).<br>- Begin writing user/developer documentation. |
-| **Week 8**    | Jul 22 - Jul 28   | - Finalize documentation (training, fine-tuning, CLI usage).<br>- Add lightweight support for 2D classification mode.<br>- Validate on small 2D image slices. |
-| **Week 9**    | Jul 29 - Aug 4    | - Add support for advanced ViT variants (DeiT, DINO, Swin).<br>- Integrate backbone selection cleanly into training pipeline.<br>- Run test training on at least one variant. |
+| **Week 8**    | Jul 22 - Jul 28   | - Finalize documentation (training, fine-tuning, CLI usage).<br>- Add lightweight support for 2D classification mode (Stretch Goal)<br> - Implement necessary changes in the Napari plugin to support ViT classifier. |
+| **Week 9**    | Jul 29 - Aug 4    | - Add support for advanced ViT variants (DeiT, DINO, Swin).<br>- Integrate backbone selection cleanly into training pipeline.<br>- Run test training on at least one variant. <br> - Validate on small 2D image slices (Stretch Goal) |
 | **Week 10**   | Aug 5 - Aug 11    | - Complete variant model testing and collect comparison results.<br>- Final cleanup of codebase, refactor and organize files.<br>- Validate full test coverage and model switching. |
 | **Week 11**   | Aug 12 - Aug 18   | - **Code freeze**: finalize codebase for submission.<br>- Write and publish final blog post summarizing work, results, and next steps. |
 | **Week 12** <br>FINAL WEEK      | Aug 19 - Sep 1   | - Submit final GSoC report and code.<br>- Review and respond to mentor feedback.<br>- Ensure documentation is contributor-friendly and future-ready. |
