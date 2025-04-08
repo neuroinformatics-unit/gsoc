@@ -1,30 +1,19 @@
-# Application template
-
-Please use the following template to submit your application to the NIU GSoC 2025 program, and to discuss your proposal with the community. 
-
-The more closely you follow this template, the easier it will be for us to review your application! Please include clear headings for all the different sections.
-
-## Project title
-Follow the following format for the proposal title: `<Package Name>-<Project Name> (<Your-Name>)` and provide it in your pull request as a new markdown file of the same name, i.e.   `<Package Name>-<Project Name> (<Your-Name>).md`
-
-E.g. "movement: support for Kalman filters (Jane Doe)". 
-
-Please use the same title when you submit your proposal to the GSoC application site!
+# datashuttle-Deploy datashuttle as installable package (Andrew Moffitt)
 
 ## Personal details
 Please include the following information:
 - **Full name** Andrew Moffitt
 - **Email** moffittandrew@outlook.com
 - **GitHub username** MoffittAndrew
-- **Zulip username** Andrew Moffitt
+- **Zulip username** Andrew Moffitt (User ID: 890214)
 - **Location & time-zone** Edinburgh, UK (BST, UTC +01:00)
 - **Code contribution**
 
-    Please link a pull request, ideally submitted to your chosen project or one of the NIU tools. Applications without a code contribution won't be considered. It must be publicly visible and represent your own work, although you may have help from other developers in the community to further improve it. It must be meaningful code contribution (i.e. not just fixing a minor spelling mistake). While AI tools (such as Copilot etc) can be a very useful, contributions mostly created by AI are unlikely to be useful, and will not be accepted. You can link more than one pull request if desired.
+    [Add docstring linting (#493)](https://github.com/neuroinformatics-unit/datashuttle/pull/493): Addressing issues [#369](https://github.com/neuroinformatics-unit/datashuttle/issues/369) and [#483](https://github.com/neuroinformatics-unit/datashuttle/issues/483), enforcing linting rules on docstrings and editing/adding docstrings to comply with the rules.
 
 - **Proposal discussion link**
 
-    Please link to the pull request where you discussed your project proposal with the community. 
+    TODO
 
 ## Project proposal 
 _Length: max 1 page_
@@ -49,7 +38,7 @@ _Length: max 1 page_
 
 - **Communication plan**
 
-    Please explain: how do you plan to communicate with your mentor? How often? (e.g., daily or weekly stand-ups, longer meetings..?) What communication channels will you use? (e.g., video calls, Zulip chat...?)
+    I expect to have some kind of active direct message channel with my mentor (for asking for help when needed, sharing short progress updates whenever something is accomplished or seeking review/feedback on a piece of work), and a weekly stand-up meeting (through a video call platform which allows screen sharing, as this will likely be useful) to go over progress over the past week and to plan next steps, ensuring that I am staying on track. I am also flexible to more/less communication, and through different means if that works best for the mentor.
 
 ## Personal statement
 
