@@ -39,36 +39,22 @@ Over the past few days, I have developed a working Jupyter prototype using **mat
 
 ### **Minimal Set of Deliverables**
 
-- Web-based GUI prototype for movement  
-- Support for video and pose data loading (SLEAP, DeepLabCut, LightningPose)  
-- Keypoint overlay and filtering tools (e.g., snout, tail, ear)  
-- Filtering by individual `animal_ids`  
-- Playback controls (play, pause, seek)  
+**A web-based GUI prototype for movement, supporting video and pose data loading (SLEAP, DeepLabCut, LightningPose), with features like keypoint overlays (e.g., snout, tail), animal ID filtering, and basic playback controls** 
 
 ### **Stretch Goals**
 
-- Export annotated frames or videos  
-- Trajectory visualization tools  
-- Notebook-friendly deployment (Binder, Hugging Face Spaces)  
+**Enable export of annotated frames/videos, add trajectory visualization tools, and support deployment in notebook environments like Binder or Hugging Face Spaces.**
 
 ### **Weekly Timeline**
 
-| **Week**              | **Deliverable**                                                                 | **Hours**     |
-|-----------------------|----------------------------------------------------------------------------------|---------------|
-| Community Bonding     | Finalize feature list with mentors, evaluate visualization frameworks           | 11–13 hrs     |
-| Week 1                | Set up project structure, initialize Dash/Plotly-based GUI scaffold              | 14–15 hrs     |
-| Week 2                | Implement video and pose data loading (SLEAP, DLC, LightningPose)                | 19–21 hrs     |
-| Week 3                | Add keypoint overlay logic, build filtering UI for body parts                    | 17–20 hrs     |
-| Week 4                | Add animal_id-based filtering, implement frame navigation and playback controls  | 19–22 hrs     |
-| Week 5                | Polish core UI, integrate components, and begin user testing in notebooks        | 8–10 hrs      |
-| Week 6                | Implement trajectory visualization and refine interactive controls               | 17–19 hrs     |
-| Week 7                | Add export functionality for annotated frames/videos                             | 21–23 hrs     |
-| Week 8                | Optimize performance, finalize filtering interactions                            | 20–22 hrs     |
-| Week 9                | Test in Colab, Binder, and other notebook environments                           | 8–10 hrs      |
-| Week 10               | Final UI polish, bug fixes, and small enhancements                               | 8–10 hrs      |
-| Week 11               | Write documentation, develop user guide, prepare for code freeze                 | 8–10 hrs      |
-| Week 12               | Record final walkthrough video, prepare for final submission and wrap-up         | 7–9 hrs       |
-| **Total**             |                                                                                  | **~175 hrs**  |
+| **Phase**                         | **Weeks**              | **Deliverables**                                                                                                              | **Estimated Hours** |
+|----------------------------------|------------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------|
+| **Planning & Setup**             | Community Bonding + Week 1 | - Finalize feature list with mentors  <br> - Evaluate visualization frameworks  <br> - Set up project structure  <br> - Initialize Dash/Plotly-based GUI scaffold | 25–28 hrs           |
+| **Data Integration**             | Weeks 2–3              | - Implement video and pose data loading (SLEAP, DLC, LightningPose)  <br> - Add keypoint overlay logic  <br> - Build filtering UI for body parts                  | 36–41 hrs           |
+| **Interactivity & Filtering**    | Weeks 4–5              | - Implement frame navigation and playback controls  <br> - Add animal_id-based filtering  <br> - Polish UI and integrate components for testing                   | 27–32 hrs           |
+| **Advanced Visualization**       | Weeks 6–7              | - Implement trajectory visualization  <br> - Refine interactive controls  <br> - Add export functionality for annotated frames/videos                             | 38–42 hrs           |
+| **Optimization & Compatibility** | Weeks 8–9              | - Optimize performance  <br> - Finalize filtering interactions  <br> - Test in Colab, Binder, and other notebook environments                                    | 28–32 hrs           |
+| **Finalization & Submission**    | Weeks 10–12            | - Final UI polish and bug fixes  <br> - Write documentation and user guide  <br> - Record walkthrough video  <br> - Final submission prep                         | 23–29 hrs           |
 
 ---
 
