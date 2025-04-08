@@ -14,7 +14,7 @@
 
 - **Proposal discussion link**
 
-	
+	https://github.com/neuroinformatics-unit/gsoc/pull/64
 
 
 
@@ -42,7 +42,7 @@
 
 - **Implementation Timeline:**
 
-	(*~35 hours per week*)  
+	(*~30 hours per week*)  
 
   | Time    | Goals    |
   |-------|---------------------|
