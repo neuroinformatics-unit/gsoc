@@ -1,87 +1,65 @@
-# Application template
-
-> [!CAUTION]
-> Do not edit this template directly!
-> Instead use it to open a new PR as explained in the [README](../README.md#steps).
-
-
-Please use the following template to submit your application to the NIU GSoC 2025 program, and to discuss your proposal with the community. 
-
-The more closely you follow this template, the easier it will be for us to review your application! Please include clear headings for all the different sections.
-
-## Project title
-Follow the following format for the proposal title: `<Package Name>:<Project Name> (<Your-Name>)` and provide it in your pull request as a new markdown file of the same name, i.e.   `<Package Name>:<Project Name> (<Your-Name>).md`
-
-E.g. "movement: support for Kalman filters (Jane Doe)". 
-
-Please use the same title when you submit your proposal to the GSoC application site!
+# BrainGlobe: Implementing Atlas-Registered Data Visualization in brainrender-napari (Tanmmay Koli)
 
 ## Personal details
-Please include the following information:
-- **Full name** (include preferred name if desired)
-- **Email**
-- **GitHub username**
-- **Zulip username**
-- **Location & time-zone**
-- **Personal website / project portfolio** (optional)
-- **Code contribution**
+- **Full name**: Tanmmay Koli  
+- **Email**: tanmmaykoli@gmail.com  
+- **GitHub username**: TanmmayKoli  
+- **Zulip username**: Tanmmay Koli  
+- **Location & time-zone**: Davis, California, US / GMT -7  
+- **Personal website**: [www.linkedin.com/in/tanmmay-koli-068a992a6](https://www.linkedin.com/in/tanmmay-koli-068a992a6)  
+- **Code contribution**: [PR #195](https://github.com/brainglobe/brainrender-napari/pull/195)  
+- **Proposal discussion link**: [neuroinformatics-unit/gsoc#79](https://github.com/neuroinformatics-unit/gsoc/pull/79)  
 
-    Please link a pull request, ideally submitted to your chosen project or one of the NIU tools. Applications without a code contribution won't be considered. It must be publicly visible and represent your own work, although you may have help from other developers in the community to further improve it. It must be meaningful code contribution (i.e. not just fixing a minor spelling mistake). While AI tools (such as Copilot etc) can be a very useful, contributions mostly created by AI are unlikely to be useful, and will not be accepted. You can link more than one pull request if desired.
+## Project proposal
 
-- **Proposal discussion link**
+### Synopsis
+The BrainGlobe brainrender tool is used to visualise brain data in a common coordinate space defined by a "brain atlas" (We refer to this data as "atlas-registered" data). However, brainrender is inaccessible to people without programming skills. The brainrender-napari tool aims to make brainrender functionality available to more people through a plugin for the popular open-source graphical image viewer napari. This project is supposed to expand on the functionality of the brainrender-napari tool by implementing code that will add a widget, designed in python, that allows users to download and visualise atlas-registered data from mouse and fish brains. This will make the brainrender-napari tool more accessible to neuroscience researchers and contribute to an expanded employment of advanced data technologies for neuroimagery research.
 
-    Please link to the pull request where you discussed your project proposal with the community. 
+### Goals and Deliverables
+**Core**:
+- Develop a python plugin widget that will allow users to be able to download and visualize atlas-registered data, primarily from fish and mouse brains.
+- Implement tests that will cover the expanded functionality
+- Create clear documentation for the new functionality
 
-## Project proposal 
-_Length: max 1 page_
+**Stretch Goals (if there is additional time)**:
+- Implement add additional annotational tools that can save or export custom region labels
+- Find a way to sync camera positions
 
-- **Synopsis**
+### Implementation timeline
+**Duration**: Medium (~175 hours), 12 weeks  
+**Weekly commitment**: ~30 hours  
 
-    Briefly explain: what is the project about? Why is it important? What are the goals? What are the deliverables? How would the open source community benefit from this project?
+| Week       | Hours | Tasks |
+|------------|-------|-------|
+| **Bonding (May 8 - June 1)** | 30 | Complete "Visualize an atlas in napari" tutorial along with other tutorials of the Brainrender tool. Study existing brainrender widget code and different python libraries for implementation. Discuss schedule and project details more in depth with mentor. |
+| **Week 1-2** | 30 | Design UI for widget using magicgui or other gui toolkits. Work on designing the outline and framework of the widget. |
+| **Week 3-4** | 30 | Identify fish and mouse brain atlases datasets and set up data fetching, load sample data into napari from bg_atlasapi. Start process of programming the functionality of the widget on python. |
+| **Week 5-6** | 30 | Build an interactive GUI and implement functionality with magicgui or pyQT. Design and test the python implemented widget with visualization on BrainGlobe. Implement unit testing to ensure proper data handling and integrate with BrainGlobe's data API. |
+| **Week 6-7** | 30 | Complete bulk of the initial coding process, continue testing and visualizing in BrainGlobe. Start documentation for widget code and functionality. Prepare for midterm project report documentation. |
+| **Week 8-9** | 30 | Start implementing feedback from mentor and midterm report. Make any adjustment to the widget code if needed along with additional testing to ensure proper functionality. |
+| **Week 10-12** | 30 | Finalize refinement and optimize the widget's performance. Prepare final report for documentation and showcase of widget functionality (If available time, implement stretch goals). |
 
-- **Implementation timeline**
-
-    Please include the following information:
-    1. A bullet point list with **minimal set of deliverables**
-    2. Additional **stretch goals** or "if time allows" deliverables (optional)
-    3. A detailed **weekly timeline**: when do you plan to do what? 
-        - Please use a week as a minimal unit of time, and include any planned vacations or other commitments. 
-        - This timeline could be formatted as a table. 
-        - Remember to also include the number of hours per week you plan to work on the GSoC project. 
-        - When estimating the required time for a task, keep in mind deliverables should include investigation/research, coding and documentation. 
-        - The default schedule for GSoC is 12 weeks - see the [GSoC timeline](https://developers.google.com/open-source/gsoc/timeline) for precise dates. 
-        - Also please specify any prep work you plan to do during the "Community bonding period".
-        - Usually week 1's deliverables already include some code. Week 6 marks the mid-term point, where usually more than half of the project should be completed. At the end of week 11 you may want to try to "freeze" the code and complete any remaining tests or documentation in weeks 11 and 12.
-
-- **Communication plan**
-
-    Please explain: how do you plan to communicate with your mentor? How often? (e.g., daily or weekly stand-ups, longer meetings..?) What communication channels will you use? (e.g., video calls, Zulip chat...?)
+## Communication plan
+I will be active on Zulip to communicate with mentors and the rest of the community involved in NIU's projects. I will also be using zoom for online meetings and progress reports with my mentors and peers. I plan to push my changes onto the BrainGlobe brainrender-napari Github repo to receive feedback and track my development. I will also document and post weekly summaries for my development process so that I can receive feedback as well.
 
 ## Personal statement
 
-_Length: max 0.75 page_
+### Past experience
+I have been programming for 3 years now and I am in my second year of my Bachelor's degree in Computer Science at the University of California, Davis. I have pursued various levels of coding projects, in both python and C, and I am also a member of various tech-related clubs at UC Davis. I have worked on projects that range from a data loss prevention agent and data classification to brain computer interfaces (BCI) as part of my club at school and they have all exposed me to various different types of systems and programming features that have helped refine my skills. For the BCI project, specifically, I worked on developing a program in python that can read EEG data waves and use an algorithm to determine how confident a person is when they are studying and give it a score. For the BCI, we used OpenBCI EEG tech and developed a quiz system to repeat a series of questions based on the confidence score given to a user when they answer a question. The idea is that it is a live feedback loop that will update the questions each time until all the questions have been answered. It can also display the average confidence score at the end to show users how well the user is retaining the information of the quiz, helping them learn more effectively.
 
-- **Past experience.** 
+### Motivation: Why this project?
+The reason why this specific project interests me the most is because I am deeply fascinated by visualization technologies, as part of my experience with OpenBCI software. EEG data always interested me ever since I started working with it as part of my club and BrainGlobe's software intrigued me a lot as it showed 2D and 3D models of different animal brains, which was quite exciting to play around with. Working on a widget that can actually contribute and affect BrainGlobe's software motivates me the most as it links pretty well to my own personal interests and professional as I gain a lot more crucial experience with python and can use that for future projects as well. I also envision that this can have a pretty positive impact for the open source community as researchers in neuroscience can find work like this very useful for their own work as the open source community can make it easier for them to conduct their research and help expand understanding of neuro anatomical data in different animals. It can also help with research into different human brains as well and deepen understanding of several neural phenomena.
 
-    Please describe your past experience with programming, open source, or any other experience you deem relevant for the project you are applying for. Any successful open source projects, published work or content of the like should definitely be highlighted.
-- **Motivation: why this project?**
+### Match: Why you?
+I believe I match quite well with this project as it pertains to my personal interests as well my professional and academic ones due in part to my experience with neuroscience and programming. My hands-on experience with neural data and my background in python should be the right technical fit for developing the widget. Although I haven't worked exactly with widget creation before, I believe my coding contribution for BrainGlobe and my previously mentioned projects should indicate my adaptiveness and willingness to learn new technologies in order to achieve my goal for any project. Plus, I am very willing to learn and collaborate with a community of neuroscience and programming enthusiasts such as myself.
 
-    Why are you interested in this specific project? What aspects of it motivate you to work on it? How does it link to your personal or professional interests? How do you envision its impact in the open source community?
-- **Match: why you?**
-
-    Why should we choose you for this project? What unique skills or experiences can you bring to the project and the community? Is there something you have worked on in the past that makes you particularly well-suited for this project?
-- **Availability**
-
-    Please state if you have any other plans for the work period (school work, another job, planned vacation)? If so, how do you plan to combine them with your GSoC work?
+### Availability
+For available, I should be available for most of the summer with the exception of the first two weeks as my school is on a quarterly system so that would mean that my final exams do end at around June 12th so, I was hoping to coordinate my mentor the beginning of week 1 a bit further than the start of June 1st in order to properly acclimate at the start of the project.
 
 ## GSoC
 
-_Length: max 0.25 page_
+### GSoC experience
+I intend to gain first hand experience on an open source for the first time and get more experience in building visualization tool technology. I also expect to gain more experience in real world software development through this program.
 
-- **GSoC experience**
-
-    What do you expect from the program?
-
-- **Are you also applying to projects with other organisations in GSoC 2025?**
-
-    If so, which ones? What would be your preference in case of a tie?
+### Are you also applying to projects with other organisations in GSoC 2025?
+No, I am only focusing on one project for the Neuroinformatics Unit in GSoC 2025 as it aligns with my interests in Neuroscience and computer science. I am focused only on this BrainGlobe project for now as I find it the most engaging and also the most friendly experience to expand my programming capabilities.
