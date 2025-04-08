@@ -17,9 +17,9 @@ The BrainGlobe brainrender tool is used to visualise brain data in a common coor
 
 ### Goals and Deliverables
 **Core**:
-- Develop a python plugin widget that will allow users to be able to download and visualize atlas-registered data, primarily from fish and mouse brains.
-- Implement tests that will cover the expanded functionality
-- Create clear documentation for the new functionality
+- Develop a python plugin widget that will allow users to be able to download and visualize atlas-registered data, primarily from fish and mouse brains with data sets from bg-atlasapi 
+- Implement tests that will cover the expanded functionality using unit testing and local caching for storing data
+- Create clear documentation for the new functionality with weekly updates and summaries on Zulip or other channels
 
 **Stretch Goals (if there is additional time)**:
 - Implement a side by side visualization of different atlases with 3d navigation, used to compare different species at once
