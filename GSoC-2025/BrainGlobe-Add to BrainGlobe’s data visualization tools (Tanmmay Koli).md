@@ -22,19 +22,19 @@ The BrainGlobe brainrender tool is used to visualise brain data in a common coor
 - Create clear documentation for the new functionality
 
 **Stretch Goals (if there is additional time)**:
-- Implement add additional annotational tools that can save or export custom region labels
-- Find a way to sync camera positions
+- Implement a side by side visualization of different atlases with 3d navigation, used to compare different species at once
+- Add a tool to export and calculate different brain region metrics (volume, surface area, eg.)  
 
 ### Implementation timeline
 **Duration**: Medium (~175 hours), 12 weeks  
-**Weekly commitment**: ~30 hours, ~4 hours everyday 
+**Weekly commitment**: ~15 hours, ~3 hours everyday 
 
 | Week       | Hours | Tasks |
 |------------|-------|-------|
 | **Community Bonding & Research (May 8 - June 1)** | 30 | Complete "Visualize an atlas in napari" tutorial along with other tutorials of the Brainrender tool. Study existing brainrender widget code and different python libraries for implementation. Discuss schedule and project details more in depth with mentor. |
-| **Week 1-2** | 30 | Design UI for widget using magicgui or other gui toolkits. Work on designing the outline and framework of the widget. |
+| **Week 1-2** | 30 | Design UI for widget using QtPy. Work on designing the outline and framework of the widget. |
 | **Week 3-4** | 30 | Identify fish and mouse brain atlases datasets and set up data fetching, load sample data into napari from bg_atlasapi. Start process of programming the functionality of the widget on python. |
-| **Week 5-6** | 30 | Build an interactive GUI and implement functionality with magicgui or pyQT. Design and test the python implemented widget with visualization on BrainGlobe. Implement unit testing to ensure proper data handling and integrate with BrainGlobe's data API. |
+| **Week 5-6** | 30 | Build an interactive GUI and implement functionality with QtPy. Design and test the python implemented widget with visualization on BrainGlobe. Implement unit testing to ensure proper data handling and integrate with BrainGlobe's data API. |
 | **Week 6-7** | 30 | Complete bulk of the initial coding process, continue testing and visualizing in BrainGlobe. Start documentation for widget code and functionality. Prepare for midterm project report documentation. |
 | **Week 8-9** | 30 | Start implementing feedback from mentor and midterm report. Make any adjustment to the widget code if needed along with additional testing to ensure proper functionality. |
 | **Week 10-12** | 30 | Finalize refinement and optimize the widget's performance. Prepare final report for documentation and showcase of widget functionality (If available time, implement stretch goals). |
