@@ -31,7 +31,7 @@ The BrainGlobe brainrender tool is used to visualise brain data in a common coor
 
 | Week       | Hours | Tasks |
 |------------|-------|-------|
-| **Bonding (May 8 - June 1)** | 30 | Complete "Visualize an atlas in napari" tutorial along with other tutorials of the Brainrender tool. Study existing brainrender widget code and different python libraries for implementation. Discuss schedule and project details more in depth with mentor. |
+| **Community Bonding & Research (May 8 - June 1)** | 30 | Complete "Visualize an atlas in napari" tutorial along with other tutorials of the Brainrender tool. Study existing brainrender widget code and different python libraries for implementation. Discuss schedule and project details more in depth with mentor. |
 | **Week 1-2** | 30 | Design UI for widget using magicgui or other gui toolkits. Work on designing the outline and framework of the widget. |
 | **Week 3-4** | 30 | Identify fish and mouse brain atlases datasets and set up data fetching, load sample data into napari from bg_atlasapi. Start process of programming the functionality of the widget on python. |
 | **Week 5-6** | 30 | Build an interactive GUI and implement functionality with magicgui or pyQT. Design and test the python implemented widget with visualization on BrainGlobe. Implement unit testing to ensure proper data handling and integrate with BrainGlobe's data API. |
