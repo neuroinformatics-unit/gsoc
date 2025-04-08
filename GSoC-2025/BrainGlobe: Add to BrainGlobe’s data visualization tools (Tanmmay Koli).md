@@ -40,7 +40,7 @@ The BrainGlobe brainrender tool is used to visualise brain data in a common coor
 | **Week 10-12** | 30 | Finalize refinement and optimize the widget's performance. Prepare final report for documentation and showcase of widget functionality (If available time, implement stretch goals). |
 
 ## Communication plan
-I will be active on Zulip to communicate with mentors and the rest of the community involved in NIU's projects. I will also be using zoom for online meetings and progress reports with my mentors and peers. I plan to push my changes onto the BrainGlobe brainrender-napari Github repo to receive feedback and track my development. I will also document and post weekly summaries for my development process so that I can receive feedback as well.
+I will be active on Zulip to communicate with mentors, Alessandro Felder and Igor Tarnikov, and the rest of the community involved in NIU's projects. I will also be using zoom for online meetings and progress reports with my mentors and peers. I plan to push my changes onto the BrainGlobe brainrender-napari Github repo to receive feedback and track my development. I will also document and post weekly summaries for my development process so that I can receive feedback as well.
 
 ## Personal statement
 
