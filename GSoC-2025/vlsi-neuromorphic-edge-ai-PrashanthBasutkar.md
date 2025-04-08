@@ -7,8 +7,8 @@ Personal details
 •	Zulip username: https://reva2498.zulipchat.com/
 •	Location & time-zone: Bengaluru, India, & Kolkata
 •	Personal website / project portfolio: (optional)
-•	Code contribution: 
-•	Proposal discussion link: 
+•	Code contribution: https://github.com/neuroinformatics-unit/gsoc/pull/82
+•	Proposal discussion link: https://github.com/neuroinformatics-unit/gsoc/pull/82
 Project proposal
 •	Synopsis
 Neuromorphic computing emulates the neural architecture of the human brain to enable low-power, event-driven computation. This project focuses on the design and development of a neuromorphic VLSI system optimized for Edge AI applications. It will implement a simple spiking neural network (SNN) architecture using CMOS-compatible analog/digital circuitry to process real-time data with ultra-low power consumption. The aim is to deliver a functional prototype (e.g., on FPGA or simulated ASIC) for applications such as gesture recognition, environmental monitoring, or low-power IoT devices. The open-source community will benefit from accessible hardware designs and SNN models deployable in constrained edge environments.
