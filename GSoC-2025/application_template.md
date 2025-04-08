@@ -10,7 +10,7 @@ Please use the following template to submit your application to the NIU GSoC 202
 The more closely you follow this template, the easier it will be for us to review your application! Please include clear headings for all the different sections.
 
 ## Project title
-Follow the following format for the proposal title: `<Package Name>:<Project Name> (<Your-Name>)` and provide it in your pull request as a new markdown file of the same name, i.e.   `<Package Name>:<Project Name> (<Your-Name>).md`
+Follow the following format for the proposal title: `<Package Name>-<Project Name> (<Your-Name>)` and provide it in your pull request as a new markdown file of the same name, i.e.   `<Package Name>-<Project Name> (<Your-Name>).md`
 
 E.g. "movement: support for Kalman filters (Jane Doe)". 
 

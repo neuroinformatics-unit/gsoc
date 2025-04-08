@@ -34,7 +34,7 @@ Please include the following information:
 	2. Quantitative comparison between the current and new architecture with tests to cover any added functionality.
 	3. Documentation for the new functionality with a blog explaining the new network with pros and cons.
    
-    **Additional stretch goals:**
+ - **Additional stretch goals:**
 
 	- Writing a paper extending original cellfinder paper –  Try active learning – Try multi-class classifier if data is available.
 
@@ -75,6 +75,7 @@ Please include the following information:
 
     **3. Experience with Image Processing:** Here is [an org for applications of image processing and computer vision](https://github.com/ComputerVision-Projects) implemented from scratch. It’s still under development and will be updated soon with three more projects.
 
+
 - **Motivation: why this project?**
  
     Although I have navigated many gsoc orgs and projects, but I am interested in this project specifically due to three main reasons:
@@ -91,6 +92,7 @@ Please include the following information:
     
     Generally, in normal conditions, I work +50 hours per week, so I will give GSoC from 25 to 35 hours on average, and for the remaining time, I will check for any other responsibilities or self-development. 
 
+
 ## GSoC
 
 - **GSoC experience**
@@ -105,11 +107,8 @@ Please include the following information:
    Briefly, GSoC offers me a unique opportunity to contribute meaningfully to the neuroscience open-source community while also learning and growing through the process. It's a two-way journey — as much as I hope to add value to the project, I know it will also add to my skills and help shape my career path in neuroscience and open science.
 
 
-
 - **Are you also applying to projects with other organisations in GSoC 2025?**
-  
-   No, I am applying only to this project in GSoC 2025.
-
+     No, I am applying only to this project in GSoC 2025.
 
 
 
