@@ -27,7 +27,7 @@ The BrainGlobe brainrender tool is used to visualise brain data in a common coor
 
 ### Implementation timeline
 **Duration**: Medium (~175 hours), 12 weeks  
-**Weekly commitment**: ~30 hours  
+**Weekly commitment**: ~30 hours, ~4 hours everyday 
 
 | Week       | Hours | Tasks |
 |------------|-------|-------|
