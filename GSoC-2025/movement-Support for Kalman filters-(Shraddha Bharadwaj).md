@@ -2,7 +2,7 @@
 
 ## Project title
 
-movement: support for Kalman filters (Shraddha Bharadwaj)
+movement - Support for Kalman filters (Shraddha Bharadwaj)
 
 ## Personal details
 Please include the following information:
