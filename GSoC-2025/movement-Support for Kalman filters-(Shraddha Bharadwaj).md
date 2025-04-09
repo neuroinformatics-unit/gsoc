@@ -23,7 +23,7 @@ Please include the following information:
     - I have two years of work experience with Git repository management and have a good understanding of code review, pull requests, fork, branching and merging and conflict resolution.
 -  **Proposal discussion link** 
     - https://github.com/neuroinformatics-unit/gsoc/pull/68
-    - 
+    
 
 ## Project proposal 
 
